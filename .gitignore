@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+data/chroma_db/
+data/rag_eval.db
+data/testsets/
+logs/
+*.log

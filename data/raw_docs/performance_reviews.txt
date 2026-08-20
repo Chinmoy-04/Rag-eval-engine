@@ -1,0 +1,25 @@
+HelixForge Performance Review Cycle
+
+HelixForge runs two formal review cycles per fiscal year: a mid-year
+checkpoint in August and a year-end review in January. Ratings from the
+January cycle determine merit increases, which take effect on March 1.
+
+Rating scale: 1 Does not meet, 2 Inconsistent, 3 Meets, 4 Exceeds, 5
+Transformational. A 5 is rare; managers need VP calibration to assign a 5.
+A 1 requires a performance improvement plan (PIP) of 30 or 60 days, designed
+with People Operations.
+
+Calibration happens at the division level. Managers submit draft ratings 2
+weeks before calibration. Employees write a self-review in Workday; it is
+visible to the manager but not to skip-levels unless the employee opts in.
+
+Promotion packets are separate from ratings. An employee can be rated 4 and
+still not be promoted if the next-level bar is not evidenced. Promotions are
+effective March 1 or September 1 only.
+
+Feedback outside the cycle is expected. The review cycle is not the only time
+to discuss performance. Surprise 1 ratings are a manager failure; People
+Operations will inspect whether prior written feedback existed.
+
+Contractors do not receive HelixForge ratings. Their firms may run their own
+reviews.

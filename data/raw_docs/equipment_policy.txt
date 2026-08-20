@@ -1,0 +1,24 @@
+HelixForge Equipment Policy
+
+Every full-time employee receives one company laptop (14-inch MacBook Pro or
+ThinkPad T14, employee's choice during onboarding), one YubiKey 5C NFC, and
+noise-cancelling headphones on request.
+
+Monitors: Office-Primary employees use office-provided monitors and may not
+expense a home monitor unless they are approved for an exception. Remote-
+Primary employees may expense one monitor up to $350 or two monitors totaling
+$500, once every 3 years.
+
+Phones: HelixForge does not provide phones. A $30/month stipend is available
+if the employee enables MDM on a personal phone. Without MDM, Slack and email
+on a personal phone are still allowed via the official apps, but Drive file
+downloads are blocked.
+
+Broken equipment: open an IT ticket. Do not expense a replacement laptop on a
+personal card. Lost equipment follows the Information Security lost-device
+rule first, then IT issues a replacement.
+
+On termination, laptops and YubiKeys must be returned within 10 business days
+using the prepaid label IT sends. The remote stipend stops on the last day of
+employment. Unreturned laptops after 21 days may be deducted from final pay
+where legally allowed.
