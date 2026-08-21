@@ -1,0 +1,184 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;background-color:#0b0f14;background-image:linear-gradient(rgba(30,40,51,0.2) 1px,transparent 1px),linear-gradient(90deg,rgba(30,40,51,0.2) 1px,transparent 1px);background-size:24px 24px;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-tint":"#3cddc7","on-secondary":"#27313d","primary":"#57f1db","on-surface":"#e0e2ea","surface-variant":"#31353b","primary-container":"#2dd4bf","on-tertiary":"#670211","primary-fixed-dim":"#3cddc7","error-container":"#93000a","on-secondary-fixed-variant":"#3e4854","on-primary":"#003731","outline-variant":"#3c4a46","surface-container-highest":"#31353b","surface-dim":"#101419","inverse-surface":"#e0e2ea","tertiary":"#ffcfcc","on-error":"#690005","on-error-container":"#ffdad6","surface":"#101419","tertiary-fixed-dim":"#ffb3b0","inverse-primary":"#006b5f","on-primary-fixed-variant":"#005047","on-primary-container":"#00574d","secondary-fixed-dim":"#bdc7d6","surface-bright":"#36393f","on-tertiary-container":"#90242a","secondary":"#bdc7d6","on-tertiary-fixed":"#410006","background":"#101419","surface-container":"#1c2025","on-tertiary-fixed-variant":"#881d24","tertiary-container":"#ffa7a4","outline":"#859490","error":"#ffb4ab","on-surface-variant":"#bacac5","secondary-fixed":"#d9e3f2","primary-fixed":"#62fae3","tertiary-fixed":"#ffdad8","on-secondary-container":"#afb9c8","surface-container-lowest":"#0a0e13","on-secondary-fixed":"#121c27","surface-container-low":"#181c21","secondary-container":"#404a56","inverse-on-surface":"#2d3136","on-primary-fixed":"#00201c","surface-container-high":"#262a30","on-background":"#e0e2ea"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"24px","base":"4px","lg":"32px","xs":"8px","md":"20px","sm":"12px","xl":"48px","gutter":"20px"},"fontFamily":{"headline-lg-mobile":["Space Grotesk"],"display-lg":["Space Grotesk"],"body-base":["Space Grotesk"],"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"code-md":["JetBrains Mono"],"label-caps":["JetBrains Mono"],"code-sm":["JetBrains Mono"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"1.2","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}],"body-base":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"1.4","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"1.2","fontWeight":"600"}],"code-md":["14px",{"lineHeight":"1.5","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"700"}],"code-sm":["12px",{"lineHeight":"1.5","fontWeight":"500"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-base text-on-background"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low border-r border-[#1E2833] z-50 flex flex-col pt-lg pb-lg"><div class="px-md mb-xl flex items-center gap-sm"><img alt="HelixForge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANOQAvp__Dx5Oe4y0u9fz_jRiJtmuVp4WiANPPtavjQaday4ZZkYaQcUzPh9UOsBQHpFozcq7a_AEGsOrgHDFX899ufEzkhvxoUIqGM9z_GliWVgG9QFiAWEOtWnyTuxrBF-05A_xwLUJ8mnUyh2n4mNIEzz_lIP7QkhBd3iwxbQKwS32VBfZ8QbFKLyo0ZE6w67cejUQ4IvjLXXc_owtKiV_Y1Si4XnitjbP_ENk1JMzZdsVPIxvC"/><div class="flex flex-col"><span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">HelixForge</span><span class="font-label-caps text-label-caps text-primary uppercase mt-1 tracking-widest">RAG Eval</span></div></div><nav class="flex-1 px-sm space-y-base" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-[0_0_10px_rgba(45,212,191,0.15)]"><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="ask" href="#"><span class="material-symbols-outlined mr-sm text-[20px] group-hover:text-primary">chat_bubble</span><span class="font-body-base">Ask</span></a><a aria-current="page" class="flex items-center px-md py-sm rounded-lg transition-all group bg-primary-container text-on-primary-container font-bold shadow-[0_0_10px_rgba(45,212,191,0.15)]" data-path="runs" href="#"><span class="material-symbols-outlined mr-sm text-[20px] group-hover:text-primary">rocket_launch</span><span class="font-body-base">Runs</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="compare" href="#"><span class="material-symbols-outlined mr-sm text-[20px] group-hover:text-primary">compare_arrows</span><span class="font-body-base">Compare</span></a></nav><div class="px-md pt-lg border-t border-[#1E2833]"><div class="flex items-center gap-sm p-sm rounded-xl bg-surface-container-lowest border border-[#1E2833]"><img alt="Profile" class="w-10 h-10 rounded-full border border-primary/20 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOVGlxtNm0OaBPBgM_lCIa0wkWqmOggxIRaiiuEkbeMSwxUMgYLC4__grpqkrpd0n_uxQhhw7MgUHHcZZpcIN1TFRflN1Kj3gZAKdGzeD1WGjxyGEvniZfanfZetK4Boodf1Uu3zl53AghOTNI_Ek_MKbkRre9Nu56fefvAJerASz29fbT5_Dc6e0abHlVI3YvWSiIxA3h7HtjTfUUYKenULWlwLG0L_L0F8X2of3DYUrXbPekOKXa"/><div class="flex flex-col overflow-hidden"><span class="text-sm font-medium text-on-surface truncate">Engineer</span><span class="text-xs text-on-surface-variant truncate">v2.4.0-stable</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-background/60 backdrop-blur-md border-b border-[#1E2833] z-40 flex items-center justify-end px-lg gap-md"><div class="flex items-center bg-surface-container-low px-sm py-xs rounded border border-[#1E2833] group focus-within:border-primary transition-colors"><span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-xs">search</span><input class="bg-transparent border-none outline-none text-code-sm font-code-sm text-on-surface w-48 placeholder:text-outline" placeholder="Search traces..." type="text"/></div><button class="p-xs rounded-lg hover:bg-surface-container-high transition-colors relative"><span class="material-symbols-outlined text-on-surface-variant">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-primary rounded-full ring-2 ring-background"></span></button><button class="p-xs rounded-lg hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-on-surface-variant">settings</span></button></header><main class="relative pt-16 min-h-screen bg-background/10"><div class="flex flex-col w-full px-lg pb-xl gap-xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="bg-surface-container-low p-md rounded-xl flex flex-col gap-sm shadow-sm relative overflow-hidden group hover:-translate-y-1 transition-transform">
+<div class="absolute -right-12 -top-12 w-32 h-32 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-colors"></div>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">library_books</span>
+<span class="font-body-base text-on-surface-variant">Total Runs</span>
+</div>
+<div class="font-display-lg text-display-lg text-on-surface">24</div>
+<div class="flex items-center gap-base text-xs">
+<span class="material-symbols-outlined text-primary text-[14px]">trending_up</span>
+<span class="font-code-sm text-code-sm text-primary">+3 this week</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-md rounded-xl flex flex-col gap-sm shadow-sm relative overflow-hidden group hover:-translate-y-1 transition-transform">
+<div class="absolute -right-12 -top-12 w-32 h-32 bg-secondary/5 rounded-full blur-2xl group-hover:bg-secondary/10 transition-colors"></div>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">analytics</span>
+<span class="font-body-base text-on-surface-variant">Last Score</span>
+</div>
+<div class="font-display-lg text-display-lg text-on-surface">0.84</div>
+<div class="flex items-center gap-base text-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[14px]">horizontal_rule</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Stable</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-md rounded-xl flex flex-col gap-sm shadow-sm relative overflow-hidden group hover:-translate-y-1 transition-transform">
+<div class="absolute -right-12 -top-12 w-32 h-32 bg-tertiary/5 rounded-full blur-2xl group-hover:bg-tertiary/10 transition-colors"></div>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">database</span>
+<span class="font-body-base text-on-surface-variant">Vectors Indexed</span>
+</div>
+<div class="font-display-lg text-display-lg text-on-surface">142k</div>
+<div class="flex items-center gap-base text-xs">
+<span class="material-symbols-outlined text-primary text-[14px]">arrow_upward</span>
+<span class="font-code-sm text-code-sm text-primary">+12k today</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-md bg-surface-container p-md rounded-xl shadow-md">
+<div class="flex items-center justify-between flex-wrap gap-md">
+<div class="flex items-center gap-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Evaluation Runs</h2>
+<div class="px-sm py-xs bg-surface-container-high rounded-full flex items-center gap-base">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">1 Active</span>
+</div>
+</div>
+<div class="flex items-center gap-sm">
+<div class="flex items-center gap-xs bg-surface-container-highest px-sm py-xs rounded-lg cursor-pointer hover:bg-surface-bright transition-colors">
+<span class="font-code-sm text-code-sm text-on-surface-variant">Pipeline:</span>
+<span class="font-body-base text-body-base text-on-surface">All</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+<div class="flex items-center gap-xs bg-surface-container-highest px-sm py-xs rounded-lg cursor-pointer hover:bg-surface-bright transition-colors">
+<span class="font-code-sm text-code-sm text-on-surface-variant">Status:</span>
+<span class="font-body-base text-body-base text-on-surface">Any</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+<div class="flex items-center gap-xs bg-surface-container-highest px-sm py-xs rounded-lg cursor-pointer hover:bg-surface-bright transition-colors">
+<span class="font-code-sm text-code-sm text-on-surface-variant">Date:</span>
+<span class="font-body-base text-body-base text-on-surface">Last 30 Days</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+<button class="bg-primary text-on-primary px-md py-xs rounded-lg font-headline-md text-headline-md hover:bg-primary/90 transition-colors flex items-center gap-xs shadow-sm">
+<span class="material-symbols-outlined text-[20px]">add</span>
+                  New Run
+              </button>
+</div>
+</div>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-surface-container-highest">
+<th class="p-sm font-label-caps text-label-caps text-on-surface-variant">Run ID</th>
+<th class="p-sm font-label-caps text-label-caps text-on-surface-variant">Corpus</th>
+<th class="p-sm font-label-caps text-label-caps text-on-surface-variant">Questions</th>
+<th class="p-sm font-label-caps text-label-caps text-on-surface-variant">Pipeline</th>
+<th class="p-sm font-label-caps text-label-caps text-on-surface-variant">Status</th>
+<th class="p-sm font-label-caps text-label-caps text-on-surface-variant">Created</th>
+<th class="p-sm font-label-caps text-label-caps text-on-surface-variant">Faithfulness</th>
+<th class="p-sm font-label-caps text-label-caps text-on-surface-variant">Relevancy</th>
+<th class="p-sm font-label-caps text-label-caps text-on-surface-variant text-right">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-b border-surface-container-highest hover:bg-surface-container-high transition-colors group cursor-pointer">
+<td class="p-sm font-code-md text-code-md text-primary">RUN-9482</td>
+<td class="p-sm font-body-base text-body-base text-on-surface">Financial Reports Q3</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">150</td>
+<td class="p-sm"><span class="bg-surface-container-highest px-xs py-base rounded text-xs text-on-surface">Mistral-7B-v2</span></td>
+<td class="p-sm">
+<div class="flex items-center gap-xs bg-primary/10 px-sm py-base rounded-full w-fit">
+<div class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
+<span class="font-code-sm text-code-sm text-primary">Running</span>
+</div>
+</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">Just now</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">--</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">--</td>
+<td class="p-sm text-right">
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors opacity-0 group-hover:opacity-100"><span class="material-symbols-outlined text-[20px]">open_in_new</span></button>
+</td>
+</tr>
+<tr class="border-b border-surface-container-highest hover:bg-surface-container-high transition-colors group cursor-pointer">
+<td class="p-sm font-code-md text-code-md text-primary">RUN-9481</td>
+<td class="p-sm font-body-base text-body-base text-on-surface">Legal Contracts DB</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">500</td>
+<td class="p-sm"><span class="bg-surface-container-highest px-xs py-base rounded text-xs text-on-surface">GPT-4-Turbo</span></td>
+<td class="p-sm">
+<div class="flex items-center gap-xs bg-primary-container/20 px-sm py-base rounded-full w-fit">
+<div class="w-1.5 h-1.5 rounded-full bg-primary-container"></div>
+<span class="font-code-sm text-code-sm text-primary-container">Completed</span>
+</div>
+</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">2h ago</td>
+<td class="p-sm">
+<div class="flex items-center gap-xs">
+<div class="flex-1 h-1 bg-surface-container-highest rounded-full overflow-hidden w-16"><div class="h-full bg-primary" style="width: 92%"></div></div>
+<span class="font-code-md text-code-md text-on-surface">0.92</span>
+</div>
+</td>
+<td class="p-sm">
+<div class="flex items-center gap-xs">
+<div class="flex-1 h-1 bg-surface-container-highest rounded-full overflow-hidden w-16"><div class="h-full bg-primary" style="width: 88%"></div></div>
+<span class="font-code-md text-code-md text-on-surface">0.88</span>
+</div>
+</td>
+<td class="p-sm text-right">
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">refresh</span></button>
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">open_in_new</span></button>
+</td>
+</tr>
+<tr class="border-b border-surface-container-highest hover:bg-surface-container-high transition-colors group cursor-pointer">
+<td class="p-sm font-code-md text-code-md text-primary">RUN-9480</td>
+<td class="p-sm font-body-base text-body-base text-on-surface">Customer Support Logs</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">250</td>
+<td class="p-sm"><span class="bg-surface-container-highest px-xs py-base rounded text-xs text-on-surface">Claude-3-Sonnet</span></td>
+<td class="p-sm">
+<div class="flex items-center gap-xs bg-error/10 px-sm py-base rounded-full w-fit">
+<div class="w-1.5 h-1.5 rounded-full bg-error"></div>
+<span class="font-code-sm text-code-sm text-error">Failed</span>
+</div>
+</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">5h ago</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">--</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">--</td>
+<td class="p-sm text-right">
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">refresh</span></button>
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">open_in_new</span></button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors group cursor-pointer">
+<td class="p-sm font-code-md text-code-md text-primary">RUN-9479</td>
+<td class="p-sm font-body-base text-body-base text-on-surface">Internal Wiki V2</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">1000</td>
+<td class="p-sm"><span class="bg-surface-container-highest px-xs py-base rounded text-xs text-on-surface">Llama-3-70B</span></td>
+<td class="p-sm">
+<div class="flex items-center gap-xs bg-surface-container-highest px-sm py-base rounded-full w-fit">
+<div class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Ready</span>
+</div>
+</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">1d ago</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">--</td>
+<td class="p-sm font-code-md text-code-md text-on-surface-variant">--</td>
+<td class="p-sm text-right">
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">play_arrow</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between pt-sm">
+<span class="font-code-sm text-code-sm text-on-surface-variant">Showing 4 of 24 runs</span>
+<div class="flex gap-xs">
+<button class="p-xs rounded bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors disabled:opacity-50"><span class="material-symbols-outlined text-[18px]">chevron_left</span></button>
+<button class="p-xs rounded bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[18px]">chevron_right</span></button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

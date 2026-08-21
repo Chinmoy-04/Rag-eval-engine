@@ -1,0 +1,21 @@
+software_name,vendor,category,license_model,approved_data_classification,vendor_risk_tier,business_owner_email,cost_center_code
+Jamf Pro,Jamf Software,MDM & Endpoint Management,Per Device Annual,Restricted,Tier 1,nathan.brooks@helixforge.example,CC-4050
+CrowdStrike Falcon,CrowdStrike,EDR & Threat Detection,Per Endpoint Annual,Restricted,Tier 1,elena.voss@helixforge.example,CC-1050
+1Password Enterprise,AgileBits,Password Manager,Per User Annual,Restricted,Tier 1,elena.voss@helixforge.example,CC-1050
+Okta Workforce Identity,Okta Inc,IdP & SSO,Per User Annual,Restricted,Tier 1,nathan.brooks@helixforge.example,CC-4050
+PagerDuty Enterprise,PagerDuty,Incident Escalation,Per User Annual,Confidential,Tier 2,chloe.bennett@helixforge.example,CC-1030
+Datadog Infrastructure,Datadog,Observability & APM,Usage-Based Monthly,Confidential,Tier 2,chloe.bennett@helixforge.example,CC-1030
+HashiCorp Vault Enterprise,HashiCorp,Secrets Management,Cluster Annual,Restricted,Tier 1,marcus.vance@helixforge.example,CC-1010
+GitHub Enterprise Cloud,GitHub Inc,Source Code & CI/CD,Per User Annual,Restricted,Tier 1,devon.hale@helixforge.example,CC-1010
+Slack Enterprise Grid,Slack Technologies,Workplace Collaboration,Per User Annual,Confidential,Tier 2,nathan.brooks@helixforge.example,CC-4050
+Google Workspace Enterprise,Google LLC,Email & Productivity,Per User Annual,Confidential,Tier 2,nathan.brooks@helixforge.example,CC-4050
+Notion Enterprise,Notion Labs,Knowledge Base & Wiki,Per User Annual,Confidential,Tier 2,priya.nair@helixforge.example,CC-4010
+Jira Software Cloud,Atlassian,Project & Issue Tracking,Per User Annual,Confidential,Tier 2,devon.hale@helixforge.example,CC-1010
+Figma Enterprise,Figma Inc,UI/UX Design,Per Editor Annual,Internal,Tier 3,diego.morales@helixforge.example,CC-3020
+Zoom Enterprise,Zoom Video Communications,Video Conferencing,Per User Annual,Confidential,Tier 2,brendan.walsh@helixforge.example,CC-4040
+Weights & Biases Enterprise,Weights & Biases,ML Experiment Tracking,Per Seat Annual,Confidential,Tier 2,dr.alina.rostova@helixforge.example,CC-2010
+Ray Core / Anyscale,Anyscale Inc,Distributed Compute Runtime,Usage-Based Cloud,Restricted,Tier 1,marcus.vance@helixforge.example,CC-1010
+AWS GovCloud & Commercial,Amazon Web Services,Cloud Infrastructure,Usage-Based Monthly,Restricted,Tier 1,chloe.bennett@helixforge.example,CC-1030
+GCP Cloud Platform,Google Cloud,Cloud Infrastructure & TPU,Usage-Based Monthly,Restricted,Tier 1,chloe.bennett@helixforge.example,CC-1030
+OpenAI API Enterprise,OpenAI,Model Evaluation Baseline,Usage-Based Monthly,Confidential,Tier 2,zheng.wei@helixforge.example,CC-2030
+Anthropic API Enterprise,Anthropic,Model Evaluation Baseline,Usage-Based Monthly,Confidential,Tier 2,zheng.wei@helixforge.example,CC-2030

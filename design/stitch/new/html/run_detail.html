@@ -1,0 +1,251 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;background-color:#0b0f14;background-image:linear-gradient(rgba(30,40,51,0.2) 1px,transparent 1px),linear-gradient(90deg,rgba(30,40,51,0.2) 1px,transparent 1px);background-size:24px 24px;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-tint":"#3cddc7","on-secondary":"#27313d","primary":"#57f1db","on-surface":"#e0e2ea","surface-variant":"#31353b","primary-container":"#2dd4bf","on-tertiary":"#670211","primary-fixed-dim":"#3cddc7","error-container":"#93000a","on-secondary-fixed-variant":"#3e4854","on-primary":"#003731","outline-variant":"#3c4a46","surface-container-highest":"#31353b","surface-dim":"#101419","inverse-surface":"#e0e2ea","tertiary":"#ffcfcc","on-error":"#690005","on-error-container":"#ffdad6","surface":"#101419","tertiary-fixed-dim":"#ffb3b0","inverse-primary":"#006b5f","on-primary-fixed-variant":"#005047","on-primary-container":"#00574d","secondary-fixed-dim":"#bdc7d6","surface-bright":"#36393f","on-tertiary-container":"#90242a","secondary":"#bdc7d6","on-tertiary-fixed":"#410006","background":"#101419","surface-container":"#1c2025","on-tertiary-fixed-variant":"#881d24","tertiary-container":"#ffa7a4","outline":"#859490","error":"#ffb4ab","on-surface-variant":"#bacac5","secondary-fixed":"#d9e3f2","primary-fixed":"#62fae3","tertiary-fixed":"#ffdad8","on-secondary-container":"#afb9c8","surface-container-lowest":"#0a0e13","on-secondary-fixed":"#121c27","surface-container-low":"#181c21","secondary-container":"#404a56","inverse-on-surface":"#2d3136","on-primary-fixed":"#00201c","surface-container-high":"#262a30","on-background":"#e0e2ea"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"24px","base":"4px","lg":"32px","xs":"8px","md":"20px","sm":"12px","xl":"48px","gutter":"20px"},"fontFamily":{"headline-lg-mobile":["Space Grotesk"],"display-lg":["Space Grotesk"],"body-base":["Space Grotesk"],"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"code-md":["JetBrains Mono"],"label-caps":["JetBrains Mono"],"code-sm":["JetBrains Mono"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"1.2","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}],"body-base":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"1.4","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"1.2","fontWeight":"600"}],"code-md":["14px",{"lineHeight":"1.5","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"700"}],"code-sm":["12px",{"lineHeight":"1.5","fontWeight":"500"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-base text-on-background"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low border-r border-[#1E2833] z-50 flex flex-col pt-lg pb-lg"><div class="px-md mb-xl flex items-center gap-sm"><img alt="HelixForge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANOQAvp__Dx5Oe4y0u9fz_jRiJtmuVp4WiANPPtavjQaday4ZZkYaQcUzPh9UOsBQHpFozcq7a_AEGsOrgHDFX899ufEzkhvxoUIqGM9z_GliWVgG9QFiAWEOtWnyTuxrBF-05A_xwLUJ8mnUyh2n4mNIEzz_lIP7QkhBd3iwxbQKwS32VBfZ8QbFKLyo0ZE6w67cejUQ4IvjLXXc_owtKiV_Y1Si4XnitjbP_ENk1JMzZdsVPIxvC"/><div class="flex flex-col"><span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">HelixForge</span><span class="font-label-caps text-label-caps text-primary uppercase mt-1 tracking-widest">RAG Eval</span></div></div><nav class="flex-1 px-sm space-y-base" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-[0_0_10px_rgba(45,212,191,0.15)]"><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="ask" href="#"><span class="material-symbols-outlined mr-sm text-[20px] group-hover:text-primary">chat_bubble</span><span class="font-body-base">Ask</span></a><a aria-current="page" class="flex items-center px-md py-sm rounded-lg transition-all group bg-primary-container text-on-primary-container font-bold shadow-[0_0_10px_rgba(45,212,191,0.15)]" data-path="runs" href="#"><span class="material-symbols-outlined mr-sm text-[20px] group-hover:text-primary">rocket_launch</span><span class="font-body-base">Runs</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="compare" href="#"><span class="material-symbols-outlined mr-sm text-[20px] group-hover:text-primary">compare_arrows</span><span class="font-body-base">Compare</span></a></nav><div class="px-md pt-lg border-t border-[#1E2833]"><div class="flex items-center gap-sm p-sm rounded-xl bg-surface-container-lowest border border-[#1E2833]"><img alt="Profile" class="w-10 h-10 rounded-full border border-primary/20 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOVGlxtNm0OaBPBgM_lCIa0wkWqmOggxIRaiiuEkbeMSwxUMgYLC4__grpqkrpd0n_uxQhhw7MgUHHcZZpcIN1TFRflN1Kj3gZAKdGzeD1WGjxyGEvniZfanfZetK4Boodf1Uu3zl53AghOTNI_Ek_MKbkRre9Nu56fefvAJerASz29fbT5_Dc6e0abHlVI3YvWSiIxA3h7HtjTfUUYKenULWlwLG0L_L0F8X2of3DYUrXbPekOKXa"/><div class="flex flex-col overflow-hidden"><span class="text-sm font-medium text-on-surface truncate">Engineer</span><span class="text-xs text-on-surface-variant truncate">v2.4.0-stable</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-background/60 backdrop-blur-md border-b border-[#1E2833] z-40 flex items-center justify-end px-lg gap-md"><div class="flex items-center bg-surface-container-low px-sm py-xs rounded border border-[#1E2833] group focus-within:border-primary transition-colors"><span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-xs">search</span><input class="bg-transparent border-none outline-none text-code-sm font-code-sm text-on-surface w-48 placeholder:text-outline" placeholder="Search traces..." type="text"/></div><button class="p-xs rounded-lg hover:bg-surface-container-high transition-colors relative"><span class="material-symbols-outlined text-on-surface-variant">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-primary rounded-full ring-2 ring-background"></span></button><button class="p-xs rounded-lg hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-on-surface-variant">settings</span></button></header><main class="relative pt-16 min-h-screen bg-background/10"><div class="flex flex-col w-full relative h-full">
+<!-- Run Header & Stats -->
+<div class="flex items-center justify-between mb-lg z-10 px-lg mt-md">
+<div class="flex items-center gap-md">
+<button class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-high hover:bg-surface-container-highest transition-colors text-on-surface">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div>
+<div class="flex items-center gap-sm mb-xs">
+<span class="font-headline-lg text-headline-lg text-on-background tracking-tight">EVAL-772</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20 font-label-caps text-label-caps uppercase flex items-center gap-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(87,241,219,0.8)]"></span>
+            Completed
+          </span>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant max-w-2xl">
+          Evaluation of Mistral-7B-Instruct-v0.2 on the Financial QA dataset (Q3 2023 Earnings Reports).
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-sm">
+<button class="flex items-center gap-2 px-md py-sm rounded-lg bg-surface-container border border-[#1E2833] text-on-surface hover:bg-surface-container-high transition-colors font-body-base">
+<span class="material-symbols-outlined text-[18px]">download</span>
+        Export JSON
+      </button>
+<button class="flex items-center gap-2 px-md py-sm rounded-lg bg-primary text-on-primary hover:bg-primary-fixed transition-colors font-body-base font-medium shadow-[0_0_15px_rgba(45,212,191,0.2)]">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+        Re-run Eval
+      </button>
+</div>
+</div>
+<!-- Metric Cards (4 Up) -->
+<div class="grid grid-cols-4 gap-md px-lg mb-xl z-10">
+<div class="bg-surface-container-low border border-[#1E2833] rounded-xl p-md relative overflow-hidden group hover:border-primary/50 transition-colors">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex items-center justify-between mb-sm relative z-10">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Avg Context Precision</span>
+<span class="material-symbols-outlined text-primary text-[20px]">target</span>
+</div>
+<div class="flex items-baseline gap-xs relative z-10">
+<span class="font-display-lg text-display-lg text-on-background">0.92</span>
+<span class="font-code-md text-code-md text-primary">+0.04</span>
+</div>
+<div class="mt-sm h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden relative z-10">
+<div class="h-full bg-primary rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<div class="bg-surface-container-low border border-[#1E2833] rounded-xl p-md relative overflow-hidden group hover:border-[#3cddc7]/50 transition-colors">
+<div class="absolute inset-0 bg-gradient-to-br from-[#3cddc7]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex items-center justify-between mb-sm relative z-10">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Avg Answer Relevance</span>
+<span class="material-symbols-outlined text-[#3cddc7] text-[20px]">fact_check</span>
+</div>
+<div class="flex items-baseline gap-xs relative z-10">
+<span class="font-display-lg text-display-lg text-on-background">0.88</span>
+<span class="font-code-md text-code-md text-error">-0.02</span>
+</div>
+<div class="mt-sm h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden relative z-10">
+<div class="h-full bg-[#3cddc7] rounded-full" style="width: 88%"></div>
+</div>
+</div>
+<div class="bg-surface-container-low border border-[#1E2833] rounded-xl p-md relative overflow-hidden group hover:border-[#bdc7d6]/50 transition-colors">
+<div class="absolute inset-0 bg-gradient-to-br from-[#bdc7d6]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex items-center justify-between mb-sm relative z-10">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Faithfulness</span>
+<span class="material-symbols-outlined text-[#bdc7d6] text-[20px]">verified</span>
+</div>
+<div class="flex items-baseline gap-xs relative z-10">
+<span class="font-display-lg text-display-lg text-on-background">0.96</span>
+<span class="font-code-md text-code-md text-on-surface-variant">--</span>
+</div>
+<div class="mt-sm h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden relative z-10">
+<div class="h-full bg-[#bdc7d6] rounded-full" style="width: 96%"></div>
+</div>
+</div>
+<div class="bg-surface-container-low border border-[#1E2833] rounded-xl p-md relative overflow-hidden group hover:border-[#ffcfcc]/50 transition-colors">
+<div class="absolute inset-0 bg-gradient-to-br from-[#ffcfcc]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex items-center justify-between mb-sm relative z-10">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Latency (P95)</span>
+<span class="material-symbols-outlined text-[#ffcfcc] text-[20px]">timer</span>
+</div>
+<div class="flex items-baseline gap-xs relative z-10">
+<span class="font-display-lg text-display-lg text-on-background">1.2s</span>
+<span class="font-code-md text-code-md text-[#ffcfcc]">+0.4s</span>
+</div>
+<div class="mt-sm flex h-[24px] items-end gap-1 relative z-10">
+<div class="w-full bg-[#ffcfcc]/20 rounded-sm" style="height: 40%"></div>
+<div class="w-full bg-[#ffcfcc]/20 rounded-sm" style="height: 60%"></div>
+<div class="w-full bg-[#ffcfcc]/20 rounded-sm" style="height: 45%"></div>
+<div class="w-full bg-[#ffcfcc]/20 rounded-sm" style="height: 80%"></div>
+<div class="w-full bg-[#ffcfcc]/50 rounded-sm" style="height: 95%"></div>
+<div class="w-full bg-[#ffcfcc]/20 rounded-sm" style="height: 50%"></div>
+<div class="w-full bg-[#ffcfcc]/20 rounded-sm" style="height: 30%"></div>
+</div>
+</div>
+</div>
+<!-- Trace List -->
+<div class="flex-1 bg-surface-container-low border-t border-[#1E2833] px-lg py-md flex flex-col z-10">
+<!-- List Header -->
+<div class="flex items-center justify-between mb-md pb-sm border-b border-[#1E2833]">
+<h3 class="font-headline-md text-headline-md text-on-surface">Execution Traces</h3>
+<div class="flex items-center gap-md">
+<div class="flex items-center gap-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Filter:</span>
+<select class="bg-surface-container border border-[#1E2833] text-on-surface font-body-base text-sm rounded px-2 py-1 outline-none focus:border-primary">
+<option>All Traces</option>
+<option>Score < 0.8</option>
+<option>High Latency</option>
+</select>
+</div>
+<div class="flex items-center bg-surface-container border border-[#1E2833] rounded overflow-hidden">
+<button class="p-1 bg-surface-container-high text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">view_list</span></button>
+<button class="p-1 bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors border-l border-[#1E2833]"><span class="material-symbols-outlined text-[18px]">grid_view</span></button>
+</div>
+</div>
+</div>
+<!-- Trace Rows -->
+<div class="space-y-sm pb-xl">
+<!-- Row 1: Expanded -->
+<div class="bg-surface border border-primary/30 rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.2)] transition-all">
+<!-- Collapsed Area -->
+<div class="p-md cursor-pointer hover:bg-surface-container-lowest transition-colors flex items-start gap-md" onclick="this.parentElement.classList.toggle('bg-surface'); this.parentElement.classList.toggle('bg-surface-container-low');">
+<div class="flex flex-col items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-on-surface-variant">keyboard_arrow_down</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant px-1 bg-surface-container-high rounded">#01</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-md mb-sm">
+<h4 class="font-headline-md text-headline-md text-on-surface tracking-tight leading-snug">What was the Q3 revenue growth for the APAC region?</h4>
+<div class="flex gap-2 shrink-0">
+<div class="flex flex-col items-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Precision</span>
+<span class="font-code-md text-code-md text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">1.00</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Relevance</span>
+<span class="font-code-md text-code-md text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">0.95</span>
+</div>
+</div>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant line-clamp-2 pr-xl">Based on the Q3 2023 earnings report, the APAC region saw a revenue growth of 14% year-over-year, driven primarily by strong enterprise software sales in Japan and Australia.</p>
+</div>
+</div>
+<!-- Expanded Details -->
+<div class="border-t border-[#1E2833] bg-surface-container-lowest p-md pl-[60px]">
+<div class="grid grid-cols-2 gap-lg">
+<!-- Context Sources -->
+<div>
+<div class="flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">data_object</span>
+<h5 class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest">Retrieved Context (Top K=2)</h5>
+</div>
+<div class="space-y-sm">
+<div class="border border-[#1E2833] rounded-lg bg-surface relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+<div class="p-sm flex flex-col gap-xs">
+<div class="flex justify-between items-center">
+<span class="font-code-sm text-code-sm text-secondary bg-surface-container-high px-1.5 py-0.5 rounded">q3_earnings_transcript.pdf</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Score: 0.89</span>
+</div>
+<p class="font-body-base text-sm text-on-surface-variant mt-1 leading-relaxed">"...turning to regional performance, EMEA was flat, while North America grew 5%. The standout this quarter was undoubtedly APAC, which delivered a robust 14% year-over-year revenue increase..."</p>
+</div>
+</div>
+<div class="border border-[#1E2833] rounded-lg bg-surface relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-surface-container-high"></div>
+<div class="p-sm flex flex-col gap-xs">
+<div class="flex justify-between items-center">
+<span class="font-code-sm text-code-sm text-secondary bg-surface-container-high px-1.5 py-0.5 rounded">regional_breakdown_q3.csv</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Score: 0.72</span>
+</div>
+<p class="font-body-base text-sm text-on-surface-variant mt-1 leading-relaxed">"Region: APAC | Segment: Enterprise Software | YOY Growth: 18% | Key Markets: JP, AU"</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Trace Data -->
+<div>
+<div class="flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">terminal</span>
+<h5 class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest">Generation Trace</h5>
+</div>
+<div class="bg-surface border border-[#1E2833] rounded-lg p-sm relative overflow-hidden group">
+<!-- Subtle noise texture for code block -->
+<div class="absolute inset-0 opacity-[0.03] mix-blend-overlay pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+<pre class="font-code-sm text-code-sm text-on-surface-variant overflow-x-auto whitespace-pre-wrap leading-loose"><span class="text-secondary">"model"</span>: <span class="text-primary">"mistral-7b-instruct"</span>,
+<span class="text-secondary">"temperature"</span>: <span class="text-[#ffcfcc]">0.1</span>,
+<span class="text-secondary">"max_tokens"</span>: <span class="text-[#ffcfcc]">256</span>,
+<span class="text-secondary">"system_prompt"</span>: <span class="text-[#3cddc7]">"You are a financial analyst..."</span>,
+<span class="text-secondary">"latency_ms"</span>: <span class="text-[#ffcfcc]">842</span>,
+<span class="text-secondary">"tokens_in"</span>: <span class="text-[#ffcfcc]">1405</span>,
+<span class="text-secondary">"tokens_out"</span>: <span class="text-[#ffcfcc]">32</span></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 2: Collapsed, Poor Score -->
+<div class="bg-surface-container-low border border-[#1E2833] rounded-xl overflow-hidden hover:border-surface-variant transition-colors group">
+<div class="p-md cursor-pointer flex items-start gap-md">
+<div class="flex flex-col items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface transition-colors">keyboard_arrow_right</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant px-1 bg-surface-container-high rounded">#02</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-md mb-sm">
+<h4 class="font-headline-md text-headline-md text-on-surface tracking-tight leading-snug truncate">Explain the risk factors associated with the new AI product launch.</h4>
+<div class="flex gap-2 shrink-0">
+<div class="flex flex-col items-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Precision</span>
+<span class="font-code-md text-code-md text-error bg-error-container/20 px-2 py-0.5 rounded border border-error/30 text-[#ffb4ab]">0.32</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Relevance</span>
+<span class="font-code-md text-code-md text-error bg-error-container/20 px-2 py-0.5 rounded border border-error/30 text-[#ffb4ab]">0.45</span>
+</div>
+</div>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant truncate pr-xl">The new AI product launch carries significant potential for market disruption. Risk factors are not detailed in the provided context, but generally include regulatory compliance and competitive response.</p>
+</div>
+</div>
+</div>
+<!-- Row 3: Collapsed -->
+<div class="bg-surface-container-low border border-[#1E2833] rounded-xl overflow-hidden hover:border-surface-variant transition-colors group">
+<div class="p-md cursor-pointer flex items-start gap-md">
+<div class="flex flex-col items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface transition-colors">keyboard_arrow_right</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant px-1 bg-surface-container-high rounded">#03</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-md mb-sm">
+<h4 class="font-headline-md text-headline-md text-on-surface tracking-tight leading-snug truncate">Did the company meet its sustainability goals for water usage?</h4>
+<div class="flex gap-2 shrink-0">
+<div class="flex flex-col items-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Precision</span>
+<span class="font-code-md text-code-md text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">0.98</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-1">Relevance</span>
+<span class="font-code-md text-code-md text-[#3cddc7] bg-[#3cddc7]/10 px-2 py-0.5 rounded border border-[#3cddc7]/20">0.85</span>
+</div>
+</div>
+</div>
+<p class="font-body-base text-body-base text-on-surface-variant truncate pr-xl">Yes, the company exceeded its sustainability goals for water usage by reducing consumption by 22% across all manufacturing facilities, outperforming the target of 15%.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

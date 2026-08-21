@@ -1,0 +1,12 @@
+instance_sku,accelerator_type,gpu_memory_gb,vcpus,system_ram_gb,hourly_internal_rate_usd,monthly_amortized_usd,primary_cloud_provider,availability_tier
+gpu.h100.8sxm,8x NVIDIA H100 SXM5,640,224,1800,28.50,20520,AWS us-east-1 / CoreWeave,Tier 0 / Production Serving
+gpu.h100.1pcie,1x NVIDIA H100 PCIe,80,28,225,3.60,2592,AWS us-east-1,Tier 1 / Fine-Tuning
+gpu.a100.8sxm,8x NVIDIA A100 SXM4,640,192,1024,18.00,12960,GCP us-central1,Tier 1 / Pre-Training
+gpu.a100.1pcie,1x NVIDIA A100 PCIe,80,24,128,2.25,1620,AWS us-east-1 / GCP,Tier 2 / Research Dev
+gpu.l40s.4pcie,4x NVIDIA L40S,192,128,512,6.80,4896,AWS us-east-1,Tier 1 / Multimodal
+tpu.v5e.8node,8x Google TPU v5e,128,96,384,9.60,6912,GCP us-central1,Tier 1 / Evaluation Sweeps
+cpu.c6i.32xlarge,None (Compute Optimized),0,128,256,4.20,3024,AWS us-east-1,Tier 0 / Gateway API
+mem.r6i.32xlarge,None (Memory Optimized),0,128,1024,6.40,4608,AWS us-east-1,Tier 0 / Redis & Vector DB
+storage.nvme.10tb,Local NVMe RAID0,0,0,0,0.85,612,Bare-Metal Austin Lab,Tier 0 / Scratch Tier
+storage.s3.standard,Object Storage (Per TB/Mo),0,0,0,0.023,23,AWS Multi-Region,Tier 1 / Model Weights
+storage.s3.glacier,Glacier Deep Archive (Per TB/Mo),0,0,0,0.001,1,AWS Multi-Region,Tier 3 / Cold Archive

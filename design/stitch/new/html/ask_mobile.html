@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;background-color:#0b0f14;background-image:linear-gradient(rgba(30,40,51,0.2) 1px,transparent 1px),linear-gradient(90deg,rgba(30,40,51,0.2) 1px,transparent 1px);background-size:24px 24px;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-tint":"#3cddc7","on-secondary":"#27313d","primary":"#57f1db","on-surface":"#e0e2ea","surface-variant":"#31353b","primary-container":"#2dd4bf","on-tertiary":"#670211","primary-fixed-dim":"#3cddc7","error-container":"#93000a","on-secondary-fixed-variant":"#3e4854","on-primary":"#003731","outline-variant":"#3c4a46","surface-container-highest":"#31353b","surface-dim":"#101419","inverse-surface":"#e0e2ea","tertiary":"#ffcfcc","on-error":"#690005","on-error-container":"#ffdad6","surface":"#101419","tertiary-fixed-dim":"#ffb3b0","inverse-primary":"#006b5f","on-primary-fixed-variant":"#005047","on-primary-container":"#00574d","secondary-fixed-dim":"#bdc7d6","surface-bright":"#36393f","on-tertiary-container":"#90242a","secondary":"#bdc7d6","on-tertiary-fixed":"#410006","background":"#101419","surface-container":"#1c2025","on-tertiary-fixed-variant":"#881d24","tertiary-container":"#ffa7a4","outline":"#859490","error":"#ffb4ab","on-surface-variant":"#bacac5","secondary-fixed":"#d9e3f2","primary-fixed":"#62fae3","tertiary-fixed":"#ffdad8","on-secondary-container":"#afb9c8","surface-container-lowest":"#0a0e13","on-secondary-fixed":"#121c27","surface-container-low":"#181c21","secondary-container":"#404a56","inverse-on-surface":"#2d3136","on-primary-fixed":"#00201c","surface-container-high":"#262a30","on-background":"#e0e2ea"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"24px","base":"4px","lg":"32px","xs":"8px","md":"20px","sm":"12px","xl":"48px","gutter":"20px"},"fontFamily":{"headline-lg-mobile":["Space Grotesk"],"display-lg":["Space Grotesk"],"body-base":["Space Grotesk"],"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"code-md":["JetBrains Mono"],"label-caps":["JetBrains Mono"],"code-sm":["JetBrains Mono"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"1.2","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}],"body-base":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"1.4","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"1.2","fontWeight":"600"}],"code-md":["14px",{"lineHeight":"1.5","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"700"}],"code-sm":["12px",{"lineHeight":"1.5","fontWeight":"500"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-base text-on-background"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low border-r border-[#1E2833] z-50 flex flex-col pt-lg pb-lg hidden"><div class="px-md mb-xl flex items-center gap-sm"><img alt="HelixForge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANOQAvp__Dx5Oe4y0u9fz_jRiJtmuVp4WiANPPtavjQaday4ZZkYaQcUzPh9UOsBQHpFozcq7a_AEGsOrgHDFX899ufEzkhvxoUIqGM9z_GliWVgG9QFiAWEOtWnyTuxrBF-05A_xwLUJ8mnUyh2n4mNIEzz_lIP7QkhBd3iwxbQKwS32VBfZ8QbFKLyo0ZE6w67cejUQ4IvjLXXc_owtKiV_Y1Si4XnitjbP_ENk1JMzZdsVPIxvC"><div class="flex flex-col"><span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">HelixForge</span><span class="font-label-caps text-label-caps text-primary uppercase mt-1 tracking-widest">RAG Eval</span></div></div><nav class="flex-1 px-sm space-y-base" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-[0_0_10px_rgba(45,212,191,0.15)]"><a aria-current="page" class="flex items-center px-md py-sm rounded-lg transition-all group bg-primary-container text-on-primary-container font-bold shadow-[0_0_10px_rgba(45,212,191,0.15)]" data-path="ask" href="#"><span class="material-symbols-outlined mr-sm text-[20px] group-hover:text-primary">chat_bubble</span><span class="font-body-base">Ask</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="runs" href="#"><span class="material-symbols-outlined mr-sm text-[20px] group-hover:text-primary">rocket_launch</span><span class="font-body-base">Runs</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="compare" href="#"><span class="material-symbols-outlined mr-sm text-[20px] group-hover:text-primary">compare_arrows</span><span class="font-body-base">Compare</span></a></nav><div class="px-md pt-lg border-t border-[#1E2833]"><div class="flex items-center gap-sm p-sm rounded-xl bg-surface-container-lowest border border-[#1E2833]"><img alt="Profile" class="w-10 h-10 rounded-full border border-primary/20 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOVGlxtNm0OaBPBgM_lCIa0wkWqmOggxIRaiiuEkbeMSwxUMgYLC4__grpqkrpd0n_uxQhhw7MgUHHcZZpcIN1TFRflN1Kj3gZAKdGzeD1WGjxyGEvniZfanfZetK4Boodf1Uu3zl53AghOTNI_Ek_MKbkRre9Nu56fefvAJerASz29fbT5_Dc6e0abHlVI3YvWSiIxA3h7HtjTfUUYKenULWlwLG0L_L0F8X2of3DYUrXbPekOKXa"><div class="flex flex-col overflow-hidden"><span class="text-sm font-medium text-on-surface truncate">Engineer</span><span class="text-xs text-on-surface-variant truncate">v2.4.0-stable</span></div></div></div></aside><div class=""><header class="fixed top-0 right-0 h-16 bg-background/60 backdrop-blur-md border-b border-[#1E2833] z-40 flex items-center justify-end px-lg gap-md left-0"><div class="flex items-center bg-surface-container-low px-sm py-xs rounded border border-[#1E2833] group focus-within:border-primary transition-colors"><span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-xs">search</span><input class="bg-transparent border-none outline-none text-code-sm font-code-sm text-on-surface w-48 placeholder:text-outline" placeholder="Search traces..." type="text"></div><button class="p-xs rounded-lg hover:bg-surface-container-high transition-colors relative"><span class="material-symbols-outlined text-on-surface-variant">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-primary rounded-full ring-2 ring-background"></span></button><button class="p-xs rounded-lg hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-on-surface-variant">settings</span></button></header><main class="relative pt-16 min-h-screen bg-background/10"><div class="flex flex-col w-full h-full relative">
+<!-- Mobile Header Area (Hamburger + Title) - Matches fixed header style -->
+<header class="flex items-center justify-between p-margin bg-background/90 backdrop-blur-sm z-30 sticky top-0">
+<div class="flex items-center gap-xs"><img alt="HelixForge Logo" class="h-6 w-auto object-contain mr-xs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANOQAvp__Dx5Oe4y0u9fz_jRiJtmuVp4WiANPPtavjQaday4ZZkYaQcUzPh9UOsBQHpFozcq7a_AEGsOrgHDFX899ufEzkhvxoUIqGM9z_GliWVgG9QFiAWEOtWnyTuxrBF-05A_xwLUJ8mnUyh2n4mNIEzz_lIP7QkhBd3iwxbQKwS32VBfZ8QbFKLyo0ZE6w67cejUQ4IvjLXXc_owtKiV_Y1Si4XnitjbP_ENk1JMzZdsVPIxvC">
+<button aria-label="Menu" class="p-xs text-on-surface-variant hover:text-on-surface transition-colors focus:outline-none focus:ring-1 focus:ring-primary rounded-lg">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+<div class="flex items-center gap-xs">
+<img class="h-6 w-auto object-contain" data-alt="Small technical logo mark, geometric hexagon shape, teal neon accent, dark mode background, sharp angles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPj4sMi83QG0BeXl8lxmVzBP_5l8otaaltJ7vE90a0F-91KN32ElQO0tIpIJUZbLESMCUnr0VOAgnhuwJ_BKKnneqNsnZUkRvnrnXIY-4xh_pBJLfswjhDZZbuObYMFZCjkLoS1I8FUbt6fW6HTHJNwScmki-yx8dfvSRnSxpEvZecNfbFmteit817ds3vKwGk0g0Z8kXLz5RUX07KpaMsokU5NvNTP-fKdcjmh714PxaMFZ2qU0i8">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight">Ask</span>
+</div>
+</div>
+<!-- Model Selection Pill -->
+<button class="flex items-center gap-base px-sm py-xs bg-surface-container-low text-on-surface-variant font-code-sm text-code-sm rounded-full border border-outline-variant hover:bg-surface-container-high transition-colors">
+<span class="">GPT-4-Turbo</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</header>
+<!-- Chat Area -->
+<main class="flex-1 overflow-y-auto px-margin pb-[180px] pt-xs flex flex-col gap-lg" id="chat-container">
+<!-- Empty State (Only visible if no messages) - Hiding for this specific prompt requirement of a chat thread -->
+<!-- System/Context Pill (Sticky or top of thread) -->
+<div class="flex justify-center mb-sm">
+<button class="flex items-center gap-xs px-sm py-xs bg-surface-container-low border border-outline-variant rounded-full text-on-surface-variant text-label-caps font-label-caps uppercase tracking-widest hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-[14px] group-hover:text-primary transition-colors">tune</span>
+<span class="">Configure System Prompt</span>
+</button>
+</div>
+<!-- User Message -->
+<div class="flex flex-col items-end gap-base animate-[slideInUp_0.3s_ease-out]">
+<div class="bg-surface-container-highest text-on-surface font-body-base text-body-base p-sm rounded-2xl rounded-tr-sm max-w-[90%] shadow-sm">
+            Can you summarize the findings from the Q3 architecture review specifically regarding vector database scaling?
+        </div>
+<span class="text-on-surface-variant text-label-caps font-label-caps mr-xs">Just now</span>
+</div>
+<!-- Assistant Message Block -->
+<div class="flex flex-col items-start gap-xs animate-[slideInUp_0.4s_ease-out_0.1s_both]">
+<!-- Assistant Avatar/Label -->
+<div class="flex items-center gap-xs ml-xs">
+<div class="w-6 h-6 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container text-[14px]">smart_toy</span>
+</div>
+<span class="text-on-surface-variant text-label-caps font-label-caps tracking-widest uppercase">Assistant</span>
+</div>
+<!-- Retrieved Context Pill (Tap to expand) -->
+<button class="ml-8 flex items-center gap-xs px-sm py-[4px] bg-surface-container-low border border-primary/20 rounded-full text-primary text-code-sm font-code-sm hover:bg-primary/10 transition-colors group" onclick="document.getElementById('context-panel-1').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-[16px]">database</span>
+<span class="">3 Sources Retrieved</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-y-0.5 transition-transform">expand_more</span>
+</button>
+<!-- Hidden Context Panel -->
+<div class="hidden ml-8 mt-xs mb-sm w-[90%] bg-surface-container-lowest border border-outline-variant rounded-xl p-sm shadow-inner relative overflow-hidden" id="context-panel-1">
+<!-- subtle noise overlay for code/context area -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+<div class="flex flex-col gap-sm relative z-10">
+<div class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] mt-0.5">description</span>
+<div class="flex flex-col">
+<span class="text-on-surface font-code-sm text-code-sm truncate">q3_arch_review.md</span>
+<span class="text-on-surface-variant text-[10px] font-label-caps">Score: 0.92</span>
+</div>
+</div>
+<div class="flex items-start gap-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] mt-0.5">description</span>
+<div class="flex flex-col">
+<span class="text-on-surface font-code-sm text-code-sm truncate">db_scaling_proposal_v2.pdf</span>
+<span class="text-on-surface-variant text-[10px] font-label-caps">Score: 0.88</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Message Bubble -->
+<div class="ml-8 bg-surface-container-low text-on-surface font-body-base text-body-base p-md rounded-2xl rounded-tl-sm w-[90%] border border-outline-variant/30 shadow-sm leading-relaxed relative overflow-hidden group">
+<p class="mb-sm">Based on the Q3 architecture review, the primary findings regarding vector database scaling are:</p>
+<ol class="list-decimal pl-md space-y-sm mb-sm text-on-surface/90 marker:text-primary/70">
+<li class=""><strong>Current Bottleneck:</strong> The existing single-node Pinecone instance is hitting IOPS limits during peak ingestion periods (approx. 2PM-4PM PST).</li>
+<li class=""><strong>Proposed Solution:</strong> The review strongly recommends migrating to a sharded architecture across three distinct availability zones to distribute read/write load.</li>
+<li class=""><strong>Cost Implications:</strong> This move is estimated to increase infrastructure costs by 45%, but will improve query latency by an expected 60% at p99.</li>
+</ol>
+<p class="">The recommendation is to initiate a proof-of-concept for the sharded setup by end of Q4.</p>
+<!-- Inline actions -->
+<div class="absolute top-sm right-sm opacity-0 group-hover:opacity-100 transition-opacity flex bg-surface-container-highest rounded-lg shadow-sm border border-outline-variant overflow-hidden">
+<button class="p-xs text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Copy">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+<button class="p-xs text-on-surface-variant hover:text-error hover:bg-surface-container transition-colors border-l border-outline-variant" title="Thumbs Down">
+<span class="material-symbols-outlined text-[16px]">thumb_down</span>
+</button>
+</div>
+</div>
+<!-- Meta Tags -->
+<div class="ml-8 mt-xs flex flex-wrap gap-xs">
+<span class="px-xs py-[2px] bg-surface-container border border-[#1E2833] rounded text-on-surface-variant font-code-sm text-[10px] flex items-center gap-[4px]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                Latency: 1.24s
+            </span>
+<span class="px-xs py-[2px] bg-surface-container border border-[#1E2833] rounded text-on-surface-variant font-code-sm text-[10px] flex items-center gap-[4px]">
+<span class="material-symbols-outlined text-[12px]">account_tree</span>
+                Pipeline: QA_Standard
+            </span>
+<span class="px-xs py-[2px] bg-surface-container border border-[#1E2833] rounded text-on-surface-variant font-code-sm text-[10px] flex items-center gap-[4px]">
+                Tokens: 452
+            </span>
+</div>
+</div>
+<!-- Typing Indicator (Simulated) -->
+<div class="flex flex-col items-start gap-xs mt-sm hidden" id="typing-indicator">
+<div class="flex items-center gap-xs ml-xs">
+<div class="w-6 h-6 rounded-full bg-primary-container/50 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[14px]">smart_toy</span>
+</div>
+</div>
+<div class="ml-8 bg-surface-container-low p-sm rounded-2xl rounded-tl-sm border border-outline-variant/30 flex items-center gap-1">
+<div class="w-2 h-2 bg-on-surface-variant rounded-full animate-[bounce_1s_infinite]"></div>
+<div class="w-2 h-2 bg-on-surface-variant rounded-full animate-[bounce_1s_infinite_0.2s]"></div>
+<div class="w-2 h-2 bg-on-surface-variant rounded-full animate-[bounce_1s_infinite_0.4s]"></div>
+</div>
+</div>
+</main>
+<!-- Composer Area (Fixed Bottom) -->
+<nav class="fixed bottom-[100px] left-margin right-margin bg-surface-container-high/80 backdrop-blur-md border border-outline-variant rounded-full p-xs flex items-center justify-around z-50 shadow-lg"><a href="#" class="flex flex-col items-center p-xs text-primary"><span class="material-symbols-outlined">chat_bubble</span><span class="text-[10px] font-label-caps uppercase">Ask</span></a><a href="#" class="flex flex-col items-center p-xs text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">rocket_launch</span><span class="text-[10px] font-label-caps uppercase">Runs</span></a><a href="#" class="flex flex-col items-center p-xs text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">compare_arrows</span><span class="text-[10px] font-label-caps uppercase">Compare</span></a></nav><div class="fixed bottom-0 left-0 right-0 p-margin bg-background/90 backdrop-blur-md border-t border-outline-variant/30 z-40 pb-[calc(24px+env(safe-area-inset-bottom))]">
+<div class="relative max-w-3xl mx-auto flex items-end gap-sm bg-surface-container-lowest border border-outline-variant rounded-2xl p-xs focus-within:border-primary focus-within:shadow-[0_0_15px_rgba(45,212,191,0.1)] transition-all">
+<button aria-label="Add Attachment" class="p-sm text-on-surface-variant hover:text-primary transition-colors flex-shrink-0">
+<span class="material-symbols-outlined">add_circle</span>
+</button>
+<textarea class="flex-1 bg-transparent border-none outline-none text-body-base text-on-surface font-body-base resize-none py-sm placeholder:text-on-surface-variant/50 max-h-32 min-h-[44px]" oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px'" placeholder="Ask a question or evaluate a prompt..." rows="1"></textarea>
+<button aria-label="Send Message" class="p-sm bg-primary text-on-primary rounded-xl hover:bg-primary-fixed transition-colors flex-shrink-0 shadow-sm flex items-center justify-center" onclick="simulateSend()">
+<span class="material-symbols-outlined text-[20px] ml-0.5">send</span>
+</button>
+</div>
+<div class="text-center mt-xs">
+<span class="text-[10px] text-on-surface-variant font-code-sm">HelixForge Eval may produce inaccurate results. Verify outputs.</span>
+</div>
+</div>
+<style>
+    @keyframes slideInUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    function simulateSend() {
+        const textarea = document.querySelector('textarea');
+        if(!textarea.value.trim()) return;
+        
+        // Clear input and reset height
+        textarea.value = '';
+        textarea.style.height = '44px';
+        
+        // Show typing indicator
+        const indicator = document.getElementById('typing-indicator');
+        indicator.classList.remove('hidden');
+        
+        // Scroll to bottom
+        const container = document.getElementById('chat-container');
+        container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+        
+        // Hide after delay (simulation)
+        setTimeout(() => {
+            indicator.classList.add('hidden');
+        }, 2000);
+    }
+  </script>
+</div></main></div>
+
+</body></html>

@@ -1,0 +1,39 @@
+================================================================================
+HELIXFORGE STANDARD OPERATING PROCEDURE: LEG-SOP-402
+TITLE: GDPR / PDPA DATA SUBJECT REQUESTS & RIGHT TO BE FORGOTTEN (RTBF)
+OWNER: Clara Dupont, Head of Legal, Regulatory & Compliance (clara.dupont@helixforge.example)
+TECHNICAL LEAD: Anand Patel, Head of Data Platform (anand.patel@helixforge.example)
+DIVISION: Business Operations (CC-4030) / Platform Engineering (CC-1040)
+EFFECTIVE DATE: February 1, 2026
+================================================================================
+
+1. PURPOSE & SCOPE
+This SOP establishes the exact technical and operational procedure for executing 
+Data Subject Access Requests (DSAR) and Right to be Forgotten (RTBF) erasure requests 
+under GDPR (EU-West), PDPA (Singapore), and CCPA/CPRA across HelixForge systems.
+
+2. STATUTORY TIMELINES & INTAKE
+- Intake Channel: Dedicated portal at privacy.helixforge.example or email to privacy@helixforge.example.
+- Legal Verification SLA: Identity verification completed within 5 business days by Legal.
+- Statutory Execution Deadline: Total completion within 30 calendar days of verified receipt.
+
+3. STEP-BY-STEP ERASURE WORKFLOW
+Step 3.1: Ticket Generation: Legal logs request under PRIV-DSR Jira project with anonymized Subject UUID.
+Step 3.2: Primary Database Deletion: Data Platform team triggers erasure script across Postgres metadata clusters:
+          $ hf-privacy purge --subject-uuid <UUID> --mode hard-delete
+Step 3.3: Vector Embedding Purge: Embeddings associated with customer fine-tuning sets are scrubbed from Pinecone / Milvus vector stores within 48 hours.
+Step 3.4: Cache Eviction: Purge Redis and edge inference caches (edge-global) per data_residency_matrix.csv.
+Step 3.5: Training Data Isolation: If customer data was processed for fine-tuning, verify dataset quarantine logs in Applied Research (CC-2020).
+Step 3.6: Backup Scrubber Register: Deletion tombstone added to backup compaction daemon. Cold archive backups will overwrite tombstones within 90 days per records_retention.md.
+
+4. LEGAL HOLD & EXCEPTIONS
+If the subject is under an active litigation hold or tax audit hold (per legal_hold.md), the erasure is suspended. Legal issues a formal exemption notice to the requester within 10 business days.
+
+5. AUDIT CERTIFICATION
+Upon completion, the Privacy Lead generates a cryptographically signed Certificate of Destruction (SHA-256 hash) archived in compliance vault for SOC 2 Type II audit inspection.
+
+6. RELATED POLICIES & CROSS-LINKS
+- Data residency and cloud partitions: data_residency_matrix.csv.
+- Records retention and backup lifecycle: records_retention.md and disaster_recovery_rpo_rto.md.
+- Legal department cost center: cost_centers.csv (CC-4030).
+================================================================================

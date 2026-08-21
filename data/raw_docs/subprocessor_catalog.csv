@@ -1,0 +1,13 @@
+subprocessor_name,corporate_entity,service_description,headquarters_country,data_center_locations,data_classes_processed,dpa_executed,soc2_report_verified
+Amazon Web Services (AWS),Amazon Web Services Inc,Primary Cloud Hosting & GPU Compute,United States,US-East (Virginia) US-Central (Austin) EU-West (Dublin) AP-East (Singapore),Internal;Confidential;Restricted,Yes,Yes
+Google Cloud Platform (GCP),Google LLC,Cloud TPU Clusters & Cold Storage,United States,US-Central (Iowa) EU-West (Belgium),Internal;Confidential;Restricted,Yes,Yes
+Cloudflare,Cloudflare Inc,Edge DNS WAF & DDoS Protection,United States,Global Anycast PoPs (300+ Cities),Internal;Confidential,Yes,Yes
+OpenAI,OpenAI LLC,Model Safety Benchmark Baselines,United States,US-East (Microsoft Azure),Confidential,Yes,Yes
+Anthropic,Anthropic PBC,Model Safety Benchmark Baselines,United States,US-East (AWS us-east-1),Confidential,Yes,Yes
+Datadog,Datadog Inc,Infrastructure Observability & APM,United States,US-East & EU-West,Confidential,Yes,Yes
+Slack Technologies,Salesforce Inc,Workplace Collaboration Platform,United States,US-East & EU-West,Confidential,Yes,Yes
+Okta,Okta Inc,Identity & Access Management (IdP),United States,US-East & EU-West,Restricted,Yes,Yes
+Ashby,Ashby Inc,Applicant Tracking & Recruiting,United States,US-East (AWS),Confidential,Yes,Yes
+NetSuite,Oracle Corporation,Enterprise ERP & Financial Accounting,United States,US-Central,Confidential,Yes,Yes
+Pinecone Systems,Pinecone Systems Inc,Managed Vector Database,United States,US-East & EU-West,Confidential;Restricted,Yes,Yes
+Modern Health,Modern Life Inc,Employee Assistance Program (EAP),United States,US-West,Confidential (Employee Health),Yes,Yes

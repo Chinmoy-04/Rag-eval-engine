@@ -11,6 +11,8 @@ SUGGESTED_QUESTIONS: dict[str, list[str]] = {
         "Where is HelixForge headquartered?",
         "When does the HelixForge fiscal year start?",
         "What are core collaboration hours?",
+        "What is the SEV-1 acknowledgment SLA in minutes?",
+        "How long does standing production SSH access last?",
     ],
     "PTO and leave": [
         "How much PTO do employees accrue after five complete years?",
@@ -43,10 +45,19 @@ SUGGESTED_QUESTIONS: dict[str, list[str]] = {
         "How quickly must a lost laptop be reported?",
         "May I paste customer data into a personal ChatGPT account?",
         "If the internal AI assistant disagrees with the handbook, which one wins?",
+        "What YubiKey model is required for production SSH?",
+    ],
+    "Tables and matrices": [
+        "What is the Austin USD mid salary for Software Engineering L5?",
+        "What is the SEV-0 ack SLA in minutes?",
+        "Who is the incident commander for a SEV-1?",
+        "What is the Critical vulnerability remediation SLA in days?",
+        "What are HelixForge's company holidays in 2026?",
     ],
     "Should abstain": [
         "What is the salary of the CEO?",
         "What is HelixForge's stock price?",
         "How many vacation days does Google give employees?",
+        "What is HelixForge's current valuation?",
     ],
 }

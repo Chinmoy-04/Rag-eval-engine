@@ -1,0 +1,237 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary":"#303030","secondary-fixed-dim":"#c8c6c5","on-error":"#690005","tertiary-fixed":"#ffdcc0","text-muted":"#A1A1AA","on-surface":"#e5e2e1","primary-fixed-dim":"#3cddc7","surface-panel":"#0A0A0A","surface":"#141313","primary-container":"#2dd4bf","surface-tint":"#3cddc7","on-primary-fixed-variant":"#005047","on-error-container":"#ffdad6","secondary-container":"#474746","error":"#ffb4ab","on-primary":"#003731","on-primary-container":"#00574d","primary":"#57f1db","surface-container":"#201f1f","secondary-fixed":"#e5e2e1","background":"#141313","primary-fixed":"#62fae3","outline":"#859490","outline-variant":"#3c4a46","surface-container-low":"#1c1b1b","on-surface-variant":"#bacac5","surface-container-lowest":"#0e0e0e","inverse-on-surface":"#313030","on-background":"#e5e2e1","text-primary":"#F4F4F5","surface-variant":"#353434","secondary":"#c8c6c5","surface-container-high":"#2a2a2a","on-tertiary-container":"#744000","on-primary-fixed":"#00201c","on-secondary-fixed":"#1b1b1c","inverse-surface":"#e5e2e1","on-tertiary-fixed":"#2d1600","on-secondary-fixed-variant":"#474746","surface-dim":"#141313","surface-bright":"#3a3939","tertiary-container":"#ffac5a","tertiary-fixed-dim":"#ffb875","tertiary":"#ffd1aa","on-tertiary-fixed-variant":"#6b3b00","on-tertiary":"#4b2800","surface-container-highest":"#353434","border-subtle":"#1F1F1F","on-secondary-container":"#b7b5b4","error-container":"#93000a","inverse-primary":"#006b5f"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"panel-padding":"24px","stack-lg":"32px","stack-sm":"8px","stack-md":"16px","margin-page":"32px","unit":"4px","gutter":"16px"},"fontFamily":{"headline-sm":["Geist"],"body-lg":["Geist"],"body-md":["Geist"],"body-sm":["Geist"],"data-lg":["JetBrains Mono"],"data-md":["JetBrains Mono"],"label-caps":["Geist"],"headline-lg":["Geist"],"headline-md":["Geist"]},"fontSize":{"headline-sm":["16px",{"lineHeight":"1.4","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"1.6","letterSpacing":"-0.01em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"1.5","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"1.5","letterSpacing":"0em","fontWeight":"400"}],"data-lg":["16px",{"lineHeight":"1.4","letterSpacing":"-0.02em","fontWeight":"500"}],"data-md":["13px",{"lineHeight":"1.5","letterSpacing":"0em","fontWeight":"400"}],"label-caps":["12px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"1.2","letterSpacing":"-0.04em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"1.3","letterSpacing":"-0.03em","fontWeight":"600"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-background"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-border-subtle z-50 flex flex-col pt-panel-padding pb-panel-padding"><div class="px-6 mb-stack-lg flex items-center gap-3"><img alt="HelixForge RAG Eval wordmark. Sleek, technical font. Minimalist geometric forge icon integrated with the letter H. Professional, dark background compatible. Color: teal #2DD4BF and white/grey." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WGV2kHtMux-jURAWG62GKc8E0pfN32qbxMbRDqzEYzHP0iW0PVbHGmj-c37Q5OkpQobeLcIKY7LOf3mKg3VylDacOns6xO4YLnacy0qHdBe3nbLTfu_9eEh58ctGJ7XXd6i-I4t8IUeeU63hUxcTIY25M-TD27bMFsfl8v_25n5PseMQ8XbGY4bXO9VaTs3wsN6fua4XeanfTSdp_PjF90S9p4NP3LuB_JExScoxZErVFlJaKbE8k3grs"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">HelixForge</span></div><nav class="flex-1 px-3 space-y-unit" data-active-classes="bg-secondary-container text-on-surface font-medium border-l-2 border-primary"><a class="flex items-center px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all group" data-path="ask" href="#"><span class="material-symbols-outlined mr-stack-md text-[20px]">chat_bubble</span><span class="font-body-md">Ask</span></a><a class="flex items-center px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all group" data-path="runs" href="#"><span class="material-symbols-outlined mr-stack-md text-[20px]">play_circle</span><span class="font-body-md">Runs</span></a><a aria-current="page" class="flex items-center px-3 py-2 rounded transition-all group bg-secondary-container text-on-surface font-medium border-l-2 border-primary" data-path="compare" href="#"><span class="material-symbols-outlined mr-stack-md text-[20px]">compare_arrows</span><span class="font-body-md">Compare</span></a></nav><div class="mt-auto px-4 pt-4 border-t border-border-subtle"><div class="flex items-center gap-3 px-2 py-2 hover:bg-surface-container-low rounded cursor-pointer transition-colors"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-body-sm text-on-surface truncate">Engineer User</span><span class="font-label-caps text-on-surface-variant text-[10px] uppercase">Professional Plan</span></div></div></div></aside><div class="pl-64 w-full"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/80 backdrop-blur-xl border-b border-border-subtle z-40 flex items-center justify-between px-margin-page"><div class="flex items-center gap-stack-md"><span class="font-label-caps text-text-muted uppercase tracking-widest">System Status:</span><div class="flex items-center gap-2 px-2 py-0.5 rounded border border-primary/20 bg-primary/5"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div><span class="font-data-md text-primary text-[11px]">OPERATIONAL</span></div></div><div class="flex items-center gap-stack-md"><button class="text-on-surface-variant hover:text-on-surface p-1 transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="text-on-surface-variant hover:text-on-surface p-1 transition-colors"><span class="material-symbols-outlined text-[20px]">settings</span></button></div></header><main class="relative pt-14 w-full"><div class="flex flex-col w-full h-full min-h-[calc(100vh-3.5rem)] text-text-primary">
+<div class="px-margin-page py-stack-md flex items-center justify-between border-b border-border-subtle bg-surface/50 backdrop-blur-sm sticky top-0 z-10">
+<div class="flex items-center gap-stack-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-stack-sm">
+<span class="font-headline-md text-headline-md text-on-surface">rn_8a2f1</span>
+<div class="flex items-center gap-2 px-2 py-1 rounded bg-primary/10 border border-primary/20">
+<div class="w-1.5 h-1.5 rounded-full bg-primary relative">
+<div class="absolute inset-0 rounded-full bg-primary animate-ping opacity-50"></div>
+</div>
+<span class="font-data-md text-data-md text-primary tracking-wide">COMPLETED</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted mt-1">Created 2 mins ago by Engineer User • eval_dataset_v4.json</span>
+</div>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="px-4 py-2 rounded border border-border-subtle text-text-primary font-body-sm text-body-sm hover:bg-surface-container-low transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">download</span>
+        Export
+      </button>
+<button class="px-4 py-2 rounded bg-primary text-on-primary font-body-sm text-body-sm hover:bg-primary-fixed transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+        Rerun Eval
+      </button>
+</div>
+</div>
+<div class="px-margin-page py-stack-lg border-b border-border-subtle bg-surface-panel">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-border-subtle rounded divide-y md:divide-y-0 md:divide-x divide-border-subtle">
+<div class="p-panel-padding flex flex-col justify-between">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-caps text-label-caps text-text-muted">FAITHFULNESS</span>
+<span class="material-symbols-outlined text-text-muted text-[16px]">info</span>
+</div>
+<div class="flex items-end gap-3">
+<span class="font-headline-lg text-headline-lg text-on-surface">0.89</span>
+<div class="flex items-center text-primary mb-1">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+<span class="font-data-md text-data-md">0.04</span>
+</div>
+</div>
+<div class="mt-4 w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[89%] rounded-full"></div>
+</div>
+</div>
+<div class="p-panel-padding flex flex-col justify-between">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-caps text-label-caps text-text-muted">RELEVANCY</span>
+<span class="material-symbols-outlined text-text-muted text-[16px]">info</span>
+</div>
+<div class="flex items-end gap-3">
+<span class="font-headline-lg text-headline-lg text-on-surface">0.92</span>
+<div class="flex items-center text-error mb-1">
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+<span class="font-data-md text-data-md">0.01</span>
+</div>
+</div>
+<div class="mt-4 w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[92%] rounded-full"></div>
+</div>
+</div>
+<div class="p-panel-padding flex flex-col justify-between">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-caps text-label-caps text-text-muted">AVG LATENCY</span>
+<span class="material-symbols-outlined text-text-muted text-[16px]">timer</span>
+</div>
+<div class="flex items-end gap-3">
+<span class="font-headline-lg text-headline-lg text-on-surface">241<span class="text-text-muted font-body-lg text-body-lg ml-1">ms</span></span>
+</div>
+<div class="mt-4 flex items-center justify-between font-data-md text-data-md text-text-muted">
+<span>P50: 210ms</span>
+<span>P99: 450ms</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 p-margin-page bg-background">
+<div class="flex items-center justify-between mb-stack-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Evaluation Results (100)</h2>
+<div class="flex items-center gap-4">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-muted text-[18px]">search</span>
+<input class="bg-surface-panel border border-border-subtle rounded py-1.5 pl-9 pr-4 font-body-sm text-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all w-64 placeholder:text-surface-container-highest" placeholder="Search prompts..." type="text"/>
+</div>
+<button class="flex items-center gap-2 px-3 py-1.5 border border-border-subtle rounded text-text-primary font-body-sm text-body-sm hover:bg-surface-panel transition-colors">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+          Filter
+        </button>
+</div>
+</div>
+<div class="border border-border-subtle rounded bg-surface-panel overflow-hidden">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-border-subtle bg-surface-container-lowest">
+<th class="py-3 px-4 font-label-caps text-label-caps text-text-muted w-8"></th>
+<th class="py-3 px-4 font-label-caps text-label-caps text-text-muted w-1/3">Prompt</th>
+<th class="py-3 px-4 font-label-caps text-label-caps text-text-muted w-1/4">Source / Context</th>
+<th class="py-3 px-4 font-label-caps text-label-caps text-text-muted text-right">Faithfulness</th>
+<th class="py-3 px-4 font-label-caps text-label-caps text-text-muted text-right">Relevancy</th>
+<th class="py-3 px-4 font-label-caps text-label-caps text-text-muted text-right">Latency</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-subtle" id="results-table">
+<tr class="group hover:bg-surface-container-low transition-colors cursor-pointer" onclick="toggleRow('row-1')">
+<td class="py-3 px-4 text-text-muted group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px] transition-transform" id="icon-row-1">chevron_right</span>
+</td>
+<td class="py-3 px-4">
+<div class="font-body-sm text-body-sm text-on-surface line-clamp-1">What are the key architectural differences between standard RAG and Agentic RAG?</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-0.5 rounded border border-border-subtle font-data-md text-[10px] text-text-muted bg-surface">docs/arch.md</span>
+<span class="px-2 py-0.5 rounded border border-border-subtle font-data-md text-[10px] text-text-muted bg-surface">wiki/agents</span>
+</div>
+</td>
+<td class="py-3 px-4 text-right">
+<span class="font-data-md text-data-md text-primary">0.98</span>
+</td>
+<td class="py-3 px-4 text-right">
+<span class="font-data-md text-data-md text-on-surface">0.95</span>
+</td>
+<td class="py-3 px-4 text-right text-text-muted">
+<span class="font-data-md text-data-md">312ms</span>
+</td>
+</tr>
+<tr class="hidden bg-surface-container-lowest border-b-2 border-border-subtle shadow-inner" id="details-row-1">
+<td class="p-6" colspan="6">
+<div class="grid grid-cols-2 gap-stack-lg">
+<div>
+<h4 class="font-label-caps text-label-caps text-text-muted mb-2">Model Output</h4>
+<div class="p-4 bg-surface rounded border border-border-subtle font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Standard RAG retrieves documents in a single pass based on a user query and prepends them to the LLM prompt. Agentic RAG employs iterative reasoning, allowing the system to use tools, evaluate intermediate retrieved information, and formulate multi-step retrieval strategies before generating a final response.
+                  </div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-text-muted mb-2">Retrieved Context Snippets (Top 2)</h4>
+<div class="space-y-3">
+<div class="p-3 bg-surface rounded border border-border-subtle relative group">
+<div class="absolute -left-[1px] top-0 bottom-0 w-0.5 bg-primary rounded-l"></div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-data-md text-[10px] text-text-muted">docs/arch.md [Score: 0.88]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 text-[12px]">...unlike standard single-pass retrieval, agentic approaches allow the model to autonomously decide if more context is needed based on the initial fetch...</p>
+</div>
+<div class="p-3 bg-surface rounded border border-border-subtle relative group">
+<div class="absolute -left-[1px] top-0 bottom-0 w-0.5 bg-border-subtle rounded-l"></div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-data-md text-[10px] text-text-muted">wiki/agents [Score: 0.76]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 text-[12px]">...tool use is a defining characteristic. An agent can execute a search tool, evaluate the result, and decide to run a subsequent query...</p>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="group hover:bg-surface-container-low transition-colors cursor-pointer" onclick="toggleRow('row-2')">
+<td class="py-3 px-4 text-text-muted group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px] transition-transform" id="icon-row-2">chevron_right</span>
+</td>
+<td class="py-3 px-4">
+<div class="font-body-sm text-body-sm text-on-surface line-clamp-1">How do I configure the connection pool size?</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-0.5 rounded border border-border-subtle font-data-md text-[10px] text-text-muted bg-surface">db/config.yaml</span>
+</div>
+</td>
+<td class="py-3 px-4 text-right">
+<span class="font-data-md text-data-md text-error bg-error/10 px-2 py-0.5 rounded border border-error/20">0.42</span>
+</td>
+<td class="py-3 px-4 text-right">
+<span class="font-data-md text-data-md text-on-surface">0.81</span>
+</td>
+<td class="py-3 px-4 text-right text-text-muted">
+<span class="font-data-md text-data-md">185ms</span>
+</td>
+</tr>
+<tr class="hidden bg-surface-container-lowest border-b-2 border-border-subtle shadow-inner" id="details-row-2">
+<td class="p-6" colspan="6">
+<div class="grid grid-cols-2 gap-stack-lg">
+<div>
+<h4 class="font-label-caps text-label-caps text-text-muted mb-2">Model Output</h4>
+<div class="p-4 bg-error/5 rounded border border-error/20 font-body-sm text-body-sm text-on-surface-variant leading-relaxed relative">
+<span class="absolute top-2 right-2 text-[10px] font-label-caps text-error bg-error/10 px-1.5 py-0.5 rounded">HALLUCINATION DETECTED</span>
+                    To configure the connection pool size, you need to set the `MAX_CONNECTIONS` environment variable in your `.env` file to the desired integer value. The default is 10.
+                  </div>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-text-muted mb-2">Retrieved Context Snippets (Top 1)</h4>
+<div class="space-y-3">
+<div class="p-3 bg-surface rounded border border-border-subtle relative group">
+<div class="absolute -left-[1px] top-0 bottom-0 w-0.5 bg-primary rounded-l"></div>
+<div class="flex justify-between items-center mb-1">
+<span class="font-data-md text-[10px] text-text-muted">db/config.yaml [Score: 0.91]</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 text-[12px] font-data-md">
+                        database:<br/>
+                          host: localhost<br/>
+                          pool:<br/>
+                            size: 20 # Configure connection pool here
+                      </p>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="px-4 py-3 border-t border-border-subtle bg-surface-container-lowest flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-muted">Showing 1-2 of 100</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1 rounded border border-border-subtle text-text-muted font-body-sm hover:text-on-surface hover:border-text-muted disabled:opacity-50" disabled="">Prev</button>
+<button class="px-3 py-1 rounded border border-border-subtle text-text-primary font-body-sm hover:bg-surface-container-low">Next</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleRow(rowId) {
+    const detailsRow = document.getElementById('details-' + rowId);
+    const icon = document.getElementById('icon-' + rowId);
+    
+    if (detailsRow.classList.contains('hidden')) {
+      detailsRow.classList.remove('hidden');
+      icon.classList.add('rotate-90');
+    } else {
+      detailsRow.classList.add('hidden');
+      icon.classList.remove('rotate-90');
+    }
+  }
+</script></main></div></body></html>

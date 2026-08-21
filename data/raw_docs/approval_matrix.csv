@@ -1,0 +1,20 @@
+request_category,min_amount_usd,max_amount_usd,primary_approver_role,secondary_approver_role,turnaround_sla_days,escalation_owner,policy_reference
+Software Subscriptions,0,5000,Department Head,None,2,julian.sterling@helixforge.example,procurement.md
+Software Subscriptions,5001,25000,Department Head,Finance Controller,3,julian.sterling@helixforge.example,procurement.md
+Software Subscriptions,25001,100000,Division VP,Finance Controller,5,mara.chen@helixforge.example,approval_matrix.csv
+Software Subscriptions,100001,9999999,CEO (Mara Chen),VP Finance,7,mara.chen@helixforge.example,procurement.md
+Cloud Compute & GPU Capacity,0,15000,Head of Cloud Infra (Chloe Bennett),None,2,devon.hale@helixforge.example,procurement.md
+Cloud Compute & GPU Capacity,15001,75000,CTO (Devon Hale),Finance Controller,4,devon.hale@helixforge.example,procurement.md
+Cloud Compute & GPU Capacity,75001,9999999,CEO (Mara Chen),CTO (Devon Hale),5,mara.chen@helixforge.example,procurement.md
+Hardware & Lab Equipment,0,3000,Workplace IT Lead,None,2,nathan.brooks@helixforge.example,cost_centers.csv
+Hardware & Lab Equipment,3001,25000,Department Head,VP Business Ops,4,priya.nair@helixforge.example,procurement.md
+Hardware & Lab Equipment,25001,9999999,Division VP,CEO (Mara Chen),5,mara.chen@helixforge.example,procurement.md
+Consulting & Contractor SOWs,0,10000,Department Head,People Ops Lead,3,priya.nair@helixforge.example,cost_centers.csv
+Consulting & Contractor SOWs,10001,50000,Division VP,People Ops Lead,4,priya.nair@helixforge.example,approval_matrix.csv
+Consulting & Contractor SOWs,50001,9999999,CEO (Mara Chen),Head of Legal,5,mara.chen@helixforge.example,procurement.md
+Production Access Exceptions,0,0,CISO (Elena Voss),Security Lead,1,elena.voss@helixforge.example,vendor_security.md
+Customer SLA Breach Credits,0,10000,Head of Enterprise Support,VP Customer Success,2,priya.nair@helixforge.example,customer_support_slas.md
+Customer SLA Breach Credits,10001,50000,VP Customer Success,Finance Controller,3,julian.sterling@helixforge.example,customer_support_slas.md
+Travel & Entertainment Budget,0,2500,Direct Manager,None,2,julian.sterling@helixforge.example,cost_centers.csv
+Travel & Entertainment Budget,2501,10000,Department Head,Finance Controller,3,julian.sterling@helixforge.example,cost_centers.csv
+Travel & Entertainment Budget,10001,9999999,Division VP,CEO (Mara Chen),4,mara.chen@helixforge.example,approval_matrix.csv

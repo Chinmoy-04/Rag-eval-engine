@@ -1,0 +1,6 @@
+severity_level,display_name,impact_criteria,ack_sla_minutes,update_frequency_minutes,war_room_required,incident_commander_role,status_page_mandate
+SEV-0,Catastrophic Breach,Active security compromise of Restricted customer model weights or tenant data,10,15,Yes,CISO (Elena Voss) or Security Lead,Mandatory Public + Direct Customer Bridge
+SEV-1,Critical Outage,Platform API unavailable > 2% traffic drop or inference failure rate > 5%,15,30,Yes,Cloud Infra Lead (Chloe Bennett) or Staff SRE,Mandatory Public Status Page (<15m)
+SEV-2,Major Degradation,Inference latency > 400% baseline or single cloud region failover in progress,30,60,Yes,Senior SRE Primary On-Call,Mandatory Public (<30m)
+SEV-3,Minor Impairment,Isolated customer tenant pod failure or non-critical worker node degradation,60,120,No,Customer Support Tier 2 On-Call,Private Customer Portal Only
+SEV-4,Low Priority Defect,Cosmetic dashboard error or internal admin tool glitch with workaround,240,480,No,Assigned Component Engineer,None

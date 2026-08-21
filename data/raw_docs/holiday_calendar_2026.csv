@@ -1,0 +1,27 @@
+date,holiday_name,location,office_status,skeleton_support_required,oncall_comp_multiplier
+2026-01-01,New Year's Day,All Locations,Closed,Yes,2.0
+2026-01-19,Martin Luther King Jr. Day,Austin,Closed,No,1.5
+2026-01-29,Lunar New Year (Day 1),Singapore,Closed,Yes,2.0
+2026-01-30,Lunar New Year (Day 2),Singapore,Closed,Yes,2.0
+2026-02-02,St. Brigid's Day,Dublin,Closed,No,1.5
+2026-02-16,Presidents' Day,Austin,Closed,No,1.5
+2026-03-17,St. Patrick's Day,Dublin,Closed,Yes,2.0
+2026-04-03,Good Friday,Dublin,Closed,Yes,1.5
+2026-04-03,Good Friday,Singapore,Closed,Yes,1.5
+2026-04-06,Easter Monday,Dublin,Closed,No,1.5
+2026-05-01,Labour Day,Singapore,Closed,No,1.5
+2026-05-04,May Bank Holiday,Dublin,Closed,No,1.5
+2026-05-25,Memorial Day,Austin,Closed,Yes,1.5
+2026-05-31,Vesak Day,Singapore,Closed,No,1.5
+2026-06-01,June Bank Holiday,Dublin,Closed,No,1.5
+2026-06-19,Juneteenth,Austin,Closed,No,1.5
+2026-07-03,Independence Day (Observed),Austin,Closed,Yes,2.0
+2026-08-03,August Bank Holiday,Dublin,Closed,No,1.5
+2026-08-09,National Day,Singapore,Closed,No,1.5
+2026-09-07,Labor Day,Austin,Closed,Yes,1.5
+2026-10-26,October Bank Holiday,Dublin,Closed,No,1.5
+2026-11-08,Deepavali,Singapore,Closed,No,1.5
+2026-11-26,Thanksgiving Day,Austin,Closed,Yes,2.0
+2026-11-27,Day After Thanksgiving,Austin,Closed,Yes,1.5
+2026-12-25,Christmas Day,All Locations,Closed,Yes,2.0
+2026-12-26,St. Stephen's Day / Boxing Day,Dublin,Closed,Yes,2.0

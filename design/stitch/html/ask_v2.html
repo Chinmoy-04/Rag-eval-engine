@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary":"#303030","secondary-fixed-dim":"#c8c6c5","on-error":"#690005","tertiary-fixed":"#ffdcc0","text-muted":"#A1A1AA","on-surface":"#e5e2e1","primary-fixed-dim":"#3cddc7","surface-panel":"#0A0A0A","surface":"#141313","primary-container":"#2dd4bf","surface-tint":"#3cddc7","on-primary-fixed-variant":"#005047","on-error-container":"#ffdad6","secondary-container":"#474746","error":"#ffb4ab","on-primary":"#003731","on-primary-container":"#00574d","primary":"#57f1db","surface-container":"#201f1f","secondary-fixed":"#e5e2e1","background":"#141313","primary-fixed":"#62fae3","outline":"#859490","outline-variant":"#3c4a46","surface-container-low":"#1c1b1b","on-surface-variant":"#bacac5","surface-container-lowest":"#0e0e0e","inverse-on-surface":"#313030","on-background":"#e5e2e1","text-primary":"#F4F4F5","surface-variant":"#353434","secondary":"#c8c6c5","surface-container-high":"#2a2a2a","on-tertiary-container":"#744000","on-primary-fixed":"#00201c","on-secondary-fixed":"#1b1b1c","inverse-surface":"#e5e2e1","on-tertiary-fixed":"#2d1600","on-secondary-fixed-variant":"#474746","surface-dim":"#141313","surface-bright":"#3a3939","tertiary-container":"#ffac5a","tertiary-fixed-dim":"#ffb875","tertiary":"#ffd1aa","on-tertiary-fixed-variant":"#6b3b00","on-tertiary":"#4b2800","surface-container-highest":"#353434","border-subtle":"#1F1F1F","on-secondary-container":"#b7b5b4","error-container":"#93000a","inverse-primary":"#006b5f"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"panel-padding":"24px","stack-lg":"32px","stack-sm":"8px","stack-md":"16px","margin-page":"32px","unit":"4px","gutter":"16px"},"fontFamily":{"headline-sm":["Geist"],"body-lg":["Geist"],"body-md":["Geist"],"body-sm":["Geist"],"data-lg":["JetBrains Mono"],"data-md":["JetBrains Mono"],"label-caps":["Geist"],"headline-lg":["Geist"],"headline-md":["Geist"]},"fontSize":{"headline-sm":["16px",{"lineHeight":"1.4","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"1.6","letterSpacing":"-0.01em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"1.5","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"1.5","letterSpacing":"0em","fontWeight":"400"}],"data-lg":["16px",{"lineHeight":"1.4","letterSpacing":"-0.02em","fontWeight":"500"}],"data-md":["13px",{"lineHeight":"1.5","letterSpacing":"0em","fontWeight":"400"}],"label-caps":["12px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"1.2","letterSpacing":"-0.04em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"1.3","letterSpacing":"-0.03em","fontWeight":"600"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-background"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-border-subtle z-50 flex flex-col pt-panel-padding pb-panel-padding"><div class="px-6 mb-stack-lg flex items-center gap-3"><img alt="HelixForge RAG Eval wordmark. Sleek, technical font. Minimalist geometric forge icon integrated with the letter H. Professional, dark background compatible. Color: teal #2DD4BF and white/grey." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WGV2kHtMux-jURAWG62GKc8E0pfN32qbxMbRDqzEYzHP0iW0PVbHGmj-c37Q5OkpQobeLcIKY7LOf3mKg3VylDacOns6xO4YLnacy0qHdBe3nbLTfu_9eEh58ctGJ7XXd6i-I4t8IUeeU63hUxcTIY25M-TD27bMFsfl8v_25n5PseMQ8XbGY4bXO9VaTs3wsN6fua4XeanfTSdp_PjF90S9p4NP3LuB_JExScoxZErVFlJaKbE8k3grs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">HelixForge</span></div><nav class="flex-1 px-3 space-y-unit" data-active-classes="bg-secondary-container text-on-surface font-medium border-l-2 border-primary"><a aria-current="page" class="flex items-center px-3 py-2 rounded transition-all group bg-secondary-container text-on-surface font-medium border-l-2 border-primary" data-path="ask" href="#"><span class="material-symbols-outlined mr-stack-md text-[20px]">chat_bubble</span><span class="font-body-md">Ask</span></a><a class="flex items-center px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all group" data-path="runs" href="#"><span class="material-symbols-outlined mr-stack-md text-[20px]">play_circle</span><span class="font-body-md">Runs</span></a><a class="flex items-center px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all group" data-path="compare" href="#"><span class="material-symbols-outlined mr-stack-md text-[20px]">compare_arrows</span><span class="font-body-md">Compare</span></a></nav><div class="mt-auto px-4 pt-4 border-t border-border-subtle"><div class="flex items-center gap-3 px-2 py-2 hover:bg-surface-container-low rounded cursor-pointer transition-colors"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-body-sm text-on-surface truncate">Engineer User</span><span class="font-label-caps text-on-surface-variant text-[10px] uppercase">Professional Plan</span></div></div></div></aside><div class="pl-64 w-full"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/80 backdrop-blur-xl border-b border-border-subtle z-40 flex items-center justify-between px-margin-page"><div class="flex items-center gap-stack-md"><span class="font-label-caps text-text-muted uppercase tracking-widest">System Status:</span><div class="flex items-center gap-2 px-2 py-0.5 rounded border border-primary/20 bg-primary/5"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div><span class="font-data-md text-primary text-[11px]">OPERATIONAL</span></div></div><div class="flex items-center gap-stack-md"><button class="text-on-surface-variant hover:text-on-surface p-1 transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="text-on-surface-variant hover:text-on-surface p-1 transition-colors"><span class="material-symbols-outlined text-[20px]">settings</span></button></div></header><main class="relative pt-14 w-full"><div class="flex flex-col w-full h-[calc(100vh-56px)] overflow-hidden">
+<div class="flex flex-1 overflow-hidden">
+<!-- Left Sidebar: Settings & Context -->
+<div class="w-80 flex-shrink-0 bg-surface-container-lowest border-r border-border-subtle flex flex-col p-panel-padding overflow-y-auto hidden lg:flex">
+<div class="mb-stack-lg">
+<h3 class="font-label-caps text-label-caps text-text-muted uppercase tracking-widest mb-stack-md">Evaluation Target</h3>
+<div class="space-y-stack-sm">
+<button class="w-full flex items-center justify-between p-3 rounded bg-surface-container-low border border-primary/30 relative overflow-hidden group transition-all text-left">
+<div class="absolute left-0 top-0 bottom-0 w-[2px] bg-primary"></div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Optimized Pipeline</span>
+<span class="font-data-md text-data-md text-text-muted mt-1">v2.4.1 (Latest)</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+</button>
+<button class="w-full flex items-center justify-between p-3 rounded bg-transparent border border-border-subtle hover:bg-surface-container-lowest transition-all text-left">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Production Baseline</span>
+<span class="font-data-md text-data-md text-text-muted mt-1">v1.9.0 (Stable)</span>
+</div>
+</button>
+</div>
+</div>
+<div class="mb-stack-lg">
+<h3 class="font-label-caps text-label-caps text-text-muted uppercase tracking-widest mb-stack-md">Configuration</h3>
+<div class="space-y-stack-md">
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mb-2 block">LLM Provider</span>
+<div class="inline-flex items-center px-2 py-1 rounded border border-border-subtle bg-surface-container-lowest">
+<span class="font-data-md text-data-md text-on-surface">GPT-4o</span>
+</div>
+</div>
+<div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mb-2 block">Embeddings</span>
+<div class="inline-flex items-center px-2 py-1 rounded border border-border-subtle bg-surface-container-lowest">
+<span class="font-data-md text-data-md text-on-surface">text-embedding-3-small</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-stack-lg border-t border-border-subtle pt-stack-lg">
+<div class="flex items-center justify-between mb-stack-md">
+<h3 class="font-label-caps text-label-caps text-text-muted uppercase tracking-widest">Inspection Details</h3>
+</div>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="relative">
+<input checked="" class="sr-only" id="toggle-chunks" type="checkbox">
+<div class="block bg-surface-container-low w-10 h-6 rounded-full border border-border-subtle transition-colors peer-checked:bg-primary/20"></div>
+<div class="dot absolute left-1 top-1 bg-on-surface w-4 h-4 rounded-full transition-transform transform translate-x-4 peer-checked:bg-primary" style="background-color: var(--color-primary); transform: translateX(16px);"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary transition-colors">Show retrieved chunks</span>
+</label>
+</div>
+<div class="mt-auto border-t border-border-subtle pt-stack-md">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Stream Index Health</span>
+<div class="flex items-center gap-1.5">
+<div class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
+<span class="font-data-md text-data-md text-on-surface">142 vectors</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Chat Area -->
+<div class="flex-1 flex flex-col bg-surface relative min-w-0">
+<!-- Chat Scroll Area -->
+<div class="flex-1 overflow-y-auto px-margin-page py-stack-lg scroll-smooth" id="chat-container">
+<div class="max-w-4xl mx-auto space-y-stack-lg pb-32">
+<!-- System Welcome -->
+<div class="flex justify-center mb-12">
+<div class="text-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-low border border-border-subtle flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-primary text-[24px]">troubleshoot</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">HelixForge RAG Evaluator</h2>
+<p class="font-body-md text-body-md text-text-muted">Ask questions against your document streams to evaluate retrieval accuracy and latency.</p>
+</div>
+</div>
+<!-- User Message -->
+<div class="flex justify-end group">
+<div class="max-w-[80%] bg-surface-container border border-border-subtle rounded-2xl rounded-tr-none px-5 py-4">
+<p class="font-body-md text-body-md text-on-surface">How does the new caching strategy affect overall query latency compared to the baseline system?</p>
+</div>
+</div>
+<!-- AI Message -->
+<div class="flex justify-start group">
+<div class="max-w-[85%]">
+<!-- AI Meta Row -->
+<div class="flex items-center gap-3 mb-2 ml-2">
+<div class="w-6 h-6 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[14px]">smart_toy</span>
+</div>
+<span class="font-data-md text-data-md text-text-muted">Optimized Pipeline</span>
+<span class="text-border-subtle font-data-md">|</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span class="font-data-md text-data-md">241ms</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-border-subtle rounded-2xl rounded-tl-none px-6 py-5">
+<div class="prose prose-invert prose-p:font-body-md prose-p:text-body-md prose-p:text-on-surface prose-p:leading-relaxed max-w-none">
+<p class="">Based on the retrieved architecture documents, the new multi-tier caching strategy significantly reduces query latency for frequent requests.</p>
+<p class="">The system now implements an L1 cache at the edge (Redis) and an L2 cache near the embedding cluster. Compared to the baseline system (which averaged 850ms per query), the optimized pipeline achieves an average latency of <strong>241ms</strong> for cache hits.</p>
+</div>
+<!-- Retrieved Context Toggle -->
+<div class="mt-6 border border-border-subtle rounded-lg overflow-hidden bg-surface">
+<button class="w-full flex items-center justify-between px-4 py-3 bg-surface-container-low hover:bg-surface-container transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180')">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-text-muted text-[18px]">dataset</span>
+<span class="font-label-caps text-label-caps text-on-surface">Retrieved Context (2 Chunks)</span>
+</div>
+<span class="material-symbols-outlined text-text-muted text-[20px] transition-transform duration-200 chevron">expand_more</span>
+</button>
+<!-- Collapsible Chunks Area -->
+<div class="hidden p-4 space-y-4 border-t border-border-subtle">
+<!-- Chunk 1 -->
+<div class="bg-surface-container-lowest border border-border-subtle rounded p-3 relative overflow-hidden group/chunk hover:border-primary/50 transition-colors">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary/30 group-hover/chunk:bg-primary transition-colors"></div>
+<div class="flex justify-between items-start mb-2 pl-2">
+<span class="font-data-md text-data-md text-text-muted text-[11px] truncate mr-4">doc_arch_cache_v2.md</span>
+<span class="font-data-md text-data-md text-primary bg-primary/10 px-1.5 rounded text-[11px]">Score: 0.94</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-2 font-mono text-xs leading-relaxed opacity-80">
+                                                "The implementation of the multi-tier L1/L2 caching architecture is designed to intercept repeated semantic queries before they hit the vector database. Edge caching (Redis) handles exact string matches, while the L2 tier caches approximate neighbor results for common semantic clusters. Early load testing indicates a drop from ~850ms baseline latency to ~240ms."
+                                            </p>
+</div>
+<!-- Chunk 2 -->
+<div class="bg-surface-container-lowest border border-border-subtle rounded p-3 relative overflow-hidden group/chunk hover:border-primary/50 transition-colors">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary-container/50 group-hover/chunk:bg-secondary-container transition-colors"></div>
+<div class="flex justify-between items-start mb-2 pl-2">
+<span class="font-data-md text-data-md text-text-muted text-[11px] truncate mr-4">perf_metrics_q3.csv</span>
+<span class="font-data-md text-data-md text-primary bg-primary/10 px-1.5 rounded text-[11px]">Score: 0.88</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-2 font-mono text-xs leading-relaxed opacity-80">
+                                                "metric_id,category,baseline_avg_ms,optimized_avg_ms,p99_ms\nlatency_q_cache_hit,performance,852,238,410\nlatency_q_cache_miss,performance,852,890,1200"
+                                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Input Area -->
+<div class="absolute bottom-0 left-0 right-0 p-margin-page bg-gradient-to-t from-surface via-surface to-transparent pt-12">
+<div class="max-w-4xl mx-auto">
+<div class="relative bg-surface-container-lowest border border-border-subtle rounded-xl shadow-lg shadow-black/50 overflow-hidden focus-within:border-primary/50 transition-colors">
+<textarea class="w-full bg-transparent border-none font-body-md text-body-md text-on-surface placeholder:text-text-muted resize-none p-4 pb-12 focus:outline-none focus:ring-0 min-h-[100px]" placeholder="Ask a question to evaluate RAG retrieval... (Press Enter to send)"></textarea>
+<div class="absolute bottom-3 right-3 flex items-center gap-2">
+<button class="p-2 text-text-muted hover:text-on-surface transition-colors" title="Attach file">
+<span class="material-symbols-outlined text-[20px]">attach_file</span>
+</button>
+<button class="bg-primary hover:bg-primary-fixed text-on-primary px-4 py-1.5 rounded flex items-center gap-2 transition-colors font-label-caps text-label-caps">
+                                Send
+                                <span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+<div class="absolute bottom-4 left-4 flex items-center gap-3">
+<span class="font-data-md text-data-md text-text-muted text-[10px] uppercase">Evaluate Mode: Active</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Simple custom toggle script for the checkbox design
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleInput = document.getElementById('toggle-chunks');
+        const dot = toggleInput.nextElementSibling.nextElementSibling;
+        
+        // Initial setup based on checked state
+        if(toggleInput.checked) {
+             dot.style.transform = 'translateX(16px)';
+             dot.style.backgroundColor = 'var(--color-primary)';
+        } else {
+             dot.style.transform = 'translateX(0)';
+             dot.style.backgroundColor = 'var(--color-on-surface)';
+        }
+
+        toggleInput.addEventListener('change', (e) => {
+            if(e.target.checked) {
+                dot.style.transform = 'translateX(16px)';
+                dot.style.backgroundColor = 'var(--color-primary)'; // Needs to map to actual hex in real app, simplified for demo
+            } else {
+                dot.style.transform = 'translateX(0)';
+                dot.style.backgroundColor = 'var(--color-on-surface)';
+            }
+        });
+    });
+</script></main></div>
+
+</body></html>

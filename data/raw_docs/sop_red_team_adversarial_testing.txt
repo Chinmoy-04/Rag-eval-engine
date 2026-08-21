@@ -1,0 +1,35 @@
+================================================================================
+HELIXFORGE STANDARD OPERATING PROCEDURE: SEC-SOP-209
+TITLE: ADVERSARIAL RED-TEAMING, JAILBREAK HARNESSES, AND MODEL PENETRATION
+OWNER: Zheng Wei, Safety & Benchmarks Lead (zheng.wei@helixforge.example)
+SUPERVISING CISO: Elena Voss (elena.voss@helixforge.example)
+DIVISION: Applied Research (CC-2030) / Platform SecOps (CC-1050)
+EFFECTIVE DATE: February 1, 2026
+================================================================================
+
+1. PURPOSE & SCOPE
+This SOP defines the technical protocols and methodology for conducting continuous 
+adversarial red-teaming, automated fuzzing, system prompt extraction resistance, 
+and boundary probing against HelixForge model weights and API services.
+
+2. ADVERSARIAL TESTING HARNESSES & CADENCE
+- Automated Continuous Fuzzing: Daily automated sweeps executing 50,000+ adversarial payloads across all active inference clusters (see model_eval_ethics_policy.md).
+- Bi-Weekly Research Red-Team Sprints: Dedicated 48-hour internal offensive testing prior to major model checkpoint promotions.
+- External Third-Party Red-Teaming: Mandatory semi-annual penetration assessment conducted by accredited external security firms (vetted via vendor_security.md).
+
+3. TESTING METHODOLOGIES & TAXONOMY
+Step 3.1: Direct Prompt Injection Probing: Multi-turn prefix injection, delimiter spoofing, role-play bypasses, and base64/rot13 obfuscated attack vectors.
+Step 3.2: Indirect Prompt Injection: Ingestion of malicious payloads via simulated external RAG web scrapes, PDF parse vectors, and untrusted database inputs.
+Step 3.3: Tool Exploitation & Privilege Escalation: Probing agentic tool execution sandboxes for unauthorized bash execution, network pivoting, or file extraction.
+Step 3.4: Cross-Tenant Memory Probing: Validating context isolation in shared GPU KV-cache engines to guarantee zero cross-tenant state bleeding.
+
+4. LOGGING, TRIAGE, AND ESCALATION
+- All discovered attack payloads with >10% success rate are cataloged in the RED-PROBE repository with reproducibility scripts.
+- Vulnerabilities meeting Tier A or Tier B criteria are escalated immediately to Elena Voss and Zheng Wei per sop_prompt_injection_reporting.txt.
+- Remediation fixes must be re-verified against the full regression benchmark suite before closure.
+
+5. RELATED POLICIES & CROSS-LINKS
+- Model ethics and safety evaluation gates: model_eval_ethics_policy.md.
+- Vulnerability triage SLAs and incident declaration: sop_prompt_injection_reporting.txt and severity_definitions.csv.
+- Vendor security standards for external auditors: vendor_security.md.
+================================================================================

@@ -1,0 +1,45 @@
+================================================================================
+HELIXFORGE STANDARD OPERATING PROCEDURE: SEC-SOP-301
+TITLE: PRODUCTION SSH ACCESS, BASTION HOPS, AND YUBIKEY ELEVATION
+OWNER: Marcus Vance, Head of Core Compute (marcus.vance@helixforge.example)
+SUPERVISING CISO: Elena Voss (elena.voss@helixforge.example)
+DIVISION: Platform Engineering (CC-1010)
+EFFECTIVE DATE: February 1, 2026
+================================================================================
+
+1. PURPOSE & SCOPE
+This SOP defines the technical procedure for accessing HelixForge production 
+Kubernetes clusters, distributed GPU nodes, and database bastions across Austin, 
+Dublin, and Singapore regions. Standing direct root access is strictly prohibited.
+
+2. AUTHENTICATION & ACCESS PREREQUISITES
+Every production SSH session requires four simultaneous criteria:
+1. Active HelixForge employee or contractor account in Okta Identity Cloud.
+2. Enrolled YubiKey 5C NFC hardware security key configured with FIDO2 / PIV certificates.
+3. Approved Jira access ticket in the ACCESS-PROD queue or an active SEV-1/SEV-2 PagerDuty incident ID.
+4. Active connection through HelixForge Zero-Trust WireGuard Gateway (pn.austin.helixforge.example or regional equivalent).
+
+3. STEP-BY-STEP ELEVATION PROCEDURE
+Step 3.1: Ticket Creation: Engineer opens an access request specifying target cluster, reason, and estimated duration.
+Step 3.2: Automated Approval: If the requester is an L5+ engineer on the active primary on-call rotation (per oncall_escalation_matrix.csv), approval is automated. Otherwise, Department Head sign-off is required.
+Step 3.3: Certificate Minting: Requester executes the internal CLI command:
+          $ hf-auth login --ticket ACCESS-8492 --duration 8h
+Step 3.4: Hardware Challenge: Requester physically touches the flashing YubiKey token when prompted.
+Step 3.5: Short-Lived Certificate: Vault issues a signed OpenSSH certificate with an exact 8-hour Time-To-Live (TTL).
+Step 3.6: Bastion Hop: Connect to the target node through the regional bastion:
+          $ ssh -F ~/.ssh/hf_config prod-gpu-worker-042.internal.helixforge.example
+
+4. STANDING ACCESS RULES & EXPIRATION
+- Standing access duration is strictly capped at **8 hours**. No permanent SSH keys or long-lived authorized_keys entries are permitted.
+- When an 8-hour session expires, all active SSH connections are automatically severed by the bastion session daemon.
+- To re-authenticate, the engineer must request an extension ticket or re-touch the YubiKey for a new certificate.
+
+5. AUDIT LOGGING & SESSION RECORDING
+- All bastion sessions are multiplexed and recorded via eBPF telemetry streaming directly to SecOps (CC-1050).
+- Recorded session logs are retained for 365 days in encrypted immutable storage per records_retention.md for SOC 2 Type II compliance.
+
+6. RELATED POLICIES & CROSS-LINKS
+- Hardware token enrollment and laptop setup: sop_laptop_imaging_deprovisioning.txt.
+- Severity escalation and incident response: severity_definitions.csv and oncall_escalation_matrix.csv.
+- Secrets handling and cryptographic key rotation: secrets_handling.md and software_catalog.csv.
+================================================================================

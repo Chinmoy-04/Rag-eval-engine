@@ -1,0 +1,48 @@
+================================================================================
+HELIXFORGE STANDARD OPERATING PROCEDURE: HPC-SOP-101
+TITLE: SLURM DISTRIBUTED GPU TRAINING SUBMISSION AND ENVIRONMENT WRAPPERS
+OWNER: Marcus Vance, Head of Core Compute (marcus.vance@helixforge.example)
+DIVISION: Platform Engineering (CC-1010)
+EFFECTIVE DATE: February 1, 2026
+================================================================================
+
+1. PURPOSE & SCOPE
+This SOP provides technical guidelines for submitting distributed PyTorch, Ray, 
+and vLLM jobs to the HelixForge on-premises and cloud Slurm clusters.
+
+2. CONTAINER & ENVIRONMENT STANDARDS
+- All training and evaluation jobs must run within standard HelixForge Apptainer/Singularity container images stored in the internal registry (registry.internal.helixforge.example/ml-runtime:2026.1).
+- Custom user virtualenvs on shared NFS root are prohibited to prevent metadata locking.
+
+3. JOB SUBMISSION TEMPLATE & CLI WORKFLOW
+Step 3.1: Navigate to project workspace and prepare the sbatch script (submit_job.sh):
+          #!/bin/bash
+          #SBATCH --job-name=hf-align-70b
+          #SBATCH --partition=finetune-lora
+          #SBATCH --nodes=4
+          #SBATCH --ntasks-per-node=8
+          #SBATCH --gpus-per-node=8
+          #SBATCH --time=24:00:00
+          #SBATCH --output=/scratch/logs/%j.out
+          #SBATCH --error=/scratch/logs/%j.err
+
+Step 3.2: Export distributed environment variables:
+          export MASTER_PORT=29500
+          export NCCL_DEBUG=INFO
+
+Step 3.3: Submit job to the cluster:
+          $ sbatch submit_job.sh
+
+Step 3.4: Monitor execution telemetry in Datadog HPC Dashboard or via Slurm CLI:
+          $ squeue -u 
+          $ hf-gpu top --job-id <JOB_ID>
+
+4. MANDATORY CHECKPOINTING RECOVERY
+- Jobs must mount /scratch/checkpoints/ and save model state dictionaries every 30 minutes.
+- When preempted by a higher priority prod-serving or eval-safety job, Slurm issues SIGTERM 10 minutes prior to SIGKILL. Scripts must trap SIGTERM and flush in-flight weights.
+
+5. RELATED POLICIES & CROSS-LINKS
+- Slurm partitions and queue priority rules: gpu_cluster_scheduling_and_slurm_policy.md and slurm_queue_allocations.csv.
+- Model checkpoint replication: sop_model_checkpoint_backup.txt.
+- FinOps and GPU cost allocations: cloud_cost_optimization_policy.md.
+================================================================================

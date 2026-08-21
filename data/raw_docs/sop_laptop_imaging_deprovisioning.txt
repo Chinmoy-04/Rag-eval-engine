@@ -1,0 +1,42 @@
+================================================================================
+HELIXFORGE STANDARD OPERATING PROCEDURE: IT-SOP-104
+TITLE: WORKPLACE LAPTOP PROVISIONING, MDM IMAGING, AND DEPROVISIONING
+OWNER: Nathan Brooks, Workplace IT Lead (nathan.brooks@helixforge.example)
+DIVISION: Business Operations (CC-4050)
+EFFECTIVE DATE: February 1, 2026
+================================================================================
+
+1. PURPOSE & SCOPE
+This SOP defines the required procedure for imaging, configuring, securing, and 
+deprovisioning corporate laptops for HelixForge employees (~420 FTEs) and ~60 
+contractors. All physical equipment remains the property of HelixForge HQ (Austin, TX).
+
+2. HARDWARE SPECIFICATIONS & IMAGING BASELINE
+- Engineering / Research FTEs: Apple MacBook Pro 16-inch (M3 Max / 64GB RAM) or Dell XPS 15 (Linux/Ubuntu 24.04 LTS).
+- Business Operations / Customer Success: Apple MacBook Pro 14-inch (M3 Pro / 36GB RAM).
+- Contractors: Standard corporate Dell XPS 13 or managed MacBook Air 16GB.
+
+Standard Baseline Configuration:
+Step 2.1: Enroll device in HelixForge Jamf Pro MDM (macOS) or Canonical Landscape (Linux).
+Step 2.2: Enforce FileVault2 / LUKS Full Disk Encryption (AES-256). Escrow recovery key to 1Password Enterprise Vault.
+Step 2.3: Install Falcon CrowdStrike EDR and Jamf Protect. Real-time telemetry reporting to SecOps (CC-1050).
+Step 2.4: Deploy HelixForge Zero-Trust Network Agent (WireGuard/Cloudflare Access) and Okta Verify.
+Step 2.5: Hardware Token Pairing: Register two YubiKey 5C NFC keys per engineer (Primary + Backup). Production SSH requires YubiKey touch + valid JIRA access ticket (8-hour max standing session).
+
+3. ONBOARDING DISPATCH SLA
+- Austin HQ hires: Equipment configured and available on Day 1 at 09:30 local time.
+- Remote / Dublin / Singapore hires: IT must ship pre-imaged hardware via tracked courier at least 7 business days prior to start date.
+- Tracking number and initial temporary Okta activation link (valid 24 hours) sent to personal email on file.
+
+4. OFFBOARDING & DEPROVISIONING PROCEDURE
+Step 4.1: HR Ticket Trigger: People Ops (Priya Nair) logs offboarding ticket 5 days prior to planned departure (or immediately for involuntary termination).
+Step 4.2: Automated Access Revocation: Exactly at 17:30 local time on departure date, Okta SSO, Google Workspace, Slack, and VPN credentials are suspended.
+Step 4.3: Remote Lock / Wipe: IT issues Jamf Remote Lock command. If device is not returned within 14 calendar days, Remote Device Wipe is triggered.
+Step 4.4: Physical Recovery: Return shipping box with prepaid courier label dispatched to departing worker's address.
+Step 4.5: Sanitization: Returned laptops undergo NIST SP 800-88 Rev 1 cryptographical erasure before inventory re-entry or recycling.
+
+5. RELATED POLICIES & CROSS-LINKS
+- Equipment purchasing and limits: cost_centers.csv (CC-4050) and approval_matrix.csv.
+- Remote work equipment stipend and security: vendor_security.md and secrets_handling.md.
+- Offboarding compliance and data retention: records_retention.md and legal_hold.md.
+================================================================================

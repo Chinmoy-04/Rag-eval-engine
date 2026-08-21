@@ -1,0 +1,222 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#005047","on-tertiary-fixed-variant":"#3e4854","surface-variant":"#31353b","surface-container-lowest":"#0a0e13","background":"#101419","outline":"#859490","tertiary-fixed-dim":"#bdc7d6","inverse-on-surface":"#2d3136","primary":"#57f1db","on-tertiary":"#27313d","on-tertiary-fixed":"#121c27","on-tertiary-container":"#444e5a","on-background":"#e0e2ea","on-primary-fixed":"#00201c","surface-container-low":"#181c21","error":"#ffb4ab","inverse-primary":"#006b5f","secondary":"#c1c7d1","on-surface":"#e0e2ea","on-error":"#690005","on-surface-variant":"#bacac5","primary-fixed":"#62fae3","surface-tint":"#3cddc7","on-secondary-fixed":"#161c23","outline-variant":"#3c4a46","inverse-surface":"#e0e2ea","on-secondary":"#2b3139","primary-fixed-dim":"#3cddc7","surface-container-highest":"#31353b","tertiary":"#d0dbea","surface":"#101419","on-error-container":"#ffdad6","secondary-fixed":"#dde3ed","surface-container-high":"#262a30","on-secondary-fixed-variant":"#41474f","on-secondary-container":"#b3b9c2","surface-bright":"#36393f","on-primary-container":"#00574d","primary-container":"#2dd4bf","surface-dim":"#101419","tertiary-container":"#b5bfce","secondary-fixed-dim":"#c1c7d1","error-container":"#93000a","tertiary-fixed":"#d9e3f2","surface-container":"#1c2025","secondary-container":"#444a52","on-primary":"#003731"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"sm":"8px","xs":"4px","lg":"24px","unit":"4px","gutter":"20px","md":"16px","xl":"40px","container-max":"1440px"},"fontFamily":{"headline-lg":["Geist"],"headline-md":["Geist"],"body-lg":["Geist"],"headline-sm":["Geist"],"label-caps":["JetBrains Mono"],"code-md":["JetBrains Mono"],"body-md":["Geist"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"1.3","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"1.4","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"500"}],"code-md":["13px",{"lineHeight":"1.5","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"1.5","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface-dim font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest border-r border-outline-variant/30 flex flex-col z-50 transition-all duration-300"><div class="p-lg flex items-center gap-sm mb-xl"><img alt="Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNjWXeN2yOGxpe6XCQ_GyKZIK7T1UTWJa5Y8LbkPk4lvxe1wGNfMtaViaUUC4y-wiYW5mX6lTKWH4BD084UDr_WzK0Kf8oo14wmAlQAsvcpcpVLO28t427TvPc2dyKKsmo2CjpxNSS-1oOz7AkaQ8ONRYuQFDdmn4hOsLHcDm5RadchPw37sQZSmWdfK-QyExu8rOAxlH9IUgx4aMAXXTvxuSFqby4bYTa41HMnCf8JRlOOm4Tka9bSA"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">RAG Eval</span></div><nav class="flex-1 flex flex-col gap-xs px-md" data-active-classes="bg-primary-container text-on-primary-container font-medium"><a class="flex items-center gap-md px-md py-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200 group" data-path="ask" href="#"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">chat_bubble</span><span class="font-body-md">Ask</span></a><a class="flex items-center gap-md px-md py-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200 group" data-path="runs" href="#"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">monitoring</span><span class="font-body-md">Runs</span></a><a aria-current="page" class="flex items-center gap-md px-md py-sm rounded-xl transition-all duration-200 group bg-primary-container text-on-primary-container font-medium" data-path="compare" href="#"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">view_column</span><span class="font-body-md">Compare</span></a></nav><div class="mt-auto p-md"><div class="flex items-center gap-sm p-sm rounded-xl bg-surface-container-low border border-outline-variant/20"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col overflow-hidden"><span class="text-label-caps text-on-surface truncate font-bold">AI Engineer</span><span class="text-[10px] text-on-surface-variant uppercase tracking-widest">HelixForge v1.0</span></div></div></div></aside><div class="pl-72 min-h-screen flex flex-col"><header class="sticky top-0 h-16 w-full bg-surface-dim/80 backdrop-blur-xl z-40 border-b border-outline-variant/10"><div class="h-full w-full px-lg flex items-center justify-end gap-lg"><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-sm text-outline">search</span><input class="w-full bg-surface-container-low border border-outline-variant/30 rounded-full py-xs pl-xl pr-md text-body-md focus:outline-none focus:border-primary/50 transition-colors" placeholder="Search evaluations..." type="text"/></div></div><div class="flex items-center gap-md"><button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-all"><span class="material-symbols-outlined">notifications</span></button><button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-all"><span class="material-symbols-outlined">settings</span></button></div></div></header><main class="flex-1 relative pt-16 bg-surface-dim px-lg pb-xl mx-auto w-full max-w-container-max"><div class="flex flex-col w-full gap-xl">
+<div class="flex flex-col gap-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Pipeline Comparison</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Evaluating multi-variant RAG architectures across key quality and performance metrics to identify the optimal configuration for production deployment.</p>
+</div>
+<!-- Summary / Winner Banner -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-high/50 p-lg shadow-lg">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-lg">
+<div class="flex items-center gap-md">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center shadow-[0_0_15px_rgba(45,212,191,0.3)]">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="flex flex-col gap-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">Recommended Deployment</span>
+<span class="font-headline-md text-headline-md text-on-surface flex items-center gap-sm">
+                        Optimized Pipeline
+                        <span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-code-md text-code-md shadow-sm">v2.4.1</span>
+</span>
+</div>
+</div>
+<div class="flex flex-col gap-xs text-right">
+<span class="font-body-md text-body-md text-on-surface-variant">Primary advantage</span>
+<span class="font-code-md text-code-md text-primary">+18% Answer Relevancy & 35% Latency Reduction</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-lg">
+<!-- Metrics Comparison Chart -->
+<div class="xl:col-span-2 flex flex-col gap-md bg-surface-container rounded-xl p-lg shadow-md">
+<div class="flex justify-between items-center mb-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-sm">
+<span class="material-symbols-outlined text-on-surface-variant">bar_chart</span>
+                    Ragas Quality Metrics
+                </h2>
+<div class="flex gap-md font-code-md text-code-md">
+<div class="flex items-center gap-xs"><div class="w-3 h-3 rounded-sm bg-surface-variant shadow-sm"></div><span class="text-on-surface-variant">Baseline</span></div>
+<div class="flex items-center gap-xs"><div class="w-3 h-3 rounded-sm bg-primary shadow-sm shadow-primary/30"></div><span class="text-on-surface">Optimized</span></div>
+<div class="flex items-center gap-xs"><div class="w-3 h-3 rounded-sm bg-surface-container-high shadow-sm"></div><span class="text-on-surface-variant">Experimental</span></div>
+</div>
+</div>
+<!-- SVG Grouped Bar Chart -->
+<div class="w-full h-[300px] relative mt-lg">
+<!-- Y-axis -->
+<div class="absolute left-0 top-0 bottom-8 w-8 flex flex-col justify-between items-end pr-2 font-code-md text-code-md text-on-surface-variant opacity-60">
+<span>1.0</span>
+<span>0.8</span>
+<span>0.6</span>
+<span>0.4</span>
+<span>0.2</span>
+<span>0.0</span>
+</div>
+<!-- Grid Lines -->
+<div class="absolute left-8 right-0 top-0 bottom-8 flex flex-col justify-between">
+<div class="w-full h-px bg-surface-variant/30"></div>
+<div class="w-full h-px bg-surface-variant/30"></div>
+<div class="w-full h-px bg-surface-variant/30"></div>
+<div class="w-full h-px bg-surface-variant/30"></div>
+<div class="w-full h-px bg-surface-variant/30"></div>
+<div class="w-full h-px bg-surface-variant/80"></div>
+</div>
+<!-- Bars Area -->
+<div class="absolute left-8 right-0 top-0 bottom-8 flex justify-around items-end pb-px">
+<!-- Faithfulness -->
+<div class="flex gap-1 h-full items-end group">
+<div class="w-8 bg-surface-variant rounded-t-sm shadow-sm transition-all hover:opacity-80" style="height: 72%;" title="Baseline: 0.72"></div>
+<div class="w-8 bg-primary rounded-t-sm shadow-[0_0_8px_rgba(45,212,191,0.2)] transition-all hover:opacity-80" style="height: 88%;" title="Optimized: 0.88"></div>
+<div class="w-8 bg-surface-container-high rounded-t-sm shadow-sm transition-all hover:opacity-80" style="height: 85%;" title="Experimental: 0.85"></div>
+</div>
+<!-- Answer Relevancy -->
+<div class="flex gap-1 h-full items-end group">
+<div class="w-8 bg-surface-variant rounded-t-sm shadow-sm transition-all hover:opacity-80" style="height: 65%;" title="Baseline: 0.65"></div>
+<div class="w-8 bg-primary rounded-t-sm shadow-[0_0_8px_rgba(45,212,191,0.2)] transition-all hover:opacity-80" style="height: 92%;" title="Optimized: 0.92"></div>
+<div class="w-8 bg-surface-container-high rounded-t-sm shadow-sm transition-all hover:opacity-80" style="height: 78%;" title="Experimental: 0.78"></div>
+</div>
+<!-- Context Precision -->
+<div class="flex gap-1 h-full items-end group">
+<div class="w-8 bg-surface-variant rounded-t-sm shadow-sm transition-all hover:opacity-80" style="height: 68%;" title="Baseline: 0.68"></div>
+<div class="w-8 bg-primary rounded-t-sm shadow-[0_0_8px_rgba(45,212,191,0.2)] transition-all hover:opacity-80" style="height: 84%;" title="Optimized: 0.84"></div>
+<div class="w-8 bg-surface-container-high rounded-t-sm shadow-sm transition-all hover:opacity-80" style="height: 89%;" title="Experimental: 0.89"></div>
+</div>
+<!-- Context Recall -->
+<div class="flex gap-1 h-full items-end group">
+<div class="w-8 bg-surface-variant rounded-t-sm shadow-sm transition-all hover:opacity-80" style="height: 75%;" title="Baseline: 0.75"></div>
+<div class="w-8 bg-primary rounded-t-sm shadow-[0_0_8px_rgba(45,212,191,0.2)] transition-all hover:opacity-80" style="height: 91%;" title="Optimized: 0.91"></div>
+<div class="w-8 bg-surface-container-high rounded-t-sm shadow-sm transition-all hover:opacity-80" style="height: 86%;" title="Experimental: 0.86"></div>
+</div>
+</div>
+<!-- X-axis Labels -->
+<div class="absolute left-8 right-0 bottom-0 h-8 flex justify-around items-center font-label-caps text-label-caps text-on-surface-variant">
+<span class="w-24 text-center">Faithfulness</span>
+<span class="w-24 text-center">Answer Rel.</span>
+<span class="w-24 text-center">Ctx Precision</span>
+<span class="w-24 text-center">Ctx Recall</span>
+</div>
+</div>
+</div>
+<!-- Latency Performance -->
+<div class="flex flex-col gap-md bg-surface-container rounded-xl p-lg shadow-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-sm mb-sm">
+<span class="material-symbols-outlined text-on-surface-variant">speed</span>
+                Inference Latency
+            </h2>
+<div class="flex flex-col gap-lg">
+<!-- Baseline -->
+<div class="flex flex-col gap-xs">
+<div class="flex justify-between items-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Baseline</span>
+<span class="font-code-md text-code-md text-on-surface">1.45s</span>
+</div>
+<div class="w-full bg-surface-variant/30 rounded-full h-2 overflow-hidden shadow-inner">
+<div class="bg-surface-variant h-full rounded-full w-[85%]"></div>
+</div>
+</div>
+<!-- Optimized -->
+<div class="flex flex-col gap-xs">
+<div class="flex justify-between items-end">
+<span class="font-label-caps text-label-caps text-primary shadow-primary/20 drop-shadow-md">Optimized</span>
+<span class="font-code-md text-code-md text-primary">0.92s</span>
+</div>
+<div class="w-full bg-surface-variant/30 rounded-full h-2 overflow-hidden shadow-inner">
+<div class="bg-primary h-full rounded-full w-[45%] shadow-[0_0_8px_rgba(45,212,191,0.5)]"></div>
+</div>
+</div>
+<!-- Experimental -->
+<div class="flex flex-col gap-xs">
+<div class="flex justify-between items-end">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Experimental</span>
+<span class="font-code-md text-code-md text-on-surface">1.82s</span>
+</div>
+<div class="w-full bg-surface-variant/30 rounded-full h-2 overflow-hidden shadow-inner">
+<div class="bg-error/70 h-full rounded-full w-[95%]"></div>
+</div>
+</div>
+</div>
+<div class="mt-auto pt-md border-t border-surface-variant/20 flex items-start gap-md">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] mt-0.5">info</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Optimized pipeline utilizes hypothetical document embeddings (HyDE) caching, reducing LLM calls per query.</p>
+</div>
+</div>
+</div>
+<!-- Failure Drill-down -->
+<div class="flex flex-col gap-md bg-surface-container rounded-xl p-lg shadow-md mt-sm">
+<div class="flex justify-between items-center mb-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-sm">
+<span class="material-symbols-outlined text-error">warning</span>
+                Regression Analysis: Baseline Failures Resolved by Optimized
+            </h2>
+<button class="px-md py-sm rounded bg-surface-variant/20 text-on-surface hover:bg-surface-variant/40 transition-colors font-body-md text-body-md text-sm flex items-center gap-xs">
+                Export CSV <span class="material-symbols-outlined text-[16px]">download</span>
+</button>
+</div>
+<div class="flex flex-col gap-0 border border-surface-variant/30 rounded-lg overflow-hidden bg-surface-dim/30">
+<!-- Table Header -->
+<div class="grid grid-cols-12 gap-md p-md bg-surface-container-high/40 font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
+<div class="col-span-1">ID</div>
+<div class="col-span-5">Query</div>
+<div class="col-span-3">Baseline Output</div>
+<div class="col-span-3">Optimized Output</div>
+</div>
+<!-- Row 1 -->
+<div class="grid grid-cols-12 gap-md p-md border-t border-surface-variant/20 hover:bg-surface-variant/10 transition-colors">
+<div class="col-span-1 font-code-md text-code-md text-on-surface-variant">Q-104</div>
+<div class="col-span-5 font-body-md text-body-md text-on-surface pr-md">
+                    "What are the specific network port requirements for deploying the Helix agent on RHEL 8?"
+                </div>
+<div class="col-span-3 flex flex-col gap-xs">
+<div class="inline-flex items-center gap-xs px-2 py-0.5 rounded-sm bg-error-container/20 border border-error/20 text-error font-code-md text-[10px] w-fit">
+<span class="material-symbols-outlined text-[12px]">block</span> ABSTAIN
+                    </div>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2 italic">"I don't have enough context in the provided documents to answer..."</span>
+</div>
+<div class="col-span-3 flex flex-col gap-xs">
+<div class="inline-flex items-center gap-xs px-2 py-0.5 rounded-sm bg-primary-container/10 border border-primary/20 text-primary font-code-md text-[10px] w-fit">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> PASS
+                    </div>
+<span class="font-body-md text-body-md text-on-surface text-sm line-clamp-2">"Ports 443 (HTTPS) and 8443 (Management) must be open outbound..."</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-12 gap-md p-md border-t border-surface-variant/20 hover:bg-surface-variant/10 transition-colors">
+<div class="col-span-1 font-code-md text-code-md text-on-surface-variant">Q-289</div>
+<div class="col-span-5 font-body-md text-body-md text-on-surface pr-md">
+                    "How do I migrate from the legacy auth v1 API to the v2 RBAC system?"
+                </div>
+<div class="col-span-3 flex flex-col gap-xs">
+<div class="inline-flex items-center gap-xs px-2 py-0.5 rounded-sm bg-error-container/20 border border-error/20 text-error font-code-md text-[10px] w-fit">
+<span class="material-symbols-outlined text-[12px]">error</span> HALLUCINATION
+                    </div>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2 italic">"Use the /v1/migrate endpoint with a POST request..." (Deprecated)</span>
+</div>
+<div class="col-span-3 flex flex-col gap-xs">
+<div class="inline-flex items-center gap-xs px-2 py-0.5 rounded-sm bg-primary-container/10 border border-primary/20 text-primary font-code-md text-[10px] w-fit">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> PASS
+                    </div>
+<span class="font-body-md text-body-md text-on-surface text-sm line-clamp-2">"V2 migration requires generating a new IAM token via the dashboard before calling..."</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-12 gap-md p-md border-t border-surface-variant/20 hover:bg-surface-variant/10 transition-colors">
+<div class="col-span-1 font-code-md text-code-md text-on-surface-variant">Q-312</div>
+<div class="col-span-5 font-body-md text-body-md text-on-surface pr-md">
+                    "Explain the retention policy for audit logs on the free tier."
+                </div>
+<div class="col-span-3 flex flex-col gap-xs">
+<div class="inline-flex items-center gap-xs px-2 py-0.5 rounded-sm bg-error-container/20 border border-error/20 text-error font-code-md text-[10px] w-fit">
+<span class="material-symbols-outlined text-[12px]">close</span> LOW_RELEVANCE
+                    </div>
+<span class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2 italic">"Enterprise plans feature 365-day retention with immutable storage..."</span>
+</div>
+<div class="col-span-3 flex flex-col gap-xs">
+<div class="inline-flex items-center gap-xs px-2 py-0.5 rounded-sm bg-primary-container/10 border border-primary/20 text-primary font-code-md text-[10px] w-fit">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> PASS
+                    </div>
+<span class="font-body-md text-body-md text-on-surface text-sm line-clamp-2">"Free tier accounts retain audit logs for 7 days. You can export them via..."</span>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

@@ -1,0 +1,38 @@
+================================================================================
+HELIXFORGE STANDARD OPERATING PROCEDURE: SUP-SOP-302
+TITLE: ENTERPRISE CUSTOMER SEV-1 INCIDENT WAR ROOM & ESCALATION PROTOCOLS
+OWNER: Rachel Adams, Head of Enterprise Technical Support (rachel.adams@helixforge.example)
+DIVISION: Customer Success (CC-3010) / Platform Engineering (CC-1030)
+EFFECTIVE DATE: February 1, 2026
+================================================================================
+
+1. PURPOSE & SCOPE
+This SOP defines the rapid-response war room mechanics, cross-functional bridge 
+coordination, and customer communications during SEV-1 critical platform outages 
+affecting Enterprise Tier 1 and Tier 2 customers.
+
+2. WAR ROOM ACTIVATION SEQUENCE
+Step 2.1: Incident Trigger: Customer Support Engineer or Datadog Synthetic Monitor detects API degradation exceeding SEV-1 criteria (> 2% API error rate).
+Step 2.2: PagerDuty Bridge: Automated PagerDuty escalation pages Cloud Infra on-call primary and Rachel Adams within 15 minutes (per customer_support_slas.md).
+Step 2.3: Slack Incident Room: PagerDuty auto-provisions dedicated channel #inc-<incident_id> and Zoom war room bridge.
+Step 2.4: Role Assignment:
+          - Incident Commander (IC): Leads technical remediation (Chloe Bennett or Senior SRE).
+          - Comms Lead: Manages status page and executive updates (Rachel Adams).
+          - Scribe: Records timeline actions in incident log.
+
+3. CUSTOMER BRIDGE & STATUS PAGE CADENCE
+- 25-Minute Bridge SLA: For Enterprise Tier 1 customers, the Comms Lead opens a dedicated external customer Zoom bridge within 25 minutes of ticket receipt.
+- Status Page Updates: Public status post (status.helixforge.example) updated every 30 minutes per status_page_rules.md.
+- External statements must be sanitized to exclude internal server hostnames, customer names, or proprietary model weight paths.
+
+4. INCIDENT DOWNGRADE & POST-MORTEM HANDOFF
+Step 4.1: Service Restoration: Error rates return to baseline (<0.01%) for 60 continuous minutes.
+Step 4.2: Downgrade to Monitoring: Status page updated to 'Monitoring'.
+Step 4.3: Post-Mortem Ticket: IC creates RCA-<incident_id> Jira ticket. 72-hour wiki draft SLA begins immediately (see security_incident_postmortem_guidelines.md).
+
+5. RELATED POLICIES & CROSS-LINKS
+- Customer support SLAs and breach credits: customer_support_slas.md.
+- Status page rules and update intervals: status_page_rules.md.
+- Severity definitions and IC authority: severity_definitions.csv.
+- Post-mortem RCA framework: security_incident_postmortem_guidelines.md.
+================================================================================

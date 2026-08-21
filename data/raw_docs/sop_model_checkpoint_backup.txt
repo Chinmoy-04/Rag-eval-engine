@@ -1,0 +1,35 @@
+================================================================================
+HELIXFORGE STANDARD OPERATING PROCEDURE: INF-SOP-305
+TITLE: MODEL WEIGHTS CHECKPOINTING, CRYPTOGRAPHIC INTEGRITY, AND GLACIER REPLICATION
+OWNER: Tariq Mansoor, Head of Model Serving & Inference (tariq.mansoor@helixforge.example)
+DIVISION: Platform Engineering (CC-1020) / Applied Research (CC-2010)
+EFFECTIVE DATE: February 1, 2026
+================================================================================
+
+1. PURPOSE & SCOPE
+This SOP defines the technical procedure for backing up, replicating, verifying, 
+and archiving pre-trained base model weights, fine-tuned customer LoRA adapters, 
+and embedding indices across multi-region cloud object storage.
+
+2. STORAGE TIERS & REPLICATION TOPOLOGY
+- Hot Storage (NVMe Distributed Cache): Local GPU scratch nodes for active inference serving.
+- Warm Storage (S3 Standard / GCS Multi-Regional): Primary active model repository in Austin (us-central-1).
+- Cold Storage (S3 Glacier Deep Archive): Cross-region immutable replication in Dublin (eu-west-1) and Singapore (p-southeast-1).
+
+3. AUTOMATED BACKUP & INTEGRITY VERIFICATION WORKFLOW
+Step 3.1: Checkpoint Generation: Distributed training workers flush tensor checkpoints to S3 bucket s3://hf-model-registry-prod/ every 30 minutes.
+Step 3.2: Cryptographic Checksum: Automated SHA-256 hash generated for each weight shard (.safetensors / .pt) and logged to immutable metadata ledger.
+Step 3.3: Cross-Region Sync: AWS S3 Cross-Region Replication (CRR) replicates weights to Dublin and Singapore vaults within **15 minutes** (meeting Tier 1 RPO <= 15 min per disaster_recovery_rpo_rto.md).
+Step 3.4: Periodic Restore Validation: Monthly automated test restore boots an isolated single-node inference container and executes benchmark verification inferences.
+
+4. CUSTOMER FINE-TUNING RETENTION & DELETION
+- Dedicated customer fine-tuned weights are classified as **Restricted Data**.
+- Checkpoints are retained for the duration of the active customer contract plus **90 days** post-termination per data_retention_schedules.csv.
+- Customer-requested deletion triggers cryptographic erasure per sop_gdpr_right_to_be_forgotten.txt.
+
+5. RELATED POLICIES & CROSS-LINKS
+- Disaster recovery RPO/RTO metrics: disaster_recovery_rpo_rto.md.
+- Data residency and multi-region boundaries: data_residency_matrix.csv.
+- Data retention and disposal schedules: data_retention_schedules.csv.
+- Secrets and Vault key encryption: sop_secrets_rotation_vault.txt.
+================================================================================

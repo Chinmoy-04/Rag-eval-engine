@@ -1,0 +1,6 @@
+subscription_tier,monthly_fee_usd,requests_per_minute_rpm,tokens_per_minute_tpm,concurrent_requests,burst_allowance_multiplier,overage_cost_per_1k_tokens,support_sla_tier
+Enterprise Tier 1,15000,10000,2000000,250,1.5x (5 min),.0015,Enterprise Tier 1 (15m 24/7)
+Enterprise Tier 2,5000,5000,1000000,100,1.5x (5 min),.0020,Enterprise Tier 2 (30m 24/7)
+Standard (Growth),1200,1200,250000,30,1.2x (2 min),.0025,Standard (2h Business)
+Developer (Pay-as-you-go),0,300,60000,10,1.0x (No Burst),.0035,Standard (2h Business)
+Free Community / Trial,0,120,30000,3,1.0x (No Burst),N/A (Hard Cap),Community Forum Only

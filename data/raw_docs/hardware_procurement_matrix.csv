@@ -1,0 +1,9 @@
+hardware_tier,role_category,standard_laptop_model,ram_gb,storage_tb,external_monitor_allowance,replacement_cycle_months,cost_center_code
+Tier-ENG-1,Platform Infrastructure & Core Compute,Apple MacBook Pro 16-inch (M3 Max),64,2,Two 4K 27-inch Displays ( cap),24,CC-1010
+Tier-ENG-2,Cloud SRE & SecOps,Apple MacBook Pro 16-inch (M3 Max),64,1,Two 4K 27-inch Displays ( cap),24,CC-1030
+Tier-RES-1,Applied Research & Safety Scientists,Dell XPS 15 (Ubuntu 24.04 LTS),64,2,Two 4K 27-inch Displays ( cap),24,CC-2010
+Tier-RES-2,Multimodal & Alignment Researchers,Apple MacBook Pro 16-inch (M3 Max),64,2,Two 4K 27-inch Displays ( cap),24,CC-2020
+Tier-CS-1,Enterprise Technical Support,Apple MacBook Pro 14-inch (M3 Pro),36,1,One 4K 27-inch Display ( cap),36,CC-3010
+Tier-CS-2,Solutions Engineers,Apple MacBook Pro 14-inch (M3 Pro),36,1,One 4K 27-inch Display ( cap),36,CC-3020
+Tier-BIZ-1,Finance People Ops Legal,Apple MacBook Pro 14-inch (M3 Pro),36,512GB,One 4K 27-inch Display ( cap),36,CC-4010
+Tier-CON-1,Contractors & Short-Term Staff,Dell XPS 13 or Managed MacBook Air,16,512GB,Standard IT Peripheral Kit ( cap),Duration of SOW,CC-4050

@@ -1,0 +1,41 @@
+================================================================================
+HELIXFORGE STANDARD OPERATING PROCEDURE: HR-SOP-501
+TITLE: EMPLOYEE & CONTRACTOR OFFBOARDING, CREDENTIAL REVOCATION, AND HARDWARE RECOVERY
+OWNER: Priya Nair, VP Business Operations / People Ops (priya.nair@helixforge.example)
+OPERATIONAL LEAD: Nathan Brooks, Workplace IT Lead (nathan.brooks@helixforge.example)
+DIVISION: Business Operations (CC-4010 / CC-4050)
+EFFECTIVE DATE: February 1, 2026
+================================================================================
+
+1. PURPOSE & SCOPE
+This SOP defines the technical and operational steps for executing departures for 
+full-time employees (~420 FTEs) and contractors (~60 personnel) across Austin, 
+Dublin, Singapore, and remote locations.
+
+2. OFFBOARDING INITIATION & NOTICE TIMELINES
+- Voluntary Resignation: Employee provides written notice to People Ops. Standard notice period is 2 weeks (US) or 1 month (Dublin / Singapore).
+- Involuntary Termination: People Ops coordinates with Legal (Clara Dupont) and CISO (Elena Voss) to synchronize access revocation.
+
+3. ACCESS REVOCATION SEQUENCE
+Step 3.1: Scheduled Suspension: Exactly at **17:30 local time** on departure date, Okta SSO triggers automated de-provisioning webhooks:
+          - Suspends Google Workspace, Slack Enterprise Grid, Notion, and Jira.
+          - Revokes HashiCorp Vault tokens and active AWS/GCP IAM sessions.
+Step 3.2: YubiKey & Certificate Invalidation: Workplace IT revokes SSH certificates and removes YubiKey serial numbers from the corporate bastion whitelist.
+Step 3.3: 1Password Vault Cleanup: Shared team vaults and private employee vaults are purged and deleted.
+Step 3.4: MDM Remote Lock: Jamf Pro / Intune issues remote lock command to laptop and selective wipe to enrolled mobile devices per byod_and_mobile_device_policy.md.
+
+4. PHYSICAL HARDWARE RECOVERY & REIMBURSEMENT
+- Departing employee must return company-owned laptops and monitors within **14 calendar days**.
+- Prepaid insured FedEx/DHL return kit dispatched to employee home address on Day 1 post-departure.
+- If hardware is not returned within 14 days, remote cryptographic wipe is executed per sop_laptop_imaging_deprovisioning.txt.
+
+5. FINAL PAYROLL, EQUITY & BENEFITS
+- Unused accrued PTO (up to the 8-day rollover cap) is paid out in final paycheck per state/country labor laws.
+- Vested stock options enter the 5-year Post-Termination Exercise Period (PTEP) for employees with >= 2 years tenure (see equity_refresh_and_options_policy.md).
+
+6. RELATED POLICIES & CROSS-LINKS
+- Laptop imaging and sanitization: sop_laptop_imaging_deprovisioning.txt.
+- Equity options exercise window: equity_refresh_and_options_policy.md.
+- BYOD mobile wipe: byod_and_mobile_device_policy.md.
+- Records retention for HR archives: data_retention_schedules.csv.
+================================================================================

@@ -1,0 +1,19 @@
+cost_center_code,department_name,division,head_email,vp_signoff_email,currency,annual_discretionary_limit_usd,location
+CC-1010,Core Compute & Distributed Systems,Platform Engineering,marcus.vance@helixforge.example,devon.hale@helixforge.example,USD,150000,Austin
+CC-1020,Model Serving & Inference,Platform Engineering,tariq.mansoor@helixforge.example,devon.hale@helixforge.example,USD,180000,Austin
+CC-1030,Cloud Infrastructure & SRE,Platform Engineering,chloe.bennett@helixforge.example,devon.hale@helixforge.example,USD,250000,Austin
+CC-1040,Data Platform & Pipelines,Platform Engineering,anand.patel@helixforge.example,devon.hale@helixforge.example,USD,120000,Dublin
+CC-1050,Information Security & SecOps,Platform Engineering,elena.voss@helixforge.example,devon.hale@helixforge.example,USD,200000,Austin
+CC-2010,Foundation Model Pre-Training,Applied Research,dr.alina.rostova@helixforge.example,devon.hale@helixforge.example,USD,350000,Austin
+CC-2020,Fine-Tuning & Alignment,Applied Research,soren.lindqvist@helixforge.example,devon.hale@helixforge.example,USD,220000,Singapore
+CC-2030,Evaluation & Safety Benchmarks,Applied Research,zheng.wei@helixforge.example,devon.hale@helixforge.example,USD,160000,Singapore
+CC-2040,Multimodal Architectures,Applied Research,fatima.al-mansoori@helixforge.example,devon.hale@helixforge.example,USD,200000,Austin
+CC-3010,Enterprise Technical Support,Customer Success,rachel.adams@helixforge.example,priya.nair@helixforge.example,USD,75000,Austin
+CC-3020,Customer Solutions Engineering,Customer Success,diego.morales@helixforge.example,priya.nair@helixforge.example,USD,90000,Dublin
+CC-3030,Technical Account Management,Customer Success,liam.obrien@helixforge.example,priya.nair@helixforge.example,USD,60000,Dublin
+CC-3040,Professional Services & Training,Customer Success,keiko.takahashi@helixforge.example,priya.nair@helixforge.example,USD,85000,Singapore
+CC-4010,People Operations & Talent,Business Operations,priya.nair@helixforge.example,mara.chen@helixforge.example,USD,110000,Austin
+CC-4020,Finance & Accounting,Business Operations,julian.sterling@helixforge.example,mara.chen@helixforge.example,USD,130000,Austin
+CC-4030,Legal Regulatory & Compliance,Business Operations,clara.dupont@helixforge.example,mara.chen@helixforge.example,USD,175000,Dublin
+CC-4040,Facilities & Global Real Estate,Business Operations,brendan.walsh@helixforge.example,mara.chen@helixforge.example,USD,140000,Austin
+CC-4050,Workplace IT & Enterprise Systems,Business Operations,nathan.brooks@helixforge.example,mara.chen@helixforge.example,USD,160000,Austin

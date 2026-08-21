@@ -1,0 +1,9 @@
+record_classification,record_category,retention_period,storage_tier,disposal_method,responsible_officer_email,cost_center_code
+Restricted,Production Bastion eBPF Session Logs,365 Days,Encrypted S3 Glacier,Automated Crypto-Erase,elena.voss@helixforge.example,CC-1050
+Restricted,Customer Fine-Tuning Checkpoint Snapshots,90 Days Post-Contract,Encrypted Cold Vault,Cryptographic Tombstone Overwrite,tariq.mansoor@helixforge.example,CC-1020
+Confidential,Internal Slack Communication History,90 Days,Slack Enterprise Storage,Automated Daily Retention Purge,nathan.brooks@helixforge.example,CC-4050
+Confidential,Employee Performance Reviews & Leveling Records,7 Years Post-Termination,Encrypted HR Archive,Secure Deletion / HR Sign-Off,priya.nair@helixforge.example,CC-4010
+Confidential,Customer Support Tickets & PagerDuty RCAs,3 Years,Zendesk / Jira Cloud Archive,Scheduled Anonymization,rachel.adams@helixforge.example,CC-3010
+Confidential,Financial Invoices Tax Audits & Expense Reports,7 Years,NetSuite Immutable Vault,Finance Controller Sign-Off,julian.sterling@helixforge.example,CC-4020
+Internal,Continuous Integration Build Logs & Test Artifacts,30 Days,Ephemeral GCS Bucket,Automated Lifecycle Expiry,devon.hale@helixforge.example,CC-1010
+Internal,Office Visitor Logs & CCTV Footage,90 Days,Local On-Prem NVR Storage,Rolling FIFO Loop Overwrite,brendan.walsh@helixforge.example,CC-4040

@@ -1,0 +1,8 @@
+partition_name,min_nodes,max_nodes,max_gpus_per_job,max_walltime_hours,priority_weight,preemptible,owning_division,primary_cost_center
+prod-serving,1,64,512,Unlimited,10000,No,Platform Engineering,CC-1020
+eval-safety,1,16,128,4,5000,No,Applied Research,CC-2030
+pretrain-batch,2,32,256,72,2500,Yes (10m grace),Applied Research,CC-2010
+finetune-lora,1,8,64,24,1000,Yes (5m grace),Applied Research,CC-2020
+dev-interactive,1,1,2,8,200,Yes (Immediate),Platform Engineering & Research,CC-1010
+benchmark-sweep,1,4,32,12,600,Yes (5m grace),Applied Research,CC-2030
+secops-probe,1,2,16,6,1500,No,Platform Engineering,CC-1050

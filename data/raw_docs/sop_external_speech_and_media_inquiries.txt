@@ -1,0 +1,34 @@
+================================================================================
+HELIXFORGE STANDARD OPERATING PROCEDURE: COM-SOP-101
+TITLE: EXTERNAL MEDIA INQUIRIES, PUBLIC SPEAKING, AND RESEARCH EMBARGOES
+OWNER: Priya Nair, VP Business Operations (priya.nair@helixforge.example)
+DIVISION: Business Operations (CC-4010 / CC-4030)
+EFFECTIVE DATE: February 1, 2026
+================================================================================
+
+1. PURPOSE & CORE PRINCIPLE
+This SOP governs interactions with journalists, conference presentations, podcast 
+appearances, and external research publications for all ~420 FTEs and contractors. 
+Only designated corporate spokespersons are authorized to speak on behalf of HelixForge.
+
+2. AUTHORIZED CORPORATE SPOKESPERSONS
+- Company Strategy, Financials & Vision: Mara Chen (CEO).
+- Technical Architecture & AI Research: Devon Hale (CTO) or designated research authors.
+- Security, Privacy & Vulnerabilities: Elena Voss (CISO) or Clara Dupont (Legal Lead).
+- People Ops & Workplace: Priya Nair (VP Business Operations).
+
+3. INTAKE WORKFLOW FOR PRESS & MEDIA
+Step 3.1: Inbound Media Inquiries: Forward all inbound press requests immediately to press@helixforge.example. Do not provide on-the-record or off-the-record comments without PR clearance.
+Step 3.2: PR Triage SLA: Communications team responds to reporter inquiries within 4 business hours.
+Step 3.3: Briefing Prep: Comms coordinates briefing prep sessions and approved talking points with the designated executive.
+
+4. CONFERENCE SPEAKING & RESEARCH PAPER PRE-CLEARANCE
+- Paper Submissions: Research manuscripts destined for arXiv, NeurIPS, ICML, or CVPR must be submitted to the Research Review Board (cost_centers.csv CC-2010) at least 10 business days prior to the conference submission deadline.
+- Intellectual Property Screen: Legal verifies that manuscripts do not disclose unpatented proprietary model architectures or trade secrets.
+- Conference Travel Funding: Approved speakers receive fully covered travel per learning_stipend_and_conferences.md.
+
+5. RELATED POLICIES & CROSS-LINKS
+- Conference attendance and travel funding: learning_stipend_and_conferences.md.
+- Open source and open weights release policy: open_source_contribution_policy.md.
+- Data classification rules: vendor_security.md.
+================================================================================

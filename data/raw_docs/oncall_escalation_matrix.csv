@@ -1,0 +1,9 @@
+rotation_name,tier,shift_hours_utc,primary_contact_group,secondary_escalation_role,executive_sponsor_email,pagerduty_service_id
+Platform-Inference,L1 On-Call,00:00-12:00,inference-oncall-apac-emea@helixforge.example,Marcus Vance (Head of Core Compute),devon.hale@helixforge.example,PD-SVC-INF-01
+Platform-Inference,L1 On-Call,12:00-24:00,inference-oncall-us@helixforge.example,Tariq Mansoor (Head of Serving),devon.hale@helixforge.example,PD-SVC-INF-02
+Cloud-Infra-SRE,L1 On-Call,00:00-12:00,sre-oncall-dublin-singapore@helixforge.example,Chloe Bennett (Head of Cloud Infra),devon.hale@helixforge.example,PD-SVC-SRE-01
+Cloud-Infra-SRE,L1 On-Call,12:00-24:00,sre-oncall-austin@helixforge.example,Chloe Bennett (Head of Cloud Infra),devon.hale@helixforge.example,PD-SVC-SRE-02
+SecOps-Incident,L1 Security,24/7 Global Rotation,secops-oncall@helixforge.example,Elena Voss (CISO),elena.voss@helixforge.example,PD-SVC-SEC-01
+Research-Alignment,L2 Safety,14:00-22:00,safety-oncall@helixforge.example,Zheng Wei (Safety Lead),devon.hale@helixforge.example,PD-SVC-RS-01
+Customer-Support,L1 Enterprise,24/7 Global Rotation,enterprise-support-oncall@helixforge.example,Rachel Adams (Support Head),priya.nair@helixforge.example,PD-SVC-CS-01
+Executive-Escalation,L3 Exec,24/7 Global Standby,exec-escalation@helixforge.example,Mara Chen (CEO),mara.chen@helixforge.example,PD-SVC-EX-01

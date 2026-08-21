@@ -1,0 +1,40 @@
+================================================================================
+HELIXFORGE STANDARD OPERATING PROCEDURE: SEC-SOP-208
+TITLE: PROMPT INJECTION, JAILBREAK, AND MODEL VULNERABILITY REPORTING
+OWNER: Elena Voss, CISO (elena.voss@helixforge.example)
+OPERATIONAL LEAD: Zheng Wei, Safety & Benchmarks Lead (zheng.wei@helixforge.example)
+DIVISION: Platform Engineering (CC-1050) / Applied Research (CC-2030)
+EFFECTIVE DATE: February 1, 2026
+================================================================================
+
+1. PURPOSE & SCOPE
+This SOP defines the technical workflow for detecting, triaging, analyzing, and 
+mitigating prompt injection vulnerabilities, jailbreaks, system prompt extractions, 
+and adversarial data poisoning attempts targeting HelixForge model endpoints, 
+agentic runtimes, and customer fine-tuning APIs.
+
+2. CLASSIFICATION OF MODEL SECURITY VULNERABILITIES
+- Tier A (Critical): Direct or indirect prompt injection resulting in arbitrary tool execution, unauthorized retrieval of Restricted/Confidential tenant data, or cross-tenant context leakage.
+- Tier B (High): Reliable bypass of model alignment safety guardrails producing prohibited outputs, or extraction of proprietary system prompt instructions.
+- Tier C (Medium): Partial filter evasion requiring complex multi-turn prompting without data exfiltration or execution capability.
+- Tier D (Low): Inconsistent model hallucinations, general factual errors, or minor style guide deviations.
+
+3. TRIAGE & RESPONSE SLAs
+- Tier A: Triage within 1 hour; hotfix or guardrail patch deployed within 24 hours. PagerDuty alert routes to Platform SecOps and Applied Research on-call.
+- Tier B: Triage within 4 hours; mitigation deployed within 72 hours.
+- Tier C: Triage within 2 business days; backlog remediation in next sprint cycle.
+- Tier D: Reviewed weekly during evaluation benchmarks review.
+
+4. REPORTING & INVESTIGATION WORKFLOW
+Step 4.1: Detection: Vulnerability identified via automated red-teaming harnesses, internal employee reporting, customer ticket, or Bug Bounty submission (see bug_bounty.md).
+Step 4.2: Submission: Reporter files Jira ticket under SEC-VULN project with reproduction payload, target model version, system prompt hash, and observed output.
+Step 4.3: Quarantine & Evaluation: Safety team reproduces payload in isolated sandbox container. Automated regression evaluation run against safety benchmark suite.
+Step 4.4: Patching: Mitigation applied via input guardrail classifier update, system prompt hardening, or direct model weight alignment fine-tune.
+Step 4.5: Customer Disclosure: If vulnerability involved unauthorized access to tenant data, Legal (Clara Dupont) and CISO (Elena Voss) execute customer breach notification within 72 hours per vendor_security.md.
+
+5. RELATED POLICIES & CROSS-LINKS
+- External bug bounty rewards and submission guidelines: bug_bounty.md.
+- Incident response communication and status page posting: status_page_rules.md.
+- Data classification handling: vendor_security.md and privacy_gdpr_requests.md.
+- Applied Research safety cost center: cost_centers.csv (CC-2030).
+================================================================================

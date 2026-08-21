@@ -1,0 +1,10 @@
+contractor_role_family,experience_tier,hourly_rate_usd,daily_rate_usd,dublin_eur_daily,singapore_sgd_daily,primary_cost_center,approval_lead_email
+Distributed Systems Architect,Principal / L7+,195,1560,1450,2100,CC-1010,marcus.vance@helixforge.example
+GPU Kernel Optimization Specialist,Senior / L5-L6,165,1320,1220,1780,CC-1010,marcus.vance@helixforge.example
+ML Safety & Red-Team Specialist,Senior / L5-L6,150,1200,1110,1620,CC-2030,zheng.wei@helixforge.example
+Cloud Infrastructure SRE Consultant,Senior / L5,140,1120,1040,1510,CC-1030,chloe.bennett@helixforge.example
+Full-Stack Frontend / UI Engineer,Mid / L4,110,880,815,1190,CC-3020,diego.morales@helixforge.example
+Technical Documentation Specialist,Senior / L5,95,760,705,1025,CC-4010,priya.nair@helixforge.example
+Tier 2 Support Specialist,Mid / L4,75,600,555,810,CC-3010,rachel.adams@helixforge.example
+Compliance & SOC2 Audit Consultant,Senior / L5-L6,175,1400,1300,1890,CC-4030,clara.dupont@helixforge.example
+RLHF Human Annotation Rater,Entry / L3,35,280,260,380,CC-2030,zheng.wei@helixforge.example

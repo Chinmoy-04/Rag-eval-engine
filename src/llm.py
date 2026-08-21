@@ -4,11 +4,37 @@ from __future__ import annotations
 
 import logging
 
+from tenacity import (
+    retry,
+    retry_if_exception,
+    stop_after_attempt,
+    wait_exponential,
+)
+
 from src.config import AppConfig, configure_litellm_env, get_llm_model_name, load_config
 
 logger = logging.getLogger("rag_eval")
 
 
+def _is_rate_limit(exc: BaseException) -> bool:
+    name = type(exc).__name__.lower()
+    msg = str(exc).lower()
+    return (
+        "ratelimit" in name
+        or "rate limit" in msg
+        or "rate_limit" in msg
+        or "tokens per minute" in msg
+        or "tpm" in msg
+        or "429" in msg
+    )
+
+
+@retry(
+    retry=retry_if_exception(_is_rate_limit),
+    wait=wait_exponential(multiplier=2, min=10, max=90),
+    stop=stop_after_attempt(6),
+    reraise=True,
+)
 def generate_completion(
     messages: list[dict[str, str]],
     config: AppConfig | None = None,

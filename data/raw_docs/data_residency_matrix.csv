@@ -1,0 +1,5 @@
+jurisdiction,region_code,primary_data_center,standby_failover_center,customer_data_classes_permitted,cross_border_transfer_rule,legal_compliance_framework
+United States (US-East/Central),us-central-1,Austin HQ Data Center & AWS us-east-1,AWS us-west-2,Internal;Confidential;Restricted,Allowed to SOC2-certified sub-processors,US CLOUD Act / HIPAA / SOC 2
+European Union (EU-West),eu-west-1,AWS Dublin (eu-west-1),AWS Frankfurt (eu-central-1),Internal;Confidential;Restricted,Strict GDPR adequacy or SCCs required,GDPR / EU AI Act Tier 2
+Singapore & APAC,ap-southeast-1,AWS Singapore (ap-southeast-1),AWS Tokyo (ap-northeast-1),Internal;Confidential;Restricted,Consent or DPA required per PDPA,Singapore PDPA / APEC CBPR
+Global Edge Inference,edge-global,Cloudflare / Anycast PoPs,Regional Origin BGP,Internal;Confidential,Ephemeral in-memory cache only (<5m),ISO 27001 / SOC 2 Type II

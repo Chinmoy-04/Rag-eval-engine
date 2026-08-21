@@ -1,0 +1,39 @@
+================================================================================
+HELIXFORGE STANDARD OPERATING PROCEDURE: SEC-SOP-401
+TITLE: DDOS MITIGATION, CLOUDFLARE WAF, AND API RATE LIMIT ENFORCEMENT
+OWNER: Chloe Bennett, Head of Cloud Infrastructure & SRE (chloe.bennett@helixforge.example)
+DIVISION: Platform Engineering (CC-1030 / CC-1050)
+EFFECTIVE DATE: February 1, 2026
+================================================================================
+
+1. PURPOSE & SCOPE
+This SOP defines the operational procedures for mitigating volumetric DDoS attacks, 
+configuring Cloudflare Web Application Firewall (WAF) rules, and enforcing tiered 
+API rate limits across global inference endpoints.
+
+2. API RATE LIMITING ARCHITECTURE
+HelixForge enforces token bucket rate limiting at the edge API gateway:
+- **Enterprise Tier 1**: 10,000 Requests Per Minute (RPM) | 2,000,000 Tokens Per Minute (TPM).
+- **Enterprise Tier 2**: 5,000 RPM | 1,000,000 TPM.
+- **Standard (Developer)**: 1,200 RPM | 250,000 TPM.
+- **Free / Trial**: 120 RPM | 30,000 TPM.
+(See full rate cards in api_rate_limits_matrix.csv).
+
+3. DDOS ATTACK TIERS & MITIGATION WORKFLOW
+- **Tier 1 Attack (< 50 Gbps / < 100k RPS)**: Automated Cloudflare Anycast mitigation. No engineer intervention required.
+- **Tier 2 Attack (50–250 Gbps / 100k–500k RPS)**: Automated challenge injection (Managed Challenge for unauthenticated traffic). SRE on-call paged if API 5xx error rate exceeds 1.0%.
+- **Tier 3 Attack (> 250 Gbps / > 500k RPS or Layer 7 Zero-Day Flood)**: 
+  Step 3.1: Declare SEV-1 incident immediately per severity_definitions.csv.
+  Step 3.2: Incident Commander enables Cloudflare Under Attack Mode for public endpoints.
+  Step 3.3: Route enterprise customer traffic through isolated dedicated IP ranges.
+  Step 3.4: Status page updated within 15 minutes per status_page_rules.md.
+
+4. BURST OVERAGE & GRACE HANDLING
+- Enterprise customers experiencing legitimate traffic spikes are granted a **150% burst multiplier** for up to 5 consecutive minutes without throttling.
+- If throttling occurs, the API returns HTTP 429 Too Many Requests with headers Retry-After: <seconds> and X-RateLimit-Reset: <timestamp>.
+
+5. RELATED POLICIES & CROSS-LINKS
+- Rate limit tiers and overage pricing: api_rate_limits_matrix.csv.
+- Incident severity and status page posting: severity_definitions.csv and status_page_rules.md.
+- Customer support escalation: customer_support_slas.md.
+================================================================================

@@ -1,0 +1,19 @@
+job_family,level,title,austin_usd_min,austin_usd_mid,austin_usd_max,dublin_eur_mid,singapore_sgd_mid,annual_equity_target_usd
+Software Engineering,L3,Software Engineer I,115000,130000,145000,95000,140000,20000
+Software Engineering,L4,Software Engineer II,145000,165000,185000,120000,180000,45000
+Software Engineering,L5,Senior Software Engineer,185000,210000,240000,155000,230000,85000
+Software Engineering,L6,Staff Software Engineer,240000,275000,315000,200000,300000,140000
+Software Engineering,L7,Principal Software Engineer,310000,350000,395000,255000,380000,220000
+Software Engineering,L8,Distinguished Engineer,390000,440000,500000,320000,480000,350000
+Applied Research,L4,Research Scientist I,155000,175000,195000,130000,190000,55000
+Applied Research,L5,Senior Research Scientist,195000,225000,260000,165000,245000,100000
+Applied Research,L6,Staff Research Scientist,255000,290000,335000,215000,320000,165000
+Applied Research,L7,Principal Research Scientist,325000,370000,420000,270000,400000,260000
+Technical Support,L3,Support Engineer I,80000,92000,105000,68000,100000,10000
+Technical Support,L4,Support Engineer II,105000,120000,135000,88000,130000,25000
+Technical Support,L5,Senior Support Engineer,135000,155000,175000,115000,170000,45000
+Solutions Engineering,L4,Solutions Engineer II,135000,150000,168000,110000,165000,35000
+Solutions Engineering,L5,Senior Solutions Engineer,170000,192000,218000,140000,210000,65000
+People Ops & HR,L4,People Ops Specialist,90000,105000,120000,78000,115000,18000
+People Ops & HR,L5,Senior People Ops Partner,125000,145000,165000,105000,160000,38000
+Finance & Legal,L5,Senior Legal / Financial Analyst,135000,155000,178000,115000,170000,40000

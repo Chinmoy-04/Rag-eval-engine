@@ -1,0 +1,7 @@
+facility_or_cloud_region,region_type,annual_pue_2025,renewable_energy_matching_pct,grid_carbon_intensity_gco2e_per_kwh,primary_power_source,audit_verification_status
+Austin HQ Server Lab & Office,On-Premises HQ,1.18,100%,185,Texas Solar & Wind RECs,Third-Party Audited (ISO 14001)
+AWS us-east-1 (Virginia),Cloud VPC (Inference),1.14,92%,280,Dominion Energy & Solar PPAs,AWS Annual Sustainability Report
+AWS eu-west-1 (Dublin),Cloud VPC (EU Hot-Standby),1.12,100%,120,Irish Wind & Grid Guarantees,AWS Annual Sustainability Report
+AWS ap-southeast-1 (Singapore),Cloud VPC (APAC Standby),1.24,65%,390,Singapore Natural Gas & Regional Solar,AWS Annual Sustainability Report
+GCP us-central1 (Iowa),Cloud TPU / Storage,1.10,100%,95,MidAmerican Wind Energy,Google Cloud Carbon Free Energy 24/7
+CoreWeave us-east (New Jersey),Specialized GPU Cloud,1.21,85%,245,PJM Regional Grid & Hydro RECs,CoreWeave Sustainability Disclosure

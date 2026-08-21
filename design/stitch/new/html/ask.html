@@ -1,0 +1,231 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;background-color:#0b0f14;background-image:linear-gradient(rgba(30,40,51,0.2) 1px,transparent 1px),linear-gradient(90deg,rgba(30,40,51,0.2) 1px,transparent 1px);background-size:24px 24px;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-tint":"#3cddc7","on-secondary":"#27313d","primary":"#57f1db","on-surface":"#e0e2ea","surface-variant":"#31353b","primary-container":"#2dd4bf","on-tertiary":"#670211","primary-fixed-dim":"#3cddc7","error-container":"#93000a","on-secondary-fixed-variant":"#3e4854","on-primary":"#003731","outline-variant":"#3c4a46","surface-container-highest":"#31353b","surface-dim":"#101419","inverse-surface":"#e0e2ea","tertiary":"#ffcfcc","on-error":"#690005","on-error-container":"#ffdad6","surface":"#101419","tertiary-fixed-dim":"#ffb3b0","inverse-primary":"#006b5f","on-primary-fixed-variant":"#005047","on-primary-container":"#00574d","secondary-fixed-dim":"#bdc7d6","surface-bright":"#36393f","on-tertiary-container":"#90242a","secondary":"#bdc7d6","on-tertiary-fixed":"#410006","background":"#101419","surface-container":"#1c2025","on-tertiary-fixed-variant":"#881d24","tertiary-container":"#ffa7a4","outline":"#859490","error":"#ffb4ab","on-surface-variant":"#bacac5","secondary-fixed":"#d9e3f2","primary-fixed":"#62fae3","tertiary-fixed":"#ffdad8","on-secondary-container":"#afb9c8","surface-container-lowest":"#0a0e13","on-secondary-fixed":"#121c27","surface-container-low":"#181c21","secondary-container":"#404a56","inverse-on-surface":"#2d3136","on-primary-fixed":"#00201c","surface-container-high":"#262a30","on-background":"#e0e2ea"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin":"24px","base":"4px","lg":"32px","xs":"8px","md":"20px","sm":"12px","xl":"48px","gutter":"20px"},"fontFamily":{"headline-lg-mobile":["Space Grotesk"],"display-lg":["Space Grotesk"],"body-base":["Space Grotesk"],"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"code-md":["JetBrains Mono"],"label-caps":["JetBrains Mono"],"code-sm":["JetBrains Mono"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"1.2","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}],"body-base":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"1.4","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"1.2","fontWeight":"600"}],"code-md":["14px",{"lineHeight":"1.5","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"700"}],"code-sm":["12px",{"lineHeight":"1.5","fontWeight":"500"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-base text-on-background"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low border-r border-[#1E2833] z-50 flex flex-col pt-lg pb-lg"><div class="px-md mb-xl flex items-center gap-sm"><img alt="HelixForge Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANOQAvp__Dx5Oe4y0u9fz_jRiJtmuVp4WiANPPtavjQaday4ZZkYaQcUzPh9UOsBQHpFozcq7a_AEGsOrgHDFX899ufEzkhvxoUIqGM9z_GliWVgG9QFiAWEOtWnyTuxrBF-05A_xwLUJ8mnUyh2n4mNIEzz_lIP7QkhBd3iwxbQKwS32VBfZ8QbFKLyo0ZE6w67cejUQ4IvjLXXc_owtKiV_Y1Si4XnitjbP_ENk1JMzZdsVPIxvC"/><div class="flex flex-col"><span class="font-headline-md text-headline-md text-on-surface tracking-tight leading-none">HelixForge</span><span class="font-label-caps text-label-caps text-primary uppercase mt-1 tracking-widest">RAG Eval</span></div></div><nav class="flex-1 px-sm space-y-base" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-[0_0_10px_rgba(45,212,191,0.15)]"><a aria-current="page" class="flex items-center px-md py-sm rounded-lg transition-all group bg-primary-container text-on-primary-container font-bold shadow-[0_0_10px_rgba(45,212,191,0.15)]" data-path="ask" href="#"><span class="material-symbols-outlined mr-sm text-[20px] group-hover:text-primary">chat_bubble</span><span class="font-body-base">Ask</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="runs" href="#"><span class="material-symbols-outlined mr-sm text-[20px] group-hover:text-primary">rocket_launch</span><span class="font-body-base">Runs</span></a><a class="flex items-center px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="compare" href="#"><span class="material-symbols-outlined mr-sm text-[20px] group-hover:text-primary">compare_arrows</span><span class="font-body-base">Compare</span></a></nav><div class="px-md pt-lg border-t border-[#1E2833]"><div class="flex items-center gap-sm p-sm rounded-xl bg-surface-container-lowest border border-[#1E2833]"><img alt="Profile" class="w-10 h-10 rounded-full border border-primary/20 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOVGlxtNm0OaBPBgM_lCIa0wkWqmOggxIRaiiuEkbeMSwxUMgYLC4__grpqkrpd0n_uxQhhw7MgUHHcZZpcIN1TFRflN1Kj3gZAKdGzeD1WGjxyGEvniZfanfZetK4Boodf1Uu3zl53AghOTNI_Ek_MKbkRre9Nu56fefvAJerASz29fbT5_Dc6e0abHlVI3YvWSiIxA3h7HtjTfUUYKenULWlwLG0L_L0F8X2of3DYUrXbPekOKXa"/><div class="flex flex-col overflow-hidden"><span class="text-sm font-medium text-on-surface truncate">Engineer</span><span class="text-xs text-on-surface-variant truncate">v2.4.0-stable</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-background/60 backdrop-blur-md border-b border-[#1E2833] z-40 flex items-center justify-end px-lg gap-md"><div class="flex items-center bg-surface-container-low px-sm py-xs rounded border border-[#1E2833] group focus-within:border-primary transition-colors"><span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-xs">search</span><input class="bg-transparent border-none outline-none text-code-sm font-code-sm text-on-surface w-48 placeholder:text-outline" placeholder="Search traces..." type="text"/></div><button class="p-xs rounded-lg hover:bg-surface-container-high transition-colors relative"><span class="material-symbols-outlined text-on-surface-variant">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-primary rounded-full ring-2 ring-background"></span></button><button class="p-xs rounded-lg hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-on-surface-variant">settings</span></button></header><main class="relative pt-16 min-h-screen bg-background/10"><div class="flex flex-col w-full h-[calc(100vh-64px)] overflow-hidden bg-background relative">
+<div class="absolute inset-0 opacity-[0.02] mix-blend-overlay pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+<div class="flex flex-1 overflow-hidden relative z-10">
+<!-- Left Rail -->
+<aside class="w-80 flex flex-col bg-surface-container/50 backdrop-blur-sm shadow-[4px_0_24px_rgba(0,0,0,0.2)] z-20 overflow-y-auto">
+<div class="p-lg space-y-xl">
+<!-- Pipeline Selection -->
+<section class="space-y-sm">
+<h3 class="font-label-caps text-label-caps text-outline uppercase tracking-widest">Target Pipeline</h3>
+<div class="flex flex-col gap-xs">
+<button class="flex items-center justify-between p-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest transition-colors group">
+<div class="flex items-center gap-sm">
+<div class="w-2 h-2 rounded-full bg-outline group-hover:bg-primary-fixed transition-colors"></div>
+<span class="font-body-base text-body-base text-on-surface-variant group-hover:text-on-surface">Baseline RAG</span>
+</div>
+</button>
+<button class="flex items-center justify-between p-sm rounded-lg bg-surface-container-high hover:bg-surface-container-highest transition-colors group">
+<div class="flex items-center gap-sm">
+<div class="w-2 h-2 rounded-full bg-error group-hover:bg-error-container transition-colors"></div>
+<span class="font-body-base text-body-base text-on-surface-variant group-hover:text-on-surface">Degraded Vectors</span>
+</div>
+</button>
+<button class="flex items-center justify-between p-sm rounded-lg bg-primary/10 shadow-[inset_2px_0_0_var(--color-primary)] transition-all group">
+<div class="flex items-center gap-sm">
+<div class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_var(--color-primary)]"></div>
+<span class="font-body-base text-body-base text-primary font-medium">Optimized v2.4</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+</button>
+</div>
+</section>
+<!-- Configuration Toggles -->
+<section class="space-y-sm">
+<h3 class="font-label-caps text-label-caps text-outline uppercase tracking-widest">Evaluation View</h3>
+<div class="flex items-center justify-between p-sm rounded-lg bg-surface-container-low shadow-sm">
+<span class="font-body-base text-body-base text-on-surface">Show retrieved chunks</span>
+<button class="w-10 h-5 rounded-full bg-primary relative transition-colors shadow-[0_0_12px_rgba(45,212,191,0.2)]" id="toggle-chunks">
+<div class="absolute top-0.5 left-[22px] w-4 h-4 rounded-full bg-on-primary shadow-sm transition-transform duration-300"></div>
+</button>
+</div>
+</section>
+<!-- Models -->
+<section class="space-y-sm">
+<h3 class="font-label-caps text-label-caps text-outline uppercase tracking-widest">Active Models</h3>
+<div class="flex flex-wrap gap-xs">
+<div class="flex items-center gap-xs px-sm py-1.5 rounded-full bg-surface-container-highest shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">memory</span>
+<span class="font-code-sm text-code-sm text-on-surface">GPT-4o</span>
+</div>
+<div class="flex items-center gap-xs px-sm py-1.5 rounded-full bg-surface-container-highest shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">data_object</span>
+<span class="font-code-sm text-code-sm text-on-surface">Ada-002</span>
+</div>
+</div>
+</section>
+<!-- Index Health -->
+<section class="p-sm rounded-xl bg-surface-container-low shadow-md relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 w-16 h-16 bg-primary/5 rounded-full blur-xl group-hover:bg-primary/10 transition-colors duration-500"></div>
+<h3 class="font-label-caps text-label-caps text-outline uppercase tracking-widest mb-xs">Index Health</h3>
+<div class="flex items-baseline gap-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">142</span>
+<span class="font-body-base text-body-base text-on-surface-variant">vectors</span>
+</div>
+<div class="mt-xs w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[85%] rounded-full shadow-[0_0_8px_var(--color-primary)]"></div>
+</div>
+</section>
+<!-- Suggested Tests -->
+<section class="space-y-sm pt-md border-t border-surface-container-highest">
+<h3 class="font-label-caps text-label-caps text-outline uppercase tracking-widest">Suggested Tests</h3>
+<div class="flex flex-col gap-xs">
+<button class="text-left p-sm rounded-lg bg-transparent hover:bg-surface-container-low transition-colors group">
+<span class="block font-body-base text-body-base text-on-surface-variant group-hover:text-on-surface">Simple Fact Retrieval</span>
+<span class="block font-code-sm text-code-sm text-outline mt-1 truncate group-hover:text-on-surface-variant transition-colors">"What is the Q3 revenue?"</span>
+</button>
+<button class="text-left p-sm rounded-lg bg-transparent hover:bg-surface-container-low transition-colors group">
+<span class="block font-body-base text-body-base text-on-surface-variant group-hover:text-on-surface">Multi-hop Reasoning</span>
+<span class="block font-code-sm text-code-sm text-outline mt-1 truncate group-hover:text-on-surface-variant transition-colors">"Compare CEO statements 2022 vs 2023"</span>
+</button>
+</div>
+</section>
+</div>
+</aside>
+<!-- Main Chat Area -->
+<main class="flex-1 flex flex-col relative bg-surface-container-lowest/50">
+<!-- Chat Transcript -->
+<div class="flex-1 overflow-y-auto px-lg py-xl pb-32 space-y-xl" id="chat-container">
+<!-- User Message -->
+<div class="flex justify-end w-full max-w-4xl mx-auto">
+<div class="max-w-[75%] bg-surface-container-highest text-on-surface p-md rounded-2xl rounded-tr-sm shadow-md">
+<p class="font-body-base text-body-base">What is the policy for severe weather travel?</p>
+</div>
+</div>
+<!-- Assistant Message -->
+<div class="flex justify-start w-full max-w-4xl mx-auto">
+<div class="flex gap-md max-w-[90%]">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 shadow-[0_0_12px_rgba(45,212,191,0.1)]">
+<span class="material-symbols-outlined text-[18px] text-primary">smart_toy</span>
+</div>
+<div class="flex flex-col gap-sm w-full">
+<!-- Content -->
+<div class="bg-surface-container-low text-on-surface p-lg rounded-2xl rounded-tl-sm shadow-lg">
+<p class="font-body-base text-body-base mb-md">According to the revised <span class="text-primary-fixed bg-primary/10 px-1 rounded font-code-sm text-code-sm">policy_v2.pdf</span>, travel reimbursements during severe weather events are governed by the following guidelines:</p>
+<ul class="list-disc list-outside ml-sm space-y-sm font-body-base text-body-base text-on-surface-variant">
+<li><strong class="text-on-surface font-medium">Rebooking Fees:</strong> Covered up to $250 if the delay exceeds 4 hours due to declared severe weather.</li>
+<li><strong class="text-on-surface font-medium">Accommodation:</strong> If stranded overnight, hotel stays are reimbursed up to the local per diem rate + 20% surge allowance.</li>
+<li><strong class="text-on-surface font-medium">Documentation:</strong> Employees must attach the airline weather delay notice alongside standard receipts.</li>
+</ul>
+<p class="font-body-base text-body-base mt-md">Please consult the <span class="text-secondary-fixed bg-secondary/10 px-1 rounded font-code-sm text-code-sm">severity_definitions.csv</span> to confirm if your specific weather event qualifies as 'Severe' (Level 3 or higher).</p>
+</div>
+<!-- Metadata Row -->
+<div class="flex flex-wrap items-center gap-sm font-code-sm text-code-sm text-outline px-sm">
+<div class="flex items-center gap-xs text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>pipeline: 'optimized'</span>
+</div>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>latency: 1.2s</span>
+</div>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[14px]">description</span>
+<span>sources: [policy_v2.pdf], [severity_definitions.csv]</span>
+</div>
+</div>
+<!-- Retrieved Context Accordion -->
+<div class="mt-sm bg-surface-container-lowest rounded-xl shadow-inner overflow-hidden border-none" id="context-accordion">
+<button class="w-full flex items-center justify-between p-sm hover:bg-surface-container-high transition-colors group" onclick="document.getElementById('context-content').classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180')">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">data_check</span>
+<span class="font-code-sm text-code-sm font-medium text-on-surface-variant group-hover:text-on-surface transition-colors">Retrieved context (3 chunks)</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-outline chevron transition-transform duration-300">expand_more</span>
+</button>
+<div class="p-sm bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPjxyZWN0IHdpZHRoPSI0IiBoZWlnaHQ9IjQiIGZpbGw9IiMxMDE0MTkiLz48cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjMUUyODMzIi8+PC9zdmc+')]" id="context-content">
+<div class="space-y-sm">
+<!-- Chunk 1 -->
+<div class="flex gap-sm p-sm rounded-lg bg-surface-container-low shadow-sm">
+<div class="font-code-md text-code-md text-outline font-bold opacity-50 select-none pt-1">01</div>
+<div class="flex-1 overflow-x-auto">
+<div class="flex justify-between items-center mb-xs">
+<span class="font-code-sm text-code-sm text-primary-fixed-dim bg-primary/5 px-2 py-0.5 rounded">policy_v2.pdf</span>
+<span class="font-code-sm text-code-sm text-outline">score: 0.92</span>
+</div>
+<pre class="font-code-sm text-code-sm text-on-surface-variant whitespace-pre-wrap leading-relaxed">...travel disruptions caused by declared severe weather events. In such cases, rebooking fees are covered up to $250 max per trip, provided the delay exceeds 4 hours. Hotel accommodations for forced overnight stays...</pre>
+</div>
+</div>
+<!-- Chunk 2 -->
+<div class="flex gap-sm p-sm rounded-lg bg-surface-container-low shadow-sm">
+<div class="font-code-md text-code-md text-outline font-bold opacity-50 select-none pt-1">02</div>
+<div class="flex-1 overflow-x-auto">
+<div class="flex justify-between items-center mb-xs">
+<span class="font-code-sm text-code-sm text-primary-fixed-dim bg-primary/5 px-2 py-0.5 rounded">policy_v2.pdf</span>
+<span class="font-code-sm text-code-sm text-outline">score: 0.88</span>
+</div>
+<pre class="font-code-sm text-code-sm text-on-surface-variant whitespace-pre-wrap leading-relaxed">...reimbursed up to the local per diem rate plus a 20% surge allowance. Employees must attach the airline weather delay notice alongside standard receipts for expense approval...</pre>
+</div>
+</div>
+<!-- Chunk 3 -->
+<div class="flex gap-sm p-sm rounded-lg bg-surface-container-low shadow-sm">
+<div class="font-code-md text-code-md text-outline font-bold opacity-50 select-none pt-1">03</div>
+<div class="flex-1 overflow-x-auto">
+<div class="flex justify-between items-center mb-xs">
+<span class="font-code-sm text-code-sm text-secondary-fixed-dim bg-secondary/5 px-2 py-0.5 rounded">severity_definitions.csv</span>
+<span class="font-code-sm text-code-sm text-outline">score: 0.76</span>
+</div>
+<pre class="font-code-sm text-code-sm text-on-surface-variant whitespace-pre-wrap leading-relaxed">Level,Name,Description,Reimbursement_Multiplier
+1,Advisory,Minor delays,1.0
+2,Watch,Moderate disruption,1.0
+3,Severe,Significant delays/cancellations,1.2
+4,Extreme,Airport closures/state of emergency,1.5</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Composer Input -->
+<div class="absolute bottom-0 left-0 right-0 p-lg bg-gradient-to-t from-background via-background/90 to-transparent pt-xl backdrop-blur-sm z-30">
+<div class="max-w-4xl mx-auto relative group shadow-xl">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-primary/20 via-primary/5 to-transparent rounded-2xl blur opacity-75 group-focus-within:opacity-100 transition duration-500"></div>
+<div class="relative flex items-end gap-sm bg-surface-container rounded-xl p-xs border-none ring-1 ring-surface-container-highest group-focus-within:ring-primary/50 transition-shadow">
+<button class="p-sm text-outline hover:text-primary transition-colors h-12 flex items-center justify-center rounded-lg hover:bg-surface-container-high shrink-0">
+<span class="material-symbols-outlined text-[20px]">attach_file</span>
+</button>
+<textarea class="flex-1 max-h-32 min-h-[48px] bg-transparent border-none outline-none font-body-base text-body-base text-on-surface placeholder:text-outline-variant resize-none py-sm leading-relaxed" oninput="this.style.height = ''; this.style.height = Math.min(this.scrollHeight, 128) + 'px'" placeholder="Ask a question about your documents..." rows="1"></textarea>
+<button class="bg-primary text-on-primary h-10 px-md rounded-lg font-headline-md text-headline-md shadow-[0_0_16px_rgba(45,212,191,0.3)] hover:shadow-[0_0_24px_rgba(45,212,191,0.5)] hover:bg-primary-fixed transition-all shrink-0 flex items-center gap-xs mb-1 mr-1">
+<span>Send</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+<div class="mt-xs text-center font-code-sm text-code-sm text-outline">
+            Press <kbd class="px-1.5 py-0.5 rounded bg-surface-container-high border border-surface-container-highest text-on-surface-variant">Enter</kbd> to send, <kbd class="px-1.5 py-0.5 rounded bg-surface-container-high border border-surface-container-highest text-on-surface-variant">Shift + Enter</kbd> for new line
+          </div>
+</div>
+</div>
+</main>
+</div>
+</div>
+<script>
+  // Simple toggle visual logic
+  document.getElementById('toggle-chunks').addEventListener('click', function() {
+    const thumb = this.querySelector('div');
+    const isActive = this.classList.contains('bg-primary');
+    
+    if (isActive) {
+      this.classList.remove('bg-primary', 'shadow-[0_0_12px_rgba(45,212,191,0.2)]');
+      this.classList.add('bg-surface-container-highest');
+      thumb.style.transform = 'translateX(-20px)';
+      thumb.classList.remove('bg-on-primary');
+      thumb.classList.add('bg-outline');
+    } else {
+      this.classList.add('bg-primary', 'shadow-[0_0_12px_rgba(45,212,191,0.2)]');
+      this.classList.remove('bg-surface-container-highest');
+      thumb.style.transform = 'translateX(0)';
+      thumb.classList.add('bg-on-primary');
+      thumb.classList.remove('bg-outline');
+    }
+  });
+
+  // Auto-scroll chat to bottom on load
+  const chatContainer = document.getElementById('chat-container');
+  chatContainer.scrollTop = chatContainer.scrollHeight;
+</script></main></div></body></html>

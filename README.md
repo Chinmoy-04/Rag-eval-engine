@@ -43,3 +43,23 @@ uv run python -m src.cli serve
 ```
 
 Opens a chat UI at http://localhost:8501 with suggested HelixForge questions, sources, latency, and retrieved chunks. Eval comparison charts still come in Phase 9 (after storage + Ragas).
+
+## Phase 4 — Storage (SQLite)
+
+```bash
+uv run python -m src.cli init-db
+```
+
+Creates `data/rag_eval.db` with `runs`, `test_items`, and `eval_results`, then inserts and deletes a smoke row to prove the schema works.
+
+## Phase 5 — Synthetic test set (Ragas)
+
+```bash
+# Start small while debugging (uses Groq + local embeddings; caches to data/testsets/)
+uv run python -m src.cli generate-testset --n 10
+
+# Force a fresh generation (ignore cache)
+uv run python -m src.cli generate-testset --n 10 --force
+```
+
+Writes `TestItem` rows for a new `Run`, mixes simple / multi-hop synthesizers, and adds a couple of handcrafted abstain questions. Re-runs with the same corpus fingerprint reload from JSON cache (no extra API calls).

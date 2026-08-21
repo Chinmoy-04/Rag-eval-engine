@@ -1,0 +1,101 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#005047","on-tertiary-fixed-variant":"#3e4854","surface-variant":"#31353b","surface-container-lowest":"#0a0e13","background":"#101419","outline":"#859490","tertiary-fixed-dim":"#bdc7d6","inverse-on-surface":"#2d3136","primary":"#57f1db","on-tertiary":"#27313d","on-tertiary-fixed":"#121c27","on-tertiary-container":"#444e5a","on-background":"#e0e2ea","on-primary-fixed":"#00201c","surface-container-low":"#181c21","error":"#ffb4ab","inverse-primary":"#006b5f","secondary":"#c1c7d1","on-surface":"#e0e2ea","on-error":"#690005","on-surface-variant":"#bacac5","primary-fixed":"#62fae3","surface-tint":"#3cddc7","on-secondary-fixed":"#161c23","outline-variant":"#3c4a46","inverse-surface":"#e0e2ea","on-secondary":"#2b3139","primary-fixed-dim":"#3cddc7","surface-container-highest":"#31353b","tertiary":"#d0dbea","surface":"#101419","on-error-container":"#ffdad6","secondary-fixed":"#dde3ed","surface-container-high":"#262a30","on-secondary-fixed-variant":"#41474f","on-secondary-container":"#b3b9c2","surface-bright":"#36393f","on-primary-container":"#00574d","primary-container":"#2dd4bf","surface-dim":"#101419","tertiary-container":"#b5bfce","secondary-fixed-dim":"#c1c7d1","error-container":"#93000a","tertiary-fixed":"#d9e3f2","surface-container":"#1c2025","secondary-container":"#444a52","on-primary":"#003731"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"sm":"8px","xs":"4px","lg":"24px","unit":"4px","gutter":"20px","md":"16px","xl":"40px","container-max":"1440px"},"fontFamily":{"headline-lg":["Geist"],"headline-md":["Geist"],"body-lg":["Geist"],"headline-sm":["Geist"],"label-caps":["JetBrains Mono"],"code-md":["JetBrains Mono"],"body-md":["Geist"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"1.2","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"1.3","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"1.4","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"1.2","letterSpacing":"0.05em","fontWeight":"500"}],"code-md":["13px",{"lineHeight":"1.5","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"1.5","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface-dim font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest border-r border-outline-variant/30 flex flex-col z-50 transition-all duration-300"><div class="p-lg flex items-center gap-sm mb-xl"><img alt="Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNjWXeN2yOGxpe6XCQ_GyKZIK7T1UTWJa5Y8LbkPk4lvxe1wGNfMtaViaUUC4y-wiYW5mX6lTKWH4BD084UDr_WzK0Kf8oo14wmAlQAsvcpcpVLO28t427TvPc2dyKKsmo2CjpxNSS-1oOz7AkaQ8ONRYuQFDdmn4hOsLHcDm5RadchPw37sQZSmWdfK-QyExu8rOAxlH9IUgx4aMAXXTvxuSFqby4bYTa41HMnCf8JRlOOm4Tka9bSA"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">RAG Eval</span></div><nav class="flex-1 flex flex-col gap-xs px-md" data-active-classes="bg-primary-container text-on-primary-container font-medium"><a aria-current="page" class="flex items-center gap-md px-md py-sm rounded-xl transition-all duration-200 group bg-primary-container text-on-primary-container font-medium" data-path="ask" href="#"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">chat_bubble</span><span class="font-body-md">Ask</span></a><a class="flex items-center gap-md px-md py-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200 group" data-path="runs" href="#"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">monitoring</span><span class="font-body-md">Runs</span></a><a class="flex items-center gap-md px-md py-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-200 group" data-path="compare" href="#"><span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">view_column</span><span class="font-body-md">Compare</span></a></nav><div class="mt-auto p-md"><div class="flex items-center gap-sm p-sm rounded-xl bg-surface-container-low border border-outline-variant/20"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col overflow-hidden"><span class="text-label-caps text-on-surface truncate font-bold">AI Engineer</span><span class="text-[10px] text-on-surface-variant uppercase tracking-widest">HelixForge v1.0</span></div></div></div></aside><div class="pl-72 min-h-screen flex flex-col"><header class="sticky top-0 h-16 w-full bg-surface-dim/80 backdrop-blur-xl z-40 border-b border-outline-variant/10"><div class="h-full w-full px-lg flex items-center justify-end gap-lg"><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-sm text-outline">search</span><input class="w-full bg-surface-container-low border border-outline-variant/30 rounded-full py-xs pl-xl pr-md text-body-md focus:outline-none focus:border-primary/50 transition-colors" placeholder="Search evaluations..." type="text"/></div></div><div class="flex items-center gap-md"><button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-all"><span class="material-symbols-outlined">notifications</span></button><button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-full transition-all"><span class="material-symbols-outlined">settings</span></button></div></div></header><main class="flex-1 relative pt-16 bg-surface-dim px-lg pb-xl mx-auto w-full max-w-container-max"><div class="flex flex-col w-full h-full pb-20 relative bg-surface-dim">
+<div class="flex-1 overflow-y-auto px-md py-lg flex flex-col gap-lg">
+<!-- AI Greeting -->
+<div class="flex flex-col gap-xs max-w-[85%] self-start animate-fade-in-up">
+<div class="flex items-center gap-xs mb-xs">
+<div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[14px]">smart_toy</span>
+</div>
+<span class="text-label-caps text-on-surface-variant font-bold">HelixForge</span>
+</div>
+<div class="p-md rounded-2xl rounded-tl-sm bg-surface-container shadow-sm border border-outline-variant/30 text-body-md text-on-surface">
+<p>Hello. I'm ready to evaluate your queries against the loaded knowledge base. What would you like to ask?</p>
+</div>
+<span class="text-[10px] text-on-surface-variant/50 ml-1">10:42 AM</span>
+</div>
+<!-- User Message -->
+<div class="flex flex-col gap-xs max-w-[85%] self-end animate-fade-in-up" style="animation-delay: 150ms;">
+<div class="flex items-center justify-end gap-xs mb-xs">
+<span class="text-label-caps text-on-surface-variant font-bold">You</span>
+</div>
+<div class="p-md rounded-2xl rounded-tr-sm bg-primary-container text-on-primary-container shadow-md text-body-md">
+<p>What is the recommended retry strategy for the payment gateway API?</p>
+</div>
+<span class="text-[10px] text-on-surface-variant/50 mr-1 self-end">10:45 AM</span>
+</div>
+<!-- AI Response with Metrics -->
+<div class="flex flex-col gap-xs max-w-[90%] self-start animate-fade-in-up" style="animation-delay: 300ms;">
+<div class="flex items-center gap-xs mb-xs">
+<div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[14px]">smart_toy</span>
+</div>
+<span class="text-label-caps text-on-surface-variant font-bold">HelixForge</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-[10px] font-code-md text-on-surface-variant flex items-center gap-1 border border-outline-variant/50">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                    Eval Mode
+                </span>
+</div>
+<div class="p-md rounded-2xl rounded-tl-sm bg-surface-container shadow-sm border border-outline-variant/30 text-body-md text-on-surface flex flex-col gap-md">
+<p>The recommended retry strategy for the payment gateway API is an exponential backoff with jitter.</p>
+<!-- Evaluation Metrics Snippet -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant/20 p-sm flex flex-col gap-sm">
+<div class="flex items-center justify-between cursor-pointer" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.expand-icon').classList.toggle('rotate-180')">
+<span class="text-label-caps text-on-surface-variant">Eval Metrics (Context RAG)</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] transition-transform duration-200 expand-icon">expand_more</span>
+</div>
+<div class="hidden flex flex-col gap-xs pt-xs border-t border-outline-variant/20">
+<div class="flex items-center justify-between">
+<span class="text-xs text-on-surface-variant font-code-md">Relevance</span>
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-variant rounded-full overflow-hidden"><div class="h-full bg-primary w-[95%]"></div></div>
+<span class="text-xs text-primary font-code-md">0.95</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-xs text-on-surface-variant font-code-md">Faithfulness</span>
+<div class="flex items-center gap-2">
+<div class="w-16 h-1.5 bg-surface-variant rounded-full overflow-hidden"><div class="h-full bg-primary w-[92%]"></div></div>
+<span class="text-xs text-primary font-code-md">0.92</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-1">
+<span class="text-xs text-on-surface-variant font-code-md">Latency</span>
+<span class="text-xs text-on-surface font-code-md">1.24s</span>
+</div>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant">Sources retrieved: 3 documents. Primary match: `gateway_v2_docs.md`.</p>
+</div>
+<span class="text-[10px] text-on-surface-variant/50 ml-1">10:45 AM</span>
+</div>
+</div>
+<!-- Pinned Composer -->
+<div class="fixed bottom-0 left-0 right-0 p-md bg-surface-dim/95 backdrop-blur-md border-t border-outline-variant/20 z-10 pb-[calc(1rem+env(safe-area-inset-bottom))] lg:pl-[19rem] lg:pr-lg">
+<div class="flex items-end gap-sm bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-xs focus-within:border-primary/50 transition-colors shadow-lg">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+</button>
+<textarea class="w-full bg-transparent text-body-md text-on-surface placeholder:text-on-surface-variant/50 resize-none py-sm focus:outline-none max-h-32 min-h-[40px] font-body-md" oninput="this.style.height = ''; this.style.height = this.scrollHeight + 'px'" placeholder="Ask or evaluate a query..." rows="1"></textarea>
+<button class="p-2 bg-primary text-on-primary rounded-xl hover:bg-primary-fixed transition-colors flex-shrink-0 shadow-[0_0_15px_rgba(45,212,191,0.2)]">
+<span class="material-symbols-outlined text-[20px] ml-0.5">send</span>
+</button>
+</div>
+</div>
+</div>
+<style>
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+    animation: fadeInUp 0.4s ease-out forwards;
+    opacity: 0;
+}
+</style></main></div></body></html>

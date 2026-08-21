@@ -1,0 +1,5 @@
+evaluation_pillar,competency_area,score_1_unacceptable,score_2_needs_growth,score_3_meets_bar,score_4_exceeds_bar,weight_percentage,evaluator_role
+Technical Depth,Distributed Systems & PyTorch,Fails basic threading/memory concepts,Solves problem with significant hints,Clean idiomatic implementation with test coverage,Optimal distributed architecture with edge-case handling,35%,Domain Specialist L5+
+System Architecture,Scalability & RPO/RTO Design,Cannot reason about failure modes,Basic monolithic design lacking failover,Modular multi-region design adhering to SLAs,Novel zero-downtime architecture with cost optimization,25%,Senior Engineer / Lead L6+
+Execution & Velocity,Problem Solving & Code Hygiene,Messy unstructured code with syntax bugs,Slow progress requires prompting,Delivers functional tested solution in time limit,Rapid high-velocity delivery with elegant structure,20%,Live Sandbox Interviewer
+Culture & Values,Blameless Comms & Mentorship,Defensive blame-shifting demeanor,Passive communication style,Strong collaborative mindset and async focus,Elevates teammates demonstrates servant leadership,20%,Bar Raiser / People Ops

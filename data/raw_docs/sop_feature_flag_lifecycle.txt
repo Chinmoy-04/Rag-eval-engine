@@ -1,0 +1,41 @@
+================================================================================
+HELIXFORGE STANDARD OPERATING PROCEDURE: ENG-SOP-204
+TITLE: FEATURE FLAG LIFECYCLE, CANARY ROLLOUTS, AND STALE FLAG CLEANUP
+OWNER: Marcus Vance, Head of Core Compute (marcus.vance@helixforge.example)
+DIVISION: Platform Engineering (CC-1010)
+EFFECTIVE DATE: February 1, 2026
+================================================================================
+
+1. PURPOSE & SCOPE
+This SOP defines the technical governance for creating, evaluating, ramping, 
+and removing dynamic runtime feature flags across HelixForge model serving 
+clusters, API gateways, and customer web consoles.
+
+2. FLAG NAMING & TAXONOMY
+All feature flags managed in Unleash / LaunchDarkly must follow strict naming:
+- 
+elease.<component>.<feature_name>: Temporary gating for new software features.
+- experiment.<team>.<hypothesis_id>: Short-term A/B test or model routing trial.
+- ops.<subsystem>.<killswitch_name>: Permanent operational circuit breakers / degrade switches.
+- permission.<tier>.<entitlement>: Customer subscription tier gating (Enterprise vs Standard).
+
+3. CANARY ROLLOUT PROGRESSION SCHEDULE
+Step 3.1: Internal Dogfooding (0% external / 100% employee accounts): 48-hour soak test.
+Step 3.2: Canary Tier (1% production traffic): Evaluate Datadog APM error rates and P99 latency for 2 hours.
+Step 3.3: Progressive Ramp (5% -> 25% -> 50% -> 100%): 24-hour interval between increments.
+Step 3.4: Automated Rollback Trigger: If flag ramp causes > 0.5% increase in API 5xx errors or > 10% latency surge, automated rollback to 0% executes within 60 seconds.
+
+4. MANDATORY 30-DAY STALE FLAG CLEANUP SLA
+- Release and experiment flags have a maximum lifespan of **30 days** post 100% rollout.
+- The owning engineer is assigned a Jira cleanup ticket upon reaching 100% ramp.
+- Flags remaining in codebase > 45 days are escalated to Marcus Vance; new feature merges are blocked until stale flag removal PR is merged.
+
+5. EMERGENCY CIRCUIT BREAKERS (OPS FLAGS)
+- Operational killswitches (e.g. ops.inference.disable_speculative_decoding) can be flipped immediately by the primary on-call engineer during SEV-1/SEV-2 incidents without prior PR review.
+- Flip event must be recorded in the active incident war room channel (#inc-<id>).
+
+6. RELATED POLICIES & CROSS-LINKS
+- Severity definitions and incident escalation: severity_definitions.csv and status_page_rules.md.
+- Platform Engineering cost center: cost_centers.csv (CC-1010).
+- Leveling rubric and PR review expectations: leveling_rubric.md.
+================================================================================
