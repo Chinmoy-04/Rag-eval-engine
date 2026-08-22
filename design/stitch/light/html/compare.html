@@ -1,0 +1,187 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.grid-bg{background-image:linear-gradient(to right,rgba(15,23,42,0.04) 1px,transparent 1px),linear-gradient(to bottom,rgba(15,23,42,0.04) 1px,transparent 1px);background-size:24px 24px;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary":"#00685f","on-background":"#131b2e","hf-chip":"#E2E8F0","on-surface":"#131b2e","on-secondary-fixed-variant":"#005047","hf-border":"#E2E8F0","hf-teal-dim":"rgba(13, 148, 136, 0.1)","surface":"#faf8ff","on-error-container":"#93000a","secondary-fixed-dim":"#3cddc7","grid-line":"rgba(15, 23, 42, 0.06)","background":"#faf8ff","on-surface-variant":"#3d4947","secondary":"#006b5f","surface-container-high":"#e2e7ff","surface-container-lowest":"#ffffff","hf-rail":"#F1F5F9","on-primary-container":"#f4fffc","surface-bright":"#faf8ff","outline":"#6d7a77","error":"#ba1a1a","on-tertiary-container":"#fffbff","on-primary-fixed-variant":"#005049","secondary-container":"#62fae3","surface-variant":"#dae2fd","hf-panel":"#FFFFFF","on-secondary-fixed":"#00201c","on-tertiary":"#ffffff","surface-tint":"#006a61","on-error":"#ffffff","hf-elevated":"#F1F5F9","error-container":"#ffdad6","surface-dim":"#d2d9f4","hf-muted":"#64748B","on-secondary":"#ffffff","hf-text":"#0F172A","on-primary":"#ffffff","primary-fixed-dim":"#6bd8cb","on-tertiary-fixed":"#370e00","on-secondary-container":"#007165","inverse-surface":"#283044","surface-container":"#eaedff","secondary-fixed":"#62fae3","hf-bg":"#F8FAFC","inverse-primary":"#6bd8cb","tertiary-container":"#b05e3d","tertiary":"#924628","primary-fixed":"#89f5e7","surface-container-highest":"#dae2fd","primary-container":"#008378","surface-container-low":"#f2f3ff","on-primary-fixed":"#00201d","outline-variant":"#bcc9c6","on-tertiary-fixed-variant":"#773215"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"stack-sm":"8px","grid-unit":"24px","margin-page":"32px","gutter-panel":"24px","stack-md":"16px"},"fontFamily":{"headline-lg":["Space Grotesk"],"code-md":["JetBrains Mono"],"headline-md":["Space Grotesk"],"headline-sm":["Space Grotesk"],"body-lg":["Space Grotesk"],"label-md":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"body-md":["Space Grotesk"],"body-sm":["Space Grotesk"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"code-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.18em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.22em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-hf-bg font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-[256px] bg-hf-panel border-r border-hf-border z-50 flex flex-col"><div class="p-6 flex flex-col gap-4"><img alt="Logo" class="h-8 w-auto self-start object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6kwka2BrKxIO7jVfM6pPQyb5H9EMpBllqFln6vxcQ1oWByKLUv1iCQwVjw_0Y1hYxXEtmTceGRarSlY6CurTo8YkMWMfaQ2ZrzmHqTZhmqg-aJVa904-YSmL5YWhvJo4jlqCcSGBxFNGcsLrgHMQflL1NZJHI1qw5H7u7Sf5cR3x9hzO1gI0El6GUvDscSLXkTa-ivaZF0WdGUmmk0I6ItQyq8i0VEp6k0ILEV-0SEX30TdNOD4Cl"/><div class="font-label-md text-primary tracking-widest uppercase">RAG EVAL</div></div><nav class="flex-1 mt-4" data-active-classes="bg-hf-teal-dim border-l-2 border-primary text-hf-text"><a class="group flex items-center px-6 py-3 text-hf-muted hover:bg-hf-bg hover:text-hf-text transition-all" data-path="ask" href="#"><span class="material-symbols-outlined mr-3">chat_bubble</span><span class="font-body-md font-medium">Ask</span></a><a class="group flex items-center px-6 py-3 text-hf-muted hover:bg-hf-bg hover:text-hf-text transition-all" data-path="runs" href="#"><span class="material-symbols-outlined mr-3">play_circle</span><span class="font-body-md font-medium">Runs</span></a><a aria-current="page" class="group flex items-center px-6 py-3 transition-all bg-hf-teal-dim border-l-2 border-primary text-hf-text" data-path="compare" href="#"><span class="material-symbols-outlined mr-3">compare_arrows</span><span class="font-body-md font-medium">Compare</span></a></nav></aside><div class="pl-[256px]"><header class="fixed top-0 left-[256px] right-0 h-14 bg-hf-panel/80 backdrop-blur-md border-b border-hf-border z-40 flex items-center justify-between px-8"><span class="text-hf-muted font-body-sm">Ask about company policies — see how well the system answers.</span><div class="flex items-center gap-4"><button class="p-2 hover:bg-hf-bg rounded-full transition-colors text-hf-muted"><span class="material-symbols-outlined">light_mode</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-hf-border" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6kwka2BrKxIO7jVfM6pPQyb5H9EMpBllqFln6vxcQ1oWByKLUv1iCQwVjw_0Y1hYxXEtmTceGRarSlY6CurTo8YkMWMfaQ2ZrzmHqTZhmqg-aJVa904-YSmL5YWhvJo4jlqCcSGBxFNGcsLrgHMQflL1NZJHI1qw5H7u7Sf5cR3x9hzO1gI0El6GUvDscSLXkTa-ivaZF0WdGUmmk0I6ItQyq8i0VEp6k0ILEV-0SEX30TdNOD4Cl"/></div></header><main class="relative pt-14 min-h-screen grid-bg"><div class="flex flex-col w-full">
+<div class="px-8 py-8 flex flex-col gap-8 max-w-7xl mx-auto w-full">
+<header class="flex items-end justify-between w-full">
+<div class="flex flex-col gap-2">
+<h1 class="font-headline-lg text-headline-lg text-hf-text">Compare</h1>
+<p class="font-body-md text-body-md text-hf-muted">Side-by-side Ragas metrics (0-100%).</p>
+</div>
+<div class="relative">
+<select class="appearance-none bg-hf-panel border border-hf-border rounded-lg pl-4 pr-10 py-2 font-body-md text-body-md text-hf-text shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer">
+<option>Batch #3</option>
+<option>Batch #2</option>
+<option>Batch #1</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-hf-muted pointer-events-none">expand_more</span>
+</div>
+</header>
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+<div class="bg-hf-panel rounded-xl border border-hf-border p-6 shadow-sm flex items-center justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-hf-muted uppercase">Best Faithfulness</span>
+<span class="font-headline-md text-headline-md text-hf-text">0.94 <span class="text-primary font-body-md text-body-md ml-2 bg-hf-teal-dim px-2 py-0.5 rounded-full">(optimized)</span></span>
+</div>
+<div class="w-12 h-12 rounded-full bg-hf-teal-dim flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="bg-hf-panel rounded-xl border border-hf-border p-6 shadow-sm flex items-center justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-hf-muted uppercase">Questions Tested</span>
+<span class="font-headline-md text-headline-md text-hf-text">40</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-hf-bg border border-hf-border flex items-center justify-center text-hf-muted">
+<span class="material-symbols-outlined">quiz</span>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full">
+<div class="lg:col-span-2 bg-hf-panel rounded-xl border border-hf-border shadow-sm p-6 flex flex-col gap-6">
+<div class="flex justify-between items-center">
+<h2 class="font-headline-sm text-headline-sm text-hf-text">Ragas Averages</h2>
+<div class="flex gap-4">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm bg-primary"></div><span class="font-label-sm text-label-sm text-hf-muted">optimized</span></div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm bg-hf-muted"></div><span class="font-label-sm text-label-sm text-hf-muted">baseline</span></div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm bg-hf-chip"></div><span class="font-label-sm text-label-sm text-hf-muted">degraded</span></div>
+</div>
+</div>
+<div class="flex-1 w-full flex flex-col justify-around gap-4 min-h-[300px]">
+<div class="flex flex-col gap-2">
+<span class="font-code-md text-code-md text-hf-text w-32">Faithfulness</span>
+<div class="flex-1 flex flex-col gap-1 relative">
+<div class="absolute inset-y-0 left-0 border-l border-grid-line z-0"></div>
+<div class="absolute inset-y-0 left-1/4 border-l border-grid-line z-0"></div>
+<div class="absolute inset-y-0 left-2/4 border-l border-grid-line z-0"></div>
+<div class="absolute inset-y-0 left-3/4 border-l border-grid-line z-0"></div>
+<div class="absolute inset-y-0 right-0 border-l border-grid-line z-0"></div>
+<div class="flex items-center group relative z-10"><div class="h-4 bg-primary rounded-r" style="width: 94%"></div><span class="ml-2 font-code-md text-code-md text-hf-muted opacity-0 group-hover:opacity-100 transition-opacity">0.94</span></div>
+<div class="flex items-center group relative z-10"><div class="h-4 bg-hf-muted rounded-r" style="width: 82%"></div><span class="ml-2 font-code-md text-code-md text-hf-muted opacity-0 group-hover:opacity-100 transition-opacity">0.82</span></div>
+<div class="flex items-center group relative z-10"><div class="h-4 bg-hf-chip rounded-r" style="width: 65%"></div><span class="ml-2 font-code-md text-code-md text-hf-muted opacity-0 group-hover:opacity-100 transition-opacity">0.65</span></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-code-md text-code-md text-hf-text w-32">Relevancy</span>
+<div class="flex-1 flex flex-col gap-1 relative">
+<div class="absolute inset-y-0 left-0 border-l border-grid-line z-0"></div>
+<div class="absolute inset-y-0 left-1/4 border-l border-grid-line z-0"></div>
+<div class="absolute inset-y-0 left-2/4 border-l border-grid-line z-0"></div>
+<div class="absolute inset-y-0 left-3/4 border-l border-grid-line z-0"></div>
+<div class="absolute inset-y-0 right-0 border-l border-grid-line z-0"></div>
+<div class="flex items-center group relative z-10"><div class="h-4 bg-primary rounded-r" style="width: 91%"></div><span class="ml-2 font-code-md text-code-md text-hf-muted opacity-0 group-hover:opacity-100 transition-opacity">0.91</span></div>
+<div class="flex items-center group relative z-10"><div class="h-4 bg-hf-muted rounded-r" style="width: 85%"></div><span class="ml-2 font-code-md text-code-md text-hf-muted opacity-0 group-hover:opacity-100 transition-opacity">0.85</span></div>
+<div class="flex items-center group relative z-10"><div class="h-4 bg-hf-chip rounded-r" style="width: 70%"></div><span class="ml-2 font-code-md text-code-md text-hf-muted opacity-0 group-hover:opacity-100 transition-opacity">0.70</span></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-code-md text-code-md text-hf-text w-32">Precision</span>
+<div class="flex-1 flex flex-col gap-1 relative">
+<div class="absolute inset-y-0 left-0 border-l border-grid-line z-0"></div>
+<div class="absolute inset-y-0 left-1/4 border-l border-grid-line z-0"></div>
+<div class="absolute inset-y-0 left-2/4 border-l border-grid-line z-0"></div>
+<div class="absolute inset-y-0 left-3/4 border-l border-grid-line z-0"></div>
+<div class="absolute inset-y-0 right-0 border-l border-grid-line z-0"></div>
+<div class="flex items-center group relative z-10"><div class="h-4 bg-primary rounded-r" style="width: 88%"></div><span class="ml-2 font-code-md text-code-md text-hf-muted opacity-0 group-hover:opacity-100 transition-opacity">0.88</span></div>
+<div class="flex items-center group relative z-10"><div class="h-4 bg-hf-muted rounded-r" style="width: 78%"></div><span class="ml-2 font-code-md text-code-md text-hf-muted opacity-0 group-hover:opacity-100 transition-opacity">0.78</span></div>
+<div class="flex items-center group relative z-10"><div class="h-4 bg-hf-chip rounded-r" style="width: 60%"></div><span class="ml-2 font-code-md text-code-md text-hf-muted opacity-0 group-hover:opacity-100 transition-opacity">0.60</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-hf-panel rounded-xl border border-hf-border shadow-sm p-6 flex flex-col gap-6">
+<h2 class="font-headline-sm text-headline-sm text-hf-text">Avg Latency (ms)</h2>
+<div class="flex flex-col gap-6 w-full flex-1 justify-center">
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-end">
+<span class="font-code-md text-code-md text-hf-text">optimized</span>
+<span class="font-code-md text-code-md text-hf-muted">450ms</span>
+</div>
+<div class="w-full bg-hf-bg rounded-full h-2">
+<div class="bg-primary h-2 rounded-full" style="width: 35%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-end">
+<span class="font-code-md text-code-md text-hf-text">baseline</span>
+<span class="font-code-md text-code-md text-hf-muted">820ms</span>
+</div>
+<div class="w-full bg-hf-bg rounded-full h-2">
+<div class="bg-hf-muted h-2 rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-end">
+<span class="font-code-md text-code-md text-hf-text">degraded</span>
+<span class="font-code-md text-code-md text-hf-muted">1200ms</span>
+</div>
+<div class="w-full bg-hf-bg rounded-full h-2">
+<div class="bg-hf-chip h-2 rounded-full" style="width: 95%"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+<div class="bg-hf-panel rounded-xl border border-hf-border p-6 shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-code-md text-code-md text-hf-text font-bold">optimized</h3>
+<span class="bg-hf-teal-dim text-primary px-2 py-1 rounded font-label-sm text-label-sm">BEST OVERALL</span>
+</div>
+<p class="font-body-sm text-body-sm text-hf-muted">GPT-4 Turbo with hybrid search and strict reranking filter.</p>
+</div>
+<div class="bg-hf-panel rounded-xl border border-hf-border p-6 shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-code-md text-code-md text-hf-text font-bold">baseline</h3>
+</div>
+<p class="font-body-sm text-body-sm text-hf-muted">GPT-3.5 with standard vector similarity search.</p>
+</div>
+<div class="bg-hf-panel rounded-xl border border-hf-border p-6 shadow-sm hover:shadow-md transition-all flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-code-md text-code-md text-hf-text font-bold">degraded</h3>
+<span class="bg-error-container text-on-error-container px-2 py-1 rounded font-label-sm text-label-sm">FAILING</span>
+</div>
+<p class="font-body-sm text-body-sm text-hf-muted">Llama-2-7b with sparse retrieval only.</p>
+</div>
+</section>
+<section class="w-full flex flex-col gap-4 bg-hf-panel rounded-xl border border-hf-border shadow-sm overflow-hidden mt-4">
+<div class="p-6 border-b border-hf-border flex justify-between items-center bg-surface-container-low">
+<h2 class="font-headline-sm text-headline-sm text-hf-text">Sub-Optimal Traces</h2>
+<button class="font-label-md text-label-md text-primary flex items-center gap-1 hover:text-secondary transition-colors">
+          VIEW ALL <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-hf-rail border-b border-hf-border">
+<th class="font-label-sm text-label-sm text-hf-muted uppercase py-3 px-6">Pipeline</th>
+<th class="font-label-sm text-label-sm text-hf-muted uppercase py-3 px-6">Question</th>
+<th class="font-label-sm text-label-sm text-hf-muted uppercase py-3 px-6 text-right">Faithfulness</th>
+<th class="font-label-sm text-label-sm text-hf-muted uppercase py-3 px-6 text-right">Relevancy</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-hf-text">
+<tr class="border-b border-hf-border hover:bg-hf-bg transition-colors">
+<td class="py-4 px-6 font-code-md text-code-md">degraded</td>
+<td class="py-4 px-6 truncate max-w-[300px]" title="What is the remote work policy for contractors?">What is the remote work policy for contractors?</td>
+<td class="py-4 px-6 text-right text-error font-code-md">0.24</td>
+<td class="py-4 px-6 text-right text-error font-code-md">0.31</td>
+</tr>
+<tr class="border-b border-hf-border hover:bg-hf-bg transition-colors">
+<td class="py-4 px-6 font-code-md text-code-md">baseline</td>
+<td class="py-4 px-6 truncate max-w-[300px]" title="How do I file an expense report for international travel?">How do I file an expense report for international travel?</td>
+<td class="py-4 px-6 text-right text-primary font-code-md">0.88</td>
+<td class="py-4 px-6 text-right text-error font-code-md">0.45</td>
+</tr>
+<tr class="hover:bg-hf-bg transition-colors">
+<td class="py-4 px-6 font-code-md text-code-md">degraded</td>
+<td class="py-4 px-6 truncate max-w-[300px]" title="Explain the Q3 hardware refresh cycle.">Explain the Q3 hardware refresh cycle.</td>
+<td class="py-4 px-6 text-right text-error font-code-md">0.12</td>
+<td class="py-4 px-6 text-right text-error font-code-md">0.18</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+</div></main></div></body></html>

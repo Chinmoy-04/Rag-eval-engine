@@ -1,0 +1,172 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.grid-bg{background-image:linear-gradient(to right,rgba(15,23,42,0.04) 1px,transparent 1px),linear-gradient(to bottom,rgba(15,23,42,0.04) 1px,transparent 1px);background-size:24px 24px;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary":"#00685f","on-background":"#131b2e","hf-chip":"#E2E8F0","on-surface":"#131b2e","on-secondary-fixed-variant":"#005047","hf-border":"#E2E8F0","hf-teal-dim":"rgba(13, 148, 136, 0.1)","surface":"#faf8ff","on-error-container":"#93000a","secondary-fixed-dim":"#3cddc7","grid-line":"rgba(15, 23, 42, 0.06)","background":"#faf8ff","on-surface-variant":"#3d4947","secondary":"#006b5f","surface-container-high":"#e2e7ff","surface-container-lowest":"#ffffff","hf-rail":"#F1F5F9","on-primary-container":"#f4fffc","surface-bright":"#faf8ff","outline":"#6d7a77","error":"#ba1a1a","on-tertiary-container":"#fffbff","on-primary-fixed-variant":"#005049","secondary-container":"#62fae3","surface-variant":"#dae2fd","hf-panel":"#FFFFFF","on-secondary-fixed":"#00201c","on-tertiary":"#ffffff","surface-tint":"#006a61","on-error":"#ffffff","hf-elevated":"#F1F5F9","error-container":"#ffdad6","surface-dim":"#d2d9f4","hf-muted":"#64748B","on-secondary":"#ffffff","hf-text":"#0F172A","on-primary":"#ffffff","primary-fixed-dim":"#6bd8cb","on-tertiary-fixed":"#370e00","on-secondary-container":"#007165","inverse-surface":"#283044","surface-container":"#eaedff","secondary-fixed":"#62fae3","hf-bg":"#F8FAFC","inverse-primary":"#6bd8cb","tertiary-container":"#b05e3d","tertiary":"#924628","primary-fixed":"#89f5e7","surface-container-highest":"#dae2fd","primary-container":"#008378","surface-container-low":"#f2f3ff","on-primary-fixed":"#00201d","outline-variant":"#bcc9c6","on-tertiary-fixed-variant":"#773215"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"stack-sm":"8px","grid-unit":"24px","margin-page":"32px","gutter-panel":"24px","stack-md":"16px"},"fontFamily":{"headline-lg":["Space Grotesk"],"code-md":["JetBrains Mono"],"headline-md":["Space Grotesk"],"headline-sm":["Space Grotesk"],"body-lg":["Space Grotesk"],"label-md":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"body-md":["Space Grotesk"],"body-sm":["Space Grotesk"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"code-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.18em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.22em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-hf-bg font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-[256px] bg-hf-panel border-r border-hf-border z-50 flex flex-col"><div class="p-6 flex flex-col gap-4"><img alt="Logo" class="h-8 w-auto self-start object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6kwka2BrKxIO7jVfM6pPQyb5H9EMpBllqFln6vxcQ1oWByKLUv1iCQwVjw_0Y1hYxXEtmTceGRarSlY6CurTo8YkMWMfaQ2ZrzmHqTZhmqg-aJVa904-YSmL5YWhvJo4jlqCcSGBxFNGcsLrgHMQflL1NZJHI1qw5H7u7Sf5cR3x9hzO1gI0El6GUvDscSLXkTa-ivaZF0WdGUmmk0I6ItQyq8i0VEp6k0ILEV-0SEX30TdNOD4Cl"/><div class="font-label-md text-primary tracking-widest uppercase">RAG EVAL</div></div><nav class="flex-1 mt-4" data-active-classes="bg-hf-teal-dim border-l-2 border-primary text-hf-text"><a aria-current="page" class="group flex items-center px-6 py-3 transition-all bg-hf-teal-dim border-l-2 border-primary text-hf-text" data-path="ask" href="#"><span class="material-symbols-outlined mr-3">chat_bubble</span><span class="font-body-md font-medium">Ask</span></a><a class="group flex items-center px-6 py-3 text-hf-muted hover:bg-hf-bg hover:text-hf-text transition-all" data-path="runs" href="#"><span class="material-symbols-outlined mr-3">play_circle</span><span class="font-body-md font-medium">Runs</span></a><a class="group flex items-center px-6 py-3 text-hf-muted hover:bg-hf-bg hover:text-hf-text transition-all" data-path="compare" href="#"><span class="material-symbols-outlined mr-3">compare_arrows</span><span class="font-body-md font-medium">Compare</span></a></nav></aside><div class="pl-[256px]"><header class="fixed top-0 left-[256px] right-0 h-14 bg-hf-panel/80 backdrop-blur-md border-b border-hf-border z-40 flex items-center justify-between px-8"><span class="text-hf-muted font-body-sm">Ask about company policies — see how well the system answers.</span><div class="flex items-center gap-4"><button class="p-2 hover:bg-hf-bg rounded-full transition-colors text-hf-muted"><span class="material-symbols-outlined">light_mode</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-hf-border" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6kwka2BrKxIO7jVfM6pPQyb5H9EMpBllqFln6vxcQ1oWByKLUv1iCQwVjw_0Y1hYxXEtmTceGRarSlY6CurTo8YkMWMfaQ2ZrzmHqTZhmqg-aJVa904-YSmL5YWhvJo4jlqCcSGBxFNGcsLrgHMQflL1NZJHI1qw5H7u7Sf5cR3x9hzO1gI0El6GUvDscSLXkTa-ivaZF0WdGUmmk0I6ItQyq8i0VEp6k0ILEV-0SEX30TdNOD4Cl"/></div></header><main class="relative pt-14 min-h-screen grid-bg"><div class="flex flex-col w-full px-8 pb-32">
+<div class="flex items-start justify-between w-full max-w-6xl mx-auto py-12">
+<div class="flex-1 pr-12">
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-2 tracking-tight">Ask the employee handbook</h1>
+<p class="font-body-lg text-body-lg text-hf-muted mb-12">Search indexed documents and see verbatim sources.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 relative">
+<div class="absolute -left-6 top-4 bottom-4 w-1 bg-hf-teal-dim rounded-full"></div>
+<button class="bg-surface hover:bg-surface-container-low transition-all duration-300 p-6 rounded-xl flex flex-col group text-left h-full shadow-sm hover:shadow-md">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Quick facts</h3>
+</div>
+<p class="font-body-sm text-body-sm text-hf-muted mt-auto line-clamp-2">"What are the core working hours for the engineering team?"</p>
+</button>
+<button class="bg-surface hover:bg-surface-container-low transition-all duration-300 p-6 rounded-xl flex flex-col group text-left h-full shadow-sm hover:shadow-md">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]">event_busy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Time off</h3>
+</div>
+<p class="font-body-sm text-body-sm text-hf-muted mt-auto line-clamp-2">"How many rollover vacation days are allowed into next year?"</p>
+</button>
+</div>
+<div class="flex flex-col gap-8 max-w-3xl mb-8">
+<div class="flex gap-6 justify-end items-end w-full">
+<div class="bg-primary/5 rounded-2xl rounded-tr-sm p-5 max-w-[85%] shadow-sm relative group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl rounded-tr-sm"></div>
+<p class="font-body-md text-body-md text-on-surface relative z-10">What's the reimbursement rate for personal car travel?</p>
+<div class="flex items-center gap-2 mt-3 text-hf-muted/60 relative z-10">
+<span class="material-symbols-outlined text-[14px]">person</span>
+<span class="font-label-sm text-label-sm uppercase">You</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A small, professional avatar of a person, headshot, subtle lighting, blue gradient background, corporate aesthetic, highly detailed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABsY__li_YMFU5JgFP76kHMgwJR-kxGn2v4a_Xso283iba7yz8XYM6VyLB_wP_mDd2X-BBsEIbjUAp1x422tQXULuGY95C10OaT373hCzJtxCEaxggqWXtnNJOO-I5HZzS4DFy3FfDtByrSVK3Sbj7Ncxax189KFGQ_YFGnqY8ger5OBalWe5hI3nInvCvIqmycwzC9OGIGbsKQ5-TS4KlQ-waFdtV4aYLQ3x2hlWt-rzJTASWImob"/>
+</div>
+</div>
+<div class="flex gap-6 items-start w-full">
+<div class="w-10 h-10 rounded-full bg-hf-panel flex items-center justify-center shrink-0 shadow-sm relative">
+<span class="material-symbols-outlined text-primary text-[20px]">robot_2</span>
+<div class="absolute -bottom-1 -right-1 w-3 h-3 bg-secondary rounded-full border-2 border-background animate-pulse"></div>
+</div>
+<div class="bg-hf-panel rounded-2xl rounded-tl-sm p-6 shadow-md w-full relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-3xl rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+<p class="font-body-md text-body-md text-on-surface mb-6 relative z-10 leading-relaxed">
+              Based on the current travel policy, personal mileage is reimbursed at <strong class="text-primary font-medium">$0.67 per mile</strong>. This rate aligns with the IRS standard mileage rate for 2024. Please ensure you submit your route map along with your expense report in Expensify within 30 days of travel.
+            </p>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex flex-wrap items-center gap-x-6 gap-y-3 relative z-10 shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-hf-muted">memory</span>
+<span class="font-label-md text-label-md text-hf-muted uppercase tracking-widest">Pipeline: Optimized</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-hf-muted">timer</span>
+<span class="font-label-md text-label-md text-hf-muted uppercase tracking-widest">Latency: 1.2s</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-hf-muted">description</span>
+<span class="font-label-md text-label-md text-hf-muted uppercase tracking-widest">Sources:</span>
+<span class="bg-hf-chip text-hf-muted font-code-md text-code-md px-2 py-1 rounded-md">policy_v2.pdf</span>
+</div>
+</div>
+<div class="mt-4 relative z-10">
+<details class="group/accordion">
+<summary class="flex items-center gap-2 cursor-pointer font-label-md text-label-md text-primary uppercase tracking-widest hover:text-secondary transition-colors select-none list-none [&::-webkit-details-marker]:hidden">
+<span class="material-symbols-outlined text-[18px] transition-transform duration-300 group-open/accordion:rotate-90">chevron_right</span>
+                  Retrieved Context
+                </summary>
+<div class="mt-4 bg-surface-container-low p-4 rounded-lg font-code-md text-code-md text-on-surface-variant leading-relaxed shadow-inner">
+<span class="text-hf-muted block mb-2 font-label-sm text-label-sm uppercase">Reimbursement Guidelines (Section 4.1.2)</span>
+                  "...employees using their personal vehicles for approved business travel will be reimbursed at the standard IRS rate, which is currently set at $0.67/mile for 2024. Commuting mileage to and from the primary office location is excluded from reimbursement. Documentation must include starting point, destination, and business purpose..."
+                </div>
+</details>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="w-[320px] shrink-0 sticky top-[88px]">
+<div class="bg-hf-panel rounded-xl shadow-lg p-6 relative overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+<div class="absolute -top-10 -right-10 w-24 h-24 bg-surface-container-high rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700 ease-out"></div>
+<div class="flex items-center justify-between mb-6 relative z-10">
+<h2 class="font-label-md text-label-md text-on-surface uppercase tracking-widest flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">settings_system_daydream</span>
+            Pipeline Config
+          </h2>
+</div>
+<div class="flex items-center justify-between mb-8 relative z-10 bg-surface p-4 rounded-lg shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-hf-muted text-[20px]">source</span>
+<div>
+<div class="font-body-md text-body-md text-on-surface font-medium">142 documents</div>
+<div class="font-label-sm text-label-sm text-hf-muted uppercase tracking-wider mt-1">Indexed corpus</div>
+</div>
+</div>
+</div>
+<div class="mb-8 relative z-10">
+<div class="flex items-center justify-between mb-4">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Show Sources</span>
+<button aria-checked="true" class="w-11 h-6 bg-primary rounded-full relative transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/20" role="switch">
+<span class="absolute right-1 top-1 w-4 h-4 bg-hf-panel rounded-full shadow-sm transition-transform duration-200"></span>
+</button>
+</div>
+</div>
+<div class="relative z-10">
+<h3 class="font-label-sm text-label-sm text-hf-muted uppercase tracking-widest mb-3">Retrieval Strategy</h3>
+<div class="flex flex-wrap gap-2">
+<button class="bg-hf-chip hover:bg-surface-container-high text-hf-muted font-code-md text-code-md px-3 py-1.5 rounded-md transition-colors shadow-sm">baseline</button>
+<button class="bg-hf-chip hover:bg-surface-container-high text-hf-muted font-code-md text-code-md px-3 py-1.5 rounded-md transition-colors shadow-sm">degraded</button>
+<button class="bg-primary text-on-primary font-code-md text-code-md px-3 py-1.5 rounded-md shadow-md flex items-center gap-2">
+              optimized
+              <span class="material-symbols-outlined text-[14px]">check</span>
+</button>
+</div>
+<div class="mt-4 bg-hf-teal-dim p-3 rounded-lg flex items-start gap-2 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">lightbulb</span>
+<p class="font-label-sm text-label-sm text-on-secondary-container leading-relaxed">Hint: using <span class="font-code-md">k=8</span> with query expansion for semantic coverage.</p>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<div class="fixed bottom-0 left-[256px] right-0 bg-gradient-to-t from-background via-background/90 to-transparent pt-12 pb-8 px-8 z-30 pointer-events-none">
+<div class="max-w-4xl mx-auto pointer-events-auto">
+<div class="bg-hf-panel rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.06)] p-2 flex items-center relative overflow-hidden group focus-within:ring-2 focus-within:ring-primary/20 transition-shadow">
+<div class="w-12 h-12 flex items-center justify-center shrink-0 text-hf-muted">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="flex-1 bg-transparent border-none focus:outline-none font-body-lg text-body-lg text-on-surface placeholder:text-hf-muted/50 py-3" placeholder="Ask a question about HR policies..." type="text"/>
+<div class="px-2 shrink-0 flex items-center gap-2">
+<div class="hidden md:flex items-center gap-1 text-hf-muted/40 font-code-md text-code-md mr-2">
+<kbd class="px-2 py-1 bg-surface-container rounded">⌘</kbd>
+<kbd class="px-2 py-1 bg-surface-container rounded">K</kbd>
+</div>
+<button class="bg-primary hover:bg-secondary text-on-primary h-12 px-6 rounded-full font-label-md text-label-md uppercase tracking-widest shadow-md hover:shadow-lg transition-all flex items-center gap-2 group/btn">
+             Ask
+             <span class="material-symbols-outlined text-[18px] group-hover/btn:translate-x-1 transition-transform">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple toggle animation script
+  document.querySelectorAll('[role="switch"]').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      const isChecked = toggle.getAttribute('aria-checked') === 'true';
+      toggle.setAttribute('aria-checked', !isChecked);
+      
+      const thumb = toggle.querySelector('span');
+      if(isChecked) {
+        // Turning off
+        toggle.classList.remove('bg-primary');
+        toggle.classList.add('bg-surface-container-high');
+        thumb.classList.remove('right-1');
+        thumb.classList.add('left-1');
+      } else {
+        // Turning on
+        toggle.classList.add('bg-primary');
+        toggle.classList.remove('bg-surface-container-high');
+        thumb.classList.add('right-1');
+        thumb.classList.remove('left-1');
+      }
+    });
+  });
+</script></main></div></body></html>

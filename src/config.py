@@ -24,6 +24,15 @@ class LLMProvider(str, Enum):
     ANTHROPIC = "anthropic"
 
 
+class EvalLLMProvider(str, Enum):
+    """Where the Ragas judge runs. Independent of Ask/RAG ``LLM_PROVIDER``."""
+
+    OLLAMA = "ollama"
+    GROQ = "groq"
+    OPENAI = "openai"
+    ANTHROPIC = "anthropic"
+
+
 class EmbeddingProvider(str, Enum):
     """Where embeddings come from.
 
@@ -52,6 +61,9 @@ class AppConfig:
     default_top_k: int
     eval_concurrency: int
     eval_max_retries: int
+    eval_llm_provider: EvalLLMProvider
+    eval_llm_model: str
+    ollama_base_url: str
     database_url: str
     log_level: str
     log_file: str
@@ -85,6 +97,19 @@ def load_config(env_file: Path | None = None) -> AppConfig:
             f"{', '.join(p.value for p in EmbeddingProvider)}"
         ) from exc
 
+    eval_provider_str = (_get_env("EVAL_LLM_PROVIDER", "ollama") or "ollama").lower()
+    try:
+        eval_provider = EvalLLMProvider(eval_provider_str)
+    except ValueError as exc:
+        raise ValueError(
+            f"Invalid EVAL_LLM_PROVIDER '{eval_provider_str}'. Must be one of: "
+            f"{', '.join(p.value for p in EvalLLMProvider)}"
+        ) from exc
+
+    default_eval_model = (
+        "llama3.1:8b" if eval_provider == EvalLLMProvider.OLLAMA else "qwen/qwen3.6-27b"
+    )
+
     return AppConfig(
         llm_provider=provider,
         embedding_provider=embed_provider,
@@ -101,6 +126,11 @@ def load_config(env_file: Path | None = None) -> AppConfig:
         default_top_k=int(_get_env("DEFAULT_TOP_K", "4") or "4"),
         eval_concurrency=int(_get_env("EVAL_CONCURRENCY", "8") or "8"),
         eval_max_retries=int(_get_env("EVAL_MAX_RETRIES", "3") or "3"),
+        eval_llm_provider=eval_provider,
+        eval_llm_model=_get_env("EVAL_LLM_MODEL", default_eval_model)
+        or default_eval_model,
+        ollama_base_url=_get_env("OLLAMA_BASE_URL", "http://127.0.0.1:11434")
+        or "http://127.0.0.1:11434",
         database_url=_get_env("DATABASE_URL", "sqlite:///data/rag_eval.db")
         or "sqlite:///data/rag_eval.db",
         log_level=_get_env("LOG_LEVEL", "INFO") or "INFO",

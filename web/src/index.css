@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-hf-bg: var(--hf-bg);
+  --color-hf-panel: var(--hf-panel);
+  --color-hf-rail: var(--hf-rail);
+  --color-hf-border: var(--hf-border);
+  --color-hf-elevated: var(--hf-elevated);
+  --color-hf-chip: var(--hf-chip);
+  --color-hf-text: var(--hf-text);
+  --color-hf-muted: var(--hf-muted);
+  --color-hf-teal: var(--hf-teal);
+  --color-hf-teal-bright: var(--hf-teal-bright);
+  --color-hf-teal-dim: var(--hf-teal-dim);
+  --color-hf-on-teal: var(--hf-on-teal);
+  --font-sans: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Light theme — Stitch export (design/stitch/light/tokens.json) */
+:root {
+  --hf-bg: #f8fafc;
+  --hf-panel: #ffffff;
+  --hf-rail: #f1f5f9;
+  --hf-border: #e2e8f0;
+  --hf-elevated: #f1f5f9;
+  --hf-chip: #e2e8f0;
+  --hf-text: #0f172a;
+  --hf-muted: #64748b;
+  --hf-teal: #00685f;
+  --hf-teal-bright: #008378;
+  --hf-teal-dim: rgba(13, 148, 136, 0.1);
+  --hf-on-teal: #ffffff;
+  --hf-grid-line: rgba(15, 23, 42, 0.06);
+  --hf-bg-glow: none;
+  --hf-scrollbar-track: #f8fafc;
+  --hf-scrollbar-thumb: #e2e8f0;
+  --hf-scrollbar-thumb-hover: #cbd5e1;
+
+  --chart-1: oklch(0.45 0.12 175);
+  --chart-2: oklch(0.55 0.02 260);
+  --chart-3: oklch(0.88 0.01 260);
+  --chart-4: oklch(0.75 0.02 260);
+  --chart-5: oklch(0.92 0.01 260);
+  --chart-background: oklch(1 0 0);
+  --chart-foreground: oklch(0.25 0.02 260);
+  --chart-foreground-muted: oklch(0.55 0.02 260);
+  --chart-line-primary: var(--chart-1);
+  --chart-line-secondary: var(--chart-2);
+  --chart-crosshair: oklch(0.45 0.1 175);
+  --chart-grid: oklch(0.93 0.01 260);
+  --chart-brush-border: var(--chart-grid);
+  --chart-tooltip-background: oklch(0.98 0.005 260 / 0.95);
+  --chart-tooltip-foreground: oklch(0.25 0.02 260);
+  --chart-tooltip-muted: oklch(0.55 0.02 260);
+  --chart-marker-background: oklch(0.97 0.005 260);
+  --chart-marker-border: oklch(0.88 0.01 260);
+  --chart-marker-foreground: oklch(0.35 0.02 260);
+  --chart-label: oklch(0.5 0.02 260);
+  --chart-scale-01: oklch(0.98 0.003 106);
+  --chart-scale-02: oklch(0.92 0.008 106);
+  --chart-scale-03: oklch(0.82 0.015 106);
+  --chart-scale-04: oklch(0.68 0.02 106);
+  --chart-scale-05: oklch(0.55 0.025 106);
+  --chart-scale-pattern-color: oklch(0.96 0.005 106);
+}
+
+.dark {
+  --hf-bg: #101419;
+  --hf-panel: #141a22;
+  --hf-rail: #0f1419;
+  --hf-border: #243040;
+  --hf-elevated: #1c2430;
+  --hf-chip: #2a3544;
+  --hf-text: #e8eef5;
+  --hf-muted: #8b9aab;
+  --hf-teal: #2dd4bf;
+  --hf-teal-bright: #57f1db;
+  --hf-teal-dim: #0a3d38;
+  --hf-on-teal: #0b0f14;
+  --hf-grid-line: rgba(30, 40, 51, 0.16);
+  --hf-bg-glow: radial-gradient(
+    ellipse 90% 55% at 50% -12%,
+    rgba(45, 212, 191, 0.08),
+    transparent 62%
+  );
+  --hf-scrollbar-track: #101419;
+  --hf-scrollbar-thumb: #27313d;
+  --hf-scrollbar-thumb-hover: #3d4a5c;
+
+  --chart-1: oklch(0.78 0.14 175);
+  --chart-2: oklch(0.72 0.02 260);
+  --chart-3: oklch(0.48 0.02 260);
+  --chart-4: oklch(0.39 0 none);
+  --chart-5: oklch(0.32 0 none);
+  --chart-background: oklch(0.145 0 0);
+  --chart-foreground: oklch(0.45 0 0);
+  --chart-foreground-muted: oklch(0.65 0.01 260);
+  --chart-crosshair: oklch(0.45 0 0);
+  --chart-grid: oklch(0.25 0 0);
+  --chart-brush-border: var(--chart-grid);
+  --chart-tooltip-background: oklch(0.21 0.006 285 / 0.8);
+  --chart-tooltip-foreground: oklch(0.985 0 0);
+  --chart-tooltip-muted: oklch(0.65 0.01 260);
+  --chart-marker-background: oklch(0.25 0.01 260);
+  --chart-marker-border: oklch(0.4 0.01 260);
+  --chart-marker-foreground: oklch(0.9 0 0);
+  --chart-label: oklch(0.75 0.01 260);
+  --chart-scale-01: oklch(0.28 0.03 270);
+  --chart-scale-02: oklch(0.38 0.04 270);
+  --chart-scale-03: oklch(0.48 0.05 270);
+  --chart-scale-04: oklch(0.58 0.06 270);
+  --chart-scale-05: oklch(0.68 0.07 270);
+  --chart-scale-pattern-color: oklch(0.145 0 0);
+}
+
+@layer base {
+  html {
+    @apply bg-hf-bg text-hf-text font-sans antialiased;
+    scroll-behavior: auto;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  body {
+    @apply min-h-screen;
+    overscroll-behavior-y: none;
+    background-color: var(--hf-bg);
+    background-image:
+      var(--hf-bg-glow),
+      linear-gradient(var(--hf-grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--hf-grid-line) 1px, transparent 1px);
+    background-size: 100% 100%, 24px 24px, 24px 24px;
+    background-attachment: fixed;
+  }
+
+  /* Stitch dark: subtle film grain (ask.html) */
+  .dark body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.022;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  ::selection {
+    @apply bg-hf-teal/30 text-hf-text;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--hf-scrollbar-thumb) var(--hf-scrollbar-track);
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--hf-scrollbar-track);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: var(--hf-scrollbar-thumb);
+    border-radius: 4px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: var(--hf-scrollbar-thumb-hover);
+  }
+}
+
+@layer utilities {
+  .hf-label {
+    @apply text-[11px] font-mono uppercase tracking-[0.14em] text-hf-muted;
+  }
+
+  .hf-panel {
+    @apply rounded-xl border border-hf-border bg-hf-panel/80 p-4 backdrop-blur-sm shadow-sm dark:shadow-none;
+  }
+
+  .hf-orb-a {
+    animation: hf-orb-a 26s ease-in-out infinite;
+  }
+
+  .hf-orb-b {
+    animation: hf-orb-b 32s ease-in-out infinite;
+  }
+
+  .hf-orb-c {
+    animation: hf-orb-c 38s ease-in-out infinite;
+  }
+
+  .hf-header-shimmer {
+    animation: hf-header-shimmer 7s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hf-orb-a,
+    .hf-orb-b,
+    .hf-orb-c,
+    .hf-header-shimmer {
+      animation: none;
+    }
+  }
+}
+
+@keyframes hf-orb-a {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(12%, 8%) scale(1.08);
+  }
+}
+
+@keyframes hf-orb-b {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-10%, -6%) scale(1.06);
+  }
+}
+
+@keyframes hf-orb-c {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(6%, -12%) scale(1.1);
+  }
+}
+
+@keyframes hf-header-shimmer {
+  0% {
+    left: -40%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@theme inline {
+  --color-chart-1: var(----chart-1);
+  --color-chart-2: var(----chart-2);
+  --color-chart-3: var(----chart-3);
+  --color-chart-4: var(----chart-4);
+  --color-chart-5: var(----chart-5);
+  --color-chart-background: var(----chart-background);
+  --color-chart-foreground: var(----chart-foreground);
+  --color-chart-foreground-muted: var(----chart-foreground-muted);
+  --chart-line-primary: var(----chart-line-primary);
+  --chart-line-secondary: var(----chart-line-secondary);
+  --color-chart-crosshair: var(----chart-crosshair);
+  --color-chart-grid: var(----chart-grid);
+  --chart-brush-border: var(----chart-brush-border);
+  --color-chart-tooltip-background: var(----chart-tooltip-background);
+  --color-chart-tooltip-foreground: var(----chart-tooltip-foreground);
+  --color-chart-tooltip-muted: var(----chart-tooltip-muted);
+  --color-chart-marker-background: var(----chart-marker-background);
+  --color-chart-marker-border: var(----chart-marker-border);
+  --color-chart-marker-foreground: var(----chart-marker-foreground);
+  --color-chart-label: var(----chart-label);
+  --color-chart-scale-01: var(----chart-scale-01);
+  --color-chart-scale-02: var(----chart-scale-02);
+  --color-chart-scale-03: var(----chart-scale-03);
+  --color-chart-scale-04: var(----chart-scale-04);
+  --color-chart-scale-05: var(----chart-scale-05);
+  --color-chart-scale-pattern-color: var(----chart-scale-pattern-color);
+}

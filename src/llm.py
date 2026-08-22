@@ -52,24 +52,52 @@ def generate_completion(
     from litellm import completion
 
     logger.info("LLM generate model=%s temperature=%.2f", model, temperature)
-    try:
-        response = completion(
-            model=model,
-            messages=messages,
-            temperature=temperature,
-            max_tokens=max_tokens,
-        )
-    except Exception as exc:
-        message = str(exc)
-        if "model_not_found" in message or "does not exist" in message:
-            raise ValueError(
-                f"Groq rejected model '{model}'. "
-                "Set LLM_MODEL=openai/gpt-oss-20b in .env "
-                "(llama-3.1-8b-instant was retired on 2026-08-16)."
-            ) from exc
-        raise
+    extra: dict[str, object] = {}
+    # gpt-oss spends max_tokens on hidden reasoning; without this, content
+    # is often empty (especially when a pipeline caps max_tokens tightly).
+    if "gpt-oss" in model.lower():
+        extra["reasoning_effort"] = "low"
+    elif "qwen" in model.lower():
+        extra["reasoning_effort"] = "none"
 
-    content = response.choices[0].message.content
-    if not content:
-        raise RuntimeError(f"Empty LLM response from {model}")
-    return str(content).strip()
+    last_error: Exception | None = None
+    for attempt in range(1, 4):
+        try:
+            response = completion(
+                model=model,
+                messages=messages,
+                temperature=temperature,
+                max_tokens=max_tokens,
+                **extra,
+            )
+        except Exception as exc:
+            message = str(exc)
+            if "model_not_found" in message or "does not exist" in message:
+                raise ValueError(
+                    f"Groq rejected model '{model}'. "
+                    "Set LLM_MODEL=openai/gpt-oss-20b in .env "
+                    "(llama-3.1-8b-instant was retired on 2026-08-16)."
+                ) from exc
+            if extra and "reasoning_effort" in message.lower():
+                logger.warning("Provider rejected reasoning_effort; retrying without it")
+                extra = {}
+                last_error = exc
+                continue
+            raise
+
+        content = response.choices[0].message.content
+        if content and str(content).strip():
+            return str(content).strip()
+        finish = getattr(response.choices[0], "finish_reason", None)
+        logger.warning(
+            "Empty LLM content model=%s attempt=%d/%d finish_reason=%s",
+            model,
+            attempt,
+            3,
+            finish,
+        )
+        last_error = RuntimeError(f"Empty LLM response from {model}")
+
+    if last_error is not None:
+        raise last_error
+    raise RuntimeError(f"Empty LLM response from {model}")

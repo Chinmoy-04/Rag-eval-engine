@@ -75,6 +75,11 @@ class EvalResult(SQLModel, table=True):
 
     id: Optional[int] = Field(default=None, primary_key=True)
     test_item_id: int = Field(foreign_key="test_items.id", index=True)
+    pipeline_config_name: str = Field(
+        default="baseline",
+        index=True,
+        description="Which RAG config produced this result (baseline/degraded/optimized).",
+    )
     generated_answer: Optional[str] = Field(default=None, sa_column=Column(Text))
     retrieved_contexts: List[str] = Field(
         default_factory=list,

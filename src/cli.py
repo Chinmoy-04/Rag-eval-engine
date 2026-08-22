@@ -147,7 +147,9 @@ def query(
 def ask(
     question: str = typer.Argument(..., help="Question to answer from the corpus."),
     pipeline_config: str = typer.Option(
-        "baseline", "--pipeline-config", help="Named RAG pipeline config."
+        "baseline",
+        "--pipeline-config",
+        help="Named RAG config: baseline, degraded, or optimized.",
     ),
     show_contexts: bool = typer.Option(
         False, "--show-contexts", help="Print retrieved chunks after the answer."
@@ -249,11 +251,71 @@ def generate_testset(
     logger.info("Test set generation complete. run_id=%s", run_id)
 
 
+@app.command("build-handauthored-testset")
+def build_handauthored_testset(
+    corpus: str = typer.Option("helixforge", "--corpus", help="Corpus name label."),
+    limit: int | None = typer.Option(
+        None,
+        "--limit",
+        help="Use a balanced subset (e.g. 20) instead of all 40 questions.",
+    ),
+) -> None:
+    """Persist hand-authored (agent-curated) questions as a new run.
+
+    No LLM calls are made — every question/answer was written by reading the
+    actual corpus documents, so there is no Groq quota or Ollama JSON-parsing
+    risk during generation.
+    """
+    from src.storage.db import session_scope
+    from src.storage.models import Run, RunStatus, TestItem
+    from src.testset.handauthored_items import ITEMS, select_balanced_items
+
+    items = select_balanced_items(ITEMS, limit) if limit is not None else ITEMS
+    note = (
+        f"Hand-authored balanced subset ({len(items)}/{len(ITEMS)}); no LLM used."
+        if limit is not None
+        else "Hand-authored by agent from the 86-doc corpus; no LLM used for generation."
+    )
+
+    config = load_config()
+    with session_scope(config) as session:
+        run = Run(
+            pipeline_config_name="baseline",
+            corpus_name=corpus,
+            num_questions=len(items),
+            status=RunStatus.READY.value,
+            notes=note,
+        )
+        session.add(run)
+        session.flush()
+        for item in items:
+            session.add(
+                TestItem(
+                    run_id=run.id,
+                    question=item["question"],
+                    ground_truth_answer=item["ground_truth_answer"],
+                    reference_contexts=item.get("reference_contexts") or [],
+                    question_type=item.get("question_type") or "simple",
+                )
+            )
+        session.flush()
+        run_id = int(run.id)
+
+    by_type: dict[str, int] = {}
+    for item in items:
+        by_type[item["question_type"]] = by_type.get(item["question_type"], 0) + 1
+    echo(f"run_id={run_id}  questions={len(items)}")
+    echo("types: " + ", ".join(f"{k}={v}" for k, v in sorted(by_type.items())))
+    logger.info("Persisted hand-authored run_id=%s with %d items", run_id, len(items))
+
+
 @app.command("run-eval")
 def run_eval(
     run_id: int = typer.Option(..., "--run-id", help="Run ID to evaluate."),
     pipeline_config: str = typer.Option(
-        "baseline", "--pipeline-config", help="Pipeline config name."
+        "baseline",
+        "--pipeline-config",
+        help="Named RAG config: baseline, degraded, or optimized.",
     ),
     concurrency: int | None = typer.Option(
         None, "--concurrency", help="Max concurrent RAG calls (default: 2)."
@@ -261,9 +323,16 @@ def run_eval(
 ) -> None:
     """Run evaluation against a test set using the selected pipeline config."""
     from src.evaluation.run_eval import run_evaluation
+    from src.rag_pipeline.configs import get_pipeline_config
+
+    try:
+        pipeline_config = get_pipeline_config(pipeline_config).name
+    except ValueError as exc:
+        echo(str(exc))
+        raise typer.Exit(code=1) from exc
 
     config = load_config()
-    conc = concurrency if concurrency is not None else min(2, config.eval_concurrency)
+    conc = concurrency if concurrency is not None else min(1, config.eval_concurrency)
     logger.info(
         "Starting evaluation run_id=%d, pipeline=%s, concurrency=%d",
         run_id,
@@ -299,31 +368,72 @@ def run_eval(
     logger.info("Evaluation complete.")
 
 
-@app.command()
-def serve(
-    port: int = typer.Option(8501, "--port", help="Streamlit server port."),
+@app.command("compare-eval")
+def compare_eval(
+    run_id: int = typer.Option(..., "--run-id", help="Test-set run id to summarize."),
 ) -> None:
-    """Launch the Streamlit dashboard."""
-    dashboard_path = PROJECT_ROOT / "src" / "dashboard" / "app.py"
-    if not dashboard_path.exists():
-        typer.echo(f"Dashboard not yet implemented: {dashboard_path}", err=True)
+    """Print stored Ragas averages per pipeline for one test set."""
+    from src.evaluation.run_eval import summarize_pipeline_scores
+
+    config = load_config()
+    rows = summarize_pipeline_scores(config, run_id=run_id)
+    if not rows:
+        echo(f"No eval results for run_id={run_id}.")
+        raise typer.Exit(code=1)
+    for row in rows:
+        avgs = row.get("averages") or {}
+        parts = []
+        for key in (
+            "faithfulness",
+            "answer_relevancy",
+            "context_precision",
+            "context_recall",
+        ):
+            val = avgs.get(key)
+            parts.append(f"{key}={val:.3f}" if isinstance(val, float) else f"{key}=n/a")
+        lat = row.get("avg_latency_ms")
+        lat_s = f"{lat:.0f}ms" if isinstance(lat, float) else "n/a"
+        echo(
+            f"{row['pipeline']}: items={row['num_results']} errors={row['num_errors']} "
+            f"latency={lat_s}  " + "  ".join(parts)
+        )
+    logger.info("compare-eval run_id=%d pipelines=%d", run_id, len(rows))
+
+
+@app.command("serve-api")
+def serve_api(
+    port: int = typer.Option(8000, "--port", help="FastAPI server port."),
+    host: str = typer.Option("127.0.0.1", "--host", help="Bind host."),
+) -> None:
+    """Launch the FastAPI backend for the React dashboard."""
+    import uvicorn
+
+    logger.info("Launching API on http://%s:%d", host, port)
+    uvicorn.run(
+        "src.api.app:app",
+        host=host,
+        port=port,
+        reload=False,
+        factory=False,
+    )
+
+
+@app.command("serve-ui")
+def serve_ui(
+    port: int = typer.Option(5173, "--port", help="Vite dev server port."),
+) -> None:
+    """Launch the React dashboard (requires serve-api in another terminal)."""
+    web_dir = PROJECT_ROOT / "web"
+    if not (web_dir / "package.json").exists():
+        typer.echo(f"React app not found at {web_dir}", err=True)
         raise typer.Exit(code=1)
 
-    logger.info("Launching Streamlit dashboard on port %d", port)
+    logger.info("Launching React UI on http://127.0.0.1:%d", port)
     subprocess.run(
-        [
-            sys.executable,
-            "-m",
-            "streamlit",
-            "run",
-            str(dashboard_path),
-            "--server.port",
-            str(port),
-            "--server.headless",
-            "true",
-        ],
+        ["npm", "run", "dev", "--", "--port", str(port), "--host"],
         check=True,
-        cwd=str(PROJECT_ROOT),
+        cwd=str(web_dir),
+        shell=True,
     )
 
 

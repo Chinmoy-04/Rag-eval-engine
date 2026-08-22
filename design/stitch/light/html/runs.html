@@ -1,0 +1,98 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.grid-bg{background-image:linear-gradient(to right,rgba(15,23,42,0.04) 1px,transparent 1px),linear-gradient(to bottom,rgba(15,23,42,0.04) 1px,transparent 1px);background-size:24px 24px;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary":"#00685f","on-background":"#131b2e","hf-chip":"#E2E8F0","on-surface":"#131b2e","on-secondary-fixed-variant":"#005047","hf-border":"#E2E8F0","hf-teal-dim":"rgba(13, 148, 136, 0.1)","surface":"#faf8ff","on-error-container":"#93000a","secondary-fixed-dim":"#3cddc7","grid-line":"rgba(15, 23, 42, 0.06)","background":"#faf8ff","on-surface-variant":"#3d4947","secondary":"#006b5f","surface-container-high":"#e2e7ff","surface-container-lowest":"#ffffff","hf-rail":"#F1F5F9","on-primary-container":"#f4fffc","surface-bright":"#faf8ff","outline":"#6d7a77","error":"#ba1a1a","on-tertiary-container":"#fffbff","on-primary-fixed-variant":"#005049","secondary-container":"#62fae3","surface-variant":"#dae2fd","hf-panel":"#FFFFFF","on-secondary-fixed":"#00201c","on-tertiary":"#ffffff","surface-tint":"#006a61","on-error":"#ffffff","hf-elevated":"#F1F5F9","error-container":"#ffdad6","surface-dim":"#d2d9f4","hf-muted":"#64748B","on-secondary":"#ffffff","hf-text":"#0F172A","on-primary":"#ffffff","primary-fixed-dim":"#6bd8cb","on-tertiary-fixed":"#370e00","on-secondary-container":"#007165","inverse-surface":"#283044","surface-container":"#eaedff","secondary-fixed":"#62fae3","hf-bg":"#F8FAFC","inverse-primary":"#6bd8cb","tertiary-container":"#b05e3d","tertiary":"#924628","primary-fixed":"#89f5e7","surface-container-highest":"#dae2fd","primary-container":"#008378","surface-container-low":"#f2f3ff","on-primary-fixed":"#00201d","outline-variant":"#bcc9c6","on-tertiary-fixed-variant":"#773215"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"stack-sm":"8px","grid-unit":"24px","margin-page":"32px","gutter-panel":"24px","stack-md":"16px"},"fontFamily":{"headline-lg":["Space Grotesk"],"code-md":["JetBrains Mono"],"headline-md":["Space Grotesk"],"headline-sm":["Space Grotesk"],"body-lg":["Space Grotesk"],"label-md":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"body-md":["Space Grotesk"],"body-sm":["Space Grotesk"]},"fontSize":{"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"code-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.18em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.22em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-hf-bg font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-[256px] bg-hf-panel border-r border-hf-border z-50 flex flex-col"><div class="p-6 flex flex-col gap-4"><img alt="Logo" class="h-8 w-auto self-start object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6kwka2BrKxIO7jVfM6pPQyb5H9EMpBllqFln6vxcQ1oWByKLUv1iCQwVjw_0Y1hYxXEtmTceGRarSlY6CurTo8YkMWMfaQ2ZrzmHqTZhmqg-aJVa904-YSmL5YWhvJo4jlqCcSGBxFNGcsLrgHMQflL1NZJHI1qw5H7u7Sf5cR3x9hzO1gI0El6GUvDscSLXkTa-ivaZF0WdGUmmk0I6ItQyq8i0VEp6k0ILEV-0SEX30TdNOD4Cl"/><div class="font-label-md text-primary tracking-widest uppercase">RAG EVAL</div></div><nav class="flex-1 mt-4" data-active-classes="bg-hf-teal-dim border-l-2 border-primary text-hf-text"><a class="group flex items-center px-6 py-3 text-hf-muted hover:bg-hf-bg hover:text-hf-text transition-all" data-path="ask" href="#"><span class="material-symbols-outlined mr-3">chat_bubble</span><span class="font-body-md font-medium">Ask</span></a><a aria-current="page" class="group flex items-center px-6 py-3 transition-all bg-hf-teal-dim border-l-2 border-primary text-hf-text" data-path="runs" href="#"><span class="material-symbols-outlined mr-3">play_circle</span><span class="font-body-md font-medium">Runs</span></a><a class="group flex items-center px-6 py-3 text-hf-muted hover:bg-hf-bg hover:text-hf-text transition-all" data-path="compare" href="#"><span class="material-symbols-outlined mr-3">compare_arrows</span><span class="font-body-md font-medium">Compare</span></a></nav></aside><div class="pl-[256px]"><header class="fixed top-0 left-[256px] right-0 h-14 bg-hf-panel/80 backdrop-blur-md border-b border-hf-border z-40 flex items-center justify-between px-8"><span class="text-hf-muted font-body-sm">Ask about company policies — see how well the system answers.</span><div class="flex items-center gap-4"><button class="p-2 hover:bg-hf-bg rounded-full transition-colors text-hf-muted"><span class="material-symbols-outlined">light_mode</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-hf-border" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6kwka2BrKxIO7jVfM6pPQyb5H9EMpBllqFln6vxcQ1oWByKLUv1iCQwVjw_0Y1hYxXEtmTceGRarSlY6CurTo8YkMWMfaQ2ZrzmHqTZhmqg-aJVa904-YSmL5YWhvJo4jlqCcSGBxFNGcsLrgHMQflL1NZJHI1qw5H7u7Sf5cR3x9hzO1gI0El6GUvDscSLXkTa-ivaZF0WdGUmmk0I6ItQyq8i0VEp6k0ILEV-0SEX30TdNOD4Cl"/></div></header><main class="relative pt-14 min-h-screen grid-bg"><div class="flex flex-col w-full h-full relative font-body-md">
+<div class="px-margin-page py-margin-page">
+<div class="flex flex-col gap-stack-sm mb-margin-page">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Runs</h1>
+<p class="font-body-lg text-body-lg text-hf-muted">Browse evaluation campaigns stored in SQLite.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-panel mb-margin-page">
+<div class="bg-surface-container rounded-xl p-6 relative overflow-hidden group transition-all duration-300 hover:shadow-md cursor-pointer">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary-fixed/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
+<div class="flex flex-col gap-2 relative z-10">
+<span class="font-label-md text-label-md text-hf-muted uppercase">Total Runs</span>
+<span class="font-headline-lg text-headline-lg text-on-surface">24</span>
+<div class="flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-primary text-[16px]">trending_up</span>
+<span class="font-label-sm text-label-sm text-primary">+12% this week</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-6 relative overflow-hidden group transition-all duration-300 hover:shadow-md cursor-pointer">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-secondary-fixed/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
+<div class="flex flex-col gap-2 relative z-10">
+<span class="font-label-md text-label-md text-hf-muted uppercase">Last Avg Faithfulness</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-code-md">0.84</span>
+<div class="w-full bg-hf-border h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[84%] transition-all duration-1000 ease-out"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-6 relative overflow-hidden group transition-all duration-300 hover:shadow-md cursor-pointer">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-tertiary-fixed/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-500"></div>
+<div class="flex flex-col gap-2 relative z-10">
+<span class="font-label-md text-label-md text-hf-muted uppercase">Latest Run ID</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-code-md">RUN-9482</span>
+<div class="flex items-center gap-2 mt-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse shadow-[0_0_8px_rgba(98,250,227,0.6)]"></span>
+<span class="font-label-sm text-label-sm text-hf-muted">Active now</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-hf-panel rounded-xl shadow-sm border border-hf-border overflow-hidden flex flex-col">
+<div class="p-6 border-b border-hf-border flex justify-between items-center bg-hf-bg/50">
+<h2 class="font-headline-md text-headline-md text-on-surface">Recent Evaluations</h2>
+<button class="bg-primary hover:bg-primary/90 text-on-primary px-4 py-2 rounded-lg font-label-md text-label-md transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add</span>
+          NEW RUN
+        </button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-hf-rail border-b border-hf-border">
+<th class="p-4 font-label-sm text-label-sm text-hf-muted uppercase tracking-wider whitespace-nowrap">Run ID</th>
+<th class="p-4 font-label-sm text-label-sm text-hf-muted uppercase tracking-wider">Corpus</th>
+<th class="p-4 font-label-sm text-label-sm text-hf-muted uppercase tracking-wider text-right">Questions</th>
+<th class="p-4 font-label-sm text-label-sm text-hf-muted uppercase tracking-wider">Pipeline</th>
+<th class="p-4 font-label-sm text-label-sm text-hf-muted uppercase tracking-wider">Status</th>
+<th class="p-4 font-label-sm text-label-sm text-hf-muted uppercase tracking-wider">Created</th>
+<th class="p-4 font-label-sm text-label-sm text-hf-muted uppercase tracking-wider text-right">Faithfulness</th>
+</tr>
+</thead>
+<tbody class="font-body-md divide-y divide-hf-border">
+<tr class="hover:bg-hf-teal-dim/30 transition-colors group">
+<td class="p-4 font-code-md text-code-md text-primary font-medium whitespace-nowrap">RUN-9482</td>
+<td class="p-4 text-on-surface">Financial Reports</td>
+<td class="p-4 font-code-md text-code-md text-on-surface-variant text-right">150</td>
+<td class="p-4 text-on-surface-variant"><span class="bg-surface-variant text-on-surface px-2 py-1 rounded text-sm">mistral-7b</span></td>
+<td class="p-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="text-on-surface-variant">Running</span>
+</div>
+</td>
+<td class="p-4 text-hf-muted whitespace-nowrap">Just now</td>
+<td class="p-4 font-code-md text-code-md text-hf-muted text-right">--</td>
+</tr>
+<tr class="hover:bg-hf-bg transition-colors">
+<td class="p-4 font-code-md text-code-md text-on-surface font-medium whitespace-nowrap">RUN-9481</td>
+<td class="p-4 text-on-surface">Legal Contracts</td>
+<td class="p-4 font-code-md text-code-md text-on-surface-variant text-right">500</td>
+<td class="p-4 text-on-surface-variant"><span class="bg-surface-variant text-on-surface px-2 py-1 rounded text-sm">GPT-4</span></td>
+<td class="p-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span class="text-on-surface-variant">Completed</span>
+</div>
+</td>
+<td class="p-4 text-hf-muted whitespace-nowrap">2h ago</td>
+<td class="p-4 font-code-md text-code-md text-primary font-medium text-right">0.92</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

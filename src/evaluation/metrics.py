@@ -5,7 +5,7 @@ from __future__ import annotations
 import logging
 from typing import Any
 
-from src.config import AppConfig
+from src.config import AppConfig, EvalLLMProvider
 from src.evaluation.ragas_clients import build_ragas_embeddings, build_ragas_llm
 
 logger = logging.getLogger("rag_eval")
@@ -16,6 +16,26 @@ METRIC_COLUMNS = (
     "context_precision",
     "context_recall",
 )
+
+# Local 8B judges choke on eight full chunks inside Ragas JSON prompts.
+_OLLAMA_CONTEXT_CHAR_LIMIT = 900
+
+
+def _prepare_samples_for_judge(
+    samples: list[dict[str, Any]], *, shrink_contexts: bool
+) -> list[dict[str, Any]]:
+    if not shrink_contexts:
+        return samples
+    prepared: list[dict[str, Any]] = []
+    for sample in samples:
+        contexts = list(sample.get("contexts") or [])
+        prepared.append(
+            {
+                **sample,
+                "contexts": [text[:_OLLAMA_CONTEXT_CHAR_LIMIT] for text in contexts],
+            }
+        )
+    return prepared
 
 
 def score_rag_samples(
@@ -46,6 +66,11 @@ def score_rag_samples(
     if not samples:
         return []
 
+    to_score = _prepare_samples_for_judge(
+        samples,
+        shrink_contexts=config.eval_llm_provider == EvalLLMProvider.OLLAMA,
+    )
+
     dataset = EvaluationDataset(
         samples=[
             SingleTurnSample(
@@ -54,7 +79,7 @@ def score_rag_samples(
                 retrieved_contexts=list(s.get("contexts") or []),
                 reference=s.get("ground_truth") or "",
             )
-            for s in samples
+            for s in to_score
         ]
     )
 
@@ -62,6 +87,9 @@ def score_rag_samples(
     embeddings = build_ragas_embeddings()
     # Groq rejects OpenAI-style n>1; keep answer_relevancy at strictness=1.
     answer_relevancy = AnswerRelevancy(strictness=1)
+    # Local 8B on 8GB VRAM cannot score two prompts at once.
+    if config.eval_llm_provider == EvalLLMProvider.OLLAMA:
+        max_workers = 1
     run_config = RunConfig(
         max_workers=max(1, max_workers),
         max_retries=5,

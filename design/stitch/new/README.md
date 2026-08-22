@@ -6,6 +6,8 @@
 
 ## Screens (5/6 OK)
 
+Brand assets: [`brand/`](brand/) (wordmark + icon mark).
+
 | Role | Screen ID | HTML | Preview |
 |------|-----------|------|---------|
 | **Ask** | `e1701ac91b444840a5c1775f1dee8424` | [html/ask.html](html/ask.html) | [images/ask.png](images/ask.png) |

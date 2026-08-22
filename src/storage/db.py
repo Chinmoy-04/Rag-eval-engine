@@ -7,6 +7,7 @@ from collections.abc import Iterator
 from contextlib import contextmanager
 from pathlib import Path
 
+from sqlalchemy import text
 from sqlmodel import Session, SQLModel, create_engine
 
 from src.config import PROJECT_ROOT, AppConfig, load_config
@@ -66,7 +67,26 @@ def init_db(config: AppConfig | None = None) -> None:
 
     engine = get_engine(config)
     SQLModel.metadata.create_all(engine)
+    _migrate_eval_result_pipeline_column(engine)
     logger.info("Database tables ready: %s", ", ".join(SQLModel.metadata.tables))
+
+
+def _migrate_eval_result_pipeline_column(engine) -> None:
+    """Add pipeline_config_name to existing SQLite eval_results tables."""
+    with engine.begin() as conn:
+        rows = conn.execute(text("PRAGMA table_info(eval_results)")).fetchall()
+        if not rows:
+            return
+        names = {row[1] for row in rows}
+        if "pipeline_config_name" in names:
+            return
+        conn.execute(
+            text(
+                "ALTER TABLE eval_results "
+                "ADD COLUMN pipeline_config_name VARCHAR DEFAULT 'baseline'"
+            )
+        )
+        logger.info("Migrated eval_results: added pipeline_config_name")
 
 
 @contextmanager
