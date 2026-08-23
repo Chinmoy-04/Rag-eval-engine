@@ -1,0 +1,5 @@
+SOP PROCEDURE INDEX
+Canonical procedure: sop_gdpr_right_to_be_forgotten.txt
+This file: sop_gdpr_right_to_be_forgotten_procedure_v50.txt
+
+This revision index does not redefine operational steps. Follow the canonical SOP for the authoritative procedure.

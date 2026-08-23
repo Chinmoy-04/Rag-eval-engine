@@ -1,0 +1,9 @@
+vendor_name,service_provided,data_transferred_category,hosting_region,dpa_execution_date,soc2_type2_report_date,encryption_in_transit,encryption_at_rest,vendor_risk_tier,annual_contract_value_usd
+"Amazon Web Services Inc","Cloud Compute & Storage","Customer Vectors & Telemetry","AP-Southeast (Singapore)","2025-05-15","2025-05-30","TLS 1.3 AES-256-GCM","AES-256-KMS","Tier 2 - Operational Vendor",207515
+"OpenAI Ireland Ltd","LLM Inference API","Customer Vectors & Telemetry","US-East (N. Virginia)","2025-11-15","2025-09-30","TLS 1.3 AES-256-GCM","AES-256-KMS","Tier 1 - Critical Subprocessor",143648
+"Pinecone Systems Inc","Legacy Vector Search","Customer Vectors & Telemetry","AP-Southeast (Singapore)","2025-07-15","2025-04-30","TLS 1.3 AES-256-GCM","AES-256-KMS","Tier 2 - Operational Vendor",136014
+"Datadog Inc","Infrastructure Monitoring","Customer Vectors & Telemetry","EU-West (Frankfurt)","2025-08-15","2025-01-30","TLS 1.3 AES-256-GCM","AES-256-KMS","Tier 2 - Operational Vendor",50821
+"Expensify Inc","Expense Reimbursements","Customer Vectors & Telemetry","EU-West (Frankfurt)","2025-03-15","2025-10-30","TLS 1.3 AES-256-GCM","AES-256-KMS","Tier 2 - Operational Vendor",402373
+"Navan Inc","Corporate Travel Booking","Customer Vectors & Telemetry","AP-Southeast (Singapore)","2025-06-15","2025-06-30","TLS 1.3 AES-256-GCM","AES-256-KMS","Tier 2 - Operational Vendor",424285
+"Workday Inc","HRIS System of Record","Customer Vectors & Telemetry","AP-Southeast (Singapore)","2025-05-15","2025-08-30","TLS 1.3 AES-256-GCM","AES-256-KMS","Tier 1 - Critical Subprocessor",105495
+"PagerDuty Inc","On-Call Escalations","Customer Vectors & Telemetry","US-East (N. Virginia)","2025-01-15","2025-01-30","TLS 1.3 AES-256-GCM","AES-256-KMS","Tier 2 - Operational Vendor",276206

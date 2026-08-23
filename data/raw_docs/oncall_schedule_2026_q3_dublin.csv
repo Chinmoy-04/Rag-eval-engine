@@ -1,0 +1,14 @@
+shift_id,week_number,start_date,primary_engineer,primary_email,secondary_engineer,secondary_email,escalation_tier_1,escalation_tier_2,team,cost_center,oncall_stipend_usd
+ONCALL-Q3-DUB-W01,1,2026-07-08,Elena Zhao,elena.zhao@helixforge.example,Sophia Hoffmann,sophia.hoffmann@helixforge.example,Sarah Chen,Elena Voss (CISO),Infra & DevOps,CC-1500,350
+ONCALL-Q3-DUB-W02,2,2026-07-15,Beatriz Joshi,beatriz.joshi@helixforge.example,Tariq Kim,tariq.kim@helixforge.example,Elena O'Connor,Elena Voss (CISO),Security & Compliance,CC-1010,350
+ONCALL-Q3-DUB-W03,3,2026-07-22,Marcus Moreau,marcus.moreau@helixforge.example,Matteo Vance,matteo.vance@helixforge.example,Dominic Voss,Devon Hale (CTO),Core Retrieval,CC-1010,350
+ONCALL-Q3-DUB-W04,4,2026-07-01,Dominic Wong,dominic.wong@helixforge.example,Aris Santos,aris.santos@helixforge.example,Liam Silva,Elena Voss (CISO),Core Retrieval,CC-5010,350
+ONCALL-Q3-DUB-W05,5,2026-08-08,Raj Joshi,raj.joshi@helixforge.example,Lars Wong,lars.wong@helixforge.example,Elena Novak,Elena Voss (CISO),Infra & DevOps,CC-5010,350
+ONCALL-Q3-DUB-W06,6,2026-08-15,Isla Voss,isla.voss@helixforge.example,Isla Lin,isla.lin@helixforge.example,Lucas Mueller,Devon Hale (CTO),Infra & DevOps,CC-5010,350
+ONCALL-Q3-DUB-W07,7,2026-08-22,Aris Garcia,aris.garcia@helixforge.example,Carlos Kim,carlos.kim@helixforge.example,Ananya Vance,Elena Voss (CISO),Core Retrieval,CC-1010,350
+ONCALL-Q3-DUB-W08,8,2026-08-01,Viktor Joshi,viktor.joshi@helixforge.example,Gabriel Watanabe,gabriel.watanabe@helixforge.example,Chloe Nair,Elena Voss (CISO),Core Retrieval,CC-1500,350
+ONCALL-Q3-DUB-W09,9,2026-09-08,Chloe Tanaka,chloe.tanaka@helixforge.example,Marcus Ivanov,marcus.ivanov@helixforge.example,Aisha Nguyen,Devon Hale (CTO),Security & Compliance,CC-1010,350
+ONCALL-Q3-DUB-W10,10,2026-09-15,Xavier Ivanov,xavier.ivanov@helixforge.example,Noah Takahashi,noah.takahashi@helixforge.example,Noah Vance,Elena Voss (CISO),Vector Engine,CC-1010,350
+ONCALL-Q3-DUB-W11,11,2026-09-22,Dmitri Zhao,dmitri.zhao@helixforge.example,Lars Smith,lars.smith@helixforge.example,Siddharth Wong,Elena Voss (CISO),Security & Compliance,CC-1500,350
+ONCALL-Q3-DUB-W12,12,2026-09-01,Soren Hoffmann,soren.hoffmann@helixforge.example,Lars Thorne,lars.thorne@helixforge.example,Gabriel Nair,Devon Hale (CTO),Security & Compliance,CC-5010,350
+ONCALL-Q3-DUB-W13,13,2026-10-08,Zoe O'Connor,zoe.oconnor@helixforge.example,Devon Thorne,devon.thorne@helixforge.example,Mina Hale,Elena Voss (CISO),Infra & DevOps,CC-5010,350

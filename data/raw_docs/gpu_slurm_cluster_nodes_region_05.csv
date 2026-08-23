@@ -1,0 +1,130 @@
+node_hostname,gpu_model,gpu_count_per_node,total_vram_gb,slurm_partition,reserved_team,cost_center_id,maintenance_window,node_status,interconnect_speed
+gpu-node-05-001.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-prod-inference,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-002.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-interactive-dev,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-003.internal.helixforge.net,NVIDIA L40S,4,192,gpu-interactive-dev,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-004.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-eval-short,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-005.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-interactive-dev,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-006.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-007.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-interactive-dev,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-008.internal.helixforge.net,NVIDIA L40S,4,192,gpu-prod-inference,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-009.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-interactive-dev,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-010.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-eval-short,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-011.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-prod-inference,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-012.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-013.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-interactive-dev,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-014.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-interactive-dev,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-015.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-prod-inference,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-016.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-prod-inference,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-017.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-interactive-dev,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-018.internal.helixforge.net,NVIDIA L40S,4,192,gpu-prod-inference,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-019.internal.helixforge.net,NVIDIA L40S,4,192,gpu-interactive-dev,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-020.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-research-long,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-021.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-prod-inference,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-022.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-interactive-dev,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-023.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-interactive-dev,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-024.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-interactive-dev,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-025.internal.helixforge.net,NVIDIA L40S,4,192,gpu-prod-inference,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-026.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-interactive-dev,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-027.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-prod-inference,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-028.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-eval-short,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-029.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-eval-short,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-030.internal.helixforge.net,NVIDIA L40S,4,192,gpu-eval-short,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-031.internal.helixforge.net,NVIDIA L40S,4,192,gpu-prod-inference,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-032.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-eval-short,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-033.internal.helixforge.net,NVIDIA L40S,4,192,gpu-prod-inference,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-034.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-prod-inference,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-035.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-eval-short,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-036.internal.helixforge.net,NVIDIA L40S,4,192,gpu-interactive-dev,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-037.internal.helixforge.net,NVIDIA L40S,4,192,gpu-eval-short,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-038.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-039.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-interactive-dev,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-040.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-research-long,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-041.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-research-long,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-042.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-research-long,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-043.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-interactive-dev,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-044.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-prod-inference,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-045.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-046.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-interactive-dev,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-047.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-interactive-dev,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-048.internal.helixforge.net,NVIDIA L40S,4,192,gpu-research-long,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-049.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-050.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-research-long,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-051.internal.helixforge.net,NVIDIA L40S,4,192,gpu-prod-inference,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-052.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-eval-short,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-053.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-eval-short,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-054.internal.helixforge.net,NVIDIA L40S,4,192,gpu-interactive-dev,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-055.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-interactive-dev,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-056.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-057.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-eval-short,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-058.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-interactive-dev,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-059.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-research-long,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-060.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-research-long,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-061.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-interactive-dev,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-062.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-prod-inference,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-063.internal.helixforge.net,NVIDIA L40S,4,192,gpu-eval-short,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-064.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-interactive-dev,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-065.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-research-long,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-066.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-067.internal.helixforge.net,NVIDIA L40S,4,192,gpu-eval-short,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-068.internal.helixforge.net,NVIDIA L40S,4,192,gpu-research-long,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-069.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-prod-inference,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-070.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-prod-inference,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-071.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-prod-inference,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-072.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-eval-short,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-073.internal.helixforge.net,NVIDIA L40S,4,192,gpu-prod-inference,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-074.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-075.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-prod-inference,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-076.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-research-long,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-077.internal.helixforge.net,NVIDIA L40S,4,192,gpu-prod-inference,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-078.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-prod-inference,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-079.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-eval-short,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-080.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-eval-short,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-081.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-082.internal.helixforge.net,NVIDIA L40S,4,192,gpu-prod-inference,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-083.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-prod-inference,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-084.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-interactive-dev,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-085.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-eval-short,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-086.internal.helixforge.net,NVIDIA L40S,4,192,gpu-prod-inference,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-087.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-research-long,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-088.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-research-long,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-089.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-interactive-dev,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-090.internal.helixforge.net,NVIDIA L40S,4,192,gpu-eval-short,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-091.internal.helixforge.net,NVIDIA L40S,4,192,gpu-eval-short,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-092.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-prod-inference,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-093.internal.helixforge.net,NVIDIA L40S,4,192,gpu-eval-short,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-094.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-research-long,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-095.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-prod-inference,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-096.internal.helixforge.net,NVIDIA L40S,4,192,gpu-research-long,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-097.internal.helixforge.net,NVIDIA L40S,4,192,gpu-eval-short,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-098.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-interactive-dev,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-099.internal.helixforge.net,NVIDIA L40S,4,192,gpu-eval-short,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-100.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-interactive-dev,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-101.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-eval-short,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-102.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-prod-inference,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-103.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-prod-inference,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-104.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-interactive-dev,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-105.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-106.internal.helixforge.net,NVIDIA L40S,4,192,gpu-research-long,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-107.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-eval-short,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-108.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-prod-inference,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-109.internal.helixforge.net,NVIDIA L40S,4,192,gpu-research-long,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-110.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-eval-short,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-111.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-prod-inference,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-112.internal.helixforge.net,NVIDIA L40S,4,192,gpu-research-long,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-113.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-114.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-research-long,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-115.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-eval-short,Applied Research,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-116.internal.helixforge.net,NVIDIA L40S,4,192,gpu-research-long,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-117.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-eval-short,Eval & Benchmarks,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-118.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-prod-inference,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-119.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-120.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-research-long,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-121.internal.helixforge.net,NVIDIA L40S,4,192,gpu-prod-inference,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-122.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-123.internal.helixforge.net,NVIDIA L40S,4,192,gpu-prod-inference,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-124.internal.helixforge.net,NVIDIA RTX 6000 Ada,4,192,gpu-interactive-dev,Vector Engine,CC-1010,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-125.internal.helixforge.net,NVIDIA L40S,4,192,gpu-interactive-dev,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-126.internal.helixforge.net,NVIDIA H100 SXM5,8,640,gpu-eval-short,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-127.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-eval-short,Applied Research,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR
+gpu-node-05-128.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-eval-short,Eval & Benchmarks,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,DRAINING_FOR_MAINTENANCE,3.2 Tbps InfiniBand NDR
+gpu-node-05-129.internal.helixforge.net,NVIDIA A100 80GB,8,640,gpu-research-long,Vector Engine,CC-1020,Every 2nd Sunday 02:00-04:00 UTC,ALLOCATED_AND_RUNNING,3.2 Tbps InfiniBand NDR

@@ -1,0 +1,5 @@
+SOP PROCEDURE INDEX
+Canonical procedure: sop_production_ssh_yubikey.txt
+This file: sop_production_ssh_yubikey_procedure_v48.txt
+
+This revision index does not redefine operational steps. Follow the canonical SOP for the authoritative procedure.

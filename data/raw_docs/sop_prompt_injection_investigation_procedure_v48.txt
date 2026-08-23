@@ -1,0 +1,5 @@
+SOP PROCEDURE INDEX
+Canonical procedure: sop_prompt_injection_reporting.txt
+This file: sop_prompt_injection_investigation_procedure_v48.txt
+
+This revision index does not redefine operational steps. Follow the canonical SOP for the authoritative procedure.

@@ -1,0 +1,14 @@
+shift_id,week_number,start_date,primary_engineer,primary_email,secondary_engineer,secondary_email,escalation_tier_1,escalation_tier_2,team,cost_center,oncall_stipend_usd
+ONCALL-Q4-DUB-W01,1,2026-10-08,Mina Al-Mansoor,mina.al-mansoor@helixforge.example,Mina Nguyen,mina.nguyen@helixforge.example,Isla O'Connor,Elena Voss (CISO),Core Retrieval,CC-5010,350
+ONCALL-Q4-DUB-W02,2,2026-10-15,Sarah Nair,sarah.nair@helixforge.example,Dmitri Joshi,dmitri.joshi@helixforge.example,Priya Bhat,Elena Voss (CISO),Core Retrieval,CC-1010,350
+ONCALL-Q4-DUB-W03,3,2026-10-22,Chloe Kovacs,chloe.kovacs@helixforge.example,Viktor Kim,viktor.kim@helixforge.example,Ava Johnson,Devon Hale (CTO),Infra & DevOps,CC-5010,350
+ONCALL-Q4-DUB-W04,4,2026-10-01,Soren Takahashi,soren.takahashi@helixforge.example,Olivia O'Connor,olivia.oconnor@helixforge.example,Beatriz Zhao,Elena Voss (CISO),Infra & DevOps,CC-1010,350
+ONCALL-Q4-DUB-W05,5,2026-11-08,Siddharth Vance,siddharth.vance@helixforge.example,Noah Ivanov,noah.ivanov@helixforge.example,Hannah Bhat,Elena Voss (CISO),Vector Engine,CC-1500,350
+ONCALL-Q4-DUB-W06,6,2026-11-15,Mara O'Connor,mara.oconnor@helixforge.example,Xavier Smith,xavier.smith@helixforge.example,Siddharth Bhat,Devon Hale (CTO),Infra & DevOps,CC-5010,350
+ONCALL-Q4-DUB-W07,7,2026-11-22,Raj Bhat,raj.bhat@helixforge.example,Sarah Ivanov,sarah.ivanov@helixforge.example,Beatriz Hale,Elena Voss (CISO),Infra & DevOps,CC-5010,350
+ONCALL-Q4-DUB-W08,8,2026-11-01,Mina Vance,mina.vance@helixforge.example,Siddharth Wong,siddharth.wong@helixforge.example,Viktor Smith,Elena Voss (CISO),Core Retrieval,CC-1010,350
+ONCALL-Q4-DUB-W09,9,2026-12-08,Priya Wong,priya.wong@helixforge.example,Matteo Smith,matteo.smith@helixforge.example,Sarah Santos,Devon Hale (CTO),Core Retrieval,CC-1500,350
+ONCALL-Q4-DUB-W10,10,2026-12-15,Siddharth Bhat,siddharth.bhat@helixforge.example,Xavier Silva,xavier.silva@helixforge.example,Elena Patel,Elena Voss (CISO),Security & Compliance,CC-5010,350
+ONCALL-Q4-DUB-W11,11,2026-12-22,Sarah Hoffmann,sarah.hoffmann@helixforge.example,Isla Silva,isla.silva@helixforge.example,Kaito Nair,Elena Voss (CISO),Infra & DevOps,CC-1010,350
+ONCALL-Q4-DUB-W12,12,2026-12-01,Lars Joshi,lars.joshi@helixforge.example,Carlos Bhat,carlos.bhat@helixforge.example,Sarah Bhat,Devon Hale (CTO),Infra & DevOps,CC-1010,350
+ONCALL-Q4-DUB-W13,13,2026-13-08,Hannah Takahashi,hannah.takahashi@helixforge.example,Ava Smith,ava.smith@helixforge.example,Siddharth Thorne,Elena Voss (CISO),Core Retrieval,CC-5010,350

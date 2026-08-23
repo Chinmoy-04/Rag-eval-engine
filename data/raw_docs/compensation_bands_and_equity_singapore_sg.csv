@@ -1,0 +1,7 @@
+job_level,level_title,base_salary_min,base_salary_mid,base_salary_max,annual_target_bonus_pct,initial_rsu_grant_target,annual_refresh_rsu_target,currency,401k_match_pct
+L3,L3 - Associate,95625,112500,129374,5%,18750,6562,SGD,5.0%
+L4,L4 - Mid-Level,132812,156250,179687,8%,50000,17500,SGD,5.0%
+L5,L5 - Senior,170000,200000,229999,11%,81250,28437,SGD,5.0%
+L6,L6 - Staff,207187,243750,280312,14%,112500,39375,SGD,5.0%
+L7,L7 - Principal,244375,287500,330625,17%,143750,50312,SGD,5.0%
+L8,L8 - Distinguished,281562,331250,380937,20%,175000,61249,SGD,5.0%

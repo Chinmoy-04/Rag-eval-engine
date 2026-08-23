@@ -1,0 +1,150 @@
+employee_id,full_name,job_title,department,job_level,manager_name,office_location,work_model,hire_date,annual_pto_accrual_days,workday_id
+HF-EMP-2026-08-0001,Ava Hale,People Ops Partner,Business Operations,L3,Dmitri Mueller,Austin, TX,Remote-Primary ($150/mo stipend),2022-12-10,23,WD-55254
+HF-EMP-2026-08-0002,Devon Johnson,People Ops Partner,Business Operations,L8,Fatima Moreau,Singapore,Office-Primary (3 days office),2022-09-04,23,WD-87976
+HF-EMP-2026-08-0003,Matteo Takahashi,Security Engineer,Platform Engineering,L6,Lars O'Connor,Singapore,Remote-Primary ($150/mo stipend),2021-03-07,28,WD-32411
+HF-EMP-2026-08-0004,Xavier Moreau,Security Engineer,Platform Engineering,L4,Tariq Chen,Dublin, Ireland,Office-Primary (3 days office),2023-05-15,23,WD-22267
+HF-EMP-2026-08-0005,Matteo Zhao,Solutions Architect,Customer Success,L6,Chen Wong,Austin, TX,Remote-Primary ($150/mo stipend),2023-07-26,23,WD-21123
+HF-EMP-2026-08-0006,Noah Takahashi,DevOps Engineer,Platform Engineering,L3,Aris Vance,Dublin, Ireland,Office-Primary (3 days office),2025-01-26,18,WD-23175
+HF-EMP-2026-08-0007,Olivia Takahashi,Research Scientist,Applied Research,L7,Sarah Lin,Singapore,Remote-Primary ($150/mo stipend),2023-01-15,23,WD-62065
+HF-EMP-2026-08-0008,Ethan Lin,Software Engineer,Platform Engineering,L7,Hannah Garcia,Dublin, Ireland,Office-Primary (3 days office),2025-03-03,18,WD-59368
+HF-EMP-2026-08-0009,Ananya Takahashi,People Ops Partner,Business Operations,L4,Devon Garcia,Austin, TX,Remote-Primary ($150/mo stipend),2023-04-03,23,WD-50895
+HF-EMP-2026-08-0010,Marcus Nair,Solutions Architect,Customer Success,L5,Aisha Mueller,Austin, TX,Office-Primary (3 days office),2024-06-24,18,WD-48941
+HF-EMP-2026-08-0011,Mara Al-Mansoor,Technical Writer,Customer Success,L7,Raj Zhao,Austin, TX,Remote-Primary ($150/mo stipend),2024-07-24,18,WD-26175
+HF-EMP-2026-08-0012,Matteo Kim,Security Engineer,Platform Engineering,L6,Sophia Hoffmann,Singapore,Office-Primary (3 days office),2021-02-17,28,WD-82824
+HF-EMP-2026-08-0013,Dominic Hoffmann,Software Engineer,Platform Engineering,L6,Elena Wong,Dublin, Ireland,Remote-Primary ($150/mo stipend),2023-03-01,23,WD-37626
+HF-EMP-2026-08-0014,Lars Zhao,Security Engineer,Platform Engineering,L8,Fatima Watanabe,Austin, TX,Office-Primary (3 days office),2024-10-03,18,WD-97424
+HF-EMP-2026-08-0015,Yuki Watanabe,Financial Analyst,Business Operations,L5,Noah Vance,Dublin, Ireland,Remote-Primary ($150/mo stipend),2021-02-04,28,WD-46494
+HF-EMP-2026-08-0016,Devon Tanaka,Research Scientist,Applied Research,L4,Yuki Lindqvist,Dublin, Ireland,Office-Primary (3 days office),2024-03-27,18,WD-87725
+HF-EMP-2026-08-0017,Mara Hoffmann,Software Engineer,Platform Engineering,L4,Mei-Ling Ivanov,Singapore,Remote-Primary ($150/mo stipend),2022-03-15,23,WD-25011
+HF-EMP-2026-08-0018,Mina O'Connor,Solutions Architect,Customer Success,L5,Matteo Voss,Dublin, Ireland,Office-Primary (3 days office),2025-05-22,18,WD-97553
+HF-EMP-2026-08-0019,Dominic Johnson,Solutions Architect,Customer Success,L4,Zoe Joshi,Austin, TX,Remote-Primary ($150/mo stipend),2023-12-10,23,WD-16496
+HF-EMP-2026-08-0020,Devon Takahashi,DevOps Engineer,Platform Engineering,L4,Aisha Smith,Dublin, Ireland,Office-Primary (3 days office),2021-11-09,28,WD-57676
+HF-EMP-2026-08-0021,Yuki Wong,Technical Writer,Customer Success,L6,Lucas Watanabe,Austin, TX,Remote-Primary ($150/mo stipend),2024-01-27,18,WD-21796
+HF-EMP-2026-08-0022,Sophia Nair,Technical Writer,Customer Success,L4,Carlos Al-Mansoor,Dublin, Ireland,Office-Primary (3 days office),2022-11-19,23,WD-90273
+HF-EMP-2026-08-0023,Beatriz Takahashi,People Ops Partner,Business Operations,L5,Hannah Tanaka,Dublin, Ireland,Remote-Primary ($150/mo stipend),2023-05-13,23,WD-96497
+HF-EMP-2026-08-0024,Yuki Hoffmann,Technical Writer,Customer Success,L6,Lars O'Connor,Singapore,Office-Primary (3 days office),2025-02-08,18,WD-49677
+HF-EMP-2026-08-0025,Soren Lin,Technical Writer,Customer Success,L7,Kaito Chen,Austin, TX,Remote-Primary ($150/mo stipend),2021-05-25,28,WD-28587
+HF-EMP-2026-08-0026,Olivia Smith,Technical Writer,Customer Success,L8,Aisha Al-Mansoor,Austin, TX,Office-Primary (3 days office),2025-03-28,18,WD-99075
+HF-EMP-2026-08-0027,Chloe Zhao,Solutions Architect,Customer Success,L3,Dmitri Moreau,Austin, TX,Remote-Primary ($150/mo stipend),2020-01-10,28,WD-84998
+HF-EMP-2026-08-0028,Soren Nguyen,DevOps Engineer,Platform Engineering,L7,Priya Voss,Dublin, Ireland,Office-Primary (3 days office),2024-02-25,18,WD-91022
+HF-EMP-2026-08-0029,Ananya Nguyen,Technical Writer,Customer Success,L5,Marcus Zhao,Dublin, Ireland,Remote-Primary ($150/mo stipend),2024-01-11,18,WD-88036
+HF-EMP-2026-08-0030,Aris Ivanov,People Ops Partner,Business Operations,L6,Fatima Mueller,Singapore,Office-Primary (3 days office),2023-10-25,23,WD-14347
+HF-EMP-2026-08-0031,Priya Kovacs,People Ops Partner,Business Operations,L7,Lucas O'Connor,Austin, TX,Remote-Primary ($150/mo stipend),2020-09-02,28,WD-75265
+HF-EMP-2026-08-0032,Fatima Nair,DevOps Engineer,Platform Engineering,L3,Lucas Kovacs,Dublin, Ireland,Office-Primary (3 days office),2022-02-07,23,WD-66335
+HF-EMP-2026-08-0033,Kaito Nair,Solutions Architect,Customer Success,L8,Gabriel Wong,Austin, TX,Remote-Primary ($150/mo stipend),2025-03-23,18,WD-15712
+HF-EMP-2026-08-0034,Ananya Dubois,DevOps Engineer,Platform Engineering,L3,Ava Lin,Austin, TX,Office-Primary (3 days office),2025-02-12,18,WD-54158
+HF-EMP-2026-08-0035,Dominic Al-Mansoor,DevOps Engineer,Platform Engineering,L7,Ethan Takahashi,Austin, TX,Remote-Primary ($150/mo stipend),2024-12-15,18,WD-24576
+HF-EMP-2026-08-0036,Yuki Moreau,DevOps Engineer,Platform Engineering,L5,Lucas Lindqvist,Austin, TX,Office-Primary (3 days office),2020-09-03,28,WD-24309
+HF-EMP-2026-08-0037,Beatriz Chen,Financial Analyst,Business Operations,L4,Ananya Nair,Singapore,Remote-Primary ($150/mo stipend),2021-03-23,28,WD-56548
+HF-EMP-2026-08-0038,Ava Nguyen,Technical Writer,Customer Success,L3,Chloe Takahashi,Singapore,Office-Primary (3 days office),2025-10-04,18,WD-71570
+HF-EMP-2026-08-0039,Elena Patel,Research Scientist,Applied Research,L8,Viktor Dubois,Austin, TX,Remote-Primary ($150/mo stipend),2022-09-04,23,WD-18283
+HF-EMP-2026-08-0040,Sarah Zhao,Technical Writer,Customer Success,L7,Matteo Kim,Dublin, Ireland,Office-Primary (3 days office),2020-02-16,28,WD-40742
+HF-EMP-2026-08-0041,Beatriz Chen,Solutions Architect,Customer Success,L3,Chen Mueller,Singapore,Remote-Primary ($150/mo stipend),2022-06-02,23,WD-36752
+HF-EMP-2026-08-0042,Chen Kovacs,Technical Writer,Customer Success,L6,Mina Thorne,Austin, TX,Office-Primary (3 days office),2025-02-05,18,WD-25365
+HF-EMP-2026-08-0043,Ava Vance,Solutions Architect,Customer Success,L5,Ava O'Connor,Singapore,Remote-Primary ($150/mo stipend),2025-07-13,18,WD-60885
+HF-EMP-2026-08-0044,Sophia Smith,Financial Analyst,Business Operations,L8,Raj Kim,Austin, TX,Office-Primary (3 days office),2022-04-19,23,WD-46173
+HF-EMP-2026-08-0045,Aisha Chen,Technical Writer,Customer Success,L3,Marcus Zhao,Dublin, Ireland,Remote-Primary ($150/mo stipend),2025-02-23,18,WD-27186
+HF-EMP-2026-08-0046,Mara Dubois,Security Engineer,Platform Engineering,L7,Ananya Zhao,Dublin, Ireland,Office-Primary (3 days office),2023-06-08,23,WD-91144
+HF-EMP-2026-08-0047,Ava Novak,Software Engineer,Platform Engineering,L3,Beatriz Zhao,Singapore,Remote-Primary ($150/mo stipend),2020-04-28,28,WD-99815
+HF-EMP-2026-08-0048,Ava Bhat,Financial Analyst,Business Operations,L4,Carlos Novak,Singapore,Office-Primary (3 days office),2022-02-28,23,WD-68078
+HF-EMP-2026-08-0049,Fatima Smith,Software Engineer,Platform Engineering,L8,Mara Joshi,Singapore,Remote-Primary ($150/mo stipend),2022-07-12,23,WD-80161
+HF-EMP-2026-08-0050,Noah Dubois,DevOps Engineer,Platform Engineering,L5,Soren Santos,Singapore,Office-Primary (3 days office),2023-09-24,23,WD-59244
+HF-EMP-2026-08-0051,Aris Patel,Financial Analyst,Business Operations,L8,Tariq Hoffmann,Singapore,Remote-Primary ($150/mo stipend),2020-06-01,28,WD-72821
+HF-EMP-2026-08-0052,Lucas Nair,Software Engineer,Platform Engineering,L6,Sophia O'Connor,Singapore,Office-Primary (3 days office),2025-09-11,18,WD-60641
+HF-EMP-2026-08-0053,Carlos Lindqvist,Technical Writer,Customer Success,L6,Lars Nguyen,Austin, TX,Remote-Primary ($150/mo stipend),2021-10-24,28,WD-63004
+HF-EMP-2026-08-0054,Ethan Moreau,Financial Analyst,Business Operations,L4,Xavier Tanaka,Dublin, Ireland,Office-Primary (3 days office),2022-08-01,23,WD-25458
+HF-EMP-2026-08-0055,Aris Kim,Research Scientist,Applied Research,L5,Ava Al-Mansoor,Singapore,Remote-Primary ($150/mo stipend),2025-04-20,18,WD-39797
+HF-EMP-2026-08-0056,Dominic O'Connor,Solutions Architect,Customer Success,L6,Olivia Patel,Singapore,Office-Primary (3 days office),2024-02-25,18,WD-56034
+HF-EMP-2026-08-0057,Viktor Bhat,Technical Writer,Customer Success,L3,Chloe Voss,Austin, TX,Remote-Primary ($150/mo stipend),2024-11-15,18,WD-46909
+HF-EMP-2026-08-0058,Dmitri Tanaka,People Ops Partner,Business Operations,L3,Raj Takahashi,Singapore,Office-Primary (3 days office),2020-04-08,28,WD-54199
+HF-EMP-2026-08-0059,Matteo Garcia,Solutions Architect,Customer Success,L5,Chloe Johnson,Austin, TX,Remote-Primary ($150/mo stipend),2022-01-13,23,WD-81604
+HF-EMP-2026-08-0060,Mei-Ling Wong,Financial Analyst,Business Operations,L7,Carlos Ivanov,Singapore,Office-Primary (3 days office),2024-07-01,18,WD-61383
+HF-EMP-2026-08-0061,Noah Novak,Financial Analyst,Business Operations,L7,Noah Ivanov,Singapore,Remote-Primary ($150/mo stipend),2020-10-05,28,WD-86712
+HF-EMP-2026-08-0062,Chloe Watanabe,People Ops Partner,Business Operations,L5,Fatima O'Connor,Dublin, Ireland,Office-Primary (3 days office),2023-12-22,23,WD-11947
+HF-EMP-2026-08-0063,Ava Smith,Technical Writer,Customer Success,L7,Raj Bhat,Singapore,Remote-Primary ($150/mo stipend),2021-08-20,28,WD-88266
+HF-EMP-2026-08-0064,Dmitri Smith,Solutions Architect,Customer Success,L7,Viktor Zhao,Dublin, Ireland,Office-Primary (3 days office),2022-09-27,23,WD-27033
+HF-EMP-2026-08-0065,Siddharth Hoffmann,Research Scientist,Applied Research,L7,Fatima Thorne,Singapore,Remote-Primary ($150/mo stipend),2020-10-24,28,WD-86985
+HF-EMP-2026-08-0066,Aisha Smith,Financial Analyst,Business Operations,L6,Dmitri Wong,Singapore,Office-Primary (3 days office),2023-08-06,23,WD-85818
+HF-EMP-2026-08-0067,Sarah Smith,Security Engineer,Platform Engineering,L5,Priya Smith,Dublin, Ireland,Remote-Primary ($150/mo stipend),2023-12-01,23,WD-82953
+HF-EMP-2026-08-0068,Ethan Nguyen,Research Scientist,Applied Research,L8,Elena Lindqvist,Austin, TX,Office-Primary (3 days office),2023-11-05,23,WD-56252
+HF-EMP-2026-08-0069,Soren Johnson,Security Engineer,Platform Engineering,L8,Aisha Garcia,Dublin, Ireland,Remote-Primary ($150/mo stipend),2020-11-26,28,WD-76457
+HF-EMP-2026-08-0070,Devon O'Connor,DevOps Engineer,Platform Engineering,L5,Isla Thorne,Austin, TX,Office-Primary (3 days office),2024-10-19,18,WD-58833
+HF-EMP-2026-08-0071,Liam Garcia,Research Scientist,Applied Research,L8,Beatriz Wong,Singapore,Remote-Primary ($150/mo stipend),2022-08-12,23,WD-65537
+HF-EMP-2026-08-0072,Mina Moreau,DevOps Engineer,Platform Engineering,L3,Soren Mueller,Dublin, Ireland,Office-Primary (3 days office),2020-05-15,28,WD-15534
+HF-EMP-2026-08-0073,Olivia Nguyen,People Ops Partner,Business Operations,L3,Olivia Bhat,Austin, TX,Remote-Primary ($150/mo stipend),2023-09-06,23,WD-24544
+HF-EMP-2026-08-0074,Sophia Chen,Financial Analyst,Business Operations,L5,Soren Smith,Austin, TX,Office-Primary (3 days office),2024-11-22,18,WD-68264
+HF-EMP-2026-08-0075,Isla Dubois,Research Scientist,Applied Research,L7,Yuki Kim,Singapore,Remote-Primary ($150/mo stipend),2022-06-05,23,WD-44686
+HF-EMP-2026-08-0076,Priya Bhat,DevOps Engineer,Platform Engineering,L7,Dominic Tanaka,Austin, TX,Office-Primary (3 days office),2021-06-20,28,WD-18309
+HF-EMP-2026-08-0077,Dominic Kovacs,DevOps Engineer,Platform Engineering,L4,Olivia Patel,Singapore,Remote-Primary ($150/mo stipend),2023-08-26,23,WD-14362
+HF-EMP-2026-08-0078,Ethan Bhat,Security Engineer,Platform Engineering,L5,Ananya Kovacs,Dublin, Ireland,Office-Primary (3 days office),2022-03-06,23,WD-14985
+HF-EMP-2026-08-0079,Zoe Zhao,People Ops Partner,Business Operations,L4,Dominic Smith,Austin, TX,Remote-Primary ($150/mo stipend),2024-09-22,18,WD-99487
+HF-EMP-2026-08-0080,Dominic Moreau,People Ops Partner,Business Operations,L4,Carlos Bhat,Singapore,Office-Primary (3 days office),2025-04-15,18,WD-13748
+HF-EMP-2026-08-0081,Yuki Mueller,Solutions Architect,Customer Success,L4,Elena Chen,Singapore,Remote-Primary ($150/mo stipend),2020-08-03,28,WD-89746
+HF-EMP-2026-08-0082,Fatima Al-Mansoor,People Ops Partner,Business Operations,L6,Ava Johnson,Singapore,Office-Primary (3 days office),2022-11-27,23,WD-25650
+HF-EMP-2026-08-0083,Hannah Silva,Solutions Architect,Customer Success,L3,Fatima Novak,Singapore,Remote-Primary ($150/mo stipend),2023-05-26,23,WD-83073
+HF-EMP-2026-08-0084,Raj Mueller,People Ops Partner,Business Operations,L5,Matteo Voss,Austin, TX,Office-Primary (3 days office),2025-01-07,18,WD-64240
+HF-EMP-2026-08-0085,Hannah Santos,Technical Writer,Customer Success,L8,Elena Johnson,Dublin, Ireland,Remote-Primary ($150/mo stipend),2025-09-15,18,WD-25278
+HF-EMP-2026-08-0086,Siddharth Dubois,Security Engineer,Platform Engineering,L3,Tariq Ivanov,Austin, TX,Office-Primary (3 days office),2024-11-18,18,WD-63288
+HF-EMP-2026-08-0087,Tariq Kovacs,Solutions Architect,Customer Success,L4,Soren Watanabe,Dublin, Ireland,Remote-Primary ($150/mo stipend),2025-02-15,18,WD-30563
+HF-EMP-2026-08-0088,Siddharth Takahashi,Technical Writer,Customer Success,L3,Mara Santos,Dublin, Ireland,Office-Primary (3 days office),2020-01-25,28,WD-58979
+HF-EMP-2026-08-0089,Ananya Kim,People Ops Partner,Business Operations,L3,Carlos Bhat,Austin, TX,Remote-Primary ($150/mo stipend),2023-02-19,23,WD-87104
+HF-EMP-2026-08-0090,Kaito Joshi,Security Engineer,Platform Engineering,L5,Mara Hale,Singapore,Office-Primary (3 days office),2023-01-14,23,WD-45042
+HF-EMP-2026-08-0091,Aisha Voss,People Ops Partner,Business Operations,L8,Marcus Kim,Singapore,Remote-Primary ($150/mo stipend),2022-04-26,23,WD-47733
+HF-EMP-2026-08-0092,Viktor Lin,Research Scientist,Applied Research,L5,Tariq Dubois,Austin, TX,Office-Primary (3 days office),2022-11-01,23,WD-28018
+HF-EMP-2026-08-0093,Lars Kim,Software Engineer,Platform Engineering,L3,Chen Vance,Austin, TX,Remote-Primary ($150/mo stipend),2021-01-17,28,WD-95466
+HF-EMP-2026-08-0094,Mina Al-Mansoor,Financial Analyst,Business Operations,L3,Marcus Novak,Singapore,Office-Primary (3 days office),2024-06-21,18,WD-26172
+HF-EMP-2026-08-0095,Fatima Johnson,Solutions Architect,Customer Success,L4,Aisha Kovacs,Austin, TX,Remote-Primary ($150/mo stipend),2024-10-14,18,WD-13821
+HF-EMP-2026-08-0096,Beatriz Vance,Financial Analyst,Business Operations,L6,Raj Lindqvist,Dublin, Ireland,Office-Primary (3 days office),2020-11-28,28,WD-83488
+HF-EMP-2026-08-0097,Elena Lindqvist,Software Engineer,Platform Engineering,L6,Elena Dubois,Singapore,Remote-Primary ($150/mo stipend),2020-12-14,28,WD-47980
+HF-EMP-2026-08-0098,Devon Al-Mansoor,Research Scientist,Applied Research,L3,Xavier Ivanov,Austin, TX,Office-Primary (3 days office),2024-12-09,18,WD-12883
+HF-EMP-2026-08-0099,Sarah Zhao,Security Engineer,Platform Engineering,L3,Siddharth Hale,Dublin, Ireland,Remote-Primary ($150/mo stipend),2021-09-19,28,WD-35144
+HF-EMP-2026-08-0100,Zoe Ivanov,Research Scientist,Applied Research,L6,Ava Patel,Dublin, Ireland,Office-Primary (3 days office),2023-02-12,23,WD-97759
+HF-EMP-2026-08-0101,Fatima Garcia,Solutions Architect,Customer Success,L5,Aris Vance,Austin, TX,Remote-Primary ($150/mo stipend),2022-02-10,23,WD-82378
+HF-EMP-2026-08-0102,Sarah Johnson,Technical Writer,Customer Success,L8,Ananya Johnson,Dublin, Ireland,Office-Primary (3 days office),2022-09-23,23,WD-38723
+HF-EMP-2026-08-0103,Zoe Kim,People Ops Partner,Business Operations,L4,Xavier Mueller,Singapore,Remote-Primary ($150/mo stipend),2025-10-14,18,WD-75614
+HF-EMP-2026-08-0104,Xavier Kovacs,Technical Writer,Customer Success,L3,Viktor Takahashi,Dublin, Ireland,Office-Primary (3 days office),2023-09-21,23,WD-45891
+HF-EMP-2026-08-0105,Lars Voss,Financial Analyst,Business Operations,L3,Isla Bhat,Dublin, Ireland,Remote-Primary ($150/mo stipend),2024-11-19,18,WD-66223
+HF-EMP-2026-08-0106,Tariq Lin,Solutions Architect,Customer Success,L8,Carlos O'Connor,Dublin, Ireland,Office-Primary (3 days office),2025-10-09,18,WD-90844
+HF-EMP-2026-08-0107,Lucas Chen,People Ops Partner,Business Operations,L8,Ananya Wong,Dublin, Ireland,Remote-Primary ($150/mo stipend),2023-09-09,23,WD-42826
+HF-EMP-2026-08-0108,Gabriel Voss,Solutions Architect,Customer Success,L4,Elena Watanabe,Dublin, Ireland,Office-Primary (3 days office),2020-05-21,28,WD-60616
+HF-EMP-2026-08-0109,Tariq Nair,Solutions Architect,Customer Success,L7,Yuki Chen,Austin, TX,Remote-Primary ($150/mo stipend),2020-09-08,28,WD-68271
+HF-EMP-2026-08-0110,Viktor Vance,Software Engineer,Platform Engineering,L7,Marcus Lin,Singapore,Office-Primary (3 days office),2025-04-16,18,WD-79210
+HF-EMP-2026-08-0111,Elena Smith,Research Scientist,Applied Research,L3,Chloe Tanaka,Austin, TX,Remote-Primary ($150/mo stipend),2024-11-21,18,WD-45086
+HF-EMP-2026-08-0112,Kaito O'Connor,Security Engineer,Platform Engineering,L5,Mina Johnson,Dublin, Ireland,Office-Primary (3 days office),2023-08-05,23,WD-21716
+HF-EMP-2026-08-0113,Marcus Dubois,Research Scientist,Applied Research,L3,Mara Takahashi,Dublin, Ireland,Remote-Primary ($150/mo stipend),2025-11-22,18,WD-27282
+HF-EMP-2026-08-0114,Hannah Al-Mansoor,Solutions Architect,Customer Success,L3,Viktor Dubois,Dublin, Ireland,Office-Primary (3 days office),2020-05-26,28,WD-66838
+HF-EMP-2026-08-0115,Ethan Chen,Software Engineer,Platform Engineering,L3,Xavier Watanabe,Singapore,Remote-Primary ($150/mo stipend),2023-05-24,23,WD-23999
+HF-EMP-2026-08-0116,Dmitri Santos,People Ops Partner,Business Operations,L6,Olivia Garcia,Austin, TX,Office-Primary (3 days office),2024-06-11,18,WD-66310
+HF-EMP-2026-08-0117,Elena Nguyen,Research Scientist,Applied Research,L5,Dominic Ivanov,Dublin, Ireland,Remote-Primary ($150/mo stipend),2022-09-18,23,WD-19417
+HF-EMP-2026-08-0118,Priya Hoffmann,Financial Analyst,Business Operations,L4,Siddharth Silva,Singapore,Office-Primary (3 days office),2020-10-22,28,WD-89626
+HF-EMP-2026-08-0119,Priya Santos,People Ops Partner,Business Operations,L6,Lars Santos,Austin, TX,Remote-Primary ($150/mo stipend),2020-01-26,28,WD-32282
+HF-EMP-2026-08-0120,Zoe Nguyen,People Ops Partner,Business Operations,L8,Zoe Ivanov,Austin, TX,Office-Primary (3 days office),2022-09-11,23,WD-24983
+HF-EMP-2026-08-0121,Fatima Vance,Security Engineer,Platform Engineering,L7,Kaito Nair,Singapore,Remote-Primary ($150/mo stipend),2020-08-09,28,WD-66568
+HF-EMP-2026-08-0122,Beatriz Johnson,Financial Analyst,Business Operations,L7,Siddharth Thorne,Austin, TX,Office-Primary (3 days office),2024-09-05,18,WD-22616
+HF-EMP-2026-08-0123,Elena Joshi,Technical Writer,Customer Success,L8,Priya Kovacs,Singapore,Remote-Primary ($150/mo stipend),2024-06-11,18,WD-80175
+HF-EMP-2026-08-0124,Siddharth Nair,Security Engineer,Platform Engineering,L4,Chen Ivanov,Singapore,Office-Primary (3 days office),2023-08-14,23,WD-87754
+HF-EMP-2026-08-0125,Viktor Watanabe,Financial Analyst,Business Operations,L4,Chen Takahashi,Singapore,Remote-Primary ($150/mo stipend),2023-07-01,23,WD-73681
+HF-EMP-2026-08-0126,Mara Kim,People Ops Partner,Business Operations,L4,Matteo Johnson,Austin, TX,Office-Primary (3 days office),2024-01-12,18,WD-69733
+HF-EMP-2026-08-0127,Liam Patel,Research Scientist,Applied Research,L6,Yuki Kim,Singapore,Remote-Primary ($150/mo stipend),2023-11-13,23,WD-78479
+HF-EMP-2026-08-0128,Ethan Watanabe,Financial Analyst,Business Operations,L5,Olivia Voss,Singapore,Office-Primary (3 days office),2022-03-13,23,WD-81062
+HF-EMP-2026-08-0129,Zoe Zhao,Security Engineer,Platform Engineering,L6,Mara Moreau,Singapore,Remote-Primary ($150/mo stipend),2024-10-11,18,WD-76370
+HF-EMP-2026-08-0130,Gabriel Santos,Solutions Architect,Customer Success,L3,Isla Vance,Singapore,Office-Primary (3 days office),2025-04-07,18,WD-14136
+HF-EMP-2026-08-0131,Kaito Wong,Solutions Architect,Customer Success,L3,Beatriz Kovacs,Austin, TX,Remote-Primary ($150/mo stipend),2022-12-18,23,WD-55392
+HF-EMP-2026-08-0132,Viktor O'Connor,DevOps Engineer,Platform Engineering,L8,Mara Zhao,Dublin, Ireland,Office-Primary (3 days office),2023-03-09,23,WD-13249
+HF-EMP-2026-08-0133,Dmitri Zhao,Research Scientist,Applied Research,L6,Lucas Thorne,Dublin, Ireland,Remote-Primary ($150/mo stipend),2025-11-23,18,WD-60670
+HF-EMP-2026-08-0134,Chloe Lin,People Ops Partner,Business Operations,L3,Elena Voss,Austin, TX,Office-Primary (3 days office),2021-08-19,28,WD-12080
+HF-EMP-2026-08-0135,Aisha Joshi,Security Engineer,Platform Engineering,L4,Liam Johnson,Singapore,Remote-Primary ($150/mo stipend),2020-07-26,28,WD-98216
+HF-EMP-2026-08-0136,Hannah Hale,DevOps Engineer,Platform Engineering,L8,Soren Hale,Singapore,Office-Primary (3 days office),2024-06-14,18,WD-87790
+HF-EMP-2026-08-0137,Mara Johnson,Research Scientist,Applied Research,L8,Matteo Voss,Singapore,Remote-Primary ($150/mo stipend),2024-09-01,18,WD-67532
+HF-EMP-2026-08-0138,Noah Takahashi,Solutions Architect,Customer Success,L3,Beatriz Dubois,Austin, TX,Office-Primary (3 days office),2020-09-23,28,WD-68284
+HF-EMP-2026-08-0139,Siddharth Patel,Solutions Architect,Customer Success,L6,Gabriel Novak,Dublin, Ireland,Remote-Primary ($150/mo stipend),2023-04-09,23,WD-91170
+HF-EMP-2026-08-0140,Zoe Novak,Software Engineer,Platform Engineering,L3,Zoe Nair,Austin, TX,Office-Primary (3 days office),2024-06-26,18,WD-82803
+HF-EMP-2026-08-0141,Zoe Takahashi,Research Scientist,Applied Research,L8,Chloe Lindqvist,Dublin, Ireland,Remote-Primary ($150/mo stipend),2020-07-16,28,WD-86618
+HF-EMP-2026-08-0142,Olivia Smith,Solutions Architect,Customer Success,L6,Marcus Kovacs,Austin, TX,Office-Primary (3 days office),2023-02-16,23,WD-26067
+HF-EMP-2026-08-0143,Soren Silva,People Ops Partner,Business Operations,L3,Elena Novak,Singapore,Remote-Primary ($150/mo stipend),2021-12-23,28,WD-72202
+HF-EMP-2026-08-0144,Sophia Hale,Research Scientist,Applied Research,L6,Aisha Kovacs,Dublin, Ireland,Office-Primary (3 days office),2023-02-08,23,WD-38674
+HF-EMP-2026-08-0145,Sophia Kovacs,Research Scientist,Applied Research,L8,Elena Silva,Austin, TX,Remote-Primary ($150/mo stipend),2022-09-03,23,WD-39899
+HF-EMP-2026-08-0146,Devon Nair,Security Engineer,Platform Engineering,L8,Carlos Lindqvist,Austin, TX,Office-Primary (3 days office),2022-11-13,23,WD-84332
+HF-EMP-2026-08-0147,Liam Dubois,Financial Analyst,Business Operations,L8,Gabriel Santos,Austin, TX,Remote-Primary ($150/mo stipend),2022-09-26,23,WD-20522
+HF-EMP-2026-08-0148,Xavier Hoffmann,Technical Writer,Customer Success,L4,Chloe Chen,Dublin, Ireland,Office-Primary (3 days office),2023-07-03,23,WD-13633
+HF-EMP-2026-08-0149,Marcus Nair,Technical Writer,Customer Success,L8,Marcus Al-Mansoor,Singapore,Remote-Primary ($150/mo stipend),2024-02-26,18,WD-59249

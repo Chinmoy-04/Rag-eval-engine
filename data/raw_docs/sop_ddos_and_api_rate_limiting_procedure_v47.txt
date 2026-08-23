@@ -1,0 +1,5 @@
+SOP PROCEDURE INDEX
+Canonical procedure: sop_ddos_and_api_rate_limiting.txt
+This file: sop_ddos_and_api_rate_limiting_procedure_v47.txt
+
+This revision index does not redefine operational steps. Follow the canonical SOP for the authoritative procedure.

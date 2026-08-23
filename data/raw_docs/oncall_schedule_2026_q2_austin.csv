@@ -1,0 +1,14 @@
+shift_id,week_number,start_date,primary_engineer,primary_email,secondary_engineer,secondary_email,escalation_tier_1,escalation_tier_2,team,cost_center,oncall_stipend_usd
+ONCALL-Q2-AUS-W01,1,2026-04-08,Mei-Ling Chen,mei-ling.chen@helixforge.example,Ananya Wong,ananya.wong@helixforge.example,Sarah Johnson,Elena Voss (CISO),Infra & DevOps,CC-1010,350
+ONCALL-Q2-AUS-W02,2,2026-04-15,Sarah Patel,sarah.patel@helixforge.example,Kaito Zhao,kaito.zhao@helixforge.example,Gabriel Mueller,Elena Voss (CISO),Infra & DevOps,CC-1010,350
+ONCALL-Q2-AUS-W03,3,2026-04-22,Aisha Hoffmann,aisha.hoffmann@helixforge.example,Aisha Voss,aisha.voss@helixforge.example,Aris Novak,Devon Hale (CTO),Infra & DevOps,CC-1010,350
+ONCALL-Q2-AUS-W04,4,2026-04-01,Mara Dubois,mara.dubois@helixforge.example,Sophia O'Connor,sophia.oconnor@helixforge.example,Olivia Joshi,Elena Voss (CISO),Security & Compliance,CC-5010,350
+ONCALL-Q2-AUS-W05,5,2026-05-08,Mara Smith,mara.smith@helixforge.example,Marcus Patel,marcus.patel@helixforge.example,Xavier Nair,Elena Voss (CISO),Infra & DevOps,CC-5010,350
+ONCALL-Q2-AUS-W06,6,2026-05-15,Ananya Patel,ananya.patel@helixforge.example,Yuki Johnson,yuki.johnson@helixforge.example,Priya Wong,Devon Hale (CTO),Infra & DevOps,CC-1010,350
+ONCALL-Q2-AUS-W07,7,2026-05-22,Fatima Mueller,fatima.mueller@helixforge.example,Carlos Lin,carlos.lin@helixforge.example,Fatima Silva,Elena Voss (CISO),Core Retrieval,CC-1010,350
+ONCALL-Q2-AUS-W08,8,2026-05-01,Olivia Kim,olivia.kim@helixforge.example,Viktor Hale,viktor.hale@helixforge.example,Ethan Dubois,Elena Voss (CISO),Security & Compliance,CC-5010,350
+ONCALL-Q2-AUS-W09,9,2026-06-08,Carlos Takahashi,carlos.takahashi@helixforge.example,Olivia Lin,olivia.lin@helixforge.example,Raj Nair,Devon Hale (CTO),Security & Compliance,CC-1010,350
+ONCALL-Q2-AUS-W10,10,2026-06-15,Ava Tanaka,ava.tanaka@helixforge.example,Fatima Wong,fatima.wong@helixforge.example,Mina Ivanov,Elena Voss (CISO),Vector Engine,CC-5010,350
+ONCALL-Q2-AUS-W11,11,2026-06-22,Ava Moreau,ava.moreau@helixforge.example,Tariq Takahashi,tariq.takahashi@helixforge.example,Marcus Takahashi,Elena Voss (CISO),Infra & DevOps,CC-5010,350
+ONCALL-Q2-AUS-W12,12,2026-06-01,Soren Moreau,soren.moreau@helixforge.example,Xavier Dubois,xavier.dubois@helixforge.example,Devon Smith,Devon Hale (CTO),Infra & DevOps,CC-1010,350
+ONCALL-Q2-AUS-W13,13,2026-07-08,Elena O'Connor,elena.oconnor@helixforge.example,Priya Lin,priya.lin@helixforge.example,Gabriel Novak,Elena Voss (CISO),Infra & DevOps,CC-5010,350

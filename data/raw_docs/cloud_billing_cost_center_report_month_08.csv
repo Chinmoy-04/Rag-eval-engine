@@ -1,0 +1,150 @@
+record_id,aws_account_id,service_name,cost_center_id,department,monthly_budget_usd,actual_spend_usd,variance_usd,primary_owner,tagging_compliance_pct,environment
+REC-2026-M08-0001,894120938271,Datadog Telemetry,CC-1010,Business Operations,10702,13684,2982,Priya Hale,99%,Staging
+REC-2026-M08-0002,894120937182,EC2 p4d.24xlarge GPU,CC-3010,Applied Research,37443,40736,3293,Priya Voss,96%,Benchmark-Eval
+REC-2026-M08-0003,894120932299,Datadog Telemetry,CC-3010,Customer Success,30817,33166,2349,Ananya Joshi,93%,Benchmark-Eval
+REC-2026-M08-0004,894120937251,S3 Glacier Deep Archive,CC-5010,Business Operations,29439,26738,-2701,Fatima Watanabe,99%,Staging
+REC-2026-M08-0005,894120931101,CloudFront CDN,CC-3010,Customer Success,70744,73905,3161,Yuki Smith,100%,Production
+REC-2026-M08-0006,894120935759,Datadog Telemetry,CC-3010,Platform Engineering,40920,39710,-1210,Matteo Bhat,95%,Benchmark-Eval
+REC-2026-M08-0007,894120932040,AWS Bedrock API,CC-1020,Business Operations,27691,30543,2852,Lucas O'Connor,94%,Production
+REC-2026-M08-0008,894120933638,EC2 g5.12xlarge,CC-2010,Applied Research,80529,86117,5588,Mei-Ling Garcia,93%,Staging
+REC-2026-M08-0009,894120931390,Amazon OpenSearch Vector Engine,CC-5010,Platform Engineering,32737,31008,-1729,Mara Zhao,96%,Benchmark-Eval
+REC-2026-M08-0010,894120935236,CloudFront CDN,CC-4010,Business Operations,68304,65468,-2836,Chen Takahashi,93%,Benchmark-Eval
+REC-2026-M08-0011,894120938612,RDS PostgreSQL Multi-AZ,CC-4010,Platform Engineering,43889,45060,1171,Viktor Ivanov,93%,Production
+REC-2026-M08-0012,894120937584,AWS Bedrock API,CC-3020,Business Operations,57516,61569,4053,Lars Moreau,97%,Staging
+REC-2026-M08-0013,894120938094,RDS PostgreSQL Multi-AZ,CC-4010,Customer Success,68000,70456,2456,Priya Al-Mansoor,94%,Production
+REC-2026-M08-0014,894120939194,CloudFront CDN,CC-1500,Business Operations,45743,47142,1399,Zoe Kim,93%,Staging
+REC-2026-M08-0015,894120936959,Amazon OpenSearch Vector Engine,CC-3010,Business Operations,74365,72566,-1799,Elena Hoffmann,94%,Staging
+REC-2026-M08-0016,894120936907,AWS Bedrock API,CC-3010,Applied Research,26838,22919,-3919,Yuki Vance,100%,Staging
+REC-2026-M08-0017,894120931665,RDS PostgreSQL Multi-AZ,CC-1500,Business Operations,35429,40050,4621,Yuki Takahashi,92%,Production
+REC-2026-M08-0018,894120937224,Datadog Telemetry,CC-1500,Customer Success,59379,62453,3074,Ava Nair,95%,Production
+REC-2026-M08-0019,894120932437,AWS Bedrock API,CC-2010,Platform Engineering,30425,27882,-2543,Xavier Nguyen,95%,Production
+REC-2026-M08-0020,894120931324,EC2 p4d.24xlarge GPU,CC-1020,Platform Engineering,71625,71931,306,Devon Moreau,97%,Staging
+REC-2026-M08-0021,894120939220,CloudFront CDN,CC-3020,Business Operations,46914,49001,2087,Sophia Zhao,97%,Production
+REC-2026-M08-0022,894120937433,EC2 p4d.24xlarge GPU,CC-3020,Platform Engineering,41238,40397,-841,Viktor Tanaka,96%,Staging
+REC-2026-M08-0023,894120938451,S3 Glacier Deep Archive,CC-3020,Platform Engineering,64384,69753,5369,Xavier Nguyen,100%,Staging
+REC-2026-M08-0024,894120932458,S3 Glacier Deep Archive,CC-3020,Customer Success,57090,60040,2950,Isla Novak,95%,Benchmark-Eval
+REC-2026-M08-0025,894120934331,CloudFront CDN,CC-4010,Customer Success,13951,17552,3601,Xavier Patel,97%,Benchmark-Eval
+REC-2026-M08-0026,894120937341,Amazon OpenSearch Vector Engine,CC-1020,Platform Engineering,61644,59756,-1888,Aisha Novak,96%,Benchmark-Eval
+REC-2026-M08-0027,894120938709,RDS PostgreSQL Multi-AZ,CC-1500,Applied Research,56555,61347,4792,Chloe Johnson,98%,Benchmark-Eval
+REC-2026-M08-0028,894120936929,EC2 p4d.24xlarge GPU,CC-5010,Business Operations,30066,33178,3112,Beatriz Voss,93%,Production
+REC-2026-M08-0029,894120933148,Datadog Telemetry,CC-1020,Platform Engineering,46000,44084,-1916,Mara Nguyen,100%,Benchmark-Eval
+REC-2026-M08-0030,894120938441,EC2 g5.12xlarge,CC-1020,Applied Research,21279,23264,1985,Marcus Nair,96%,Staging
+REC-2026-M08-0031,894120937270,EC2 g5.12xlarge,CC-3010,Customer Success,59666,58662,-1004,Noah Nair,93%,Staging
+REC-2026-M08-0032,894120936514,RDS PostgreSQL Multi-AZ,CC-4010,Applied Research,35909,41766,5857,Lucas Al-Mansoor,92%,Benchmark-Eval
+REC-2026-M08-0033,894120933550,AWS Bedrock API,CC-2010,Applied Research,55234,53334,-1900,Zoe Santos,100%,Production
+REC-2026-M08-0034,894120935530,Amazon OpenSearch Vector Engine,CC-2010,Platform Engineering,69817,70959,1142,Zoe Zhao,93%,Benchmark-Eval
+REC-2026-M08-0035,894120935483,EC2 g5.12xlarge,CC-1010,Applied Research,42104,46774,4670,Dmitri Nguyen,97%,Production
+REC-2026-M08-0036,894120938993,AWS Bedrock API,CC-3020,Platform Engineering,83675,83154,-521,Carlos Kim,100%,Production
+REC-2026-M08-0037,894120938628,Amazon OpenSearch Vector Engine,CC-1500,Customer Success,40367,36431,-3936,Dmitri Nguyen,93%,Production
+REC-2026-M08-0038,894120931197,Datadog Telemetry,CC-5010,Platform Engineering,78041,76890,-1151,Carlos Dubois,95%,Production
+REC-2026-M08-0039,894120939011,Datadog Telemetry,CC-2010,Business Operations,62169,63978,1809,Tariq O'Connor,99%,Staging
+REC-2026-M08-0040,894120932062,Datadog Telemetry,CC-1500,Business Operations,51788,55583,3795,Mina Dubois,97%,Staging
+REC-2026-M08-0041,894120932748,AWS Bedrock API,CC-5010,Platform Engineering,28556,30939,2383,Viktor Novak,93%,Staging
+REC-2026-M08-0042,894120935047,S3 Glacier Deep Archive,CC-1500,Customer Success,28492,32072,3580,Elena Johnson,93%,Staging
+REC-2026-M08-0043,894120931964,EC2 p4d.24xlarge GPU,CC-2010,Customer Success,34174,34262,88,Dominic Voss,98%,Production
+REC-2026-M08-0044,894120938742,CloudFront CDN,CC-1500,Customer Success,63518,67270,3752,Ava Mueller,93%,Production
+REC-2026-M08-0045,894120931711,S3 Glacier Deep Archive,CC-5010,Platform Engineering,83710,81506,-2204,Noah Joshi,97%,Benchmark-Eval
+REC-2026-M08-0046,894120934971,CloudFront CDN,CC-3020,Business Operations,16473,17188,715,Ethan Thorne,93%,Staging
+REC-2026-M08-0047,894120934063,EC2 g5.12xlarge,CC-1010,Business Operations,47624,53422,5798,Aris Nair,92%,Benchmark-Eval
+REC-2026-M08-0048,894120935523,AWS Bedrock API,CC-2010,Business Operations,37923,37455,-468,Hannah Takahashi,96%,Staging
+REC-2026-M08-0049,894120934444,EC2 g5.12xlarge,CC-4010,Platform Engineering,38145,36559,-1586,Olivia Chen,92%,Staging
+REC-2026-M08-0050,894120933461,EC2 g5.12xlarge,CC-5010,Business Operations,70565,70480,-85,Zoe Garcia,99%,Benchmark-Eval
+REC-2026-M08-0051,894120931769,Datadog Telemetry,CC-3020,Business Operations,18949,15872,-3077,Gabriel Mueller,95%,Benchmark-Eval
+REC-2026-M08-0052,894120937097,S3 Glacier Deep Archive,CC-1010,Platform Engineering,10714,16347,5633,Priya Voss,98%,Production
+REC-2026-M08-0053,894120933302,CloudFront CDN,CC-4010,Business Operations,63450,64868,1418,Chloe Moreau,97%,Benchmark-Eval
+REC-2026-M08-0054,894120937769,EC2 p4d.24xlarge GPU,CC-5010,Applied Research,77448,78511,1063,Siddharth Hale,95%,Staging
+REC-2026-M08-0055,894120935492,RDS PostgreSQL Multi-AZ,CC-2010,Applied Research,29092,29794,702,Raj Al-Mansoor,98%,Benchmark-Eval
+REC-2026-M08-0056,894120935670,EC2 p4d.24xlarge GPU,CC-3020,Customer Success,58846,58134,-712,Tariq Smith,99%,Staging
+REC-2026-M08-0057,894120939111,S3 Glacier Deep Archive,CC-3020,Platform Engineering,72459,74462,2003,Sarah Hoffmann,98%,Benchmark-Eval
+REC-2026-M08-0058,894120937334,CloudFront CDN,CC-3020,Business Operations,47887,50634,2747,Mara Nair,95%,Benchmark-Eval
+REC-2026-M08-0059,894120934586,Datadog Telemetry,CC-3020,Applied Research,28899,34227,5328,Hannah Takahashi,100%,Staging
+REC-2026-M08-0060,894120933288,EC2 p4d.24xlarge GPU,CC-1010,Applied Research,29118,27213,-1905,Zoe Thorne,96%,Staging
+REC-2026-M08-0061,894120936785,Datadog Telemetry,CC-3020,Applied Research,64396,62533,-1863,Mina Hoffmann,98%,Staging
+REC-2026-M08-0062,894120931738,AWS Bedrock API,CC-1020,Customer Success,23864,26903,3039,Dmitri Mueller,92%,Production
+REC-2026-M08-0063,894120938731,Amazon OpenSearch Vector Engine,CC-1020,Applied Research,68791,67334,-1457,Ethan Patel,93%,Production
+REC-2026-M08-0064,894120934281,CloudFront CDN,CC-1500,Customer Success,29928,35858,5930,Noah Garcia,97%,Production
+REC-2026-M08-0065,894120932424,AWS Bedrock API,CC-4010,Applied Research,78006,78270,264,Devon Tanaka,98%,Benchmark-Eval
+REC-2026-M08-0066,894120936380,S3 Glacier Deep Archive,CC-1010,Business Operations,75581,75061,-520,Chloe Hoffmann,98%,Staging
+REC-2026-M08-0067,894120931393,Amazon OpenSearch Vector Engine,CC-5010,Applied Research,45724,46695,971,Hannah Novak,98%,Staging
+REC-2026-M08-0068,894120936056,S3 Glacier Deep Archive,CC-4010,Platform Engineering,79064,80131,1067,Lucas Silva,100%,Production
+REC-2026-M08-0069,894120936832,Amazon OpenSearch Vector Engine,CC-3020,Customer Success,80927,79888,-1039,Tariq Novak,94%,Benchmark-Eval
+REC-2026-M08-0070,894120938810,EC2 g5.12xlarge,CC-4010,Business Operations,79129,77526,-1603,Lucas Patel,97%,Staging
+REC-2026-M08-0071,894120933602,Datadog Telemetry,CC-2010,Customer Success,59115,63967,4852,Gabriel Garcia,99%,Production
+REC-2026-M08-0072,894120935431,Datadog Telemetry,CC-1500,Applied Research,36583,36733,150,Aisha Novak,98%,Staging
+REC-2026-M08-0073,894120932726,Amazon OpenSearch Vector Engine,CC-3020,Platform Engineering,44093,49915,5822,Raj Thorne,100%,Production
+REC-2026-M08-0074,894120937200,RDS PostgreSQL Multi-AZ,CC-1500,Business Operations,73151,77699,4548,Beatriz Garcia,96%,Staging
+REC-2026-M08-0075,894120935174,Amazon OpenSearch Vector Engine,CC-2010,Customer Success,15929,20450,4521,Yuki Kovacs,98%,Production
+REC-2026-M08-0076,894120934760,AWS Bedrock API,CC-3010,Platform Engineering,78589,83440,4851,Mina Santos,93%,Benchmark-Eval
+REC-2026-M08-0077,894120935056,Amazon OpenSearch Vector Engine,CC-1020,Business Operations,80930,80053,-877,Kaito Watanabe,98%,Benchmark-Eval
+REC-2026-M08-0078,894120932116,EC2 g5.12xlarge,CC-2010,Business Operations,69727,75597,5870,Carlos Chen,93%,Benchmark-Eval
+REC-2026-M08-0079,894120933584,EC2 g5.12xlarge,CC-1010,Platform Engineering,55535,55058,-477,Sarah Bhat,94%,Production
+REC-2026-M08-0080,894120931096,EC2 g5.12xlarge,CC-2010,Platform Engineering,52685,51173,-1512,Lucas Vance,95%,Production
+REC-2026-M08-0081,894120937471,S3 Glacier Deep Archive,CC-1020,Customer Success,5638,11364,5726,Ananya Kim,93%,Production
+REC-2026-M08-0082,894120938946,Amazon OpenSearch Vector Engine,CC-1500,Applied Research,21016,26015,4999,Gabriel Novak,99%,Production
+REC-2026-M08-0083,894120931572,EC2 p4d.24xlarge GPU,CC-1500,Customer Success,84219,80516,-3703,Carlos Lin,99%,Staging
+REC-2026-M08-0084,894120936246,RDS PostgreSQL Multi-AZ,CC-1010,Platform Engineering,5747,3470,-2277,Elena Thorne,99%,Staging
+REC-2026-M08-0085,894120936615,S3 Glacier Deep Archive,CC-1500,Customer Success,45489,50165,4676,Carlos O'Connor,95%,Benchmark-Eval
+REC-2026-M08-0086,894120938880,EC2 p4d.24xlarge GPU,CC-3020,Platform Engineering,45975,46639,664,Matteo Wong,98%,Benchmark-Eval
+REC-2026-M08-0087,894120932888,EC2 p4d.24xlarge GPU,CC-5010,Platform Engineering,77410,80818,3408,Mara Johnson,99%,Production
+REC-2026-M08-0088,894120939733,EC2 g5.12xlarge,CC-1010,Customer Success,11976,8739,-3237,Isla Santos,100%,Production
+REC-2026-M08-0089,894120939934,S3 Glacier Deep Archive,CC-3010,Platform Engineering,28425,27782,-643,Olivia Smith,98%,Benchmark-Eval
+REC-2026-M08-0090,894120931206,Amazon OpenSearch Vector Engine,CC-3020,Applied Research,28324,28670,346,Marcus Ivanov,94%,Benchmark-Eval
+REC-2026-M08-0091,894120936739,EC2 g5.12xlarge,CC-5010,Business Operations,25994,27907,1913,Noah Nair,94%,Production
+REC-2026-M08-0092,894120934608,EC2 p4d.24xlarge GPU,CC-1020,Business Operations,66252,71492,5240,Fatima Zhao,94%,Benchmark-Eval
+REC-2026-M08-0093,894120934524,EC2 g5.12xlarge,CC-4010,Business Operations,8482,6145,-2337,Aris Moreau,99%,Benchmark-Eval
+REC-2026-M08-0094,894120932815,EC2 p4d.24xlarge GPU,CC-4010,Business Operations,75387,78127,2740,Sophia Chen,94%,Staging
+REC-2026-M08-0095,894120932570,CloudFront CDN,CC-2010,Business Operations,38631,37404,-1227,Yuki Joshi,95%,Production
+REC-2026-M08-0096,894120933795,EC2 g5.12xlarge,CC-1010,Customer Success,15966,19884,3918,Tariq Mueller,92%,Staging
+REC-2026-M08-0097,894120931195,CloudFront CDN,CC-2010,Platform Engineering,84735,89285,4550,Kaito Vance,92%,Benchmark-Eval
+REC-2026-M08-0098,894120936615,Amazon OpenSearch Vector Engine,CC-5010,Customer Success,46907,42950,-3957,Mei-Ling O'Connor,100%,Staging
+REC-2026-M08-0099,894120933683,AWS Bedrock API,CC-4010,Business Operations,63534,60554,-2980,Mina Hoffmann,100%,Staging
+REC-2026-M08-0100,894120938146,Datadog Telemetry,CC-5010,Platform Engineering,5909,11069,5160,Mina Hale,99%,Staging
+REC-2026-M08-0101,894120935466,AWS Bedrock API,CC-1010,Customer Success,71838,71643,-195,Zoe Kovacs,92%,Production
+REC-2026-M08-0102,894120939151,EC2 g5.12xlarge,CC-5010,Applied Research,64580,70327,5747,Lars Santos,94%,Benchmark-Eval
+REC-2026-M08-0103,894120934070,Amazon OpenSearch Vector Engine,CC-1020,Applied Research,22096,18274,-3822,Chen Lin,93%,Production
+REC-2026-M08-0104,894120932035,S3 Glacier Deep Archive,CC-3010,Platform Engineering,60991,60193,-798,Raj Hale,93%,Benchmark-Eval
+REC-2026-M08-0105,894120931647,CloudFront CDN,CC-1010,Applied Research,44695,41374,-3321,Hannah Kovacs,93%,Production
+REC-2026-M08-0106,894120938685,AWS Bedrock API,CC-5010,Platform Engineering,16628,20179,3551,Elena Moreau,96%,Benchmark-Eval
+REC-2026-M08-0107,894120936761,Datadog Telemetry,CC-4010,Business Operations,30590,28057,-2533,Olivia O'Connor,92%,Staging
+REC-2026-M08-0108,894120931413,AWS Bedrock API,CC-3010,Platform Engineering,37303,42189,4886,Mei-Ling Smith,92%,Production
+REC-2026-M08-0109,894120932635,AWS Bedrock API,CC-3020,Business Operations,70516,73104,2588,Siddharth Joshi,98%,Production
+REC-2026-M08-0110,894120936543,EC2 g5.12xlarge,CC-3010,Business Operations,8799,6378,-2421,Beatriz Nair,94%,Production
+REC-2026-M08-0111,894120938370,RDS PostgreSQL Multi-AZ,CC-3010,Customer Success,14843,18759,3916,Siddharth Nair,94%,Production
+REC-2026-M08-0112,894120934369,Amazon OpenSearch Vector Engine,CC-3010,Customer Success,35146,36148,1002,Lars Garcia,99%,Staging
+REC-2026-M08-0113,894120933227,CloudFront CDN,CC-2010,Applied Research,12775,14563,1788,Elena Kim,100%,Staging
+REC-2026-M08-0114,894120939587,Datadog Telemetry,CC-2010,Customer Success,70802,74975,4173,Ethan Tanaka,94%,Benchmark-Eval
+REC-2026-M08-0115,894120934115,S3 Glacier Deep Archive,CC-3020,Business Operations,7083,5760,-1323,Aisha Hale,95%,Benchmark-Eval
+REC-2026-M08-0116,894120939241,RDS PostgreSQL Multi-AZ,CC-4010,Applied Research,84485,89144,4659,Dmitri Lindqvist,96%,Benchmark-Eval
+REC-2026-M08-0117,894120935685,AWS Bedrock API,CC-1500,Business Operations,37566,43159,5593,Ananya Ivanov,97%,Benchmark-Eval
+REC-2026-M08-0118,894120937437,CloudFront CDN,CC-1500,Applied Research,84011,81279,-2732,Ananya Silva,99%,Staging
+REC-2026-M08-0119,894120933720,EC2 g5.12xlarge,CC-5010,Applied Research,48711,48409,-302,Carlos Wong,92%,Staging
+REC-2026-M08-0120,894120933589,Amazon OpenSearch Vector Engine,CC-1020,Business Operations,60591,59776,-815,Carlos Takahashi,92%,Production
+REC-2026-M08-0121,894120935289,EC2 g5.12xlarge,CC-1020,Customer Success,57213,56428,-785,Aisha Dubois,94%,Staging
+REC-2026-M08-0122,894120934469,RDS PostgreSQL Multi-AZ,CC-1500,Business Operations,28848,28405,-443,Ava Bhat,99%,Production
+REC-2026-M08-0123,894120935641,AWS Bedrock API,CC-3010,Customer Success,52588,50508,-2080,Dmitri Mueller,96%,Staging
+REC-2026-M08-0124,894120933413,EC2 p4d.24xlarge GPU,CC-1020,Platform Engineering,66235,67797,1562,Aisha O'Connor,96%,Benchmark-Eval
+REC-2026-M08-0125,894120936446,Datadog Telemetry,CC-3010,Applied Research,15623,20703,5080,Xavier Wong,94%,Benchmark-Eval
+REC-2026-M08-0126,894120935919,RDS PostgreSQL Multi-AZ,CC-2010,Platform Engineering,53114,50336,-2778,Olivia Smith,93%,Staging
+REC-2026-M08-0127,894120935474,Datadog Telemetry,CC-1500,Customer Success,55776,56499,723,Ethan Joshi,94%,Staging
+REC-2026-M08-0128,894120938224,S3 Glacier Deep Archive,CC-3020,Applied Research,74246,78369,4123,Chen Smith,97%,Production
+REC-2026-M08-0129,894120931034,Amazon OpenSearch Vector Engine,CC-5010,Customer Success,20627,20904,277,Chen Vance,100%,Production
+REC-2026-M08-0130,894120935554,Datadog Telemetry,CC-1500,Applied Research,11385,12949,1564,Siddharth Garcia,96%,Staging
+REC-2026-M08-0131,894120934220,EC2 p4d.24xlarge GPU,CC-1010,Platform Engineering,23391,23503,112,Hannah Wong,95%,Benchmark-Eval
+REC-2026-M08-0132,894120938838,RDS PostgreSQL Multi-AZ,CC-1500,Customer Success,31946,28723,-3223,Marcus Takahashi,98%,Production
+REC-2026-M08-0133,894120937975,RDS PostgreSQL Multi-AZ,CC-4010,Platform Engineering,8471,10657,2186,Gabriel Silva,95%,Benchmark-Eval
+REC-2026-M08-0134,894120938305,AWS Bedrock API,CC-1020,Applied Research,13370,17871,4501,Matteo Nair,98%,Staging
+REC-2026-M08-0135,894120931146,RDS PostgreSQL Multi-AZ,CC-1020,Customer Success,62379,59747,-2632,Fatima Chen,93%,Production
+REC-2026-M08-0136,894120933698,CloudFront CDN,CC-1010,Applied Research,30036,27369,-2667,Viktor Nair,92%,Staging
+REC-2026-M08-0137,894120931863,EC2 g5.12xlarge,CC-5010,Applied Research,78127,82992,4865,Viktor Ivanov,94%,Production
+REC-2026-M08-0138,894120933828,Amazon OpenSearch Vector Engine,CC-4010,Platform Engineering,39638,44616,4978,Chloe Patel,97%,Production
+REC-2026-M08-0139,894120938570,RDS PostgreSQL Multi-AZ,CC-4010,Business Operations,71224,71504,280,Olivia Nair,92%,Benchmark-Eval
+REC-2026-M08-0140,894120932105,AWS Bedrock API,CC-1020,Customer Success,40348,38583,-1765,Aisha Moreau,92%,Benchmark-Eval
+REC-2026-M08-0141,894120938793,S3 Glacier Deep Archive,CC-5010,Applied Research,37334,42070,4736,Yuki Vance,97%,Benchmark-Eval
+REC-2026-M08-0142,894120937032,EC2 g5.12xlarge,CC-3020,Customer Success,64894,66196,1302,Beatriz Novak,95%,Staging
+REC-2026-M08-0143,894120939254,EC2 g5.12xlarge,CC-2010,Platform Engineering,49566,50716,1150,Matteo Watanabe,99%,Benchmark-Eval
+REC-2026-M08-0144,894120939759,S3 Glacier Deep Archive,CC-4010,Business Operations,61957,58216,-3741,Beatriz Wong,93%,Production
+REC-2026-M08-0145,894120937045,S3 Glacier Deep Archive,CC-3010,Platform Engineering,46478,42550,-3928,Kaito Ivanov,92%,Production
+REC-2026-M08-0146,894120936586,RDS PostgreSQL Multi-AZ,CC-1010,Applied Research,74565,76390,1825,Ananya Silva,98%,Staging
+REC-2026-M08-0147,894120931247,RDS PostgreSQL Multi-AZ,CC-2010,Customer Success,45272,48939,3667,Hannah Hale,99%,Staging
+REC-2026-M08-0148,894120932341,EC2 g5.12xlarge,CC-1020,Platform Engineering,16613,20811,4198,Chloe Johnson,98%,Production
+REC-2026-M08-0149,894120933240,RDS PostgreSQL Multi-AZ,CC-3010,Customer Success,18603,23227,4624,Devon Johnson,96%,Staging

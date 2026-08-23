@@ -1,0 +1,160 @@
+asset_tag_id,device_model,serial_number,assigned_employee,employee_level,office_location,procurement_date,warranty_expiration,disk_encryption_status,mdm_enrolled,purchase_price_usd
+HF-HW-04-0001,Dell Precision 7680,SN-2026-741780,Aris Wong,L5,Dublin, Ireland,2023-09-08,2027-02-17,Enabled (FileVault2/BitLocker),Intune/Knox,4200
+HF-HW-04-0002,MacBook Pro 16 M3 Max,SN-2026-748985,Chen Ivanov,L6,Singapore,2024-05-02,2027-02-26,Enabled (FileVault2/BitLocker),Jamf Pro,2505
+HF-HW-04-0003,Dell Precision 7680,SN-2026-621682,Ethan Garcia,L8,Austin, TX,2023-11-12,2028-04-14,Enabled (FileVault2/BitLocker),Intune/Knox,2714
+HF-HW-04-0004,Lenovo ThinkPad P1 Gen 6,SN-2026-746781,Siddharth Nair,L3,Singapore,2023-09-06,2027-01-16,Enabled (FileVault2/BitLocker),Intune/Knox,3254
+HF-HW-04-0005,MacBook Pro 16 M3 Max,SN-2026-174301,Carlos Joshi,L7,Singapore,2025-07-07,2028-04-25,Enabled (FileVault2/BitLocker),Jamf Pro,2425
+HF-HW-04-0006,Lenovo ThinkPad P1 Gen 6,SN-2026-338846,Sarah Santos,L8,Dublin, Ireland,2024-07-08,2026-08-19,Enabled (FileVault2/BitLocker),Intune/Knox,3192
+HF-HW-04-0007,MacBook Pro 16 M3 Max,SN-2026-557037,Noah Mueller,L7,Dublin, Ireland,2024-07-12,2027-08-24,Enabled (FileVault2/BitLocker),Jamf Pro,2597
+HF-HW-04-0008,Lenovo ThinkPad P1 Gen 6,SN-2026-382795,Ava Dubois,L4,Austin, TX,2023-05-05,2026-08-15,Enabled (FileVault2/BitLocker),Intune/Knox,3056
+HF-HW-04-0009,MacBook Pro 14 M3 Pro,SN-2026-897273,Tariq Ivanov,L5,Singapore,2024-11-20,2027-10-18,Enabled (FileVault2/BitLocker),Jamf Pro,3951
+HF-HW-04-0010,MacBook Pro 14 M3 Pro,SN-2026-190674,Viktor Hoffmann,L4,Singapore,2026-08-09,2026-12-14,Pending Compliance Review,Jamf Pro,3707
+HF-HW-04-0011,MacBook Pro 14 M3 Pro,SN-2026-359870,Zoe Novak,L7,Austin, TX,2024-10-01,2029-01-02,Enabled (FileVault2/BitLocker),Jamf Pro,3163
+HF-HW-04-0012,System76 Serval WS,SN-2026-135253,Yuki Moreau,L6,Singapore,2023-08-16,2027-02-18,Enabled (FileVault2/BitLocker),Intune/Knox,3742
+HF-HW-04-0013,MacBook Pro 16 M3 Max,SN-2026-826830,Viktor Mueller,L4,Dublin, Ireland,2025-04-21,2026-01-16,Enabled (FileVault2/BitLocker),Jamf Pro,3570
+HF-HW-04-0014,Lenovo ThinkPad P1 Gen 6,SN-2026-269662,Siddharth Hale,L6,Dublin, Ireland,2024-12-13,2027-06-21,Enabled (FileVault2/BitLocker),Intune/Knox,3150
+HF-HW-04-0015,MacBook Pro 16 M3 Max,SN-2026-757776,Marcus Lindqvist,L8,Dublin, Ireland,2023-05-14,2028-12-20,Enabled (FileVault2/BitLocker),Jamf Pro,3310
+HF-HW-04-0016,System76 Serval WS,SN-2026-933071,Lucas Thorne,L7,Dublin, Ireland,2023-09-22,2028-01-04,Enabled (FileVault2/BitLocker),Intune/Knox,2984
+HF-HW-04-0017,Lenovo ThinkPad P1 Gen 6,SN-2026-587957,Isla Nair,L5,Dublin, Ireland,2024-11-18,2026-09-23,Enabled (FileVault2/BitLocker),Intune/Knox,3784
+HF-HW-04-0018,MacBook Pro 14 M3 Pro,SN-2026-245129,Tariq Santos,L7,Austin, TX,2026-12-25,2027-12-25,Enabled (FileVault2/BitLocker),Jamf Pro,2661
+HF-HW-04-0019,Lenovo ThinkPad P1 Gen 6,SN-2026-469844,Kaito Novak,L5,Austin, TX,2023-06-12,2029-08-17,Enabled (FileVault2/BitLocker),Intune/Knox,3278
+HF-HW-04-0020,MacBook Pro 16 M3 Max,SN-2026-593002,Xavier Zhao,L6,Singapore,2025-11-23,2026-04-15,Pending Compliance Review,Jamf Pro,2378
+HF-HW-04-0021,MacBook Pro 16 M3 Max,SN-2026-509660,Ethan Zhao,L3,Austin, TX,2024-05-04,2027-08-05,Enabled (FileVault2/BitLocker),Jamf Pro,3991
+HF-HW-04-0022,MacBook Pro 14 M3 Pro,SN-2026-645980,Devon Zhao,L6,Singapore,2024-08-12,2029-08-24,Enabled (FileVault2/BitLocker),Jamf Pro,3520
+HF-HW-04-0023,MacBook Pro 16 M3 Max,SN-2026-405677,Ava Vance,L3,Austin, TX,2025-07-19,2028-11-21,Enabled (FileVault2/BitLocker),Jamf Pro,3811
+HF-HW-04-0024,Lenovo ThinkPad P1 Gen 6,SN-2026-609763,Elena Joshi,L6,Dublin, Ireland,2024-05-06,2028-04-16,Enabled (FileVault2/BitLocker),Intune/Knox,2961
+HF-HW-04-0025,Lenovo ThinkPad P1 Gen 6,SN-2026-907141,Elena Patel,L5,Dublin, Ireland,2026-03-20,2027-12-18,Enabled (FileVault2/BitLocker),Intune/Knox,2784
+HF-HW-04-0026,MacBook Pro 14 M3 Pro,SN-2026-283877,Noah Garcia,L4,Austin, TX,2023-06-19,2027-08-09,Enabled (FileVault2/BitLocker),Jamf Pro,2957
+HF-HW-04-0027,MacBook Pro 14 M3 Pro,SN-2026-315120,Ananya Nair,L8,Dublin, Ireland,2025-03-12,2029-09-06,Enabled (FileVault2/BitLocker),Jamf Pro,3292
+HF-HW-04-0028,Lenovo ThinkPad P1 Gen 6,SN-2026-227391,Devon Moreau,L6,Austin, TX,2026-06-05,2026-12-18,Enabled (FileVault2/BitLocker),Intune/Knox,4198
+HF-HW-04-0029,System76 Serval WS,SN-2026-447372,Chloe Watanabe,L5,Singapore,2024-10-24,2029-06-23,Enabled (FileVault2/BitLocker),Intune/Knox,2430
+HF-HW-04-0030,Dell Precision 7680,SN-2026-142027,Sophia Smith,L5,Austin, TX,2026-10-27,2027-08-12,Pending Compliance Review,Intune/Knox,2389
+HF-HW-04-0031,Lenovo ThinkPad P1 Gen 6,SN-2026-157706,Gabriel Nguyen,L7,Singapore,2024-05-07,2026-02-18,Enabled (FileVault2/BitLocker),Intune/Knox,3939
+HF-HW-04-0032,Dell Precision 7680,SN-2026-809952,Aris Moreau,L4,Dublin, Ireland,2025-10-20,2026-11-12,Enabled (FileVault2/BitLocker),Intune/Knox,3014
+HF-HW-04-0033,MacBook Pro 14 M3 Pro,SN-2026-850742,Yuki Bhat,L6,Dublin, Ireland,2023-05-12,2028-05-15,Enabled (FileVault2/BitLocker),Jamf Pro,3990
+HF-HW-04-0034,System76 Serval WS,SN-2026-191853,Lucas Joshi,L8,Dublin, Ireland,2026-05-06,2029-12-14,Enabled (FileVault2/BitLocker),Intune/Knox,2485
+HF-HW-04-0035,System76 Serval WS,SN-2026-726981,Aris Patel,L4,Dublin, Ireland,2026-09-11,2026-10-25,Enabled (FileVault2/BitLocker),Intune/Knox,2969
+HF-HW-04-0036,MacBook Pro 16 M3 Max,SN-2026-106940,Viktor Takahashi,L6,Austin, TX,2026-12-19,2027-04-06,Enabled (FileVault2/BitLocker),Jamf Pro,3904
+HF-HW-04-0037,Dell Precision 7680,SN-2026-403524,Ananya Hoffmann,L3,Dublin, Ireland,2025-08-18,2029-04-01,Enabled (FileVault2/BitLocker),Intune/Knox,3820
+HF-HW-04-0038,MacBook Pro 16 M3 Max,SN-2026-261505,Aisha Wong,L8,Singapore,2026-02-21,2028-07-06,Enabled (FileVault2/BitLocker),Jamf Pro,3207
+HF-HW-04-0039,MacBook Pro 14 M3 Pro,SN-2026-129824,Liam Takahashi,L6,Austin, TX,2025-10-16,2029-05-21,Enabled (FileVault2/BitLocker),Jamf Pro,3604
+HF-HW-04-0040,Dell Precision 7680,SN-2026-827968,Liam Bhat,L7,Singapore,2023-05-06,2026-03-11,Pending Compliance Review,Intune/Knox,3144
+HF-HW-04-0041,MacBook Pro 14 M3 Pro,SN-2026-474745,Olivia Voss,L5,Dublin, Ireland,2026-11-12,2026-05-10,Enabled (FileVault2/BitLocker),Jamf Pro,3284
+HF-HW-04-0042,MacBook Pro 16 M3 Max,SN-2026-638828,Ava Kim,L3,Singapore,2024-09-11,2028-11-26,Enabled (FileVault2/BitLocker),Jamf Pro,2816
+HF-HW-04-0043,Lenovo ThinkPad P1 Gen 6,SN-2026-818739,Chen Lin,L7,Singapore,2025-03-01,2027-09-10,Enabled (FileVault2/BitLocker),Intune/Knox,2963
+HF-HW-04-0044,Dell Precision 7680,SN-2026-532007,Tariq Garcia,L3,Austin, TX,2024-09-08,2027-09-20,Enabled (FileVault2/BitLocker),Intune/Knox,3612
+HF-HW-04-0045,System76 Serval WS,SN-2026-987168,Xavier Smith,L6,Dublin, Ireland,2023-02-27,2027-01-16,Enabled (FileVault2/BitLocker),Intune/Knox,2913
+HF-HW-04-0046,Lenovo ThinkPad P1 Gen 6,SN-2026-824619,Chen Johnson,L6,Singapore,2025-03-23,2028-01-24,Enabled (FileVault2/BitLocker),Intune/Knox,3868
+HF-HW-04-0047,MacBook Pro 16 M3 Max,SN-2026-333159,Sophia Patel,L8,Austin, TX,2025-03-07,2027-02-14,Enabled (FileVault2/BitLocker),Jamf Pro,3614
+HF-HW-04-0048,MacBook Pro 16 M3 Max,SN-2026-181511,Devon Watanabe,L6,Austin, TX,2024-02-02,2026-08-04,Enabled (FileVault2/BitLocker),Jamf Pro,4060
+HF-HW-04-0049,Lenovo ThinkPad P1 Gen 6,SN-2026-145383,Marcus Wong,L8,Austin, TX,2023-02-20,2027-10-07,Enabled (FileVault2/BitLocker),Intune/Knox,2578
+HF-HW-04-0050,Lenovo ThinkPad P1 Gen 6,SN-2026-130680,Aris Patel,L8,Dublin, Ireland,2025-06-06,2027-09-19,Pending Compliance Review,Intune/Knox,2339
+HF-HW-04-0051,MacBook Pro 16 M3 Max,SN-2026-959398,Elena Chen,L7,Austin, TX,2024-05-06,2026-12-04,Enabled (FileVault2/BitLocker),Jamf Pro,4092
+HF-HW-04-0052,MacBook Pro 14 M3 Pro,SN-2026-628687,Beatriz Bhat,L8,Singapore,2024-08-22,2026-03-27,Enabled (FileVault2/BitLocker),Jamf Pro,2926
+HF-HW-04-0053,Dell Precision 7680,SN-2026-544692,Lucas Ivanov,L6,Austin, TX,2025-02-15,2026-09-05,Enabled (FileVault2/BitLocker),Intune/Knox,3215
+HF-HW-04-0054,Lenovo ThinkPad P1 Gen 6,SN-2026-838963,Chloe Nair,L3,Dublin, Ireland,2026-02-13,2028-08-20,Enabled (FileVault2/BitLocker),Intune/Knox,3707
+HF-HW-04-0055,Lenovo ThinkPad P1 Gen 6,SN-2026-820420,Lars Ivanov,L7,Dublin, Ireland,2025-07-07,2026-08-22,Enabled (FileVault2/BitLocker),Intune/Knox,2952
+HF-HW-04-0056,MacBook Pro 14 M3 Pro,SN-2026-113406,Matteo Lin,L6,Dublin, Ireland,2023-02-05,2029-07-23,Enabled (FileVault2/BitLocker),Jamf Pro,3409
+HF-HW-04-0057,MacBook Pro 16 M3 Max,SN-2026-877447,Olivia Vance,L5,Austin, TX,2025-04-20,2029-02-08,Enabled (FileVault2/BitLocker),Jamf Pro,3916
+HF-HW-04-0058,Dell Precision 7680,SN-2026-860427,Matteo Takahashi,L8,Singapore,2025-11-13,2028-08-22,Enabled (FileVault2/BitLocker),Intune/Knox,3435
+HF-HW-04-0059,Dell Precision 7680,SN-2026-608069,Soren Takahashi,L4,Dublin, Ireland,2023-02-09,2029-08-08,Enabled (FileVault2/BitLocker),Intune/Knox,3486
+HF-HW-04-0060,MacBook Pro 14 M3 Pro,SN-2026-131167,Sarah Voss,L3,Dublin, Ireland,2023-03-13,2028-03-10,Pending Compliance Review,Jamf Pro,3473
+HF-HW-04-0061,System76 Serval WS,SN-2026-201013,Marcus Hoffmann,L6,Austin, TX,2025-11-16,2029-09-09,Enabled (FileVault2/BitLocker),Intune/Knox,3310
+HF-HW-04-0062,Lenovo ThinkPad P1 Gen 6,SN-2026-948802,Xavier Hale,L3,Dublin, Ireland,2023-07-15,2028-07-15,Enabled (FileVault2/BitLocker),Intune/Knox,3141
+HF-HW-04-0063,MacBook Pro 16 M3 Max,SN-2026-134455,Ethan Wong,L8,Austin, TX,2026-07-05,2028-12-13,Enabled (FileVault2/BitLocker),Jamf Pro,3198
+HF-HW-04-0064,MacBook Pro 16 M3 Max,SN-2026-696487,Matteo Watanabe,L6,Singapore,2024-09-02,2029-05-16,Enabled (FileVault2/BitLocker),Jamf Pro,3410
+HF-HW-04-0065,Dell Precision 7680,SN-2026-746908,Fatima Zhao,L5,Austin, TX,2023-10-02,2027-06-12,Enabled (FileVault2/BitLocker),Intune/Knox,3857
+HF-HW-04-0066,System76 Serval WS,SN-2026-128206,Tariq Lindqvist,L3,Dublin, Ireland,2025-06-14,2028-01-22,Enabled (FileVault2/BitLocker),Intune/Knox,2700
+HF-HW-04-0067,MacBook Pro 14 M3 Pro,SN-2026-346019,Dmitri Thorne,L8,Austin, TX,2025-02-11,2027-01-18,Enabled (FileVault2/BitLocker),Jamf Pro,2867
+HF-HW-04-0068,MacBook Pro 16 M3 Max,SN-2026-583298,Yuki Silva,L5,Austin, TX,2026-10-01,2028-07-19,Enabled (FileVault2/BitLocker),Jamf Pro,2999
+HF-HW-04-0069,Lenovo ThinkPad P1 Gen 6,SN-2026-700350,Sarah Hoffmann,L3,Singapore,2024-06-16,2028-03-20,Enabled (FileVault2/BitLocker),Intune/Knox,2813
+HF-HW-04-0070,Lenovo ThinkPad P1 Gen 6,SN-2026-557169,Ava Hoffmann,L8,Austin, TX,2024-05-09,2026-05-19,Pending Compliance Review,Intune/Knox,3023
+HF-HW-04-0071,MacBook Pro 14 M3 Pro,SN-2026-754911,Aris Lin,L7,Dublin, Ireland,2025-02-19,2029-07-07,Enabled (FileVault2/BitLocker),Jamf Pro,2911
+HF-HW-04-0072,MacBook Pro 16 M3 Max,SN-2026-783185,Dmitri Wong,L6,Singapore,2025-04-14,2029-05-20,Enabled (FileVault2/BitLocker),Jamf Pro,3255
+HF-HW-04-0073,Dell Precision 7680,SN-2026-804181,Ananya Kim,L3,Singapore,2024-10-16,2027-11-27,Enabled (FileVault2/BitLocker),Intune/Knox,3720
+HF-HW-04-0074,Dell Precision 7680,SN-2026-380951,Xavier Novak,L7,Singapore,2023-09-07,2028-08-05,Enabled (FileVault2/BitLocker),Intune/Knox,2692
+HF-HW-04-0075,MacBook Pro 14 M3 Pro,SN-2026-882692,Dmitri Novak,L6,Dublin, Ireland,2023-11-07,2029-05-27,Enabled (FileVault2/BitLocker),Jamf Pro,2787
+HF-HW-04-0076,MacBook Pro 14 M3 Pro,SN-2026-368903,Gabriel Santos,L6,Austin, TX,2023-03-07,2026-04-26,Enabled (FileVault2/BitLocker),Jamf Pro,3894
+HF-HW-04-0077,Lenovo ThinkPad P1 Gen 6,SN-2026-586706,Matteo Novak,L6,Singapore,2023-04-06,2028-03-01,Enabled (FileVault2/BitLocker),Intune/Knox,2729
+HF-HW-04-0078,Lenovo ThinkPad P1 Gen 6,SN-2026-790666,Ananya Kim,L8,Austin, TX,2026-01-02,2026-06-20,Enabled (FileVault2/BitLocker),Intune/Knox,2810
+HF-HW-04-0079,MacBook Pro 16 M3 Max,SN-2026-526777,Chen Thorne,L6,Singapore,2024-04-04,2026-09-22,Enabled (FileVault2/BitLocker),Jamf Pro,3897
+HF-HW-04-0080,System76 Serval WS,SN-2026-912767,Mei-Ling O'Connor,L6,Austin, TX,2024-10-04,2028-06-27,Pending Compliance Review,Intune/Knox,3396
+HF-HW-04-0081,Dell Precision 7680,SN-2026-944986,Carlos Novak,L4,Austin, TX,2023-03-07,2028-08-14,Enabled (FileVault2/BitLocker),Intune/Knox,2720
+HF-HW-04-0082,System76 Serval WS,SN-2026-158642,Matteo Bhat,L8,Austin, TX,2025-09-14,2029-11-08,Enabled (FileVault2/BitLocker),Intune/Knox,4172
+HF-HW-04-0083,Lenovo ThinkPad P1 Gen 6,SN-2026-922370,Noah Bhat,L6,Singapore,2025-05-01,2026-12-22,Enabled (FileVault2/BitLocker),Intune/Knox,3836
+HF-HW-04-0084,MacBook Pro 16 M3 Max,SN-2026-824233,Carlos O'Connor,L7,Dublin, Ireland,2025-11-23,2028-11-04,Enabled (FileVault2/BitLocker),Jamf Pro,3295
+HF-HW-04-0085,MacBook Pro 14 M3 Pro,SN-2026-999308,Lars Lindqvist,L3,Dublin, Ireland,2025-05-03,2027-05-07,Enabled (FileVault2/BitLocker),Jamf Pro,3960
+HF-HW-04-0086,MacBook Pro 14 M3 Pro,SN-2026-560163,Zoe Silva,L3,Dublin, Ireland,2023-08-16,2029-06-23,Enabled (FileVault2/BitLocker),Jamf Pro,3065
+HF-HW-04-0087,MacBook Pro 16 M3 Max,SN-2026-964446,Olivia O'Connor,L7,Austin, TX,2025-07-20,2028-08-23,Enabled (FileVault2/BitLocker),Jamf Pro,2256
+HF-HW-04-0088,MacBook Pro 16 M3 Max,SN-2026-772528,Ethan Joshi,L8,Austin, TX,2023-07-07,2028-06-19,Enabled (FileVault2/BitLocker),Jamf Pro,2368
+HF-HW-04-0089,MacBook Pro 16 M3 Max,SN-2026-265488,Carlos Johnson,L7,Singapore,2026-06-15,2029-12-05,Enabled (FileVault2/BitLocker),Jamf Pro,2733
+HF-HW-04-0090,MacBook Pro 14 M3 Pro,SN-2026-820861,Elena Kovacs,L5,Austin, TX,2023-07-12,2027-07-13,Pending Compliance Review,Jamf Pro,4134
+HF-HW-04-0091,System76 Serval WS,SN-2026-335391,Devon Hale,L7,Singapore,2024-02-15,2027-05-23,Enabled (FileVault2/BitLocker),Intune/Knox,3944
+HF-HW-04-0092,MacBook Pro 14 M3 Pro,SN-2026-152201,Hannah Novak,L7,Dublin, Ireland,2024-02-12,2027-10-04,Enabled (FileVault2/BitLocker),Jamf Pro,2228
+HF-HW-04-0093,System76 Serval WS,SN-2026-556297,Siddharth Hoffmann,L3,Austin, TX,2024-04-28,2028-05-24,Enabled (FileVault2/BitLocker),Intune/Knox,3212
+HF-HW-04-0094,Dell Precision 7680,SN-2026-236523,Yuki Mueller,L7,Austin, TX,2025-12-22,2027-07-06,Enabled (FileVault2/BitLocker),Intune/Knox,3036
+HF-HW-04-0095,MacBook Pro 14 M3 Pro,SN-2026-130170,Chloe O'Connor,L4,Singapore,2026-04-12,2029-02-01,Enabled (FileVault2/BitLocker),Jamf Pro,3160
+HF-HW-04-0096,MacBook Pro 14 M3 Pro,SN-2026-438947,Hannah Mueller,L8,Dublin, Ireland,2026-12-20,2028-02-04,Enabled (FileVault2/BitLocker),Jamf Pro,3340
+HF-HW-04-0097,MacBook Pro 16 M3 Max,SN-2026-154644,Tariq Santos,L6,Dublin, Ireland,2023-01-09,2029-05-13,Enabled (FileVault2/BitLocker),Jamf Pro,3574
+HF-HW-04-0098,Lenovo ThinkPad P1 Gen 6,SN-2026-238661,Ananya Nair,L7,Austin, TX,2025-03-17,2029-06-15,Enabled (FileVault2/BitLocker),Intune/Knox,2470
+HF-HW-04-0099,MacBook Pro 16 M3 Max,SN-2026-432731,Mei-Ling Novak,L4,Dublin, Ireland,2023-06-02,2027-08-28,Enabled (FileVault2/BitLocker),Jamf Pro,4193
+HF-HW-04-0100,Lenovo ThinkPad P1 Gen 6,SN-2026-884149,Chen Novak,L5,Dublin, Ireland,2025-09-11,2029-03-11,Pending Compliance Review,Intune/Knox,3709
+HF-HW-04-0101,Dell Precision 7680,SN-2026-900771,Noah Joshi,L3,Austin, TX,2024-01-08,2027-01-16,Enabled (FileVault2/BitLocker),Intune/Knox,2732
+HF-HW-04-0102,MacBook Pro 14 M3 Pro,SN-2026-840255,Siddharth Novak,L3,Dublin, Ireland,2023-08-12,2029-08-16,Enabled (FileVault2/BitLocker),Jamf Pro,2430
+HF-HW-04-0103,MacBook Pro 14 M3 Pro,SN-2026-229660,Fatima Thorne,L4,Dublin, Ireland,2024-03-24,2028-10-22,Enabled (FileVault2/BitLocker),Jamf Pro,3399
+HF-HW-04-0104,MacBook Pro 14 M3 Pro,SN-2026-711893,Mara Kim,L6,Austin, TX,2024-08-22,2026-06-01,Enabled (FileVault2/BitLocker),Jamf Pro,2782
+HF-HW-04-0105,MacBook Pro 16 M3 Max,SN-2026-513316,Chen Lin,L5,Austin, TX,2023-02-15,2029-08-21,Enabled (FileVault2/BitLocker),Jamf Pro,4156
+HF-HW-04-0106,Lenovo ThinkPad P1 Gen 6,SN-2026-723068,Mara Dubois,L3,Singapore,2026-06-24,2027-04-28,Enabled (FileVault2/BitLocker),Intune/Knox,2299
+HF-HW-04-0107,Lenovo ThinkPad P1 Gen 6,SN-2026-438869,Elena Vance,L7,Singapore,2026-02-13,2028-03-08,Enabled (FileVault2/BitLocker),Intune/Knox,4176
+HF-HW-04-0108,Dell Precision 7680,SN-2026-193520,Devon Mueller,L4,Dublin, Ireland,2026-05-21,2027-02-10,Enabled (FileVault2/BitLocker),Intune/Knox,3205
+HF-HW-04-0109,Dell Precision 7680,SN-2026-871635,Dmitri Johnson,L5,Singapore,2023-06-17,2027-08-15,Enabled (FileVault2/BitLocker),Intune/Knox,4013
+HF-HW-04-0110,Dell Precision 7680,SN-2026-599583,Kaito Novak,L3,Dublin, Ireland,2025-10-06,2029-11-14,Pending Compliance Review,Intune/Knox,2390
+HF-HW-04-0111,MacBook Pro 16 M3 Max,SN-2026-638277,Tariq Tanaka,L8,Austin, TX,2024-08-17,2026-05-15,Enabled (FileVault2/BitLocker),Jamf Pro,3095
+HF-HW-04-0112,MacBook Pro 16 M3 Max,SN-2026-940480,Beatriz Wong,L4,Austin, TX,2025-04-17,2029-05-19,Enabled (FileVault2/BitLocker),Jamf Pro,2297
+HF-HW-04-0113,System76 Serval WS,SN-2026-180250,Priya Lin,L7,Dublin, Ireland,2026-02-15,2028-06-09,Enabled (FileVault2/BitLocker),Intune/Knox,3399
+HF-HW-04-0114,MacBook Pro 16 M3 Max,SN-2026-905984,Soren Hale,L3,Singapore,2026-03-26,2027-07-02,Enabled (FileVault2/BitLocker),Jamf Pro,2370
+HF-HW-04-0115,Dell Precision 7680,SN-2026-838594,Dmitri Kovacs,L7,Singapore,2026-11-15,2028-06-28,Enabled (FileVault2/BitLocker),Intune/Knox,3858
+HF-HW-04-0116,MacBook Pro 14 M3 Pro,SN-2026-321321,Ethan Thorne,L8,Singapore,2025-11-04,2029-09-01,Enabled (FileVault2/BitLocker),Jamf Pro,2211
+HF-HW-04-0117,Dell Precision 7680,SN-2026-222346,Mara Garcia,L8,Dublin, Ireland,2026-12-13,2029-05-20,Enabled (FileVault2/BitLocker),Intune/Knox,3865
+HF-HW-04-0118,System76 Serval WS,SN-2026-478251,Hannah Wong,L3,Austin, TX,2024-01-07,2026-01-23,Enabled (FileVault2/BitLocker),Intune/Knox,4187
+HF-HW-04-0119,MacBook Pro 14 M3 Pro,SN-2026-128117,Lucas Watanabe,L8,Austin, TX,2024-07-27,2027-02-10,Enabled (FileVault2/BitLocker),Jamf Pro,3776
+HF-HW-04-0120,Dell Precision 7680,SN-2026-255362,Beatriz Novak,L3,Austin, TX,2024-03-24,2029-08-16,Pending Compliance Review,Intune/Knox,2240
+HF-HW-04-0121,Dell Precision 7680,SN-2026-713654,Carlos Nguyen,L5,Singapore,2026-01-11,2026-02-21,Enabled (FileVault2/BitLocker),Intune/Knox,3935
+HF-HW-04-0122,Dell Precision 7680,SN-2026-535878,Matteo Zhao,L3,Dublin, Ireland,2026-08-17,2029-04-23,Enabled (FileVault2/BitLocker),Intune/Knox,2324
+HF-HW-04-0123,System76 Serval WS,SN-2026-119943,Yuki Kovacs,L7,Austin, TX,2025-11-14,2029-02-16,Enabled (FileVault2/BitLocker),Intune/Knox,3475
+HF-HW-04-0124,Lenovo ThinkPad P1 Gen 6,SN-2026-570103,Yuki Hale,L4,Dublin, Ireland,2024-08-12,2029-04-17,Enabled (FileVault2/BitLocker),Intune/Knox,2649
+HF-HW-04-0125,System76 Serval WS,SN-2026-818247,Tariq Tanaka,L4,Dublin, Ireland,2026-07-27,2028-08-26,Enabled (FileVault2/BitLocker),Intune/Knox,4188
+HF-HW-04-0126,MacBook Pro 14 M3 Pro,SN-2026-752048,Lucas Zhao,L8,Singapore,2023-11-16,2027-03-07,Enabled (FileVault2/BitLocker),Jamf Pro,2520
+HF-HW-04-0127,System76 Serval WS,SN-2026-616094,Sarah Silva,L6,Dublin, Ireland,2024-04-18,2026-01-12,Enabled (FileVault2/BitLocker),Intune/Knox,4004
+HF-HW-04-0128,Lenovo ThinkPad P1 Gen 6,SN-2026-474387,Olivia Kim,L7,Austin, TX,2023-06-14,2026-10-08,Enabled (FileVault2/BitLocker),Intune/Knox,2447
+HF-HW-04-0129,System76 Serval WS,SN-2026-334981,Matteo O'Connor,L5,Dublin, Ireland,2023-09-09,2027-12-28,Enabled (FileVault2/BitLocker),Intune/Knox,3255
+HF-HW-04-0130,System76 Serval WS,SN-2026-802006,Sarah Voss,L6,Dublin, Ireland,2023-02-26,2026-09-02,Pending Compliance Review,Intune/Knox,3238
+HF-HW-04-0131,MacBook Pro 16 M3 Max,SN-2026-275160,Liam Mueller,L5,Austin, TX,2025-12-15,2029-12-28,Enabled (FileVault2/BitLocker),Jamf Pro,2403
+HF-HW-04-0132,MacBook Pro 14 M3 Pro,SN-2026-778526,Chen Dubois,L4,Austin, TX,2024-08-14,2026-04-27,Enabled (FileVault2/BitLocker),Jamf Pro,3857
+HF-HW-04-0133,Dell Precision 7680,SN-2026-457900,Chloe Garcia,L3,Dublin, Ireland,2025-12-25,2029-06-21,Enabled (FileVault2/BitLocker),Intune/Knox,3561
+HF-HW-04-0134,MacBook Pro 14 M3 Pro,SN-2026-258975,Mei-Ling Silva,L4,Austin, TX,2026-07-14,2029-09-26,Enabled (FileVault2/BitLocker),Jamf Pro,3597
+HF-HW-04-0135,Lenovo ThinkPad P1 Gen 6,SN-2026-131208,Lars Patel,L3,Singapore,2023-02-11,2028-07-25,Enabled (FileVault2/BitLocker),Intune/Knox,2536
+HF-HW-04-0136,Dell Precision 7680,SN-2026-164454,Hannah Nair,L8,Singapore,2024-10-02,2028-07-13,Enabled (FileVault2/BitLocker),Intune/Knox,4014
+HF-HW-04-0137,System76 Serval WS,SN-2026-419105,Zoe Al-Mansoor,L3,Dublin, Ireland,2024-12-13,2029-11-07,Enabled (FileVault2/BitLocker),Intune/Knox,4017
+HF-HW-04-0138,System76 Serval WS,SN-2026-754688,Isla Joshi,L8,Dublin, Ireland,2026-04-10,2026-01-18,Enabled (FileVault2/BitLocker),Intune/Knox,2885
+HF-HW-04-0139,Dell Precision 7680,SN-2026-860321,Sophia Zhao,L4,Austin, TX,2025-09-11,2027-01-01,Enabled (FileVault2/BitLocker),Intune/Knox,4023
+HF-HW-04-0140,System76 Serval WS,SN-2026-721285,Aisha Santos,L5,Singapore,2026-09-04,2026-06-09,Pending Compliance Review,Intune/Knox,3484
+HF-HW-04-0141,System76 Serval WS,SN-2026-471692,Liam Voss,L8,Austin, TX,2026-05-19,2026-08-11,Enabled (FileVault2/BitLocker),Intune/Knox,2683
+HF-HW-04-0142,System76 Serval WS,SN-2026-693071,Xavier Ivanov,L5,Dublin, Ireland,2025-11-26,2027-12-13,Enabled (FileVault2/BitLocker),Intune/Knox,3264
+HF-HW-04-0143,MacBook Pro 14 M3 Pro,SN-2026-210338,Zoe Nguyen,L5,Dublin, Ireland,2023-03-23,2029-07-03,Enabled (FileVault2/BitLocker),Jamf Pro,2388
+HF-HW-04-0144,MacBook Pro 16 M3 Max,SN-2026-545526,Sophia Watanabe,L4,Dublin, Ireland,2023-06-22,2029-10-18,Enabled (FileVault2/BitLocker),Jamf Pro,3262
+HF-HW-04-0145,Dell Precision 7680,SN-2026-376502,Elena Hoffmann,L8,Dublin, Ireland,2026-12-16,2029-03-05,Enabled (FileVault2/BitLocker),Intune/Knox,3235
+HF-HW-04-0146,MacBook Pro 14 M3 Pro,SN-2026-608312,Siddharth Johnson,L8,Singapore,2023-12-07,2029-08-02,Enabled (FileVault2/BitLocker),Jamf Pro,3728
+HF-HW-04-0147,MacBook Pro 14 M3 Pro,SN-2026-686181,Chen Smith,L7,Dublin, Ireland,2023-02-12,2028-01-17,Enabled (FileVault2/BitLocker),Jamf Pro,2513
+HF-HW-04-0148,MacBook Pro 16 M3 Max,SN-2026-489511,Dmitri Bhat,L5,Dublin, Ireland,2026-01-26,2027-03-26,Enabled (FileVault2/BitLocker),Jamf Pro,3407
+HF-HW-04-0149,Dell Precision 7680,SN-2026-151014,Dmitri Zhao,L4,Austin, TX,2026-01-04,2028-02-28,Enabled (FileVault2/BitLocker),Intune/Knox,2291
+HF-HW-04-0150,Dell Precision 7680,SN-2026-604550,Dominic Wong,L7,Dublin, Ireland,2025-07-16,2027-03-17,Pending Compliance Review,Intune/Knox,3503
+HF-HW-04-0151,Dell Precision 7680,SN-2026-898678,Lars Joshi,L4,Singapore,2025-02-26,2029-07-08,Enabled (FileVault2/BitLocker),Intune/Knox,4043
+HF-HW-04-0152,Dell Precision 7680,SN-2026-455465,Xavier Nair,L8,Dublin, Ireland,2025-11-03,2027-12-01,Enabled (FileVault2/BitLocker),Intune/Knox,3371
+HF-HW-04-0153,Lenovo ThinkPad P1 Gen 6,SN-2026-688297,Liam Thorne,L4,Singapore,2023-10-17,2027-08-17,Enabled (FileVault2/BitLocker),Intune/Knox,4036
+HF-HW-04-0154,MacBook Pro 16 M3 Max,SN-2026-226126,Xavier Kim,L3,Dublin, Ireland,2024-04-27,2029-02-26,Enabled (FileVault2/BitLocker),Jamf Pro,3292
+HF-HW-04-0155,System76 Serval WS,SN-2026-435996,Hannah Nair,L6,Austin, TX,2025-07-06,2029-01-28,Enabled (FileVault2/BitLocker),Intune/Knox,3281
+HF-HW-04-0156,Lenovo ThinkPad P1 Gen 6,SN-2026-500567,Aisha Thorne,L3,Austin, TX,2024-05-05,2027-05-25,Enabled (FileVault2/BitLocker),Intune/Knox,2383
+HF-HW-04-0157,MacBook Pro 14 M3 Pro,SN-2026-421697,Viktor Garcia,L3,Singapore,2025-03-01,2026-05-13,Enabled (FileVault2/BitLocker),Jamf Pro,2402
+HF-HW-04-0158,Lenovo ThinkPad P1 Gen 6,SN-2026-249380,Viktor Kovacs,L5,Dublin, Ireland,2023-01-07,2027-10-19,Enabled (FileVault2/BitLocker),Intune/Knox,2684
+HF-HW-04-0159,Dell Precision 7680,SN-2026-633328,Soren Lindqvist,L3,Dublin, Ireland,2023-06-15,2029-02-16,Enabled (FileVault2/BitLocker),Intune/Knox,2259

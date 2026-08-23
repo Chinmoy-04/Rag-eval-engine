@@ -1,0 +1,7 @@
+job_level,level_title,base_salary_min,base_salary_mid,base_salary_max,annual_target_bonus_pct,initial_rsu_grant_target,annual_refresh_rsu_target,currency,401k_match_pct
+L3,L3 - Associate,68850,81000,93150,5%,13500,4725,GBP,5.0%
+L4,L4 - Mid-Level,95625,112500,129374,8%,36000,12600,GBP,5.0%
+L5,L5 - Senior,122400,144000,165600,11%,58500,20475,GBP,5.0%
+L6,L6 - Staff,149175,175500,201824,14%,81000,28350,GBP,5.0%
+L7,L7 - Principal,175950,207000,238049,17%,103500,36225,GBP,5.0%
+L8,L8 - Distinguished,202725,238500,274275,20%,126000,44100,GBP,5.0%

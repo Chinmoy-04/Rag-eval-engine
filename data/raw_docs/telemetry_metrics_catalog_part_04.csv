@@ -1,0 +1,16 @@
+metric_name,metric_type,service_owner,alert_p99_threshold,alert_evaluation_window,pagerduty_escalation_policy,dashboard_panel_id
+helixforge_vector_index_search_latency_seconds_prod-austin,histogram,Infra & DevOps,0.250s,5m,PD-POLICY-P0-IMMEDIATE,DASH-GRAFANA-701
+helixforge_vector_index_search_latency_seconds_prod-dublin,histogram,Finance & Procurement,0.250s,5m,PD-POLICY-P0-IMMEDIATE,DASH-GRAFANA-102
+helixforge_vector_index_search_latency_seconds_prod-singapore,histogram,Customer Solutions,0.250s,5m,PD-POLICY-P0-IMMEDIATE,DASH-GRAFANA-297
+helixforge_gpu_memory_utilization_ratio_prod-austin,gauge,Fine-Tuning,0.95,5m,PD-POLICY-P2-WARNING,DASH-GRAFANA-342
+helixforge_gpu_memory_utilization_ratio_prod-dublin,gauge,Vector Engine,0.95,5m,PD-POLICY-P2-WARNING,DASH-GRAFANA-925
+helixforge_gpu_memory_utilization_ratio_prod-singapore,gauge,Infra & DevOps,0.95,5m,PD-POLICY-P2-WARNING,DASH-GRAFANA-789
+helixforge_api_http_5xx_error_count_prod-austin,gauge,Security & Compliance,5,5m,PD-POLICY-P0-IMMEDIATE,DASH-GRAFANA-694
+helixforge_api_http_5xx_error_count_prod-dublin,gauge,Security & Compliance,5,5m,PD-POLICY-P0-IMMEDIATE,DASH-GRAFANA-370
+helixforge_api_http_5xx_error_count_prod-singapore,gauge,Core Retrieval,5,5m,PD-POLICY-P0-IMMEDIATE,DASH-GRAFANA-218
+helixforge_slurm_queue_waiting_jobs_total_prod-austin,gauge,Core Retrieval,5,5m,PD-POLICY-P2-WARNING,DASH-GRAFANA-185
+helixforge_slurm_queue_waiting_jobs_total_prod-dublin,gauge,Customer Solutions,5,5m,PD-POLICY-P2-WARNING,DASH-GRAFANA-515
+helixforge_slurm_queue_waiting_jobs_total_prod-singapore,gauge,Core Retrieval,5,5m,PD-POLICY-P2-WARNING,DASH-GRAFANA-192
+helixforge_chroma_collection_node_count_prod-austin,gauge,Product Design,5,5m,PD-POLICY-P2-WARNING,DASH-GRAFANA-793
+helixforge_chroma_collection_node_count_prod-dublin,gauge,Fine-Tuning,5,5m,PD-POLICY-P2-WARNING,DASH-GRAFANA-313
+helixforge_chroma_collection_node_count_prod-singapore,gauge,Infra & DevOps,5,5m,PD-POLICY-P2-WARNING,DASH-GRAFANA-290

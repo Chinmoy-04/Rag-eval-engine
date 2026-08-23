@@ -1,0 +1,5 @@
+SOP PROCEDURE INDEX
+Canonical procedure: sop_slurm_gpu_job_submission.txt
+This file: sop_slurm_gpu_job_submission_procedure_v47.txt
+
+This revision index does not redefine operational steps. Follow the canonical SOP for the authoritative procedure.

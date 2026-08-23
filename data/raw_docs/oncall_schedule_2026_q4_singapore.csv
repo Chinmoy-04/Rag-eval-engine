@@ -1,0 +1,14 @@
+shift_id,week_number,start_date,primary_engineer,primary_email,secondary_engineer,secondary_email,escalation_tier_1,escalation_tier_2,team,cost_center,oncall_stipend_usd
+ONCALL-Q4-SIN-W01,1,2026-10-08,Gabriel Hale,gabriel.hale@helixforge.example,Elena Dubois,elena.dubois@helixforge.example,Carlos Johnson,Elena Voss (CISO),Core Retrieval,CC-1010,350
+ONCALL-Q4-SIN-W02,2,2026-10-15,Ananya Mueller,ananya.mueller@helixforge.example,Elena Mueller,elena.mueller@helixforge.example,Mina Dubois,Elena Voss (CISO),Core Retrieval,CC-5010,350
+ONCALL-Q4-SIN-W03,3,2026-10-22,Mara Takahashi,mara.takahashi@helixforge.example,Noah Johnson,noah.johnson@helixforge.example,Xavier O'Connor,Devon Hale (CTO),Core Retrieval,CC-1010,350
+ONCALL-Q4-SIN-W04,4,2026-10-01,Devon Johnson,devon.johnson@helixforge.example,Mara Al-Mansoor,mara.al-mansoor@helixforge.example,Carlos Kovacs,Elena Voss (CISO),Vector Engine,CC-1010,350
+ONCALL-Q4-SIN-W05,5,2026-11-08,Aisha Voss,aisha.voss@helixforge.example,Sophia Silva,sophia.silva@helixforge.example,Mei-Ling Smith,Elena Voss (CISO),Vector Engine,CC-1500,350
+ONCALL-Q4-SIN-W06,6,2026-11-15,Lars Bhat,lars.bhat@helixforge.example,Soren Lin,soren.lin@helixforge.example,Lars Ivanov,Devon Hale (CTO),Vector Engine,CC-5010,350
+ONCALL-Q4-SIN-W07,7,2026-11-22,Mei-Ling Wong,mei-ling.wong@helixforge.example,Siddharth Hale,siddharth.hale@helixforge.example,Elena Watanabe,Elena Voss (CISO),Security & Compliance,CC-1500,350
+ONCALL-Q4-SIN-W08,8,2026-11-01,Sarah Hoffmann,sarah.hoffmann@helixforge.example,Lars Vance,lars.vance@helixforge.example,Aris Kovacs,Elena Voss (CISO),Core Retrieval,CC-1010,350
+ONCALL-Q4-SIN-W09,9,2026-12-08,Sophia Takahashi,sophia.takahashi@helixforge.example,Isla Kovacs,isla.kovacs@helixforge.example,Raj Zhao,Devon Hale (CTO),Security & Compliance,CC-5010,350
+ONCALL-Q4-SIN-W10,10,2026-12-15,Gabriel Novak,gabriel.novak@helixforge.example,Sarah Smith,sarah.smith@helixforge.example,Ananya Mueller,Elena Voss (CISO),Security & Compliance,CC-1500,350
+ONCALL-Q4-SIN-W11,11,2026-12-22,Mina Silva,mina.silva@helixforge.example,Tariq Tanaka,tariq.tanaka@helixforge.example,Hannah Silva,Elena Voss (CISO),Vector Engine,CC-1500,350
+ONCALL-Q4-SIN-W12,12,2026-12-01,Yuki Kovacs,yuki.kovacs@helixforge.example,Aisha Bhat,aisha.bhat@helixforge.example,Noah Watanabe,Devon Hale (CTO),Vector Engine,CC-1010,350
+ONCALL-Q4-SIN-W13,13,2026-13-08,Aris Thorne,aris.thorne@helixforge.example,Yuki Lin,yuki.lin@helixforge.example,Chen Johnson,Elena Voss (CISO),Vector Engine,CC-5010,350

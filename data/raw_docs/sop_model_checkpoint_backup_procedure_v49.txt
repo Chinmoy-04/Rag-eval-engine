@@ -1,0 +1,5 @@
+SOP PROCEDURE INDEX
+Canonical procedure: sop_model_checkpoint_backup.txt
+This file: sop_model_checkpoint_backup_procedure_v49.txt
+
+This revision index does not redefine operational steps. Follow the canonical SOP for the authoritative procedure.

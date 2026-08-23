@@ -1,0 +1,120 @@
+incident_id,incident_date,severity_level,primary_root_cause,impacted_service,time_to_detect_mins,time_to_resolve_mins,customer_sla_breached,incident_commander,postmortem_document_url,financial_penalty_usd
+INC-2026-09-0001,2026-005-28,"P1 - Major Degradation","Slurm GPU Out of Memory",Vector Engine API,8,162,NO,"Kaito Joshi",https://wiki.helixforge.internal/postmortems/INC-2026-09-0001.md,0
+INC-2026-09-0002,2026-001-01,"P1 - Major Degradation","Expired TLS Certificate",Workday Single Sign-On,8,219,NO,"Marcus Tanaka",https://wiki.helixforge.internal/postmortems/INC-2026-09-0002.md,0
+INC-2026-09-0003,2026-002-14,"P1 - Major Degradation","Database Connection Pool Exhaustion",Search Reranker,24,40,NO,"Elena Smith",https://wiki.helixforge.internal/postmortems/INC-2026-09-0003.md,0
+INC-2026-09-0004,2026-006-01,"P2 - Minor Component Issue","Slurm GPU Out of Memory",Expensify Sync,20,138,NO,"Fatima Lin",https://wiki.helixforge.internal/postmortems/INC-2026-09-0004.md,0
+INC-2026-09-0005,2026-002-01,"P0 - Critical Outage","Database Connection Pool Exhaustion",Vector Engine API,17,77,YES (Credit Issued),"Devon Vance",https://wiki.helixforge.internal/postmortems/INC-2026-09-0005.md,34621
+INC-2026-09-0006,2026-002-10,"P2 - Minor Component Issue","BGP Route Flapping",Vector Engine API,2,215,NO,"Tariq Hale",https://wiki.helixforge.internal/postmortems/INC-2026-09-0006.md,0
+INC-2026-09-0007,2026-002-25,"P1 - Major Degradation","Database Connection Pool Exhaustion",Expensify Sync,22,132,NO,"Siddharth Kim",https://wiki.helixforge.internal/postmortems/INC-2026-09-0007.md,0
+INC-2026-09-0008,2026-004-03,"P2 - Minor Component Issue","Slurm GPU Out of Memory",Expensify Sync,9,119,NO,"Liam Garcia",https://wiki.helixforge.internal/postmortems/INC-2026-09-0008.md,0
+INC-2026-09-0009,2026-004-07,"P1 - Major Degradation","Expired TLS Certificate",Expensify Sync,19,188,NO,"Noah Zhao",https://wiki.helixforge.internal/postmortems/INC-2026-09-0009.md,0
+INC-2026-09-0010,2026-002-10,"P2 - Minor Component Issue","Database Connection Pool Exhaustion",Search Reranker,18,230,NO,"Mara Dubois",https://wiki.helixforge.internal/postmortems/INC-2026-09-0010.md,0
+INC-2026-09-0011,2026-004-13,"P0 - Critical Outage","Upstream Provider Outage",Search Reranker,14,63,YES (Credit Issued),"Carlos Thorne",https://wiki.helixforge.internal/postmortems/INC-2026-09-0011.md,36863
+INC-2026-09-0012,2026-006-04,"P0 - Critical Outage","Upstream Provider Outage",Expensify Sync,2,56,NO,"Dmitri Dubois",https://wiki.helixforge.internal/postmortems/INC-2026-09-0012.md,0
+INC-2026-09-0013,2026-003-26,"P0 - Critical Outage","Slurm GPU Out of Memory",Workday Single Sign-On,18,134,YES (Credit Issued),"Elena Nair",https://wiki.helixforge.internal/postmortems/INC-2026-09-0013.md,35681
+INC-2026-09-0014,2026-006-27,"P0 - Critical Outage","Slurm GPU Out of Memory",Workday Single Sign-On,6,223,YES (Credit Issued),"Elena Patel",https://wiki.helixforge.internal/postmortems/INC-2026-09-0014.md,12838
+INC-2026-09-0015,2026-003-10,"P0 - Critical Outage","Database Connection Pool Exhaustion",Workday Single Sign-On,25,236,YES (Credit Issued),"Ethan Kim",https://wiki.helixforge.internal/postmortems/INC-2026-09-0015.md,16324
+INC-2026-09-0016,2026-002-15,"P0 - Critical Outage","Corrupted Vector Index Partition",Expensify Sync,9,48,NO,"Hannah Dubois",https://wiki.helixforge.internal/postmortems/INC-2026-09-0016.md,0
+INC-2026-09-0017,2026-006-18,"P0 - Critical Outage","BGP Route Flapping",Workday Single Sign-On,18,87,YES (Credit Issued),"Marcus Vance",https://wiki.helixforge.internal/postmortems/INC-2026-09-0017.md,38005
+INC-2026-09-0018,2026-001-28,"P0 - Critical Outage","Upstream Provider Outage",Vector Engine API,25,36,NO,"Olivia Patel",https://wiki.helixforge.internal/postmortems/INC-2026-09-0018.md,0
+INC-2026-09-0019,2026-001-25,"P0 - Critical Outage","Slurm GPU Out of Memory",Expensify Sync,17,216,YES (Credit Issued),"Noah Santos",https://wiki.helixforge.internal/postmortems/INC-2026-09-0019.md,44314
+INC-2026-09-0020,2026-004-26,"P1 - Major Degradation","Expired TLS Certificate",Expensify Sync,18,166,NO,"Mina Silva",https://wiki.helixforge.internal/postmortems/INC-2026-09-0020.md,0
+INC-2026-09-0021,2026-005-17,"P0 - Critical Outage","Upstream Provider Outage",Search Reranker,7,106,YES (Credit Issued),"Priya Lin",https://wiki.helixforge.internal/postmortems/INC-2026-09-0021.md,24209
+INC-2026-09-0022,2026-003-22,"P2 - Minor Component Issue","Corrupted Vector Index Partition",Vector Engine API,8,140,NO,"Kaito Kim",https://wiki.helixforge.internal/postmortems/INC-2026-09-0022.md,0
+INC-2026-09-0023,2026-001-10,"P0 - Critical Outage","Slurm GPU Out of Memory",Workday Single Sign-On,2,165,YES (Credit Issued),"Gabriel Bhat",https://wiki.helixforge.internal/postmortems/INC-2026-09-0023.md,18675
+INC-2026-09-0024,2026-001-02,"P1 - Major Degradation","Corrupted Vector Index Partition",Vector Engine API,12,179,NO,"Xavier Garcia",https://wiki.helixforge.internal/postmortems/INC-2026-09-0024.md,0
+INC-2026-09-0025,2026-004-04,"P0 - Critical Outage","BGP Route Flapping",Expensify Sync,11,206,YES (Credit Issued),"Matteo Silva",https://wiki.helixforge.internal/postmortems/INC-2026-09-0025.md,17150
+INC-2026-09-0026,2026-006-27,"P1 - Major Degradation","Expired TLS Certificate",Expensify Sync,8,95,NO,"Mara Al-Mansoor",https://wiki.helixforge.internal/postmortems/INC-2026-09-0026.md,0
+INC-2026-09-0027,2026-001-03,"P0 - Critical Outage","Corrupted Vector Index Partition",Vector Engine API,21,98,YES (Credit Issued),"Chen Tanaka",https://wiki.helixforge.internal/postmortems/INC-2026-09-0027.md,30623
+INC-2026-09-0028,2026-003-23,"P2 - Minor Component Issue","Slurm GPU Out of Memory",Search Reranker,9,100,NO,"Chen Tanaka",https://wiki.helixforge.internal/postmortems/INC-2026-09-0028.md,0
+INC-2026-09-0029,2026-002-19,"P1 - Major Degradation","Slurm GPU Out of Memory",Vector Engine API,13,229,NO,"Chen Patel",https://wiki.helixforge.internal/postmortems/INC-2026-09-0029.md,0
+INC-2026-09-0030,2026-003-03,"P0 - Critical Outage","BGP Route Flapping",Workday Single Sign-On,22,42,NO,"Zoe Wong",https://wiki.helixforge.internal/postmortems/INC-2026-09-0030.md,0
+INC-2026-09-0031,2026-001-26,"P2 - Minor Component Issue","Expired TLS Certificate",Search Reranker,7,178,NO,"Ava Zhao",https://wiki.helixforge.internal/postmortems/INC-2026-09-0031.md,0
+INC-2026-09-0032,2026-004-13,"P0 - Critical Outage","Expired TLS Certificate",Workday Single Sign-On,7,113,YES (Credit Issued),"Chloe Ivanov",https://wiki.helixforge.internal/postmortems/INC-2026-09-0032.md,33131
+INC-2026-09-0033,2026-003-26,"P1 - Major Degradation","Upstream Provider Outage",Expensify Sync,16,67,NO,"Yuki Mueller",https://wiki.helixforge.internal/postmortems/INC-2026-09-0033.md,0
+INC-2026-09-0034,2026-003-17,"P2 - Minor Component Issue","Slurm GPU Out of Memory",Expensify Sync,23,22,NO,"Elena Patel",https://wiki.helixforge.internal/postmortems/INC-2026-09-0034.md,0
+INC-2026-09-0035,2026-002-22,"P0 - Critical Outage","Expired TLS Certificate",Workday Single Sign-On,7,172,YES (Credit Issued),"Raj Tanaka",https://wiki.helixforge.internal/postmortems/INC-2026-09-0035.md,45298
+INC-2026-09-0036,2026-002-18,"P1 - Major Degradation","Corrupted Vector Index Partition",Vector Engine API,20,149,NO,"Sophia Kovacs",https://wiki.helixforge.internal/postmortems/INC-2026-09-0036.md,0
+INC-2026-09-0037,2026-005-01,"P1 - Major Degradation","BGP Route Flapping",Workday Single Sign-On,6,33,NO,"Dominic Wong",https://wiki.helixforge.internal/postmortems/INC-2026-09-0037.md,0
+INC-2026-09-0038,2026-002-26,"P1 - Major Degradation","BGP Route Flapping",Vector Engine API,6,231,NO,"Mina Hale",https://wiki.helixforge.internal/postmortems/INC-2026-09-0038.md,0
+INC-2026-09-0039,2026-001-26,"P2 - Minor Component Issue","Database Connection Pool Exhaustion",Vector Engine API,25,48,NO,"Marcus Santos",https://wiki.helixforge.internal/postmortems/INC-2026-09-0039.md,0
+INC-2026-09-0040,2026-002-13,"P0 - Critical Outage","Database Connection Pool Exhaustion",Workday Single Sign-On,18,96,YES (Credit Issued),"Elena Silva",https://wiki.helixforge.internal/postmortems/INC-2026-09-0040.md,37923
+INC-2026-09-0041,2026-004-17,"P1 - Major Degradation","Corrupted Vector Index Partition",Search Reranker,10,208,NO,"Soren Smith",https://wiki.helixforge.internal/postmortems/INC-2026-09-0041.md,0
+INC-2026-09-0042,2026-003-22,"P0 - Critical Outage","Expired TLS Certificate",Vector Engine API,7,63,YES (Credit Issued),"Aris Chen",https://wiki.helixforge.internal/postmortems/INC-2026-09-0042.md,26652
+INC-2026-09-0043,2026-002-23,"P2 - Minor Component Issue","Corrupted Vector Index Partition",Vector Engine API,12,127,NO,"Dominic Voss",https://wiki.helixforge.internal/postmortems/INC-2026-09-0043.md,0
+INC-2026-09-0044,2026-003-25,"P0 - Critical Outage","Corrupted Vector Index Partition",Expensify Sync,24,207,YES (Credit Issued),"Aisha O'Connor",https://wiki.helixforge.internal/postmortems/INC-2026-09-0044.md,34953
+INC-2026-09-0045,2026-005-09,"P1 - Major Degradation","Database Connection Pool Exhaustion",Vector Engine API,24,39,NO,"Mara Silva",https://wiki.helixforge.internal/postmortems/INC-2026-09-0045.md,0
+INC-2026-09-0046,2026-004-01,"P2 - Minor Component Issue","Expired TLS Certificate",Vector Engine API,13,73,NO,"Priya Ivanov",https://wiki.helixforge.internal/postmortems/INC-2026-09-0046.md,0
+INC-2026-09-0047,2026-002-14,"P2 - Minor Component Issue","BGP Route Flapping",Expensify Sync,5,181,NO,"Ananya Tanaka",https://wiki.helixforge.internal/postmortems/INC-2026-09-0047.md,0
+INC-2026-09-0048,2026-001-02,"P1 - Major Degradation","BGP Route Flapping",Expensify Sync,10,129,NO,"Aisha Moreau",https://wiki.helixforge.internal/postmortems/INC-2026-09-0048.md,0
+INC-2026-09-0049,2026-002-18,"P2 - Minor Component Issue","Expired TLS Certificate",Search Reranker,6,152,NO,"Dmitri Nair",https://wiki.helixforge.internal/postmortems/INC-2026-09-0049.md,0
+INC-2026-09-0050,2026-001-10,"P2 - Minor Component Issue","Slurm GPU Out of Memory",Workday Single Sign-On,20,31,NO,"Tariq Hoffmann",https://wiki.helixforge.internal/postmortems/INC-2026-09-0050.md,0
+INC-2026-09-0051,2026-006-08,"P1 - Major Degradation","Expired TLS Certificate",Vector Engine API,12,88,NO,"Liam Novak",https://wiki.helixforge.internal/postmortems/INC-2026-09-0051.md,0
+INC-2026-09-0052,2026-002-04,"P2 - Minor Component Issue","Expired TLS Certificate",Search Reranker,16,111,NO,"Priya Chen",https://wiki.helixforge.internal/postmortems/INC-2026-09-0052.md,0
+INC-2026-09-0053,2026-004-22,"P2 - Minor Component Issue","Expired TLS Certificate",Search Reranker,5,105,NO,"Ava Hale",https://wiki.helixforge.internal/postmortems/INC-2026-09-0053.md,0
+INC-2026-09-0054,2026-006-01,"P1 - Major Degradation","BGP Route Flapping",Workday Single Sign-On,24,143,NO,"Chloe Smith",https://wiki.helixforge.internal/postmortems/INC-2026-09-0054.md,0
+INC-2026-09-0055,2026-004-20,"P2 - Minor Component Issue","Upstream Provider Outage",Vector Engine API,8,193,NO,"Mina Nair",https://wiki.helixforge.internal/postmortems/INC-2026-09-0055.md,0
+INC-2026-09-0056,2026-002-19,"P0 - Critical Outage","Corrupted Vector Index Partition",Expensify Sync,22,190,YES (Credit Issued),"Soren Lin",https://wiki.helixforge.internal/postmortems/INC-2026-09-0056.md,24082
+INC-2026-09-0057,2026-006-01,"P2 - Minor Component Issue","BGP Route Flapping",Search Reranker,4,137,NO,"Devon Zhao",https://wiki.helixforge.internal/postmortems/INC-2026-09-0057.md,0
+INC-2026-09-0058,2026-003-19,"P1 - Major Degradation","Corrupted Vector Index Partition",Vector Engine API,19,36,NO,"Lucas O'Connor",https://wiki.helixforge.internal/postmortems/INC-2026-09-0058.md,0
+INC-2026-09-0059,2026-001-02,"P0 - Critical Outage","Expired TLS Certificate",Vector Engine API,15,50,NO,"Raj Lin",https://wiki.helixforge.internal/postmortems/INC-2026-09-0059.md,0
+INC-2026-09-0060,2026-006-18,"P1 - Major Degradation","Database Connection Pool Exhaustion",Workday Single Sign-On,4,34,NO,"Viktor Hoffmann",https://wiki.helixforge.internal/postmortems/INC-2026-09-0060.md,0
+INC-2026-09-0061,2026-001-15,"P1 - Major Degradation","Expired TLS Certificate",Workday Single Sign-On,17,21,NO,"Ethan Kovacs",https://wiki.helixforge.internal/postmortems/INC-2026-09-0061.md,0
+INC-2026-09-0062,2026-006-17,"P2 - Minor Component Issue","BGP Route Flapping",Search Reranker,17,226,NO,"Sarah Watanabe",https://wiki.helixforge.internal/postmortems/INC-2026-09-0062.md,0
+INC-2026-09-0063,2026-004-08,"P0 - Critical Outage","Corrupted Vector Index Partition",Expensify Sync,24,184,YES (Credit Issued),"Matteo Vance",https://wiki.helixforge.internal/postmortems/INC-2026-09-0063.md,13957
+INC-2026-09-0064,2026-003-24,"P0 - Critical Outage","Expired TLS Certificate",Expensify Sync,4,124,YES (Credit Issued),"Ananya Novak",https://wiki.helixforge.internal/postmortems/INC-2026-09-0064.md,25316
+INC-2026-09-0065,2026-001-17,"P1 - Major Degradation","Slurm GPU Out of Memory",Search Reranker,23,101,NO,"Viktor Tanaka",https://wiki.helixforge.internal/postmortems/INC-2026-09-0065.md,0
+INC-2026-09-0066,2026-004-23,"P1 - Major Degradation","Expired TLS Certificate",Workday Single Sign-On,21,189,NO,"Mara Kovacs",https://wiki.helixforge.internal/postmortems/INC-2026-09-0066.md,0
+INC-2026-09-0067,2026-006-10,"P0 - Critical Outage","BGP Route Flapping",Workday Single Sign-On,23,211,YES (Credit Issued),"Raj Thorne",https://wiki.helixforge.internal/postmortems/INC-2026-09-0067.md,15663
+INC-2026-09-0068,2026-003-07,"P1 - Major Degradation","BGP Route Flapping",Expensify Sync,6,216,NO,"Dmitri Johnson",https://wiki.helixforge.internal/postmortems/INC-2026-09-0068.md,0
+INC-2026-09-0069,2026-004-27,"P2 - Minor Component Issue","Expired TLS Certificate",Workday Single Sign-On,23,169,NO,"Yuki Joshi",https://wiki.helixforge.internal/postmortems/INC-2026-09-0069.md,0
+INC-2026-09-0070,2026-004-17,"P1 - Major Degradation","Expired TLS Certificate",Vector Engine API,3,139,NO,"Ananya Kim",https://wiki.helixforge.internal/postmortems/INC-2026-09-0070.md,0
+INC-2026-09-0071,2026-005-26,"P0 - Critical Outage","Corrupted Vector Index Partition",Vector Engine API,10,49,NO,"Carlos Hoffmann",https://wiki.helixforge.internal/postmortems/INC-2026-09-0071.md,0
+INC-2026-09-0072,2026-005-28,"P2 - Minor Component Issue","Upstream Provider Outage",Workday Single Sign-On,10,191,NO,"Priya Zhao",https://wiki.helixforge.internal/postmortems/INC-2026-09-0072.md,0
+INC-2026-09-0073,2026-005-27,"P1 - Major Degradation","BGP Route Flapping",Search Reranker,19,80,NO,"Dmitri Lin",https://wiki.helixforge.internal/postmortems/INC-2026-09-0073.md,0
+INC-2026-09-0074,2026-001-08,"P0 - Critical Outage","BGP Route Flapping",Vector Engine API,13,111,YES (Credit Issued),"Matteo Watanabe",https://wiki.helixforge.internal/postmortems/INC-2026-09-0074.md,13555
+INC-2026-09-0075,2026-001-18,"P0 - Critical Outage","BGP Route Flapping",Workday Single Sign-On,18,98,YES (Credit Issued),"Isla Hale",https://wiki.helixforge.internal/postmortems/INC-2026-09-0075.md,43029
+INC-2026-09-0076,2026-002-25,"P1 - Major Degradation","Slurm GPU Out of Memory",Workday Single Sign-On,2,195,NO,"Isla Zhao",https://wiki.helixforge.internal/postmortems/INC-2026-09-0076.md,0
+INC-2026-09-0077,2026-002-05,"P0 - Critical Outage","BGP Route Flapping",Search Reranker,3,58,NO,"Sophia Nguyen",https://wiki.helixforge.internal/postmortems/INC-2026-09-0077.md,0
+INC-2026-09-0078,2026-005-25,"P2 - Minor Component Issue","Database Connection Pool Exhaustion",Expensify Sync,10,33,NO,"Carlos Bhat",https://wiki.helixforge.internal/postmortems/INC-2026-09-0078.md,0
+INC-2026-09-0079,2026-004-03,"P0 - Critical Outage","Database Connection Pool Exhaustion",Expensify Sync,10,144,YES (Credit Issued),"Olivia Tanaka",https://wiki.helixforge.internal/postmortems/INC-2026-09-0079.md,46179
+INC-2026-09-0080,2026-001-05,"P0 - Critical Outage","Expired TLS Certificate",Workday Single Sign-On,22,202,YES (Credit Issued),"Zoe Watanabe",https://wiki.helixforge.internal/postmortems/INC-2026-09-0080.md,25215
+INC-2026-09-0081,2026-003-03,"P1 - Major Degradation","Upstream Provider Outage",Expensify Sync,20,117,NO,"Elena Lindqvist",https://wiki.helixforge.internal/postmortems/INC-2026-09-0081.md,0
+INC-2026-09-0082,2026-004-02,"P1 - Major Degradation","Upstream Provider Outage",Workday Single Sign-On,15,88,NO,"Matteo Thorne",https://wiki.helixforge.internal/postmortems/INC-2026-09-0082.md,0
+INC-2026-09-0083,2026-002-09,"P0 - Critical Outage","Slurm GPU Out of Memory",Workday Single Sign-On,22,229,YES (Credit Issued),"Ananya Ivanov",https://wiki.helixforge.internal/postmortems/INC-2026-09-0083.md,27201
+INC-2026-09-0084,2026-005-11,"P1 - Major Degradation","Expired TLS Certificate",Workday Single Sign-On,12,47,NO,"Tariq Hoffmann",https://wiki.helixforge.internal/postmortems/INC-2026-09-0084.md,0
+INC-2026-09-0085,2026-005-17,"P0 - Critical Outage","BGP Route Flapping",Expensify Sync,18,79,YES (Credit Issued),"Noah Novak",https://wiki.helixforge.internal/postmortems/INC-2026-09-0085.md,48297
+INC-2026-09-0086,2026-004-21,"P0 - Critical Outage","Corrupted Vector Index Partition",Vector Engine API,15,79,YES (Credit Issued),"Elena Vance",https://wiki.helixforge.internal/postmortems/INC-2026-09-0086.md,38772
+INC-2026-09-0087,2026-005-17,"P2 - Minor Component Issue","Database Connection Pool Exhaustion",Vector Engine API,25,30,NO,"Isla Dubois",https://wiki.helixforge.internal/postmortems/INC-2026-09-0087.md,0
+INC-2026-09-0088,2026-005-06,"P1 - Major Degradation","Expired TLS Certificate",Search Reranker,24,208,NO,"Mina Kim",https://wiki.helixforge.internal/postmortems/INC-2026-09-0088.md,0
+INC-2026-09-0089,2026-005-11,"P2 - Minor Component Issue","Upstream Provider Outage",Workday Single Sign-On,19,78,NO,"Aisha Kovacs",https://wiki.helixforge.internal/postmortems/INC-2026-09-0089.md,0
+INC-2026-09-0090,2026-001-03,"P1 - Major Degradation","Upstream Provider Outage",Vector Engine API,24,34,NO,"Raj Al-Mansoor",https://wiki.helixforge.internal/postmortems/INC-2026-09-0090.md,0
+INC-2026-09-0091,2026-001-11,"P2 - Minor Component Issue","BGP Route Flapping",Search Reranker,18,58,NO,"Olivia Garcia",https://wiki.helixforge.internal/postmortems/INC-2026-09-0091.md,0
+INC-2026-09-0092,2026-004-05,"P2 - Minor Component Issue","Database Connection Pool Exhaustion",Workday Single Sign-On,12,150,NO,"Ananya Ivanov",https://wiki.helixforge.internal/postmortems/INC-2026-09-0092.md,0
+INC-2026-09-0093,2026-003-24,"P2 - Minor Component Issue","Expired TLS Certificate",Workday Single Sign-On,3,104,NO,"Noah Nair",https://wiki.helixforge.internal/postmortems/INC-2026-09-0093.md,0
+INC-2026-09-0094,2026-006-10,"P2 - Minor Component Issue","Expired TLS Certificate",Search Reranker,12,57,NO,"Raj Tanaka",https://wiki.helixforge.internal/postmortems/INC-2026-09-0094.md,0
+INC-2026-09-0095,2026-006-20,"P0 - Critical Outage","Upstream Provider Outage",Search Reranker,18,148,YES (Credit Issued),"Chen Thorne",https://wiki.helixforge.internal/postmortems/INC-2026-09-0095.md,33237
+INC-2026-09-0096,2026-005-13,"P2 - Minor Component Issue","Slurm GPU Out of Memory",Vector Engine API,21,96,NO,"Soren Tanaka",https://wiki.helixforge.internal/postmortems/INC-2026-09-0096.md,0
+INC-2026-09-0097,2026-001-17,"P2 - Minor Component Issue","Database Connection Pool Exhaustion",Vector Engine API,22,139,NO,"Xavier Chen",https://wiki.helixforge.internal/postmortems/INC-2026-09-0097.md,0
+INC-2026-09-0098,2026-004-13,"P1 - Major Degradation","BGP Route Flapping",Expensify Sync,10,111,NO,"Mei-Ling Chen",https://wiki.helixforge.internal/postmortems/INC-2026-09-0098.md,0
+INC-2026-09-0099,2026-006-21,"P1 - Major Degradation","BGP Route Flapping",Workday Single Sign-On,3,26,NO,"Aris Mueller",https://wiki.helixforge.internal/postmortems/INC-2026-09-0099.md,0
+INC-2026-09-0100,2026-004-11,"P0 - Critical Outage","Database Connection Pool Exhaustion",Search Reranker,2,36,NO,"Viktor Nguyen",https://wiki.helixforge.internal/postmortems/INC-2026-09-0100.md,0
+INC-2026-09-0101,2026-003-15,"P1 - Major Degradation","Expired TLS Certificate",Vector Engine API,9,123,NO,"Dmitri Joshi",https://wiki.helixforge.internal/postmortems/INC-2026-09-0101.md,0
+INC-2026-09-0102,2026-002-28,"P2 - Minor Component Issue","Slurm GPU Out of Memory",Expensify Sync,14,159,NO,"Kaito Kim",https://wiki.helixforge.internal/postmortems/INC-2026-09-0102.md,0
+INC-2026-09-0103,2026-001-23,"P0 - Critical Outage","Database Connection Pool Exhaustion",Expensify Sync,8,216,YES (Credit Issued),"Zoe O'Connor",https://wiki.helixforge.internal/postmortems/INC-2026-09-0103.md,16689
+INC-2026-09-0104,2026-003-08,"P0 - Critical Outage","BGP Route Flapping",Expensify Sync,7,121,YES (Credit Issued),"Siddharth Ivanov",https://wiki.helixforge.internal/postmortems/INC-2026-09-0104.md,36182
+INC-2026-09-0105,2026-002-05,"P1 - Major Degradation","BGP Route Flapping",Expensify Sync,9,43,NO,"Priya O'Connor",https://wiki.helixforge.internal/postmortems/INC-2026-09-0105.md,0
+INC-2026-09-0106,2026-006-08,"P0 - Critical Outage","Expired TLS Certificate",Vector Engine API,11,102,YES (Credit Issued),"Mina Thorne",https://wiki.helixforge.internal/postmortems/INC-2026-09-0106.md,12193
+INC-2026-09-0107,2026-001-06,"P1 - Major Degradation","Expired TLS Certificate",Vector Engine API,11,134,NO,"Chen Zhao",https://wiki.helixforge.internal/postmortems/INC-2026-09-0107.md,0
+INC-2026-09-0108,2026-006-26,"P1 - Major Degradation","Corrupted Vector Index Partition",Vector Engine API,16,47,NO,"Mina Al-Mansoor",https://wiki.helixforge.internal/postmortems/INC-2026-09-0108.md,0
+INC-2026-09-0109,2026-005-11,"P0 - Critical Outage","Upstream Provider Outage",Expensify Sync,15,231,YES (Credit Issued),"Elena Lin",https://wiki.helixforge.internal/postmortems/INC-2026-09-0109.md,41017
+INC-2026-09-0110,2026-002-17,"P1 - Major Degradation","Corrupted Vector Index Partition",Vector Engine API,6,135,NO,"Liam Patel",https://wiki.helixforge.internal/postmortems/INC-2026-09-0110.md,0
+INC-2026-09-0111,2026-004-06,"P1 - Major Degradation","BGP Route Flapping",Workday Single Sign-On,19,235,NO,"Ava Santos",https://wiki.helixforge.internal/postmortems/INC-2026-09-0111.md,0
+INC-2026-09-0112,2026-002-07,"P0 - Critical Outage","Corrupted Vector Index Partition",Expensify Sync,13,188,YES (Credit Issued),"Isla Joshi",https://wiki.helixforge.internal/postmortems/INC-2026-09-0112.md,36021
+INC-2026-09-0113,2026-001-08,"P1 - Major Degradation","Slurm GPU Out of Memory",Search Reranker,24,55,NO,"Mara Patel",https://wiki.helixforge.internal/postmortems/INC-2026-09-0113.md,0
+INC-2026-09-0114,2026-002-27,"P1 - Major Degradation","Expired TLS Certificate",Workday Single Sign-On,5,188,NO,"Matteo Tanaka",https://wiki.helixforge.internal/postmortems/INC-2026-09-0114.md,0
+INC-2026-09-0115,2026-006-01,"P0 - Critical Outage","BGP Route Flapping",Search Reranker,19,31,NO,"Ananya Al-Mansoor",https://wiki.helixforge.internal/postmortems/INC-2026-09-0115.md,0
+INC-2026-09-0116,2026-006-27,"P1 - Major Degradation","Upstream Provider Outage",Vector Engine API,16,66,NO,"Elena Takahashi",https://wiki.helixforge.internal/postmortems/INC-2026-09-0116.md,0
+INC-2026-09-0117,2026-005-18,"P2 - Minor Component Issue","Expired TLS Certificate",Search Reranker,9,200,NO,"Liam Thorne",https://wiki.helixforge.internal/postmortems/INC-2026-09-0117.md,0
+INC-2026-09-0118,2026-005-17,"P2 - Minor Component Issue","Corrupted Vector Index Partition",Search Reranker,13,97,NO,"Priya Bhat",https://wiki.helixforge.internal/postmortems/INC-2026-09-0118.md,0
+INC-2026-09-0119,2026-002-22,"P1 - Major Degradation","Upstream Provider Outage",Workday Single Sign-On,10,25,NO,"Raj Hale",https://wiki.helixforge.internal/postmortems/INC-2026-09-0119.md,0

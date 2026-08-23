@@ -1,0 +1,14 @@
+shift_id,week_number,start_date,primary_engineer,primary_email,secondary_engineer,secondary_email,escalation_tier_1,escalation_tier_2,team,cost_center,oncall_stipend_usd
+ONCALL-Q1-SIN-W01,1,2026-01-08,Siddharth Voss,siddharth.voss@helixforge.example,Sarah Voss,sarah.voss@helixforge.example,Hannah Dubois,Elena Voss (CISO),Vector Engine,CC-1010,350
+ONCALL-Q1-SIN-W02,2,2026-01-15,Ava Nguyen,ava.nguyen@helixforge.example,Xavier Joshi,xavier.joshi@helixforge.example,Sophia Novak,Elena Voss (CISO),Core Retrieval,CC-1500,350
+ONCALL-Q1-SIN-W03,3,2026-01-22,Siddharth Santos,siddharth.santos@helixforge.example,Marcus Joshi,marcus.joshi@helixforge.example,Ananya Lin,Devon Hale (CTO),Vector Engine,CC-5010,350
+ONCALL-Q1-SIN-W04,4,2026-01-01,Xavier Chen,xavier.chen@helixforge.example,Aris Santos,aris.santos@helixforge.example,Olivia Silva,Elena Voss (CISO),Security & Compliance,CC-1500,350
+ONCALL-Q1-SIN-W05,5,2026-02-08,Lucas Moreau,lucas.moreau@helixforge.example,Elena Garcia,elena.garcia@helixforge.example,Raj Chen,Elena Voss (CISO),Security & Compliance,CC-1500,350
+ONCALL-Q1-SIN-W06,6,2026-02-15,Siddharth Zhao,siddharth.zhao@helixforge.example,Yuki Hoffmann,yuki.hoffmann@helixforge.example,Noah Nguyen,Devon Hale (CTO),Infra & DevOps,CC-1010,350
+ONCALL-Q1-SIN-W07,7,2026-02-22,Elena Voss,elena.voss@helixforge.example,Zoe Voss,zoe.voss@helixforge.example,Elena Watanabe,Elena Voss (CISO),Core Retrieval,CC-1010,350
+ONCALL-Q1-SIN-W08,8,2026-02-01,Soren Thorne,soren.thorne@helixforge.example,Ethan Vance,ethan.vance@helixforge.example,Gabriel Vance,Elena Voss (CISO),Core Retrieval,CC-1500,350
+ONCALL-Q1-SIN-W09,9,2026-03-08,Liam Santos,liam.santos@helixforge.example,Elena Nair,elena.nair@helixforge.example,Isla Thorne,Devon Hale (CTO),Security & Compliance,CC-5010,350
+ONCALL-Q1-SIN-W10,10,2026-03-15,Elena Kovacs,elena.kovacs@helixforge.example,Aisha Mueller,aisha.mueller@helixforge.example,Zoe Santos,Elena Voss (CISO),Infra & DevOps,CC-1500,350
+ONCALL-Q1-SIN-W11,11,2026-03-22,Sophia Wong,sophia.wong@helixforge.example,Siddharth Kovacs,siddharth.kovacs@helixforge.example,Marcus Chen,Elena Voss (CISO),Security & Compliance,CC-5010,350
+ONCALL-Q1-SIN-W12,12,2026-03-01,Dominic Lin,dominic.lin@helixforge.example,Marcus Mueller,marcus.mueller@helixforge.example,Soren O'Connor,Devon Hale (CTO),Core Retrieval,CC-1500,350
+ONCALL-Q1-SIN-W13,13,2026-04-08,Marcus Santos,marcus.santos@helixforge.example,Chen Zhao,chen.zhao@helixforge.example,Olivia Joshi,Elena Voss (CISO),Infra & DevOps,CC-5010,350
