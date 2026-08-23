@@ -80,20 +80,30 @@ uv run python -m src.cli build-handauthored-testset              # all 40 questi
 uv run python -m src.cli build-handauthored-testset --limit 20   # balanced 20-Q subset
 ```
 
+### Ingestion
+
+Rebuild the vector index and BM25 node cache after corpus or chunking changes:
+
+```bash
+uv run python -m src.cli ingest --rebuild
+```
+
 ### Evaluation
 
-Three pipeline configs: `baseline`, `degraded`, `optimized`.
+Seven pipeline configs: `baseline`, `degraded`, `optimized`, plus hybrid retrieval variants (`hybrid`, `hybrid_plus`, `rerank`, `csv_route`). Hybrid pipelines require a fresh ingest so `data/chroma_db/nodes_bm25.jsonl` exists.
 
 ```bash
 uv run python -m src.cli run-eval --run-id 5 --pipeline-config baseline --concurrency 1
-uv run python -m src.cli run-eval --run-id 5 --pipeline-config degraded --concurrency 1
-uv run python -m src.cli run-eval --run-id 5 --pipeline-config optimized --concurrency 1
+uv run python -m src.cli run-eval --run-id 5 --pipeline-config hybrid --concurrency 1
+uv run python -m src.cli run-eval --run-id 5 --pipeline-config hybrid_plus --concurrency 1
+uv run python -m src.cli run-eval --run-id 5 --pipeline-config rerank --concurrency 1
+uv run python -m src.cli run-eval --run-id 5 --pipeline-config csv_route --concurrency 1
 uv run python -m src.cli compare-eval --run-id 5
 ```
 
 Ragas scoring uses a local **Ollama** judge (`EVAL_LLM_PROVIDER=ollama`, `llama3.1:8b` by default). Start Ollama and pull the model before eval runs.
 
-**Groq free tier:** use `--concurrency 1` and keep test sets modest (20 questions × 3 pipelines ≈ 60 RAG calls) to stay under the daily token limit.
+**Groq free tier:** use `--concurrency 1` and run one pipeline at a time. Each new pipeline adds ~20 RAG calls per test set.
 
 ### Database
 
@@ -109,7 +119,7 @@ Creates `data/rag_eval.db` with `runs`, `test_items`, and `eval_results`.
 src/
   api/           FastAPI backend for the React UI
   ingestion/     Document loading, chunking, Chroma index
-  rag_pipeline/  baseline / degraded / optimized configs
+  rag_pipeline/  retrieval configs (vector, hybrid, rerank, csv_route)
   evaluation/    Batch RAG + Ragas scoring → SQLite
   testset/       Synthetic generation + hand-authored items
   cli.py         Typer entry point
@@ -119,6 +129,6 @@ data/raw_docs/   HelixForge policy corpus (~86 docs)
 
 ## Recommended eval workflow
 
-1. `build-handauthored-testset --limit 20` → note the `run_id`
-2. After Groq daily quota resets, run all three pipelines with `--concurrency 1`
+1. `ingest --rebuild` then `build-handauthored-testset --limit 20` → note the `run_id`
+2. Run pipelines one at a time with `--concurrency 1` (start with `baseline`, then hybrid variants)
 3. Open **Compare** in the dashboard for side-by-side Ragas scores

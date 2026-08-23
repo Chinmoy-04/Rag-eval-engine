@@ -18,6 +18,8 @@ from src.ingestion.loader import corpus_fingerprint, load_and_chunk
 
 logger = logging.getLogger("rag_eval")
 
+BM25_NODES_NAME = "nodes_bm25.jsonl"
+
 INGEST_META_NAME = "ingest_meta.json"
 
 
@@ -55,6 +57,62 @@ def _signatures_match(stored: dict[str, Any] | None, current: dict[str, Any]) ->
     if not stored:
         return False
     return all(stored.get(key) == value for key, value in current.items())
+
+
+def _bm25_nodes_path(persist_dir: Path) -> Path:
+    return persist_dir / BM25_NODES_NAME
+
+
+def write_bm25_nodes(nodes: list[TextNode], persist_dir: Path | None = None) -> None:
+    """Persist chunked nodes for BM25 retrieval (id, text, metadata per line)."""
+    persist = persist_dir or CHROMA_DIR
+    persist.mkdir(parents=True, exist_ok=True)
+    path = _bm25_nodes_path(persist)
+    with path.open("w", encoding="utf-8") as handle:
+        for i, node in enumerate(nodes):
+            payload = {
+                "id": node.node_id or f"node-{i}",
+                "text": node.get_content(),
+                "metadata": dict(node.metadata or {}),
+            }
+            handle.write(json.dumps(payload, ensure_ascii=False) + "\n")
+    logger.info("Persisted BM25 node cache (%d nodes) to %s", len(nodes), path)
+
+
+_bm25_nodes_cache: list[TextNode] | None = None
+
+
+def get_bm25_nodes(config: AppConfig | None = None) -> list[TextNode]:
+    """Load BM25 node cache written during ingest."""
+    global _bm25_nodes_cache
+    if _bm25_nodes_cache is not None:
+        return _bm25_nodes_cache
+
+    if config is None:
+        config = load_config()
+    path = _bm25_nodes_path(CHROMA_DIR)
+    if not path.exists():
+        logger.warning("BM25 cache missing at %s — run: uv run python -m src.cli ingest --rebuild", path)
+        _bm25_nodes_cache = []
+        return _bm25_nodes_cache
+
+    nodes: list[TextNode] = []
+    with path.open(encoding="utf-8") as handle:
+        for line in handle:
+            line = line.strip()
+            if not line:
+                continue
+            row = json.loads(line)
+            nodes.append(
+                TextNode(
+                    text=row.get("text") or "",
+                    metadata=row.get("metadata") or {},
+                    id_=row.get("id"),
+                )
+            )
+    _bm25_nodes_cache = nodes
+    logger.info("Loaded %d BM25 nodes from cache", len(nodes))
+    return nodes
 
 
 def get_chroma_client(persist_dir: Path | None = None):
@@ -178,6 +236,7 @@ def run_ingestion(
             len(nodes),
         )
     meta = {**signature, "num_vectors": count, "num_nodes": len(nodes)}
+    write_bm25_nodes(nodes, persist)
     _write_meta(persist, meta)
     logger.info("Persisted %d vectors to %s", count, persist)
     return {"status": "built", **meta}

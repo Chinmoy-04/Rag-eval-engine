@@ -10,7 +10,7 @@ from sqlmodel import col, select
 from src.config import AppConfig, EvalLLMProvider, load_config
 from src.evaluation.async_batch import generate_answers_batch_sync
 from src.evaluation.metrics import METRIC_COLUMNS, score_rag_samples
-from src.rag_pipeline.configs import get_pipeline_config
+from src.rag_pipeline.configs import get_pipeline_config, sorted_pipeline_names
 from src.storage.db import init_db, session_scope
 from src.storage.models import EvalResult, Run, RunStatus, TestItem
 
@@ -235,7 +235,7 @@ def summarize_pipeline_scores(
                 bucket["latency_sum"] += float(row.latency_ms)
                 bucket["latency_n"] += 1
 
-    order = ("degraded", "baseline", "optimized")
+    order = sorted_pipeline_names(buckets.keys())
     summaries: list[dict[str, Any]] = []
 
     def _to_summary(bucket: dict[str, Any]) -> dict[str, Any]:
@@ -256,8 +256,7 @@ def summarize_pipeline_scores(
 
     for name in order:
         if name in buckets:
-            summaries.append(_to_summary(buckets.pop(name)))
-    summaries.extend(_to_summary(bucket) for bucket in buckets.values())
+            summaries.append(_to_summary(buckets[name]))
     return summaries
 
 
@@ -341,7 +340,7 @@ def list_runs_overview(config: AppConfig | None = None) -> list[dict[str, Any]]:
         overview.append(
             {
                 **payload,
-                "pipelines": sorted(pipelines),
+                "pipelines": sorted_pipeline_names(pipelines),
                 "eval_errors": errors,
                 "avg_faithfulness": (
                     sum(faith_vals) / len(faith_vals) if faith_vals else None
@@ -378,10 +377,13 @@ def fetch_item_breakdown(
         )
 
         by_item: dict[int, dict[str, EvalResult]] = {}
+        pipeline_names: set[str] = set()
         for row in results:
-            by_item.setdefault(int(row.test_item_id), {})[
-                row.pipeline_config_name or "baseline"
-            ] = row
+            pipe_name = row.pipeline_config_name or "baseline"
+            pipeline_names.add(pipe_name)
+            by_item.setdefault(int(row.test_item_id), {})[pipe_name] = row
+
+        ordered_pipelines = sorted_pipeline_names(pipeline_names)
 
         rows: list[dict[str, Any]] = []
         for item in items:
@@ -391,8 +393,9 @@ def fetch_item_breakdown(
             entry: dict[str, Any] = {
                 "question": item.question,
                 "type": item.question_type,
+                "pipelines": ordered_pipelines,
             }
-            for pipe in ("degraded", "baseline", "optimized"):
+            for pipe in ordered_pipelines:
                 result = per_pipe.get(pipe)
                 if result is None:
                     entry[f"{pipe}_faithfulness"] = None

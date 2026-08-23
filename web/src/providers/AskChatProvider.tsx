@@ -7,7 +7,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { postAsk, type AskResponse, type PipelineName } from "@/lib/api";
+import { postAsk, type AskResponse } from "@/lib/api";
 
 const STORAGE_KEY = "hf-ask-chat";
 const LEGACY_SESSION_KEY = STORAGE_KEY;
@@ -29,14 +29,14 @@ export interface ChatMessage {
 
 interface PersistedAskState {
   messages: ChatMessage[];
-  pipeline: PipelineName;
+  pipeline: string;
   showContexts: boolean;
   showExamples: boolean;
 }
 
 interface AskChatContextValue extends PersistedAskState {
   loading: boolean;
-  setPipeline: (pipeline: PipelineName) => void;
+  setPipeline: (pipeline: string) => void;
   setShowContexts: (show: boolean) => void;
   setShowExamples: (show: boolean | ((prev: boolean) => boolean)) => void;
   ask: (question: string) => Promise<void>;
@@ -58,9 +58,7 @@ function loadPersistedState(): PersistedAskState {
     return {
       messages: Array.isArray(parsed.messages) ? parsed.messages : [],
       pipeline:
-        parsed.pipeline === "baseline" ||
-        parsed.pipeline === "degraded" ||
-        parsed.pipeline === "optimized"
+        typeof parsed.pipeline === "string" && parsed.pipeline.trim()
           ? parsed.pipeline
           : defaultState.pipeline,
       showContexts:
@@ -82,7 +80,6 @@ const AskChatContext = createContext<AskChatContextValue | null>(null);
 export function AskChatProvider({ children }: { children: ReactNode }) {
   const [state, setState] = useState<PersistedAskState>(() => {
     const loaded = loadPersistedState();
-    // Migrate one-time from sessionStorage → localStorage
     if (loaded.messages.length > 0 || readStorage()) {
       saveStorage(JSON.stringify(loaded));
     }
@@ -94,7 +91,7 @@ export function AskChatProvider({ children }: { children: ReactNode }) {
     saveStorage(JSON.stringify(state));
   }, [state]);
 
-  const setPipeline = useCallback((pipeline: PipelineName) => {
+  const setPipeline = useCallback((pipeline: string) => {
     setState((prev) => ({ ...prev, pipeline }));
   }, []);
 

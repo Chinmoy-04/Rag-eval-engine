@@ -1,4 +1,4 @@
-export type PipelineName = "baseline" | "degraded" | "optimized";
+export type PipelineName = string;
 
 export interface HealthResponse {
   status: string;
@@ -68,7 +68,7 @@ export function getSuggestedQuestions() {
 
 export function postAsk(body: {
   question: string;
-  pipeline: PipelineName;
+  pipeline: string;
   show_contexts: boolean;
 }) {
   return apiFetch<AskResponse>("/api/ask", {

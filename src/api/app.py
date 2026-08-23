@@ -16,7 +16,7 @@ from src.evaluation.run_eval import (
     summarize_pipeline_scores,
 )
 from src.ingestion.indexer import collection_count
-from src.rag_pipeline.configs import PIPELINE_CONFIGS
+from src.rag_pipeline.configs import PIPELINE_CONFIGS, sorted_pipeline_names
 from src.rag_pipeline.pipeline import run_pipeline
 from src.rag_pipeline.questions import SUGGESTED_QUESTIONS
 from src.storage.db import session_scope
@@ -58,7 +58,7 @@ def health() -> dict[str, Any]:
     return {
         "status": "ok",
         "vectors": collection_count(config),
-        "pipelines": sorted(PIPELINE_CONFIGS.keys()),
+        "pipelines": sorted_pipeline_names(),
     }
 
 

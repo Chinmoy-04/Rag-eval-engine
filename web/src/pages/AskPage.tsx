@@ -2,19 +2,15 @@ import { gsap } from "@/providers/SmoothScrollProvider";
 import { useAskChat } from "@/providers/AskChatProvider";
 import { useEffect, useRef, useState } from "react";
 import { BookOpen, ChevronDown, Loader2, MessageSquarePlus, Send } from "lucide-react";
+import { getHealth, getSuggestedQuestions } from "@/lib/api";
 import {
-  getHealth,
-  getSuggestedQuestions,
-  type PipelineName,
-} from "@/lib/api";
-import {
-  PIPELINE_DESCRIPTIONS,
-  PIPELINE_LABELS,
+  PIPELINE_ORDER,
+  pipelineDescription,
+  pipelineLabel,
+  sortPipelines,
 } from "@/lib/labels";
 import { cn, formatMs } from "@/lib/utils";
 import { SuggestedQuestionGrid } from "@/components/SuggestedQuestionCategory";
-
-const PIPELINE_ORDER: PipelineName[] = ["baseline", "degraded", "optimized"];
 
 export function AskPage() {
   const {
@@ -30,15 +26,31 @@ export function AskPage() {
     startNewChat,
   } = useAskChat();
   const [vectors, setVectors] = useState(0);
+  // Always show known pipelines (incl. hybrid/rerank/csv); merge API list when available.
+  const [pipelines, setPipelines] = useState<string[]>(PIPELINE_ORDER);
   const [suggested, setSuggested] = useState<Record<string, string[]>>({});
   const [input, setInput] = useState("");
   const chatRef = useRef<HTMLDivElement>(null);
   const pageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    getHealth().then((h) => setVectors(h.vectors)).catch(() => {});
+    getHealth()
+      .then((h) => {
+        setVectors(h.vectors);
+        const fromApi = sortPipelines(h.pipelines);
+        setPipelines(sortPipelines([...new Set([...PIPELINE_ORDER, ...fromApi])]));
+      })
+      .catch(() => {
+        setPipelines(PIPELINE_ORDER);
+      });
     getSuggestedQuestions().then(setSuggested).catch(() => {});
   }, []);
+
+  useEffect(() => {
+    if (pipelines.length && !pipelines.includes(pipeline)) {
+      setPipeline(pipelines[0]);
+    }
+  }, [pipelines, pipeline, setPipeline]);
 
   useEffect(() => {
     if (!pageRef.current) return;
@@ -129,7 +141,7 @@ export function AskPage() {
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {PIPELINE_ORDER.map((id) => (
+          {pipelines.map((id) => (
             <button
               key={id}
               type="button"
@@ -141,12 +153,12 @@ export function AskPage() {
                   : "border border-hf-border bg-hf-elevated/60 text-hf-muted hover:text-hf-text",
               )}
             >
-              {PIPELINE_LABELS[id]}
+              {pipelineLabel(id)}
             </button>
           ))}
         </div>
         <p className="text-xs leading-relaxed text-hf-muted">
-          {PIPELINE_DESCRIPTIONS[pipeline]}
+          {pipelineDescription(pipeline)}
         </p>
       </section>
 

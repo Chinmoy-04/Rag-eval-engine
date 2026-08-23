@@ -6,8 +6,9 @@ import { Grid } from "@/components/charts/grid";
 import { BarYAxis } from "@/components/charts/bar-y-axis";
 import { ChartTooltip } from "@/components/charts/tooltip";
 import { MetricHint } from "@/components/MetricHint";
+import { ThemeSelect } from "@/components/ThemeSelect";
 import { getCompare, getRuns, type CompareResponse } from "@/lib/api";
-import { METRIC_LABELS } from "@/lib/labels";
+import { METRIC_LABELS, pipelineChartColor } from "@/lib/labels";
 import { formatMs, formatScore } from "@/lib/utils";
 
 const METRIC_KEYS = [
@@ -16,12 +17,6 @@ const METRIC_KEYS = [
   "context_precision",
   "context_recall",
 ] as const;
-
-const PIPELINE_CHART_COLORS: Record<string, string> = {
-  degraded: "var(--chart-3)",
-  baseline: "var(--chart-2)",
-  optimized: "var(--chart-1)",
-};
 
 export function ComparePage() {
   const [runIds, setRunIds] = useState<number[]>([]);
@@ -90,6 +85,15 @@ export function ComparePage() {
     return () => ctx.revert();
   }, [data]);
 
+  const breakdownPipelines = useMemo(() => {
+    if (!data?.breakdown.length) return data?.pipelines.map((p) => p.pipeline) ?? [];
+    const fromRow = data.breakdown[0]?.pipelines;
+    if (Array.isArray(fromRow) && fromRow.length) {
+      return fromRow as string[];
+    }
+    return data.pipelines.map((p) => p.pipeline);
+  }, [data]);
+
   const best = data?.pipelines.reduce((a, b) => {
     const af = a.averages.faithfulness ?? 0;
     const bf = b.averages.faithfulness ?? 0;
@@ -107,19 +111,17 @@ export function ComparePage() {
           </p>
         </div>
         {runIds.length > 0 && (
-          <label className="flex items-center gap-2 text-sm">
-            <span className="text-hf-muted">Test batch</span>
-            <select
-              value={runId ?? ""}
-              onChange={(e) => setRunId(Number(e.target.value))}
-              className="rounded-lg border border-hf-border bg-hf-panel px-3 py-2 outline-none focus:border-hf-teal"
-            >
-              {runIds.map((id) => (
-                <option key={id} value={id}>
-                  Batch #{id}
-                </option>
-              ))}
-            </select>
+          <label className="flex items-center gap-2.5 text-sm">
+            <span className="hf-label normal-case tracking-normal">Test batch</span>
+            <ThemeSelect
+              aria-label="Test batch"
+              value={runId ?? runIds[0]}
+              onChange={setRunId}
+              options={runIds.map((id) => ({
+                value: id,
+                label: `Batch #${id}`,
+              }))}
+            />
           </label>
         )}
       </div>
@@ -184,32 +186,24 @@ export function ComparePage() {
                 revealSignature={`scores-${runId}`}
               >
                 <Grid vertical horizontal={false} strokeDasharray="3,6" />
-                <Bar
-                  dataKey="degraded"
-                  fill={PIPELINE_CHART_COLORS.degraded}
-                  stroke={PIPELINE_CHART_COLORS.degraded}
-                />
-                <Bar
-                  dataKey="baseline"
-                  fill={PIPELINE_CHART_COLORS.baseline}
-                  stroke={PIPELINE_CHART_COLORS.baseline}
-                />
-                <Bar
-                  dataKey="optimized"
-                  fill={PIPELINE_CHART_COLORS.optimized}
-                  stroke={PIPELINE_CHART_COLORS.optimized}
-                />
+                {data.pipelines.map((p, index) => (
+                  <Bar
+                    key={p.pipeline}
+                    dataKey={p.pipeline}
+                    fill={pipelineChartColor(p.pipeline, index)}
+                    stroke={pipelineChartColor(p.pipeline, index)}
+                  />
+                ))}
                 <BarYAxis showAllLabels />
                 <ChartTooltip />
               </BarChart>
               <div className="mt-3 flex flex-wrap gap-4 text-xs text-hf-muted">
-                {data.pipelines.map((p) => (
+                {data.pipelines.map((p, index) => (
                   <span key={p.pipeline} className="inline-flex items-center gap-1.5">
                     <span
                       className="size-2.5 rounded-sm"
                       style={{
-                        background:
-                          PIPELINE_CHART_COLORS[p.pipeline] ?? "var(--chart-4)",
+                        background: pipelineChartColor(p.pipeline, index),
                       }}
                     />
                     {p.pipeline}
@@ -245,7 +239,7 @@ export function ComparePage() {
             </div>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {data.pipelines.map((row) => (
               <div key={row.pipeline} className="hf-panel" data-chart-panel>
                 <p className="font-medium font-mono text-hf-text">{row.pipeline}</p>
@@ -283,9 +277,11 @@ export function ComparePage() {
                   <tr className="border-b border-hf-border text-hf-muted">
                     <th className="pb-2 pr-3">Question</th>
                     <th className="pb-2 pr-3">Type</th>
-                    <th className="pb-2 pr-3">degraded</th>
-                    <th className="pb-2 pr-3">baseline</th>
-                    <th className="pb-2">optimized</th>
+                    {breakdownPipelines.map((pipe) => (
+                      <th key={pipe} className="pb-2 pr-3 last:pr-0">
+                        {pipe}
+                      </th>
+                    ))}
                   </tr>
                 </thead>
                 <tbody>
@@ -295,15 +291,11 @@ export function ComparePage() {
                         {String(row.question ?? "")}
                       </td>
                       <td className="py-2 pr-3">{String(row.type ?? "")}</td>
-                      <td className="py-2 pr-3 font-mono">
-                        {formatScore(row.degraded_faithfulness as number | null)}
-                      </td>
-                      <td className="py-2 pr-3 font-mono">
-                        {formatScore(row.baseline_faithfulness as number | null)}
-                      </td>
-                      <td className="py-2 font-mono">
-                        {formatScore(row.optimized_faithfulness as number | null)}
-                      </td>
+                      {breakdownPipelines.map((pipe) => (
+                        <td key={pipe} className="py-2 pr-3 font-mono last:pr-0">
+                          {formatScore(row[`${pipe}_faithfulness`] as number | null)}
+                        </td>
+                      ))}
                     </tr>
                   ))}
                 </tbody>
