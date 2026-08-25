@@ -102,6 +102,10 @@ export function AskPage() {
 
   useEffect(() => {
     if (!pageRef.current) return;
+    const reduce =
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      window.matchMedia("(max-width: 767px)").matches;
+    if (reduce) return;
     const ctx = gsap.context(() => {
       gsap.from("[data-ask-stagger]", {
         opacity: 0,

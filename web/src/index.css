@@ -191,7 +191,7 @@
   }
 
   .hf-panel {
-    @apply rounded-xl border border-hf-border bg-hf-panel/80 p-4 backdrop-blur-sm shadow-sm dark:shadow-none;
+    @apply rounded-xl border border-hf-border bg-hf-panel/90 p-4 shadow-sm dark:shadow-none md:bg-hf-panel/80 md:backdrop-blur-sm;
   }
 
   .hf-orb-a {
@@ -208,6 +208,13 @@
 
   .hf-header-shimmer {
     animation: hf-header-shimmer 7s ease-in-out infinite;
+  }
+
+  @media (max-width: 767px) {
+    .hf-header-shimmer {
+      animation: none;
+      opacity: 0.35;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {

@@ -4,10 +4,14 @@
  * @author: @dorianbaffier (KokonutUI)
  * @website: https://kokonutui.com
  * Adapted as a fixed ambient background for HelixForge RAG Eval.
+ *
+ * Skipped on small screens / reduced motion — canvas + per-frame blur is too
+ * expensive on phones.
  */
 
 import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 interface Beam {
   x: number;
@@ -46,6 +50,9 @@ interface BeamsBackgroundProps {
   intensity?: "subtle" | "medium" | "strong";
 }
 
+const DESKTOP_FX =
+  "(min-width: 768px) and (prefers-reduced-motion: no-preference)";
+
 export function BeamsBackground({
   className,
   intensity = "medium",
@@ -54,6 +61,7 @@ export function BeamsBackground({
   const beamsRef = useRef<Beam[]>([]);
   const animationFrameRef = useRef<number>(0);
   const isDarkModeRef = useRef(true);
+  const enabled = useMediaQuery(DESKTOP_FX);
 
   const opacityMap = {
     subtle: 0.45,
@@ -62,11 +70,15 @@ export function BeamsBackground({
   };
 
   useEffect(() => {
+    if (!enabled) return;
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d", { alpha: true });
     if (!ctx) return;
+
+    let running = true;
 
     const updateDarkMode = () => {
       isDarkModeRef.current =
@@ -81,14 +93,14 @@ export function BeamsBackground({
     updateDarkMode();
 
     const updateCanvasSize = () => {
-      const dpr = window.devicePixelRatio || 1;
-      canvas.width = window.innerWidth * dpr;
-      canvas.height = window.innerHeight * dpr;
+      const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+      canvas.width = Math.floor(window.innerWidth * dpr);
+      canvas.height = Math.floor(window.innerHeight * dpr);
       canvas.style.width = `${window.innerWidth}px`;
       canvas.style.height = `${window.innerHeight}px`;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-      const totalBeams = 30;
+      const totalBeams = 12;
       beamsRef.current = Array.from({ length: totalBeams }, () =>
         createBeam(window.innerWidth, window.innerHeight, isDarkModeRef.current),
       );
@@ -128,8 +140,14 @@ export function BeamsBackground({
       const lightness = isDarkModeRef.current ? "62%" : "42%";
 
       gradient.addColorStop(0, `hsla(${beam.hue}, ${saturation}, ${lightness}, 0)`);
-      gradient.addColorStop(0.4, `hsla(${beam.hue}, ${saturation}, ${lightness}, ${pulsingOpacity})`);
-      gradient.addColorStop(0.6, `hsla(${beam.hue}, ${saturation}, ${lightness}, ${pulsingOpacity})`);
+      gradient.addColorStop(
+        0.4,
+        `hsla(${beam.hue}, ${saturation}, ${lightness}, ${pulsingOpacity})`,
+      );
+      gradient.addColorStop(
+        0.6,
+        `hsla(${beam.hue}, ${saturation}, ${lightness}, ${pulsingOpacity})`,
+      );
       gradient.addColorStop(1, `hsla(${beam.hue}, ${saturation}, ${lightness}, 0)`);
 
       context.fillStyle = gradient;
@@ -138,9 +156,14 @@ export function BeamsBackground({
     }
 
     function animate() {
-      if (!canvas || !ctx) return;
+      if (!running || !canvas || !ctx) return;
+      if (document.visibilityState === "hidden") {
+        animationFrameRef.current = requestAnimationFrame(animate);
+        return;
+      }
+
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.filter = "blur(35px)";
+      // Soft look via wide beams — avoid ctx.filter blur (very expensive per frame).
 
       const totalBeams = beamsRef.current.length;
       beamsRef.current.forEach((beam, index) => {
@@ -158,13 +181,16 @@ export function BeamsBackground({
     animate();
 
     return () => {
+      running = false;
       window.removeEventListener("resize", updateCanvasSize);
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
       }
       observer.disconnect();
     };
-  }, [intensity]);
+  }, [intensity, enabled]);
+
+  if (!enabled) return null;
 
   return (
     <div

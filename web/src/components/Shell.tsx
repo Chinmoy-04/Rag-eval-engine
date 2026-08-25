@@ -114,7 +114,7 @@ export function Shell() {
     <div className="relative min-h-screen">
       <LenisRouteSync />
       <BeamsBackground />
-      <AmbientOrbs />
+      <AmbientOrbs className="hidden md:block" />
       <div className="relative z-10">
         {/* Desktop sidebar */}
         <aside className="fixed inset-y-0 left-0 z-40 hidden w-64 flex-col border-r border-hf-border bg-hf-panel/95 backdrop-blur-md md:flex">

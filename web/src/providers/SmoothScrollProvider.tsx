@@ -1,22 +1,40 @@
+import { useEffect, useState, type ReactNode } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactLenis, useLenis } from "lenis/react";
-import { useEffect, type ReactNode } from "react";
 import { useLocation } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
+
+/** Lenis + GSAP ticker is for fine-pointer desktops; phones use native scroll. */
+const LENIS_MQ =
+  "(min-width: 768px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)";
 
 const LENIS_OPTIONS = {
   autoRaf: false,
   anchors: true,
   allowNestedScroll: true,
   respectReducedMotion: true,
-  lerp: 0.1,
+  lerp: 0.12,
   smoothWheel: true,
   wheelMultiplier: 1,
-  touchMultiplier: 1.35,
+  touchMultiplier: 1.2,
   syncTouch: false,
 } as const;
+
+function useMediaQuery(query: string) {
+  const [matches, setMatches] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia(query);
+    const sync = () => setMatches(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, [query]);
+
+  return matches;
+}
 
 function LenisGsapBridge() {
   const lenis = useLenis();
@@ -62,6 +80,12 @@ interface SmoothScrollProviderProps {
 }
 
 export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
+  const enableLenis = useMediaQuery(LENIS_MQ);
+
+  if (!enableLenis) {
+    return <>{children}</>;
+  }
+
   return (
     <ReactLenis root autoRaf={false} options={LENIS_OPTIONS}>
       <LenisGsapBridge />
@@ -70,4 +94,4 @@ export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
   );
 }
 
-export { gsap, ScrollTrigger, useLenis };
+export { gsap, ScrollTrigger, useLenis, useMediaQuery };
