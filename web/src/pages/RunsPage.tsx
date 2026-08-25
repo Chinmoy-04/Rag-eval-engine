@@ -36,7 +36,7 @@ export function RunsPage() {
   return (
     <div className="mx-auto max-w-5xl space-y-6">
       <div>
-        <h1 className="text-2xl font-semibold tracking-tight">Runs</h1>
+        <h1 className="text-xl font-semibold tracking-tight sm:text-2xl">Runs</h1>
         <p className="mt-1 text-sm text-hf-muted">
           Evaluation campaigns stored in SQLite.
         </p>

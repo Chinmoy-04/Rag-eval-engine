@@ -136,11 +136,11 @@ export function AskPage() {
   return (
     <div
       ref={pageRef}
-      className="mx-auto flex w-full max-w-3xl flex-col gap-4 pb-4"
+      className="mx-auto flex w-full max-w-3xl flex-col gap-3 pb-2 sm:gap-4 sm:pb-4"
     >
       <header data-ask-stagger className="flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <h1 className="text-2xl font-semibold tracking-tight">
+        <div className="min-w-0">
+          <h1 className="text-xl font-semibold tracking-tight sm:text-2xl">
             Ask the employee handbook
           </h1>
           <p className="mt-1 text-sm leading-relaxed text-hf-muted">
@@ -162,11 +162,11 @@ export function AskPage() {
       </header>
 
       <section className="hf-panel space-y-3 py-3" data-ask-stagger>
-        <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
           <p className="text-sm font-medium text-hf-text">Pipeline</p>
-          <div className="flex items-center gap-3 text-xs text-hf-muted">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs text-hf-muted">
             <span className="inline-flex items-center gap-1.5">
-              <BookOpen className="size-3.5" />
+              <BookOpen className="size-3.5 shrink-0" />
               {vectors.toLocaleString()} document sections indexed
             </span>
             <label className="inline-flex cursor-pointer items-center gap-2">
@@ -336,20 +336,20 @@ export function AskPage() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="e.g. How much PTO do new employees get?"
-            className="flex-1 rounded-xl border border-hf-border bg-hf-panel px-4 py-3 text-sm outline-none transition-colors focus:border-hf-teal"
+            className="min-w-0 flex-1 rounded-xl border border-hf-border bg-hf-panel px-3 py-3 text-sm outline-none transition-colors focus:border-hf-teal sm:px-4"
             disabled={loading}
           />
           <button
             type="submit"
             disabled={loading || !input.trim()}
-            className="inline-flex items-center gap-2 rounded-xl bg-hf-teal px-4 py-3 text-sm font-medium text-hf-on-teal transition-opacity hover:opacity-90 disabled:opacity-40"
+            className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-hf-teal px-3 py-3 text-sm font-medium text-hf-on-teal transition-opacity hover:opacity-90 disabled:opacity-40 sm:px-4"
           >
             {loading ? (
               <Loader2 className="size-4 animate-spin" />
             ) : (
               <Send className="size-4" />
             )}
-            Ask
+            <span className="hidden sm:inline">Ask</span>
           </button>
         </div>
       </form>
