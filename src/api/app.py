@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from typing import Any
 
 from fastapi import FastAPI, HTTPException
@@ -24,14 +25,22 @@ from src.storage.models import Run
 
 app = FastAPI(title="HelixForge RAG Eval API", version="0.1.0")
 
+_CORS_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:4173",
+    "http://127.0.0.1:4173",
+]
+# Comma-separated production origins, e.g. https://app.vercel.app
+_extra = os.getenv("FRONTEND_ORIGIN", "").strip()
+if _extra:
+    _CORS_ORIGINS.extend(
+        origin.strip() for origin in _extra.split(",") if origin.strip()
+    )
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "http://localhost:4173",
-        "http://127.0.0.1:4173",
-    ],
+    allow_origins=_CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
