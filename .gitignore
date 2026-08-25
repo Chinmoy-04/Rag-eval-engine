@@ -1,5 +1,6 @@
 .env
 decisions.md
+.cursor/
 __pycache__/
 *.py[cod]
 *.egg-info/
