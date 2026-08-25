@@ -59,8 +59,17 @@ _STOPWORDS = frozenset(
 )
 
 _TABULAR_CUE_RE = re.compile(
-    r"\b(SLA|PagerDuty|midpoint|salary|CSV|row|CC-\d+|PD-SVC|L\d+)\b",
+    r"\b("
+    r"SLA|PagerDuty|midpoint|salary|CSV|row|roster|directory|employee|"
+    r"job\s+level|compensation|cost\s+center|quota|CVE|on-?call\s+schedule|"
+    r"CC-\d+|PD-SVC|L\d+|HF-EMP|ONCALL"
+    r")\b",
     re.IGNORECASE,
+)
+
+# Proper names / IDs often buried in large CSV chunks — useful for a sparse second pass.
+_PROPER_TOKEN_RE = re.compile(
+    r"\b(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+)+|CC-\d+|PD-SVC-[A-Z0-9-]+|CVE-\d+-\d+|HF-EMP-[A-Z0-9-]+|ONCALL-[A-Z0-9-]+|SOC2-[A-Z]+-\d+|L[3-8])\b"
 )
 
 _bm25_retriever_cache: dict[int, object] = {}
@@ -157,7 +166,7 @@ def _is_csv_chunk(hit: NodeWithScore) -> bool:
 
 def csv_boost(hits: list[NodeWithScore], question: str) -> list[NodeWithScore]:
     """Boost CSV chunks when the question looks tabular or ID-heavy."""
-    if not _TABULAR_CUE_RE.search(question):
+    if not _TABULAR_CUE_RE.search(question) and not _PROPER_TOKEN_RE.search(question):
         return hits
     boosted: list[NodeWithScore] = []
     for hit in hits:
@@ -169,12 +178,21 @@ def csv_boost(hits: list[NodeWithScore], question: str) -> list[NodeWithScore]:
     return boosted
 
 
+def _entity_query(question: str) -> str | None:
+    """Extract proper names / IDs for a focused BM25 pass."""
+    tokens = _PROPER_TOKEN_RE.findall(question)
+    if not tokens:
+        return None
+    return " ".join(tokens)
+
+
 def lexical_rerank(
     question: str, hits: list[NodeWithScore], top_k: int
 ) -> list[NodeWithScore]:
     """Re-score vector hits with rapidfuzz against a keyword-stripped query."""
     alt = keyword_query(question) or question.strip()
     alt_lower = alt.lower()
+    entity = (_entity_query(question) or "").lower()
     scored: list[tuple[float, NodeWithScore]] = []
     for hit in hits:
         text = (hit.node.get_content() or "").lower()
@@ -182,6 +200,9 @@ def lexical_rerank(
         overlap_score = overlap / max(len(alt_lower.split()), 1)
         fuzzy = fuzz.partial_ratio(alt_lower, text) / 100.0
         combined = 0.55 * fuzzy + 0.45 * overlap_score
+        # Exact person/ID match is decisive for CSV row lookup.
+        if entity and entity in text:
+            combined = min(1.0, combined + 0.35)
         scored.append((combined, hit))
     scored.sort(key=lambda pair: pair[0], reverse=True)
     return [
@@ -198,11 +219,35 @@ def _retrieve_hybrid(
     *,
     csv_route: bool,
 ) -> list[NodeWithScore]:
-    dense = retrieve_vector(question, config, fetch_k)
-    sparse = retrieve_bm25(question, config, fetch_k)
-    fused = reciprocal_rank_fusion([dense, sparse], fetch_k)
+    pool_k = fetch_k
+    if csv_route:
+        # Name/row hits are often buried past top-12 in large CSV corpora.
+        pool_k = max(fetch_k, 40)
+
+    dense = retrieve_vector(question, config, pool_k)
+    sparse = retrieve_bm25(question, config, pool_k)
+    ranked_lists: list[list[NodeWithScore]] = [dense, sparse]
+    entity_hits: list[NodeWithScore] = []
+
+    if csv_route:
+        entity_q = _entity_query(question)
+        if entity_q:
+            entity_hits = retrieve_bm25(entity_q, config, pool_k)
+            ranked_lists.append(entity_hits)
+            logger.info("csv_route entity BM25 query=%r", entity_q[:80])
+        alt = keyword_query(question)
+        if alt and alt.lower() != question.strip().lower():
+            ranked_lists.append(retrieve_bm25(alt, config, pool_k))
+            ranked_lists.append(retrieve_vector(alt, config, pool_k))
+
+    fused = reciprocal_rank_fusion(ranked_lists, pool_k)
     if csv_route:
         fused = csv_boost(fused, question)
+        # Keep entity BM25 candidates in the pool — RRF often buries rank-10..30 name hits.
+        if entity_hits:
+            fused = _merge_hits([*entity_hits[:25], *fused], limit=max(pool_k, 50))
+        fused = lexical_rerank(question, fused, top_k)
+        return fused
     return fused[:top_k]
 
 

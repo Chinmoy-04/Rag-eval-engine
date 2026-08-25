@@ -58,6 +58,8 @@ export interface BarProps {
   yAxisId?: string | number;
   /** Fill color for the bar. Can be a color, gradient url, or pattern url. Default: var(--chart-line-primary) */
   fill?: string;
+  /** Read per-bar fill color from this data key (falls back to `fill`). */
+  fillKey?: string;
   /** Color for tooltip dot. Use when fill is a gradient/pattern. Default: uses fill value */
   stroke?: string;
   /** Line cap style for bar ends: "round", "butt", or a number for custom radius. Default: "round" */
@@ -180,6 +182,7 @@ const BarInner = memo(function BarInner({
   dataKey,
   yAxisId,
   fill = chartCssVars.linePrimary,
+  fillKey,
   lineCap = "round",
   animate = true,
   animationType = "grow",
@@ -385,6 +388,9 @@ const BarInner = memo(function BarInner({
         const isFaded =
           (hoveredBarIndex !== null && hoveredBarIndex !== i) || isLegendDimmed;
 
+        const barFill =
+          fillKey && typeof d[fillKey] === "string" ? d[fillKey] : fill;
+
         // Use categoryValue as key since it's the unique identifier from data
         const barKey = `bar-${dataKey}-${categoryValue}`;
 
@@ -402,7 +408,7 @@ const BarInner = memo(function BarInner({
               animationType={animationType}
               enterTransition={enterTransition}
               fadedOpacity={fadedOpacity}
-              fill={fill}
+              fill={barFill}
               height={barHeight}
               index={i}
               innerHeight={innerHeight}
@@ -423,7 +429,7 @@ const BarInner = memo(function BarInner({
         // Static bar after animation completes
         return (
           <rect
-            fill={fill}
+            fill={barFill}
             height={barHeight}
             key={barKey}
             opacity={isFaded ? fadedOpacity : 1}

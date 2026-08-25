@@ -37,16 +37,17 @@ const CHART_PALETTE = [
   "var(--chart-4)",
   "var(--chart-5)",
   "var(--chart-6)",
+  "var(--chart-7)",
 ];
 
 const PIPELINE_CHART_COLORS: Record<string, string> = {
-  degraded: "var(--chart-3)",
   baseline: "var(--chart-2)",
+  degraded: "var(--chart-3)",
   optimized: "var(--chart-1)",
   hybrid: "var(--chart-4)",
   hybrid_plus: "var(--chart-5)",
   rerank: "var(--chart-6)",
-  csv_route: "var(--chart-4)",
+  csv_route: "var(--chart-7)",
 };
 
 export function sortPipelines(names: string[]): string[] {
@@ -95,11 +96,20 @@ export const QUESTION_CATEGORY_LABELS: Record<string, string> = {
   "Simple lookup": "Quick facts",
   "PTO and leave": "Time off & leave",
   "On-call (multi-hop)": "On-call duty",
+  "On-call schedules (CSV)": "On-call schedules",
   "Travel and expenses": "Travel & expenses",
-  "Remote work": "Remote work",
-  "Compensation": "Pay & levels",
-  "Security & incidents": "Security & incidents",
-  "Trick / abstain": "Outside the handbook",
+  "Remote, security, AI": "Remote & security",
+  "Tables and matrices": "Handbook tables",
+  "Compensation & equity": "Pay & equity bands",
+  "API limits & FinOps": "API limits & cloud spend",
+  "SOC2 & compliance": "SOC2 controls",
+  "Vault & secrets": "Vault & rotation",
+  "GPU & Slurm": "GPU cluster",
+  "Architecture (ADR)": "Architecture decisions",
+  "Vendors & subprocessors": "Vendors & DPAs",
+  "Incidents & CVEs": "Incidents & CVEs",
+  "Employee directory": "Employee directory",
+  "Should abstain": "Outside the handbook",
 };
 
 export function categoryLabel(key: string): string {

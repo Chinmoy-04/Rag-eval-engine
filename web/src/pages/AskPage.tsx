@@ -1,6 +1,6 @@
 import { gsap } from "@/providers/SmoothScrollProvider";
 import { useAskChat } from "@/providers/AskChatProvider";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { BookOpen, ChevronDown, Loader2, MessageSquarePlus, Send } from "lucide-react";
 import { getHealth, getSuggestedQuestions } from "@/lib/api";
 import {
@@ -11,6 +11,54 @@ import {
 } from "@/lib/labels";
 import { cn, formatMs } from "@/lib/utils";
 import { SuggestedQuestionGrid } from "@/components/SuggestedQuestionCategory";
+
+/** Prefer one chip per category so mid-chat examples cover the expanded corpus. */
+const CHAT_EXAMPLE_CATEGORIES = [
+  "On-call schedules (CSV)",
+  "Compensation & equity",
+  "API limits & FinOps",
+  "SOC2 & compliance",
+  "Vault & secrets",
+  "GPU & Slurm",
+  "Architecture (ADR)",
+  "Vendors & subprocessors",
+  "Incidents & CVEs",
+  "Employee directory",
+  "Tables and matrices",
+  "Remote, security, AI",
+] as const;
+
+function pickChatExampleQuestions(
+  suggested: Record<string, string[]>,
+  limit = 10,
+): string[] {
+  const picked: string[] = [];
+  const seen = new Set<string>();
+
+  for (const category of CHAT_EXAMPLE_CATEGORIES) {
+    if (picked.length >= limit) break;
+    const first = suggested[category]?.[0];
+    if (first && !seen.has(first)) {
+      seen.add(first);
+      picked.push(first);
+    }
+  }
+
+  if (picked.length < limit) {
+    for (const questions of Object.values(suggested)) {
+      for (const q of questions) {
+        if (picked.length >= limit) break;
+        if (!seen.has(q)) {
+          seen.add(q);
+          picked.push(q);
+        }
+      }
+      if (picked.length >= limit) break;
+    }
+  }
+
+  return picked;
+}
 
 export function AskPage() {
   const {
@@ -80,6 +128,10 @@ export function AskPage() {
   }
 
   const hasConversation = messages.length > 0;
+  const chatExampleQuestions = useMemo(
+    () => pickChatExampleQuestions(suggested),
+    [suggested],
+  );
 
   return (
     <div
@@ -258,19 +310,16 @@ export function AskPage() {
         >
           <p className="text-xs font-medium text-hf-muted">Example questions</p>
           <div className="flex flex-wrap gap-2">
-            {Object.values(suggested)
-              .flat()
-              .slice(0, 8)
-              .map((q) => (
-                <button
-                  key={q}
-                  type="button"
-                  onClick={() => handleAsk(q)}
-                  className="rounded-full border border-hf-border px-3 py-1 text-left text-xs text-hf-muted transition-colors hover:border-hf-teal/40 hover:text-hf-text"
-                >
-                  {q.length > 56 ? `${q.slice(0, 56)}…` : q}
-                </button>
-              ))}
+            {chatExampleQuestions.map((q) => (
+              <button
+                key={q}
+                type="button"
+                onClick={() => handleAsk(q)}
+                className="rounded-full border border-hf-border px-3 py-1 text-left text-xs text-hf-muted transition-colors hover:border-hf-teal/40 hover:text-hf-text"
+              >
+                {q.length > 56 ? `${q.slice(0, 56)}…` : q}
+              </button>
+            ))}
           </div>
         </section>
       )}

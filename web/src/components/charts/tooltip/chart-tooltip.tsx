@@ -203,7 +203,12 @@ const ChartTooltipInner = memo(function ChartTooltipInner({
 
     // Default: generate rows from registered lines
     return lines.map((line) => ({
-      color: line.stroke,
+      color:
+        (line.fillKey &&
+          tooltipData.point[line.fillKey] &&
+          typeof tooltipData.point[line.fillKey] === "string"
+          ? (tooltipData.point[line.fillKey] as string)
+          : line.stroke),
       label: line.dataKey,
       value: (tooltipData.point[line.dataKey] as number) ?? 0,
     }));
@@ -222,7 +227,13 @@ const ChartTooltipInner = memo(function ChartTooltipInner({
           return dotColorProp;
         }
       }
-      return line.stroke;
+      if (!tooltipData) {
+        return line.stroke;
+      }
+      return line.fillKey &&
+        typeof tooltipData.point[line.fillKey] === "string"
+        ? (tooltipData.point[line.fillKey] as string)
+        : line.stroke;
     };
   }, [dotColorProp, rowsRenderer, tooltipData, tooltipRows]);
 

@@ -5,10 +5,11 @@ import { Bar } from "@/components/charts/bar";
 import { Grid } from "@/components/charts/grid";
 import { BarYAxis } from "@/components/charts/bar-y-axis";
 import { ChartTooltip } from "@/components/charts/tooltip";
+import { RagasCompareCharts } from "@/components/compare/RagasCompareCharts";
 import { MetricHint } from "@/components/MetricHint";
 import { ThemeSelect } from "@/components/ThemeSelect";
 import { getCompare, getRuns, type CompareResponse } from "@/lib/api";
-import { METRIC_LABELS, pipelineChartColor } from "@/lib/labels";
+import { METRIC_LABELS, pipelineChartColor, sortPipelines } from "@/lib/labels";
 import { formatMs, formatScore } from "@/lib/utils";
 
 const METRIC_KEYS = [
@@ -43,28 +44,17 @@ export function ComparePage() {
       .catch((e) => setError(e instanceof Error ? e.message : "No scores yet"));
   }, [runId]);
 
-  const scoreRows = useMemo(() => {
-    if (!data) return [];
-    return METRIC_KEYS.map((key) => {
-      const row: Record<string, string | number> = {
-        name: METRIC_LABELS[key].label,
-      };
-      for (const pipe of data.pipelines) {
-        const val = pipe.averages[key];
-        row[pipe.pipeline] =
-          typeof val === "number" && !Number.isNaN(val) ? val : 0;
-      }
-      return row;
-    });
-  }, [data]);
-
   const latencyRows = useMemo(() => {
     if (!data) return [];
-    return data.pipelines.map((p) => ({
-      name: p.pipeline,
-      seconds:
-        typeof p.avg_latency_ms === "number" ? p.avg_latency_ms / 1000 : 0,
-    }));
+    return sortPipelines(data.pipelines.map((p) => p.pipeline)).map((name, index) => {
+      const p = data.pipelines.find((pipe) => pipe.pipeline === name)!;
+      return {
+        name: p.pipeline,
+        seconds:
+          typeof p.avg_latency_ms === "number" ? p.avg_latency_ms / 1000 : 0,
+        color: pipelineChartColor(p.pipeline, index),
+      };
+    });
   }, [data]);
 
   useEffect(() => {
@@ -173,44 +163,9 @@ export function ComparePage() {
           </div>
 
           <div ref={chartsRef} className="space-y-6">
-            <div className="hf-panel" data-chart-panel>
-              <p className="hf-label mb-3">Ragas averages</p>
-              <BarChart
-                key={`scores-${runId}`}
-                data={scoreRows}
-                xDataKey="name"
-                orientation="horizontal"
-                aspectRatio="5 / 2"
-                className="min-h-[440px] w-full"
-                margin={{ top: 16, right: 32, bottom: 24, left: 112 }}
-                revealSignature={`scores-${runId}`}
-              >
-                <Grid vertical horizontal={false} strokeDasharray="3,6" />
-                {data.pipelines.map((p, index) => (
-                  <Bar
-                    key={p.pipeline}
-                    dataKey={p.pipeline}
-                    fill={pipelineChartColor(p.pipeline, index)}
-                    stroke={pipelineChartColor(p.pipeline, index)}
-                  />
-                ))}
-                <BarYAxis showAllLabels />
-                <ChartTooltip />
-              </BarChart>
-              <div className="mt-3 flex flex-wrap gap-4 text-xs text-hf-muted">
-                {data.pipelines.map((p, index) => (
-                  <span key={p.pipeline} className="inline-flex items-center gap-1.5">
-                    <span
-                      className="size-2.5 rounded-sm"
-                      style={{
-                        background: pipelineChartColor(p.pipeline, index),
-                      }}
-                    />
-                    {p.pipeline}
-                  </span>
-                ))}
-              </div>
-            </div>
+            {runId != null ? (
+              <RagasCompareCharts pipelines={data.pipelines} runId={runId} />
+            ) : null}
 
             <div className="hf-panel" data-chart-panel>
               <p className="hf-label mb-1">Average latency</p>
@@ -223,19 +178,27 @@ export function ComparePage() {
                 xDataKey="name"
                 orientation="horizontal"
                 aspectRatio="5 / 2"
-                className="min-h-[300px] w-full"
+                className="min-h-[320px] w-full"
                 margin={{ top: 16, right: 32, bottom: 24, left: 96 }}
+                barGap={0.12}
                 revealSignature={`latency-${runId}`}
               >
                 <Grid vertical horizontal={false} strokeDasharray="3,6" />
-                <Bar
-                  dataKey="seconds"
-                  fill="var(--chart-1)"
-                  stroke="var(--chart-1)"
-                />
+                <Bar dataKey="seconds" fillKey="color" fill="var(--chart-1)" />
                 <BarYAxis showAllLabels />
                 <ChartTooltip />
               </BarChart>
+              <div className="mt-3 flex flex-wrap gap-4 text-xs text-hf-muted">
+                {latencyRows.map((row) => (
+                  <span key={row.name} className="inline-flex items-center gap-1.5">
+                    <span
+                      className="size-2.5 rounded-sm"
+                      style={{ background: row.color }}
+                    />
+                    {row.name}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
 

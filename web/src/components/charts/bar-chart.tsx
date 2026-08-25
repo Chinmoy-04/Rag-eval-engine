@@ -135,6 +135,7 @@ function extractBarConfigs(children: ReactNode): LineConfig[] {
         dataKey: props.dataKey,
         stroke: dotColor,
         strokeWidth: 0,
+        fillKey: props.fillKey,
         yAxisId: props.yAxisId,
       });
     }

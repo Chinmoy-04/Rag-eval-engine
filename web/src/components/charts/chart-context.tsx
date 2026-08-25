@@ -84,6 +84,8 @@ export interface LineConfig {
   dataKey: string;
   stroke: string;
   strokeWidth: number;
+  /** When set on Bar series, read per-datum fill from this data key. */
+  fillKey?: string;
   /** Scale group id (Recharts `yAxisId`). Default: `"left"`. */
   yAxisId?: string | number;
 }

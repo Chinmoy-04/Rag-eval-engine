@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import {
   BarChart3,
   MessageSquare,
@@ -18,7 +18,24 @@ const NAV = [
   { to: "/compare", label: "Compare", icon: BarChart3 },
 ] as const;
 
+const FOOTER_NAV = [
+  { to: "/about", label: "About" },
+  { to: "/terms", label: "Terms" },
+  { to: "/privacy", label: "Privacy" },
+] as const;
+
+const PAGE_TITLE: Record<string, string> = {
+  "/runs": "Runs",
+  "/compare": "Compare",
+  "/about": "About",
+  "/terms": "Terms",
+  "/privacy": "Privacy",
+};
+
 export function Shell() {
+  const { pathname } = useLocation();
+  const pageTitle = PAGE_TITLE[pathname];
+
   return (
     <div className="relative min-h-screen">
       <LenisRouteSync />
@@ -50,16 +67,35 @@ export function Shell() {
           ))}
         </nav>
         <div className="border-t border-hf-border p-4">
-          <p className="text-xs text-hf-muted">React UI · Phase 9</p>
+          <nav className="flex flex-wrap gap-x-3 gap-y-1">
+            {FOOTER_NAV.map(({ to, label }) => (
+              <NavLink
+                key={to}
+                to={to}
+                className={({ isActive }) =>
+                  cn(
+                    "text-xs transition-colors duration-200",
+                    isActive
+                      ? "font-medium text-hf-teal"
+                      : "text-hf-muted hover:text-hf-text",
+                  )
+                }
+              >
+                {label}
+              </NavLink>
+            ))}
+          </nav>
         </div>
       </aside>
       <div className="ml-64 flex min-h-screen flex-col">
         <header className="relative sticky top-0 z-30 shrink-0 border-b border-hf-border bg-hf-panel/80 backdrop-blur-md">
           <HeaderShimmer />
           <div className="flex h-14 items-center justify-between px-6">
-            <p className="text-sm text-hf-muted">
-              Ask about company policies — see how well the system answers.
-            </p>
+            {pageTitle ? (
+              <p className="text-sm font-medium text-hf-text">{pageTitle}</p>
+            ) : (
+              <span />
+            )}
             <ThemeToggle />
           </div>
         </header>

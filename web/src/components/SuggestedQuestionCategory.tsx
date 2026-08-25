@@ -99,14 +99,14 @@ export function SuggestedQuestionGrid({
   }, [entries]);
 
   const [expanded, setExpanded] = useState<Record<string, boolean>>(() =>
-    buildExpandedState(categories, true),
+    buildExpandedState(categories, false),
   );
 
   useEffect(() => {
     setExpanded((prev) => {
       const next = { ...prev };
       for (const category of categories) {
-        if (!(category in next)) next[category] = true;
+        if (!(category in next)) next[category] = false;
       }
       for (const key of Object.keys(next)) {
         if (!categories.includes(key)) delete next[key];
