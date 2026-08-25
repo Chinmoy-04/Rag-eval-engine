@@ -1,8 +1,9 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, type ReactNode } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ReactLenis, useLenis } from "lenis/react";
 import { useLocation } from "react-router-dom";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,20 +22,6 @@ const LENIS_OPTIONS = {
   touchMultiplier: 1.2,
   syncTouch: false,
 } as const;
-
-function useMediaQuery(query: string) {
-  const [matches, setMatches] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia(query);
-    const sync = () => setMatches(mq.matches);
-    sync();
-    mq.addEventListener("change", sync);
-    return () => mq.removeEventListener("change", sync);
-  }, [query]);
-
-  return matches;
-}
 
 function LenisGsapBridge() {
   const lenis = useLenis();
@@ -94,4 +81,4 @@ export function SmoothScrollProvider({ children }: SmoothScrollProviderProps) {
   );
 }
 
-export { gsap, ScrollTrigger, useLenis, useMediaQuery };
+export { gsap, ScrollTrigger, useLenis };
