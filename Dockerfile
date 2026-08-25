@@ -11,6 +11,8 @@ COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
 COPY pyproject.toml uv.lock README.md ./
 COPY src ./src
 COPY data/raw_docs ./data/raw_docs
+# Pre-scored eval campaigns for Runs / Compare (live DB is gitignored).
+COPY data/demo_rag_eval.db ./data/rag_eval.db
 
 RUN uv sync --frozen --no-dev
 

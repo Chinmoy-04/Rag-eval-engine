@@ -11,6 +11,8 @@ build/
 .mypy_cache/
 data/chroma_db/
 data/rag_eval.db
+# Tracked snapshot shipped in the Docker image for Runs/Compare on Render.
+!data/demo_rag_eval.db
 data/testsets/
 logs/
 *.log
