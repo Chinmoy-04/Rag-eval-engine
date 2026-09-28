@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 import { AmbientOrbs } from "@/components/AmbientOrbs";
 import { BeamsBackground } from "@/components/BeamsBackground";
 import { HeaderShimmer } from "@/components/HeaderShimmer";
+import { BackendStatus } from "@/components/BackendStatus";
 import { HelixForgeBrand } from "@/components/brand/HelixForgeBrand";
 import { HelixForgeWordmark } from "@/components/brand/HelixForgeWordmark";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -191,7 +192,10 @@ export function Shell() {
                   <span className="hidden md:block" />
                 )}
               </div>
-              <ThemeToggle />
+              <div className="flex shrink-0 items-center gap-2">
+                <BackendStatus />
+                <ThemeToggle />
+              </div>
             </div>
           </header>
 

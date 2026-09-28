@@ -58,8 +58,8 @@ async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
   return res.json() as Promise<T>;
 }
 
-export function getHealth() {
-  return apiFetch<HealthResponse>("/api/health");
+export function getHealth(init?: RequestInit) {
+  return apiFetch<HealthResponse>("/api/health", init);
 }
 
 export function getSuggestedQuestions() {
